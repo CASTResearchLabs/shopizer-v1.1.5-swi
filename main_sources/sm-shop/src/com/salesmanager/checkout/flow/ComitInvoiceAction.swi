@@ -1,0 +1,68 @@
+{
+  "dependency facts about source code file [sm-shop/src/com/salesmanager/checkout/flow/ComitInvoiceAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/com/salesmanager/checkout/flow/ComitInvoiceAction.java]": [
+      {
+        "files": [
+          {
+            "calling_element_types": [
+              {
+                "comment": "",
+                "nb_calling_elements": 1,
+                "type": "Java Method",
+                "calling_elements": [
+                  {
+                    "name": "comitOrder",
+                    "calling_type": "CALL",
+                    "full_name": "com.salesmanager.checkout.flow.ComitInvoiceAction.comitOrder"
+                  }
+                ]
+              },
+              {
+                "comment": "",
+                "nb_calling_elements": 1,
+                "type": "Java Class Struts",
+                "calling_elements": [
+                  {
+                    "name": "ComitInvoiceAction",
+                    "calling_type": "CALL",
+                    "full_name": "com.salesmanager.checkout.flow.ComitInvoiceAction"
+                  }
+                ]
+              }
+            ],
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "comment": "",
+            "nb_calling_element_types": 2
+          },
+          {
+            "calling_element_types": [
+              {
+                "comment": "",
+                "nb_calling_elements": 1,
+                "type": "Struts Operation",
+                "calling_elements": [
+                  {
+                    "name": "/comitInvoice",
+                    "calling_type": "CALL",
+                    "full_name": "com.salesmanager.checkout.flow.ComitInvoiceAction/CAST_Struts_Operation/comitInvoice"
+                  },
+                  {
+                    "name": "/comitInvoice",
+                    "calling_type": "POST",
+                    "full_name": "com.salesmanager.checkout.flow.ComitInvoiceAction/CAST_Struts_Operation/comitInvoice"
+                  }
+                ]
+              }
+            ],
+            "from_file": "sm-shop/WebContent/checkout/components/invoiceConfirmation.jsp",
+            "comment": "",
+            "nb_calling_element_types": 1
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}

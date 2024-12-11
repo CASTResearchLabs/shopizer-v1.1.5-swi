@@ -1,0 +1,102 @@
+{
+  "dependency facts about source code file [sm-shop/src/com/salesmanager/checkout/flow/ShippingAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/com/salesmanager/checkout/flow/ShippingAction.java]": [
+      {
+        "files": [
+          {
+            "calling_element_types": [
+              {
+                "comment": "",
+                "nb_calling_elements": 2,
+                "type": "Java Method",
+                "calling_elements": [
+                  {
+                    "name": "selectShipping",
+                    "calling_type": "CALL",
+                    "full_name": "com.salesmanager.checkout.flow.ShippingAction.selectShipping"
+                  },
+                  {
+                    "name": "displayShipping",
+                    "calling_type": "CALL",
+                    "full_name": "com.salesmanager.checkout.flow.ShippingAction.displayShipping"
+                  }
+                ]
+              },
+              {
+                "comment": "",
+                "nb_calling_elements": 1,
+                "type": "Java Class Struts",
+                "calling_elements": [
+                  {
+                    "name": "ShippingAction",
+                    "calling_type": "CALL",
+                    "full_name": "com.salesmanager.checkout.flow.ShippingAction"
+                  },
+                  {
+                    "name": "ShippingAction",
+                    "calling_type": "CALL",
+                    "full_name": "com.salesmanager.checkout.flow.ShippingAction"
+                  }
+                ]
+              }
+            ],
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "comment": "",
+            "nb_calling_element_types": 2
+          },
+          {
+            "calling_element_types": [
+              {
+                "comment": "",
+                "nb_calling_elements": 1,
+                "type": "Struts Operation",
+                "calling_elements": [
+                  {
+                    "name": "/selectShippingMethod",
+                    "calling_type": "CALL",
+                    "full_name": "com.salesmanager.checkout.flow.ShippingAction/CAST_Struts_Operation/selectShippingMethod"
+                  },
+                  {
+                    "name": "/selectShippingMethod",
+                    "calling_type": "POST",
+                    "full_name": "com.salesmanager.checkout.flow.ShippingAction/CAST_Struts_Operation/selectShippingMethod"
+                  }
+                ]
+              }
+            ],
+            "from_file": "sm-shop/WebContent/checkout/shipping/shipping.jsp",
+            "comment": "",
+            "nb_calling_element_types": 1
+          },
+          {
+            "calling_element_types": [
+              {
+                "comment": "",
+                "nb_calling_elements": 1,
+                "type": "Struts Operation",
+                "calling_elements": [
+                  {
+                    "name": "/shipping",
+                    "calling_type": "CALL",
+                    "full_name": "com.salesmanager.checkout.flow.ShippingAction/CAST_Struts_Operation/shipping"
+                  },
+                  {
+                    "name": "/shipping",
+                    "calling_type": "GET",
+                    "full_name": "com.salesmanager.checkout.flow.ShippingAction/CAST_Struts_Operation/shipping"
+                  }
+                ]
+              }
+            ],
+            "from_file": "sm-central/WebContent/shipping/shippingleftmenu.jsp",
+            "comment": "",
+            "nb_calling_element_types": 1
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}
