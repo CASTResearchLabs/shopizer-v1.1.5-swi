@@ -4,52 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setUrl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ProcessStep.setUrl"
-                  },
-                  {
-                    "name": "setLabel",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ProcessStep.setLabel"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initCheckout",
+                "to_name": "setUrl",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ProcessStep",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ProcessStep.ProcessStep"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initCheckout",
+                "to_name": "setLabel",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProcessStep",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ProcessStep"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "initCheckout",
+                "to_name": "ProcessStep",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InitCheckoutAction",
+                "to_name": "ProcessStep",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java",
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

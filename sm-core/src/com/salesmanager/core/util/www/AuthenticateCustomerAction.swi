@@ -4,76 +4,60 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/customer/profile/LogonAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "logon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.AuthenticateCustomerAction.logon"
-                  },
-                  {
-                    "name": "logon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.AuthenticateCustomerAction.logon"
-                  },
-                  {
-                    "name": "logonCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.AuthenticateCustomerAction.logonCustomer"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "localLogon",
+                "to_name": "logon",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "AuthenticateCustomerAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.AuthenticateCustomerAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "remoteLogon",
+                "to_name": "logon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authenticateCustomer",
+                "to_name": "logonCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "LogonAction",
+                "to_name": "AuthenticateCustomerAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/customer/profile/LogonAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "logout",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.AuthenticateCustomerAction.logout"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "logout",
+                "to_name": "logout",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "AuthenticateCustomerAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.AuthenticateCustomerAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "logout",
+                "to_name": "AuthenticateCustomerAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

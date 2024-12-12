@@ -4,81 +4,60 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/MerchantConfigurationImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getShippingQuote",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexExpressQuotesImpl.getShippingQuote"
-                  },
-                  {
-                    "name": "getShippingMethodDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexExpressQuotesImpl.getShippingMethodDescription"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVOByModule",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FedexExpressQuotesImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexExpressQuotesImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVO",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantConfigurationImpl",
+                "to_name": "FedexExpressQuotesImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexExpressQuotesImpl.getConfiguration"
-                  },
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexExpressQuotesImpl.getConfiguration"
-                  },
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexExpressQuotesImpl.getConfiguration"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getShippingQuote",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FedexExpressQuotesImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexExpressQuotesImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getShippingMethodDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingService",
+                "to_name": "FedexExpressQuotesImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/MerchantConfigurationImpl.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

@@ -4,91 +4,74 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 21,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findProductByMerchantIdAndSeoURLAndByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao.findProductByMerchantIdAndSeoURLAndByLang"
-                  },
-                  {
-                    "name": "findProductsByDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao.findProductsByDescription"
-                  },
-                  {
-                    "name": "searchProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao.searchProduct"
-                  },
-                  {
-                    "name": "countProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao.countProduct"
-                  },
-                  {
-                    "name": "findProductsByAvailabilityCategoriesIdAndMerchantIdAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao.findProductsByAvailabilityCategoriesIdAndMerchantIdAndLanguageId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductByMerchantIdAndSeoURLAndByLang",
+                "to_name": "findProductByMerchantIdAndSeoURLAndByLang",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "ProductDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchProductsForText",
+                "to_name": "findProductsByDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findProducts",
+                "to_name": "searchProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductCount",
+                "to_name": "countProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findProductsByCategoryList",
+                "to_name": "findProductsByAvailabilityCategoriesIdAndMerchantIdAndLanguageId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 25
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByTaxClassId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao.findByTaxClassId"
-                  },
-                  {
-                    "name": "saveOrUpdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao.saveOrUpdate"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteTaxClass",
+                "to_name": "findByTaxClassId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "ProductDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteTaxClass",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class DAO",
+                "from_name": "TaxService",
+                "to_name": "ProductDao",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

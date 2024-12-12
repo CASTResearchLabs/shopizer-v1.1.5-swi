@@ -4,45 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/dwr.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "removeProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.AjaxShoppingCartUtil.removeProduct"
-                  },
-                  {
-                    "name": "calculate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.AjaxShoppingCartUtil.calculate"
-                  }
-                ]
+                "from_type": "DWR Method",
+                "to_type": "Java Method",
+                "from_name": "AddProduct.removeProduct",
+                "to_name": "removeProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "AjaxShoppingCartUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.AjaxShoppingCartUtil"
-                  },
-                  {
-                    "name": "AjaxShoppingCartUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.AjaxShoppingCartUtil"
-                  }
-                ]
+                "from_type": "DWR Method",
+                "to_type": "Java Method",
+                "from_name": "AddProduct.calculate",
+                "to_name": "calculate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "DWR Method",
+                "to_type": "Java Class",
+                "from_name": "AddProduct.calculate",
+                "to_name": "AjaxShoppingCartUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "DWR Method",
+                "to_type": "Java Class",
+                "from_name": "AddProduct.removeProduct",
+                "to_name": "AjaxShoppingCartUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/dwr.xml",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

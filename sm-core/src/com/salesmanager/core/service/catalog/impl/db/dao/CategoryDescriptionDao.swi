@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 10,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByParentCategoryIDMerchantIdandLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDescriptionDao.findByParentCategoryIDMerchantIdandLanguageId"
-                  },
-                  {
-                    "name": "findByParentCategoryIDMerchantIdandLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDescriptionDao.findByParentCategoryIDMerchantIdandLanguageId"
-                  },
-                  {
-                    "name": "findByMerchantIdAndCategoryIdAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDescriptionDao.findByMerchantIdAndCategoryIdAndLanguageId"
-                  },
-                  {
-                    "name": "findByLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDescriptionDao.findByLanguageId"
-                  },
-                  {
-                    "name": "findByCategoryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDescriptionDao.findByCategoryId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSubCategoriesDescriptionByCategoryAndLang",
+                "to_name": "findByParentCategoryIDMerchantIdandLanguageId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "CategoryDescriptionDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDescriptionDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSubCategoriesByCategoryAndLang",
+                "to_name": "findByParentCategoryIDMerchantIdandLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategoryDescriptionByLang",
+                "to_name": "findByMerchantIdAndCategoryIdAndLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAllCategoriesByLang",
+                "to_name": "findByLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategoryDescriptions",
+                "to_name": "findByCategoryId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 14
           }
         ],
         "files_list_comment": "",

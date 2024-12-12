@@ -4,96 +4,81 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/common/impl/ServicesUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "containsCache",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CacheUtil.containsCache"
-                  },
-                  {
-                    "name": "containsCache",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CacheUtil.containsCache"
-                  },
-                  {
-                    "name": "containsCache",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CacheUtil.containsCache"
-                  },
-                  {
-                    "name": "getCacheMap",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CacheUtil.getCacheMap"
-                  },
-                  {
-                    "name": "getCacheMap",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CacheUtil.getCacheMap"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPaymentMetodsMap",
+                "to_name": "containsCache",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CacheUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CacheUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModule",
+                "to_name": "containsCache",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Initializer",
+                "to_type": "Java Method",
+                "from_name": "{(53:2)}",
+                "to_name": "containsCache",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPaymentMetodsMap",
+                "to_name": "getCacheMap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModule",
+                "to_name": "getCacheMap",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/common/impl/ServicesUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 13
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/CategoryUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "containsCache",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CacheUtil.containsCache"
-                  },
-                  {
-                    "name": "getCacheMap",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CacheUtil.getCacheMap"
-                  },
-                  {
-                    "name": "getInstance",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CacheUtil.getInstance"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategoriesForDropDownBox",
+                "to_name": "containsCache",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CacheUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CacheUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategoriesForDropDownBox",
+                "to_name": "getCacheMap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategoriesForDropDownBox",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CategoryUtil",
+                "to_name": "CacheUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/CategoryUtil.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

@@ -4,138 +4,102 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.GatewayTransactionVO.getTransactionID"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "GatewayTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.GatewayTransactionVO"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.GatewayTransactionVO.getTransactionID"
-                  },
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.GatewayTransactionVO.getTransactionID"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "GatewayTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.GatewayTransactionVO"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PaypalTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.GatewayTransactionVO.getTransactionID"
-                  },
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.GatewayTransactionVO.getTransactionID"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "GatewayTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.GatewayTransactionVO"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "captureTransaction",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaypalTransactionImpl",
+                "to_name": "GatewayTransactionVO",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/MonerisTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.GatewayTransactionVO.getTransactionID"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "GatewayTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.GatewayTransactionVO"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "captureTransaction",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MonerisTransactionImpl",
+                "to_name": "GatewayTransactionVO",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/AuthorizeNetTransactionImpl.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTransactionType",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TransactionImpl",
+                "to_name": "GatewayTransactionVO",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/AuthorizeNetTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthorizeNetTransactionImpl",
+                "to_name": "GatewayTransactionVO",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

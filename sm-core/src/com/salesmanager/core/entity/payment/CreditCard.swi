@@ -4,239 +4,193 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 8,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getExpirationYear",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getExpirationYear"
-                  },
-                  {
-                    "name": "getExpirationMonth",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getExpirationMonth"
-                  },
-                  {
-                    "name": "getCvv",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getCvv"
-                  },
-                  {
-                    "name": "getCreditCardCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getCreditCardCode"
-                  },
-                  {
-                    "name": "getCardNumber",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getCardNumber"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CreditCard",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/CreditCardGatewayTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getExpirationYear",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getExpirationYear"
-                  },
-                  {
-                    "name": "getExpirationMonth",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getExpirationMonth"
-                  },
-                  {
-                    "name": "getCvv",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getCvv"
-                  },
-                  {
-                    "name": "getCardNumber",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getCardNumber"
-                  },
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.setLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getExpirationYear",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CreditCard",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getExpirationMonth",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getCvv",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getCreditCardCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getCardNumber",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessPayment.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getExpirationYear",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getExpirationYear"
-                  },
-                  {
-                    "name": "getExpirationMonth",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getExpirationMonth"
-                  },
-                  {
-                    "name": "getCvv",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getCvv"
-                  },
-                  {
-                    "name": "getCreditCardCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getCreditCardCode"
-                  },
-                  {
-                    "name": "getCardNumber",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getCardNumber"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "getExpirationYear",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CreditCard",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "getExpirationMonth",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "getCvv",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "getCardNumber",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "setLocale",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getExpirationYear",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getExpirationYear"
-                  },
-                  {
-                    "name": "getExpirationMonth",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getExpirationMonth"
-                  },
-                  {
-                    "name": "getCvv",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getCvv"
-                  },
-                  {
-                    "name": "getCreditCardName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getCreditCardName"
-                  },
-                  {
-                    "name": "getEncryptedCreditCardNumber",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.getEncryptedCreditCardNumber"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCreditCard",
+                "to_name": "getExpirationYear",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CreditCard",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCreditCard",
+                "to_name": "getExpirationMonth",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCreditCard",
+                "to_name": "getCvv",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCreditCard",
+                "to_name": "getCreditCardCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCreditCard",
+                "to_name": "getCardNumber",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCardNumber",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard.setCardNumber"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getExpirationYear",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CreditCard",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.CreditCard"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getExpirationMonth",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getCvv",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getCreditCardName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getEncryptedCreditCardNumber",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/CustomerInformationAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "setCardNumber",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CustomerInformationAction",
+                "to_name": "CreditCard",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 10,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.IProductAttributeDao.findById"
-                  },
-                  {
-                    "name": "findAttributesByIds",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.IProductAttributeDao.findAttributesByIds"
-                  },
-                  {
-                    "name": "findAttributesByProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.IProductAttributeDao.findAttributesByProductId"
-                  },
-                  {
-                    "name": "findByProductIdAndOptionValueId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.IProductAttributeDao.findByProductIdAndOptionValueId"
-                  },
-                  {
-                    "name": "deleteAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.IProductAttributeDao.deleteAll"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductAttribute",
+                "to_name": "findById",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "IProductAttributeDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.IProductAttributeDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductAttributes",
+                "to_name": "findAttributesByIds",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductAttributes",
+                "to_name": "findAttributesByProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductAttributeByOptionValueAndProduct",
+                "to_name": "findByProductIdAndOptionValueId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteProduct",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 15
           }
         ],
         "files_list_comment": "",

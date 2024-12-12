@@ -4,59 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "comitOrder",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitInvoiceAction.comitOrder"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "comitInvoice",
+                "to_name": "comitOrder",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "ComitInvoiceAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitInvoiceAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "comitInvoice",
+                "to_name": "ComitInvoiceAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/checkout/components/invoiceConfirmation.jsp",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/comitInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitInvoiceAction/CAST_Struts_Operation/comitInvoice"
-                  },
-                  {
-                    "name": "/comitInvoice",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.checkout.flow.ComitInvoiceAction/CAST_Struts_Operation/comitInvoice"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "comitInvoice",
+                "to_name": "/comitInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "invoiceConfirmation.jsp",
+                "to_name": "/comitInvoice",
+                "calling_type": "POST"
               }
             ],
-            "from_file": "sm-shop/WebContent/checkout/components/invoiceConfirmation.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

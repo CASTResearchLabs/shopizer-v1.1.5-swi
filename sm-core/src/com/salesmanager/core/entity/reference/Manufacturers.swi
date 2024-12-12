@@ -4,93 +4,74 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setLastModified",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Manufacturers.setLastModified"
-                  },
-                  {
-                    "name": "setDateAdded",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Manufacturers.setDateAdded"
-                  },
-                  {
-                    "name": "getManufacturersId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Manufacturers.getManufacturersId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateManufacturers",
+                "to_name": "setLastModified",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Manufacturers",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Manufacturers"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateManufacturers",
+                "to_name": "setDateAdded",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateManufacturers",
+                "to_name": "getManufacturersId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogService",
+                "to_name": "Manufacturers",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setManufacturersName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Manufacturers.setManufacturersName"
-                  },
-                  {
-                    "name": "setManufacturersId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Manufacturers.setManufacturersId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadManufacturers",
+                "to_name": "setManufacturersName",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "Manufacturers",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Manufacturers.Manufacturers"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadManufacturers",
+                "to_name": "setManufacturersId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Manufacturers",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Manufacturers"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "uploadManufacturers",
+                "to_name": "Manufacturers",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CSVFileUploadImpl",
+                "to_name": "Manufacturers",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

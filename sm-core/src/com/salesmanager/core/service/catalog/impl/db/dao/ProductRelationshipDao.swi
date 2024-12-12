@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByProductIdAndMerchantIdAndRelationTypeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductRelationshipDao.findByProductIdAndMerchantIdAndRelationTypeId"
-                  },
-                  {
-                    "name": "findByProductIdAndMerchantIdAndRelationTypeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductRelationshipDao.findByProductIdAndMerchantIdAndRelationTypeId"
-                  },
-                  {
-                    "name": "findByMerchantIdAndRelationTypeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductRelationshipDao.findByMerchantIdAndRelationTypeId"
-                  },
-                  {
-                    "name": "findRelationshipLine",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductRelationshipDao.findRelationshipLine"
-                  },
-                  {
-                    "name": "delete",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductRelationshipDao.delete"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductRelationShip",
+                "to_name": "findByProductIdAndMerchantIdAndRelationTypeId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "ProductRelationshipDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductRelationshipDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductRelationShip",
+                "to_name": "findByMerchantIdAndRelationTypeId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductRelationship",
+                "to_name": "findRelationshipLine",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProductRelationship",
+                "to_name": "delete",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateProductRelationship",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           }
         ],
         "files_list_comment": "",

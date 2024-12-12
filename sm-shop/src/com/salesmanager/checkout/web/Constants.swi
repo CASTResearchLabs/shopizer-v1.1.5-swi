@@ -4,178 +4,151 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "ATTRIBUTE_VALUE_PARAM",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.ATTRIBUTE_VALUE_PARAM"
-                  },
-                  {
-                    "name": "ATTRIBUTE_PARAM",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.ATTRIBUTE_PARAM"
-                  },
-                  {
-                    "name": "QUANTITY_PARAM",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.QUANTITY_PARAM"
-                  },
-                  {
-                    "name": "PRODUCT_ID_PARAM",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.PRODUCT_ID_PARAM"
-                  },
-                  {
-                    "name": "MERCHANT_ID_PARAM",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.MERCHANT_ID_PARAM"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "Constants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/checkout/cart/StoreShoppingCartAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "OUT_OF_STOCK_PRODUCT_QUANTITY",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.OUT_OF_STOCK_PRODUCT_QUANTITY"
-                  },
-                  {
-                    "name": "LOW_STOCK_PRODUCT_QUANTITY",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.LOW_STOCK_PRODUCT_QUANTITY"
-                  },
-                  {
-                    "name": "PRODUCT_ID_PARAM",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.PRODUCT_ID_PARAM"
-                  },
-                  {
-                    "name": "MERCHANT_ID_PARAM",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.MERCHANT_ID_PARAM"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "checkoutRemote",
+                "to_name": "ATTRIBUTE_VALUE_PARAM",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "Constants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "checkoutRemote",
+                "to_name": "ATTRIBUTE_PARAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "checkoutRemote",
+                "to_name": "QUANTITY_PARAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "checkoutRemote",
+                "to_name": "PRODUCT_ID_PARAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "checkoutRemote",
+                "to_name": "MERCHANT_ID_PARAM",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "OUT_OF_STOCK_PRODUCT_QUANTITY",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.OUT_OF_STOCK_PRODUCT_QUANTITY"
-                  },
-                  {
-                    "name": "LOW_STOCK_PRODUCT_QUANTITY",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.LOW_STOCK_PRODUCT_QUANTITY"
-                  },
-                  {
-                    "name": "PRODUCT_ID_PARAM",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.PRODUCT_ID_PARAM"
-                  },
-                  {
-                    "name": "MERCHANT_ID_PARAM",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.MERCHANT_ID_PARAM"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddSubscription",
+                "to_name": "OUT_OF_STOCK_PRODUCT_QUANTITY",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "Constants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddSubscription",
+                "to_name": "LOW_STOCK_PRODUCT_QUANTITY",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddSubscription",
+                "to_name": "PRODUCT_ID_PARAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddSubscription",
+                "to_name": "MERCHANT_ID_PARAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "SubscriptionAction",
+                "to_name": "Constants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DEFAULT_LANG",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants.DEFAULT_LANG"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddItem",
+                "to_name": "OUT_OF_STOCK_PRODUCT_QUANTITY",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "Constants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.checkout.web.Constants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddItem",
+                "to_name": "LOW_STOCK_PRODUCT_QUANTITY",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddItem",
+                "to_name": "PRODUCT_ID_PARAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddItem",
+                "to_name": "MERCHANT_ID_PARAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "ShoppingCartAction",
+                "to_name": "Constants",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/CheckoutParams.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/CheckoutParams.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Field",
+                "from_name": "lang",
+                "to_name": "DEFAULT_LANG",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CheckoutParams",
+                "to_name": "Constants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

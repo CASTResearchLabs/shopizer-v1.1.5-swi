@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.CustomerInfoDao.findById"
-                  },
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.CustomerInfoDao.findById"
-                  },
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.CustomerInfoDao.findById"
-                  },
-                  {
-                    "name": "delete",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.CustomerInfoDao.delete"
-                  },
-                  {
-                    "name": "saveOrUpdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.CustomerInfoDao.saveOrUpdate"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findCustomerInfoById",
+                "to_name": "findById",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "CustomerInfoDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.CustomerInfoDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processLastLoggedInDate",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteCustomer",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteCustomer",
+                "to_name": "delete",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateCustomerInfo",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
           }
         ],
         "files_list_comment": "",

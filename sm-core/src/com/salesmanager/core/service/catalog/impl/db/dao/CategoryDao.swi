@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 14,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDao.findById"
-                  },
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDao.findById"
-                  },
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDao.findById"
-                  },
-                  {
-                    "name": "findCategoryByMerchantIdAndSeoURLAndByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDao.findCategoryByMerchantIdAndSeoURLAndByLang"
-                  },
-                  {
-                    "name": "findSubCategoriesByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDao.findSubCategoriesByLang"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadCategories",
+                "to_name": "findById",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "CategoryDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "moveCategory",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategory",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategoryByMerchantIdAndSeoURLAndByLang",
+                "to_name": "findCategoryByMerchantIdAndSeoURLAndByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSubCategoriesByParentCategoryAndLang",
+                "to_name": "findSubCategoriesByLang",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 23
           }
         ],
         "files_list_comment": "",

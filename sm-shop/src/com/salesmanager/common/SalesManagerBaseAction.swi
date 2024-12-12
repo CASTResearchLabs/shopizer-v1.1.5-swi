@@ -4,281 +4,221 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setRequestedEntityId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setRequestedEntityId"
-                  },
-                  {
-                    "name": "getRequestedEntityId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.getRequestedEntityId"
-                  },
-                  {
-                    "name": "setPageTitle",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setPageTitle"
-                  },
-                  {
-                    "name": "setPageTitle",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setPageTitle"
-                  },
-                  {
-                    "name": "setPageText",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setPageText"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerBaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "reset",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.reset"
-                  },
-                  {
-                    "name": "setPageTitle",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setPageTitle"
-                  },
-                  {
-                    "name": "setPageText",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setPageText"
-                  },
-                  {
-                    "name": "setMetaKeywords",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setMetaKeywords"
-                  },
-                  {
-                    "name": "setMetaDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setMetaDescription"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "setRequestedEntityId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerBaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayCategory",
+                "to_name": "getRequestedEntityId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayCategory",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayCategory",
+                "to_name": "setPageText",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/store/LandingAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getRequestedEntityId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.getRequestedEntityId"
-                  },
-                  {
-                    "name": "setPageTitle",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setPageTitle"
-                  },
-                  {
-                    "name": "setMetaDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setMetaDescription"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayLanding",
+                "to_name": "reset",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerBaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayLanding",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayLanding",
+                "to_name": "setPageText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayLanding",
+                "to_name": "setMetaKeywords",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayLanding",
+                "to_name": "setMetaDescription",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getRequestedEntityId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.getRequestedEntityId"
-                  },
-                  {
-                    "name": "setPageTitle",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setPageTitle"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProduct",
+                "to_name": "getRequestedEntityId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerBaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProduct",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProduct",
+                "to_name": "setMetaDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProductDetailsAction",
+                "to_name": "SalesManagerBaseAction",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/store/StorePageAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setRequestedEntityId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setRequestedEntityId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getRequestedEntityId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerBaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/URLInterceptor.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setPageTitle",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setPageTitle"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerBaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "StorePageAction",
+                "to_name": "SalesManagerBaseAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/common/ShopInterceptor.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setPageTitle",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setPageTitle"
-                  },
-                  {
-                    "name": "setPageTitle",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction.setPageTitle"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerBaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.common.SalesManagerBaseAction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/catalog/store/SearchAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "search",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SearchAction",
+                "to_name": "SalesManagerBaseAction",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/URLInterceptor.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "baseIntercept",
+                "to_name": "setRequestedEntityId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "URLInterceptor",
+                "to_name": "SalesManagerBaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/common/ShopInterceptor.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "baseIntercept",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShopInterceptor",
+                "to_name": "SalesManagerBaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

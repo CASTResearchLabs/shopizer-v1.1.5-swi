@@ -1,0 +1,83 @@
+{
+  "dependency facts about source code file [sm-central/src/com/salesmanager/central/catalog/ProductOptionDisplay.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-central/src/com/salesmanager/central/catalog/ProductOptionDisplay.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductOptionsValuesAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProductOptionsValues",
+                "to_name": "setProductOptionName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProductOptionsValues",
+                "to_name": "setProductOptionId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "displayProductOptionsValues",
+                "to_name": "ProductOptionDisplay",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditProductOptionsValuesAction",
+                "to_name": "ProductOptionDisplay",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductAttributesAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProductAttributes",
+                "to_name": "setProductOptionName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProductAttributes",
+                "to_name": "setProductOptionId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "displayProductAttributes",
+                "to_name": "ProductOptionDisplay",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditProductAttributesAction",
+                "to_name": "ProductOptionDisplay",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}

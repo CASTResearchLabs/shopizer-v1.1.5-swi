@@ -4,107 +4,81 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "calculateTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.MiniShoppingCartUtil.calculateTotal"
-                  },
-                  {
-                    "name": "calculateTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.MiniShoppingCartUtil.calculateTotal"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MiniShoppingCartUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.MiniShoppingCartUtil"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/checkout/cart/AjaxShoppingCartUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "calculateTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.MiniShoppingCartUtil.calculateTotal"
-                  },
-                  {
-                    "name": "calculateTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.MiniShoppingCartUtil.calculateTotal"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProduct",
+                "to_name": "calculateTotal",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MiniShoppingCartUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.MiniShoppingCartUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "calculateTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AjaxShoppingCartUtil",
+                "to_name": "MiniShoppingCartUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/common/AjaxCatalogUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "calculateTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.MiniShoppingCartUtil.calculateTotal"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToCart",
+                "to_name": "calculateTotal",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MiniShoppingCartUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.MiniShoppingCartUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProduct",
+                "to_name": "calculateTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AjaxCatalogUtil",
+                "to_name": "MiniShoppingCartUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/CatalogInterceptor.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/CatalogInterceptor.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doIntercept",
+                "to_name": "calculateTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogInterceptor",
+                "to_name": "MiniShoppingCartUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

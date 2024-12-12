@@ -4,138 +4,102 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getAuthToken",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CustomerLogonModule.getAuthToken"
-                  },
-                  {
-                    "name": "logout",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CustomerLogonModule.logout"
-                  },
-                  {
-                    "name": "logon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CustomerLogonModule.logon"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "CustomerLogonModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CustomerLogonModule"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/util/www/AuthenticateCustomerAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "resetPassword",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CustomerLogonModule.resetPassword"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAuthenticatedToken",
+                "to_name": "getAuthToken",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "CustomerLogonModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CustomerLogonModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logout",
+                "to_name": "logout",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "logon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "AuthenticateCustomerAction",
+                "to_name": "CustomerLogonModule",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/customer/profile/ProfileAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isValidAuthToken",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CustomerLogonModule.isValidAuthToken"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword",
+                "to_name": "resetPassword",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "CustomerLogonModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CustomerLogonModule"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "ProfileAction",
+                "to_name": "CustomerLogonModule",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/security/JAASCustomerSecurityFilter.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "logout",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CustomerLogonModule.logout"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doFilter",
+                "to_name": "isValidAuthToken",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "CustomerLogonModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CustomerLogonModule"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "JAASCustomerSecurityFilter",
+                "to_name": "CustomerLogonModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/www/ajax/CustomerUtil.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/www/ajax/CustomerUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logout",
+                "to_name": "logout",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CustomerUtil",
+                "to_name": "CustomerLogonModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

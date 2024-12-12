@@ -4,193 +4,158 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 10,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setSpecialDateAvailable",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.setSpecialDateAvailable"
-                  },
-                  {
-                    "name": "getSpecialDateAvailable",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.getSpecialDateAvailable"
-                  },
-                  {
-                    "name": "setStatus",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.setStatus"
-                  },
-                  {
-                    "name": "setDateStatusChange",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.setDateStatusChange"
-                  },
-                  {
-                    "name": "setExpiresDate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.setExpiresDate"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "Special",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.Special"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Special",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditDiscountAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getSpecialDateAvailable",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.getSpecialDateAvailable"
-                  },
-                  {
-                    "name": "getSpecialDateAvailable",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.getSpecialDateAvailable"
-                  },
-                  {
-                    "name": "getSpecialDateAvailable",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.getSpecialDateAvailable"
-                  },
-                  {
-                    "name": "getSpecialDateAvailable",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.getSpecialDateAvailable"
-                  },
-                  {
-                    "name": "getSpecialDateAvailable",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.getSpecialDateAvailable"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Special",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/util/ProductUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getSpecialDateAvailable",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.getSpecialDateAvailable"
-                  },
-                  {
-                    "name": "getExpiresDate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.getExpiresDate"
-                  },
-                  {
-                    "name": "getSpecialNewProductPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special.getSpecialNewProductPrice"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "determinePrice",
+                "to_name": "getSpecialDateAvailable",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Special",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "determinePriceWithAttributes",
+                "to_name": "getSpecialDateAvailable",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "formatHTMLProductPrice",
+                "to_name": "getSpecialDateAvailable",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "hasDiscount",
+                "to_name": "getSpecialDateAvailable",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "formatHTMLProductPriceWithAttributes",
+                "to_name": "getSpecialDateAvailable",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/CheckoutUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 16
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditDiscountAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Special",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special"
-                  },
-                  {
-                    "name": "Special",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special"
-                  },
-                  {
-                    "name": "Special",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special"
-                  },
-                  {
-                    "name": "Special",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Special"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveDiscount",
+                "to_name": "setSpecialDateAvailable",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showDiscount",
+                "to_name": "getSpecialDateAvailable",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveDiscount",
+                "to_name": "setStatus",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveDiscount",
+                "to_name": "setDateStatusChange",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveDiscount",
+                "to_name": "setExpiresDate",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java",
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/CheckoutUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createOrderProduct",
+                "to_name": "getSpecialDateAvailable",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createOrderProduct",
+                "to_name": "getExpiresDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createOrderProduct",
+                "to_name": "getSpecialNewProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CheckoutUtil",
+                "to_name": "Special",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setSpecials",
+                "to_name": "Special",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getSpecials",
+                "to_name": "Special",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "specials",
+                "to_name": "Special",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "Product",
+                "to_name": "Special",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

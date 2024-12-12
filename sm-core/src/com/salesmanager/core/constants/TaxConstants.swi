@@ -4,188 +4,144 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 7,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_TAX_BASIS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.MODULE_TAX_BASIS"
-                  },
-                  {
-                    "name": "MODULE_TAX_BASIS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.MODULE_TAX_BASIS"
-                  },
-                  {
-                    "name": "MODULE_TAX_SCHEME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.MODULE_TAX_SCHEME"
-                  },
-                  {
-                    "name": "MODULE_TAX_SCHEME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.MODULE_TAX_SCHEME"
-                  },
-                  {
-                    "name": "SHIPPING_TAX_BASIS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.SHIPPING_TAX_BASIS"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TaxConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants"
-                  },
-                  {
-                    "name": "TaxConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/tax/DisplayTaxAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DEFAULT_TAX_CLASS_ID",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.DEFAULT_TAX_CLASS_ID"
-                  },
-                  {
-                    "name": "MODULE_TAX_BASIS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.MODULE_TAX_BASIS"
-                  },
-                  {
-                    "name": "MODULE_TAX_BASIS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.MODULE_TAX_BASIS"
-                  },
-                  {
-                    "name": "SHIPPING_TAX_BASIS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.SHIPPING_TAX_BASIS"
-                  },
-                  {
-                    "name": "SHIPPING_TAX_BASIS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.SHIPPING_TAX_BASIS"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "setInitialSetup",
+                "to_name": "MODULE_TAX_BASIS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TaxConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "setup",
+                "to_name": "MODULE_TAX_BASIS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "setInitialSetup",
+                "to_name": "MODULE_TAX_SCHEME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "setup",
+                "to_name": "MODULE_TAX_SCHEME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "configureTax",
+                "to_name": "SHIPPING_TAX_BASIS",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "EU_SCHEME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.EU_SCHEME"
-                  },
-                  {
-                    "name": "CA_SCHEME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.CA_SCHEME"
-                  },
-                  {
-                    "name": "US_SCHEME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.US_SCHEME"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteTaxClass",
+                "to_name": "DEFAULT_TAX_CLASS_ID",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TaxConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "calculateTax",
+                "to_name": "MODULE_TAX_BASIS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "calculateTax",
+                "to_name": "SHIPPING_TAX_BASIS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxService",
+                "to_name": "TaxConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/tax/TaxTemplateHelper.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DEFAULT_TAX_CLASS_ID",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.DEFAULT_TAX_CLASS_ID"
-                  },
-                  {
-                    "name": "MODULE_TAX_BASIS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants.MODULE_TAX_BASIS"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createEUTaxLines",
+                "to_name": "EU_SCHEME",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TaxConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.TaxConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createCATaxLines",
+                "to_name": "CA_SCHEME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createUSTaxLines",
+                "to_name": "US_SCHEME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxTemplateHelper",
+                "to_name": "TaxConstants",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/tax/EditTaxAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/tax/EditTaxAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "addTaxRate",
+                "to_name": "DEFAULT_TAX_CLASS_ID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "editTaxBasis",
+                "to_name": "MODULE_TAX_BASIS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditTaxAction",
+                "to_name": "TaxConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

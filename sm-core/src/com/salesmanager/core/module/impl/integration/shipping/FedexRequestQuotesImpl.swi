@@ -4,133 +4,88 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getQuote",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexRequestQuotesImpl.getQuote"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "FedexRequestQuotesImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexRequestQuotesImpl.FedexRequestQuotesImpl"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FedexRequestQuotesImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexRequestQuotesImpl"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getQuote",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexRequestQuotesImpl.getQuote"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getQuote",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "FedexRequestQuotesImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexRequestQuotesImpl.FedexRequestQuotesImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getShippingQuote",
+                "to_name": "FedexRequestQuotesImpl",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FedexRequestQuotesImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexRequestQuotesImpl"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexQuotesImpl",
+                "to_name": "FedexRequestQuotesImpl",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexGroundQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getQuote",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexRequestQuotesImpl.getQuote"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getQuote",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "FedexRequestQuotesImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexRequestQuotesImpl.FedexRequestQuotesImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getShippingQuote",
+                "to_name": "FedexRequestQuotesImpl",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FedexRequestQuotesImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.FedexRequestQuotesImpl"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexGroundQuotesImpl",
+                "to_name": "FedexRequestQuotesImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexExpressQuotesImpl.java",
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexExpressQuotesImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getQuote",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getShippingQuote",
+                "to_name": "FedexRequestQuotesImpl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexExpressQuotesImpl",
+                "to_name": "FedexRequestQuotesImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

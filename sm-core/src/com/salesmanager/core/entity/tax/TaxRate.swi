@@ -4,293 +4,228 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 13,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setPiggyback",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.setPiggyback"
-                  },
-                  {
-                    "name": "setDescriptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.setDescriptions"
-                  },
-                  {
-                    "name": "setDescriptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.setDescriptions"
-                  },
-                  {
-                    "name": "isPiggyback",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.isPiggyback"
-                  },
-                  {
-                    "name": "isPiggyback",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.isPiggyback"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.TaxRate"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setPiggyback",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.setPiggyback"
-                  },
-                  {
-                    "name": "setPiggyback",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.setPiggyback"
-                  },
-                  {
-                    "name": "setDescriptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.setDescriptions"
-                  },
-                  {
-                    "name": "setDescriptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.setDescriptions"
-                  },
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.setMerchantId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createTaxRates",
+                "to_name": "setPiggyback",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.TaxRate"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createTaxRates",
+                "to_name": "setDescriptions",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTaxRate",
+                "to_name": "setDescriptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax",
+                "to_name": "isPiggyback",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax",
+                "to_name": "getDescriptions",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 30
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/tax/EditTaxAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getZoneToGeoZone",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate.getZoneToGeoZone"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editTaxRate",
+                "to_name": "setPiggyback",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addTaxRate",
+                "to_name": "setPiggyback",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editTaxRate",
+                "to_name": "setDescriptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addTaxRate",
+                "to_name": "setDescriptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addTaxRate",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/tax/CanadianTaxModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/model/application/TaxModule.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/tax/impl/dao/ITaxRateDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  },
-                  {
-                    "name": "TaxRate",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.tax.TaxRate"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByCountryId",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByCountryIdZoneIdAndClassId",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByTaxClassId",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByMerchantId",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteAll",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/tax/impl/dao/TaxRateDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByCountryId",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByCountryIdZoneIdAndClassId",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByTaxClassId",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByMerchantId",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteAll",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/tax/CanadianTaxModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "adjustTaxRate",
+                "to_name": "getZoneToGeoZone",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CanadianTaxModule",
+                "to_name": "TaxRate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "adjustTaxRate",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CanadianTaxModule",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/model/application/TaxModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "adjustTaxRate",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "TaxModule",
+                "to_name": "TaxRate",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

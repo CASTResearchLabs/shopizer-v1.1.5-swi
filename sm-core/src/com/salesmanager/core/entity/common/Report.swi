@@ -4,35 +4,25 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/orders/OrderListAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setReportHeader",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.Report.setReportHeader"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReportByCriteria",
+                "to_name": "setReportHeader",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Report",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.Report"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderListAction",
+                "to_name": "Report",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/orders/OrderListAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

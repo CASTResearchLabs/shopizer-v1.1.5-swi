@@ -4,40 +4,32 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/SystemDao.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setOrderIdNextValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralSequencer.setOrderIdNextValue"
-                  },
-                  {
-                    "name": "getOrderIdNextValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralSequencer.getOrderIdNextValue"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "incrementOrderIdCounter",
+                "to_name": "setOrderIdNextValue",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralSequencer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralSequencer"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "incrementOrderIdCounter",
+                "to_name": "getOrderIdNextValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "SystemDao",
+                "to_name": "CentralSequencer",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/SystemDao.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

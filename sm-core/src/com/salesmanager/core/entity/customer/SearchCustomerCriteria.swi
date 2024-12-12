@@ -4,76 +4,60 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/customer/impl/dao/CustomerDao.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCompanyName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.SearchCustomerCriteria.getCompanyName"
-                  },
-                  {
-                    "name": "getEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.SearchCustomerCriteria.getEmail"
-                  },
-                  {
-                    "name": "getCustomerName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.SearchCustomerCriteria.getCustomerName"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findCustomers",
+                "to_name": "getCompanyName",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchCustomerCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.SearchCustomerCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findCustomers",
+                "to_name": "getEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findCustomers",
+                "to_name": "getCustomerName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "CustomerDao",
+                "to_name": "SearchCustomerCriteria",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/customer/impl/dao/CustomerDao.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/customer/CustomerListAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchCustomerCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.SearchCustomerCriteria.SearchCustomerCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "displayCustomerList",
+                "to_name": "SearchCustomerCriteria",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchCustomerCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.SearchCustomerCriteria"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerListAction",
+                "to_name": "SearchCustomerCriteria",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/customer/CustomerListAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

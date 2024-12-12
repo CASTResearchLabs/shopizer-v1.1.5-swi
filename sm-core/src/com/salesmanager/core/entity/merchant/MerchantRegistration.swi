@@ -4,122 +4,95 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 7,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantRegistrationDefCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration.getMerchantRegistrationDefCode"
-                  },
-                  {
-                    "name": "setPromoCodeExpiry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration.setPromoCodeExpiry"
-                  },
-                  {
-                    "name": "setPromoCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration.setPromoCode"
-                  },
-                  {
-                    "name": "setDateAdded",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration.setDateAdded"
-                  },
-                  {
-                    "name": "setLastModified",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration.setLastModified"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MerchantRegistration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getPromoCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration.getPromoCode"
-                  },
-                  {
-                    "name": "getMerchantRegistrationDefCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration.getMerchantRegistrationDefCode"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "getMerchantRegistrationDefCode",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MerchantRegistration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "setPromoCodeExpiry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "setPromoCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "setDateAdded",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "setLastModified",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/profile/LogonAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantRegistrationDefCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration.getMerchantRegistrationDefCode"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "getPromoCode",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MerchantRegistration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantRegistration"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "getMerchantRegistrationDefCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "MerchantRegistration",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setAdminTokenToSession",
+                "to_name": "getMerchantRegistrationDefCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "BaseAction",
+                "to_name": "MerchantRegistration",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

@@ -4,634 +4,466 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 7,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setTransactionID"
-                  },
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.getTransactionID"
-                  },
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.getTransactionID"
-                  },
-                  {
-                    "name": "setCreditcardtransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setCreditcardtransaction"
-                  },
-                  {
-                    "name": "setOrderID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setOrderID"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/MonerisTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setTransactionID"
-                  },
-                  {
-                    "name": "setTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setTransactionID"
-                  },
-                  {
-                    "name": "setTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setTransactionID"
-                  },
-                  {
-                    "name": "setTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setTransactionID"
-                  },
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.getTransactionID"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PaypalTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setTransactionID"
-                  },
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.getTransactionID"
-                  },
-                  {
-                    "name": "setCreditcardtransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setCreditcardtransaction"
-                  },
-                  {
-                    "name": "setOrderID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setOrderID"
-                  },
-                  {
-                    "name": "setAmount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setAmount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setTransactionID",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/AuthorizeNetTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setTransactionID"
-                  },
-                  {
-                    "name": "setCreditcardtransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setCreditcardtransaction"
-                  },
-                  {
-                    "name": "setOrderID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setOrderID"
-                  },
-                  {
-                    "name": "setAmount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setAmount"
-                  },
-                  {
-                    "name": "setAmount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setAmount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "setTransactionID",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PsigateTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setTransactionID"
-                  },
-                  {
-                    "name": "setTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setTransactionID"
-                  },
-                  {
-                    "name": "setCreditcardtransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setCreditcardtransaction"
-                  },
-                  {
-                    "name": "setOrderID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setOrderID"
-                  },
-                  {
-                    "name": "setAmount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setAmount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "captureTransaction",
+                "to_name": "setTransactionID",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "setTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 19
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/MonerisTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "captureTransaction",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "setCreditcardtransaction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setOrderID",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/BeanStreamTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCreditcardtransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setCreditcardtransaction"
-                  },
-                  {
-                    "name": "setAmount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setAmount"
-                  },
-                  {
-                    "name": "setName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setName"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "setTransactionID",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.SalesManagerTransactionVO"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setTransactionID",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "setCreditcardtransaction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setOrderID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "setAmount",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/AuthorizeNetTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "setCreditcardtransaction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setOrderID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setAmount",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PsigateTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "setCreditcardtransaction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setOrderID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "setAmount",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/CodTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.getTransactionID"
-                  },
-                  {
-                    "name": "getOrderID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.getOrderID"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setCreditcardtransaction",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "retreiveTransactions",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CodTransactionImpl",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/GatewayTransactionVO.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setOrderID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setOrderID"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.SalesManagerTransactionVO"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/MoneyOrderTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setOrderID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.setOrderID"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "setOrderID",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.SalesManagerTransactionVO"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "processTransaction",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MoneyOrderTransactionImpl",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "retreiveTransactions",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MoneyOrderTransactionImpl",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/FreeTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTransactionID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.getTransactionID"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "setOrderID",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "processTransaction",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FreeTransactionImpl",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "retreiveTransactions",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FreeTransactionImpl",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderID",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO.getOrderID"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTransactionType",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TransactionImpl",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getTransactions",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TransactionImpl",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/GatewayTransactionVO.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "toString",
+                "to_name": "getTransactionID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "toString",
+                "to_name": "getOrderID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "GatewayTransactionVO",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/payment/impl/GatewayTransactionVO.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "toString",
+                "to_name": "getOrderID",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "GatewayTransactionVO",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  },
-                  {
-                    "name": "SalesManagerTransactionVO",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.service.payment.SalesManagerTransactionVO"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getTransactions",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentService",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/model/integration/PaymentModule.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/model/integration/PaymentModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "retreiveTransactions",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "PaymentModule",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

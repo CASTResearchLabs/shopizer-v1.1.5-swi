@@ -4,589 +4,466 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 14,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STATUSINVOICED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSINVOICED"
-                  },
-                  {
-                    "name": "INVOICE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.INVOICE_CHANNEL"
-                  },
-                  {
-                    "name": "OT_REFUND",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.OT_REFUND"
-                  },
-                  {
-                    "name": "OT_RECURING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.OT_RECURING"
-                  },
-                  {
-                    "name": "OT_CREDITS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.OT_CREDITS"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 8,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "OT_RECURING_CREDITS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.OT_RECURING_CREDITS"
-                  },
-                  {
-                    "name": "OT_OTHER_DUE_NOW",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.OT_OTHER_DUE_NOW"
-                  },
-                  {
-                    "name": "OT_RECURING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.OT_RECURING"
-                  },
-                  {
-                    "name": "OT_CREDITS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.OT_CREDITS"
-                  },
-                  {
-                    "name": "OT_TAX_MODULE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.OT_TAX_MODULE"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "STATUSINVOICED",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "refundOrder",
+                "to_name": "OT_REFUND",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "OT_RECURING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepareOrderListReport",
+                "to_name": "OT_CREDITS",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 19
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/OrderUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVOICE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.INVOICE_CHANNEL"
-                  },
-                  {
-                    "name": "ONLINE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.ONLINE_CHANNEL"
-                  },
-                  {
-                    "name": "STATUSINVOICEPAID",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSINVOICEPAID"
-                  },
-                  {
-                    "name": "STATUSUPDATE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSUPDATE"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getOrderTotals",
+                "to_name": "OT_RECURING_CREDITS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STATUSINVOICED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSINVOICED"
-                  },
-                  {
-                    "name": "INVOICE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.INVOICE_CHANNEL"
-                  },
-                  {
-                    "name": "INVOICE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.INVOICE_CHANNEL"
-                  },
-                  {
-                    "name": "INVOICE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.INVOICE_CHANNEL"
-                  },
-                  {
-                    "name": "ONLINE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.ONLINE_CHANNEL"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getOrderTotals",
+                "to_name": "OT_OTHER_DUE_NOW",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getOrderTotals",
+                "to_name": "OT_RECURING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getOrderTotals",
+                "to_name": "OT_CREDITS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getOrderTotals",
+                "to_name": "OT_TAX_MODULE",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderDao.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVOICE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.INVOICE_CHANNEL"
-                  },
-                  {
-                    "name": "STATUSDELIVERED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSDELIVERED"
-                  },
-                  {
-                    "name": "STATUSPROCESSING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSPROCESSING"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "searchInvoice",
+                "to_name": "STATUSINVOICED",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PaypalTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STATUSREFUND",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSREFUND"
-                  },
-                  {
-                    "name": "STATUSDELIVERED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSDELIVERED"
-                  },
-                  {
-                    "name": "STATUSDELIVERED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSDELIVERED"
-                  },
-                  {
-                    "name": "STATUSPROCESSING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSPROCESSING"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "searchInvoice",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findInvoicesByCustomerAndStartDate",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findInvoicesByCustomer",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "ONLINE_CHANNEL",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createInvoice",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processInvoicePayment",
+                "to_name": "ONLINE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processInvoicePayment",
+                "to_name": "STATUSINVOICEPAID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processInvoicePayment",
+                "to_name": "STATUSUPDATE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceDetailsAction",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/CreditCardGatewayTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STATUSREFUND",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSREFUND"
-                  },
-                  {
-                    "name": "STATUSDELIVERED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSDELIVERED"
-                  },
-                  {
-                    "name": "ONLINE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.ONLINE_CHANNEL"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processRefund",
+                "to_name": "STATUSREFUND",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processCapture",
+                "to_name": "STATUSDELIVERED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processTransaction",
+                "to_name": "STATUSDELIVERED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processTransaction",
+                "to_name": "STATUSPROCESSING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CreditCardGatewayTransactionImpl",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PaypalTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "initTransaction",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processTransaction",
+                "to_name": "STATUSDELIVERED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processTransaction",
+                "to_name": "STATUSPROCESSING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaypalTransactionImpl",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/entity/orders/Order.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STATUSDELIVERED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSDELIVERED"
-                  },
-                  {
-                    "name": "STATUSPROCESSING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSPROCESSING"
-                  },
-                  {
-                    "name": "ONLINE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.ONLINE_CHANNEL"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getStatusmark",
+                "to_name": "STATUSREFUND",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getStatusmark",
+                "to_name": "STATUSDELIVERED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "initialize",
+                "to_name": "ONLINE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "Order",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessPayment.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STATUSINVOICED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSINVOICED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "execute",
+                "to_name": "STATUSDELIVERED",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "execute",
+                "to_name": "STATUSPROCESSING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "execute",
+                "to_name": "ONLINE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProcessPayment",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/invoice/InvoiceAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVOICE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.INVOICE_CHANNEL"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayInvoice",
+                "to_name": "STATUSINVOICED",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceAction",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVOICE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.INVOICE_CHANNEL"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processNewInvoice",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerInvoiceWSImpl",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/PayPalExpressCheckoutAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVOICE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.INVOICE_CHANNEL"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "preparePaypalResponse",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STATUSDELIVERED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSDELIVERED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "initCheckout",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InitCheckoutAction",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/FreeTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STATUSPROCESSING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.STATUSPROCESSING"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processTransaction",
+                "to_name": "STATUSDELIVERED",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FreeTransactionImpl",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/MoneyOrderTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "ONLINE_CHANNEL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants.ONLINE_CHANNEL"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processTransaction",
+                "to_name": "STATUSPROCESSING",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.OrderConstants"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MoneyOrderTransactionImpl",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processPaymentTransaction",
+                "to_name": "ONLINE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentService",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

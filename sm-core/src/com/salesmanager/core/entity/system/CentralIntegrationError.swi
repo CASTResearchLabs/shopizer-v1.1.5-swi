@@ -4,115 +4,88 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setDateAdded",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError.setDateAdded"
-                  },
-                  {
-                    "name": "setCentralIntegrationErrorDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError.setCentralIntegrationErrorDescription"
-                  },
-                  {
-                    "name": "setMerchantid",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError.setMerchantid"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CentralIntegrationError",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError.CentralIntegrationError"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralIntegrationError",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError"
-                  },
-                  {
-                    "name": "CentralIntegrationError",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError"
-                  },
-                  {
-                    "name": "CentralIntegrationError",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/system/SystemService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralIntegrationError",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError"
-                  },
-                  {
-                    "name": "CentralIntegrationError",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logServiceMessage",
+                "to_name": "setDateAdded",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logServiceMessage",
+                "to_name": "setCentralIntegrationErrorDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logServiceMessage",
+                "to_name": "setMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "logServiceMessage",
+                "to_name": "CentralIntegrationError",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SystemService",
+                "to_name": "CentralIntegrationError",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/ICentralIntegrationErrorDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralIntegrationError",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError"
-                  },
-                  {
-                    "name": "CentralIntegrationError",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralIntegrationError"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByMerchantId",
+                "to_name": "CentralIntegrationError",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ICentralIntegrationErrorDao",
+                "to_name": "CentralIntegrationError",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/CentralIntegrationErrorDao.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/CentralIntegrationErrorDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByMerchantId",
+                "to_name": "CentralIntegrationError",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "CentralIntegrationErrorDao",
+                "to_name": "CentralIntegrationError",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

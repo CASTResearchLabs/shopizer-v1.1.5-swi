@@ -4,192 +4,158 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setPaymentMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction.setPaymentMethod"
-                  },
-                  {
-                    "name": "displayPayment",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction.displayPayment"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InvoicePaymentAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "selectPayment",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction.selectPayment"
-                  },
-                  {
-                    "name": "selectPayment",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction.selectPayment"
-                  },
-                  {
-                    "name": "displayPayment",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction.displayPayment"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction"
-                  },
-                  {
-                    "name": "PaymentAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction"
-                  },
-                  {
-                    "name": "PaymentAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/selectPaymentMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction/CAST_Struts_Operation/selectPaymentMethod"
-                  },
-                  {
-                    "name": "/selectPaymentMethod",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction/CAST_Struts_Operation/selectPaymentMethod"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "selectInvoicePaymentMethod",
+                "to_name": "selectPayment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "selectPaymentMethod",
+                "to_name": "selectPayment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "payment",
+                "to_name": "displayPayment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "selectInvoicePaymentMethod",
+                "to_name": "PaymentAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "selectPaymentMethod",
+                "to_name": "PaymentAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/checkout/payment/payment.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InvoicePaymentAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/selectInvoicePaymentMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction/CAST_Struts_Operation/selectInvoicePaymentMethod"
-                  },
-                  {
-                    "name": "/selectInvoicePaymentMethod",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction/CAST_Struts_Operation/selectInvoicePaymentMethod"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "setPaymentMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "displayPayment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InvoicePaymentAction",
+                "to_name": "PaymentAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/checkout/invoice/invoicePayment.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 3
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/payment",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction/CAST_Struts_Operation/payment"
-                  },
-                  {
-                    "name": "/payment",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction/CAST_Struts_Operation/payment"
-                  },
-                  {
-                    "name": "/payment",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction/CAST_Struts_Operation/payment"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/checkout/components/confirmation.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/payment",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction/CAST_Struts_Operation/payment"
-                  },
-                  {
-                    "name": "/payment",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.checkout.flow.PaymentAction/CAST_Struts_Operation/payment"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "checkout/payment.action",
+                "to_name": "/payment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "confirmation.jsp",
+                "to_name": "/payment",
+                "calling_type": "GET"
               }
             ],
-            "from_file": "sm-shop/WebContent/checkout/components/invoiceConfirmation.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/WebContent/checkout/payment/payment.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "selectPaymentMethod",
+                "to_name": "/selectPaymentMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "payment.jsp",
+                "to_name": "/selectPaymentMethod",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/checkout/invoice/invoicePayment.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "selectInvoicePaymentMethod",
+                "to_name": "/selectInvoicePaymentMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "invoicePayment.jsp",
+                "to_name": "/selectInvoicePaymentMethod",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/checkout/components/invoiceConfirmation.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "checkout/payment.action",
+                "to_name": "/payment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "invoiceConfirmation.jsp",
+                "to_name": "/payment",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

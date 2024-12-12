@@ -1,0 +1,118 @@
+{
+  "dependency facts about source code file [sm-central/src/com/salesmanager/central/merchantstore/StoreFrontPagesAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-central/src/com/salesmanager/central/merchantstore/StoreFrontPagesAction.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "deletePage",
+                "to_name": "delete",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "savePage",
+                "to_name": "save",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "storePageDetails",
+                "to_name": "displayDetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "updateStorePageList",
+                "to_name": "saveList",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "storePageList",
+                "to_name": "displayList",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
+          },
+          {
+            "from_file": "sm-central/WebContent/merchantstore/storePageList.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/deletePage.action",
+                "to_name": "/deletePage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "storePageList.jsp",
+                "to_name": "/deletePage",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "storePageDetails.action",
+                "to_name": "/storePageDetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/storePageDetails.action",
+                "to_name": "/storePageDetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "storePageList.jsp",
+                "to_name": "/storePageDetails",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-central/WebContent/merchantstore/storePageDetails.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "savePage",
+                "to_name": "/savePage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "storePageDetails.jsp",
+                "to_name": "/savePage",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}

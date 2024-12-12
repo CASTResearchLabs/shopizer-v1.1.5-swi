@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isCalculateShipping",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Invoice.isCalculateShipping"
-                  },
-                  {
-                    "name": "getProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Invoice.getProducts"
-                  },
-                  {
-                    "name": "getProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Invoice.getProducts"
-                  },
-                  {
-                    "name": "getLanguage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Invoice.getLanguage"
-                  },
-                  {
-                    "name": "getLanguage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Invoice.getLanguage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "isCalculateShipping",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Invoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Invoice"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isValidInvoice",
+                "to_name": "getProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "getProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "getLanguage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createInvoice",
+                "to_name": "getLanguage",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 15
           }
         ],
         "files_list_comment": "",

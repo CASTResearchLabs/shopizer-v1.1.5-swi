@@ -4,76 +4,60 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderStatus.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "hashCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderStatusId.hashCode"
-                  },
-                  {
-                    "name": "equals",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderStatusId.equals"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "hashCode",
+                "to_name": "hashCode",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderStatusId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderStatusId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "equals",
+                "to_name": "equals",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderStatus",
+                "to_name": "OrderStatusId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderStatus.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderStatusId.getLanguageId"
-                  },
-                  {
-                    "name": "getOrderStatusId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderStatusId.getOrderStatusId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCache",
+                "to_name": "getLanguageId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderStatusId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderStatusId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCache",
+                "to_name": "getOrderStatusId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RefCache",
+                "to_name": "OrderStatusId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

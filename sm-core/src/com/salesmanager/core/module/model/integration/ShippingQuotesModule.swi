@@ -4,40 +4,32 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getShippingMethodDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.integration.ShippingQuotesModule.getShippingMethodDescription"
-                  },
-                  {
-                    "name": "getShippingQuote",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.integration.ShippingQuotesModule.getShippingQuote"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getShippingMethodDescription",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "ShippingQuotesModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.integration.ShippingQuotesModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getShippingQuote",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ShippingService",
+                "to_name": "ShippingQuotesModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

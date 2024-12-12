@@ -1,0 +1,118 @@
+{
+  "dependency facts about source code file [sm-central/src/com/salesmanager/central/merchantstore/StoreFrontPortletsAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-central/src/com/salesmanager/central/merchantstore/StoreFrontPortletsAction.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "saveStoreFrontPortlets",
+                "to_name": "save",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "deleteCustomPortlet",
+                "to_name": "deleteCustomPortlet",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "updateCustomPortletsList",
+                "to_name": "saveCustomPortlets",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "savePortlet",
+                "to_name": "savePortlet",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "customPortletDetails",
+                "to_name": "customPortletsDetails",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
+          },
+          {
+            "from_file": "sm-central/WebContent/merchantstore/portlets.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "customPortletDetails.action",
+                "to_name": "/customPortletDetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/customPortletDetails.action",
+                "to_name": "/customPortletDetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "portlets.jsp",
+                "to_name": "/customPortletDetails",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/deleteCustomPortlet.action",
+                "to_name": "/deleteCustomPortlet",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "portlets.jsp",
+                "to_name": "/deleteCustomPortlet",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
+          },
+          {
+            "from_file": "sm-central/WebContent/merchantstore/customPortletDetails.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "savePortlet",
+                "to_name": "/savePortlet",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "customPortletDetails.jsp",
+                "to_name": "/savePortlet",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}

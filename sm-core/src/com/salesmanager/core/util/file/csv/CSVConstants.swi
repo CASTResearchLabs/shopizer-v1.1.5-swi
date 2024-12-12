@@ -4,91 +4,81 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/util/upload/GenericFileUploadAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DOUBLEQUOTE_STR",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVConstants.DOUBLEQUOTE_STR"
-                  },
-                  {
-                    "name": "COMMA_STR",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVConstants.COMMA_STR"
-                  },
-                  {
-                    "name": "CSV_PATTERN",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVConstants.CSV_PATTERN"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "uploadManufacturers",
+                "to_name": "INVALID_FILE_EXCEPTION_MSG",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "CSVConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "uploadProducts",
+                "to_name": "INVALID_FILE_EXCEPTION_MSG",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "uploadCategories",
+                "to_name": "INVALID_FILE_EXCEPTION_MSG",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "isValidFile",
+                "to_name": "CSV_SUFFIX",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "GenericFileUploadAction",
+                "to_name": "CSVConstants",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileReader.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileReader.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVALID_FILE_EXCEPTION_MSG",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVConstants.INVALID_FILE_EXCEPTION_MSG"
-                  },
-                  {
-                    "name": "INVALID_FILE_EXCEPTION_MSG",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVConstants.INVALID_FILE_EXCEPTION_MSG"
-                  },
-                  {
-                    "name": "INVALID_FILE_EXCEPTION_MSG",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVConstants.INVALID_FILE_EXCEPTION_MSG"
-                  },
-                  {
-                    "name": "CSV_SUFFIX",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVConstants.CSV_SUFFIX"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "parseRow",
+                "to_name": "DOUBLEQUOTE_STR",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "CSVConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "parseRow",
+                "to_name": "COMMA_STR",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Field",
+                "from_name": "CSVFileReader",
+                "to_name": "CSV_PATTERN",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CSVFileReader",
+                "to_name": "CSVConstants",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/util/upload/GenericFileUploadAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

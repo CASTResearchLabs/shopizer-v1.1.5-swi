@@ -4,35 +4,25 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/OrderWorkflowProcessor.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "execute",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.workflow.order.ProcessOrder.execute"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doWorkflow",
+                "to_name": "execute",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProcessOrder",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.workflow.order.ProcessOrder"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderWorkflowProcessor",
+                "to_name": "ProcessOrder",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/OrderWorkflowProcessor.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

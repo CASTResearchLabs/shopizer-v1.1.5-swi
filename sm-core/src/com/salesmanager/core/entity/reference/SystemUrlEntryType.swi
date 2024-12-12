@@ -4,195 +4,137 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum",
-                "calling_elements": [
-                  {
-                    "name": "SystemUrlEntryType",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Enum Item",
-                "calling_elements": [
-                  {
-                    "name": "WEB",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType.WEB"
-                  },
-                  {
-                    "name": "PORTAL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType.PORTAL"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum",
-                "calling_elements": [
-                  {
-                    "name": "SystemUrlEntryType",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "CustomerService",
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum Item",
-                "calling_elements": [
-                  {
-                    "name": "WEB",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType.WEB"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "WEB",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "PORTAL",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/customer/profile/LogonAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum",
-                "calling_elements": [
-                  {
-                    "name": "SystemUrlEntryType",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Enum",
+                "from_name": "LogonAction",
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum Item",
-                "calling_elements": [
-                  {
-                    "name": "WEB",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType.WEB"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "registerCustomer",
+                "to_name": "WEB",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/customer/profile/AddressAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum",
-                "calling_elements": [
-                  {
-                    "name": "SystemUrlEntryType",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "AddressAction",
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum Item",
-                "calling_elements": [
-                  {
-                    "name": "WEB",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType.WEB"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "changeAddress",
+                "to_name": "WEB",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/customer/CustomerDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum",
-                "calling_elements": [
-                  {
-                    "name": "SystemUrlEntryType",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Enum",
+                "from_name": "CustomerDetailsAction",
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum Item",
-                "calling_elements": [
-                  {
-                    "name": "WEB",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType.WEB"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "createCustomer",
+                "to_name": "WEB",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerCustomerWSImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum",
-                "calling_elements": [
-                  {
-                    "name": "SystemUrlEntryType",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "SalesManagerCustomerWSImpl",
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Enum Item",
-                "calling_elements": [
-                  {
-                    "name": "PORTAL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.reference.SystemUrlEntryType.PORTAL"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "createCustomer",
+                "to_name": "WEB",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessCustomer.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessCustomer.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ProcessCustomer",
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "execute",
+                "to_name": "PORTAL",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

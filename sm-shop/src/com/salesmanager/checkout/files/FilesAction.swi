@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.files.FilesAction.getFile"
-                  },
-                  {
-                    "name": "viewFiles",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.files.FilesAction.viewFiles"
-                  },
-                  {
-                    "name": "accessUrl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.files.FilesAction.accessUrl"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "getFile",
+                "to_name": "getFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "FilesAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.files.FilesAction"
-                  },
-                  {
-                    "name": "FilesAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.files.FilesAction"
-                  },
-                  {
-                    "name": "FilesAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.files.FilesAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "viewFiles",
+                "to_name": "viewFiles",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "accessUrl",
+                "to_name": "accessUrl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "viewFiles",
+                "to_name": "FilesAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "accessUrl",
+                "to_name": "FilesAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           }
         ],
         "files_list_comment": "",

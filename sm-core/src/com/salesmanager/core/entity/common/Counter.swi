@@ -4,88 +4,67 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ReviewDao.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.Counter.setCount"
-                  },
-                  {
-                    "name": "setAverage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.Counter.setAverage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "countAverageRatingByProduct",
+                "to_name": "setCount",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "Counter",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.Counter.Counter"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "countAverageRatingByProduct",
+                "to_name": "setAverage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Counter",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.Counter"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "countAverageRatingByProduct",
+                "to_name": "Counter",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "ReviewDao",
+                "to_name": "Counter",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ReviewDao.java",
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.Counter.getCount"
-                  },
-                  {
-                    "name": "getAverage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.Counter.getAverage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "getCount",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Counter",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.Counter"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "getAverage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProductDetailsAction",
+                "to_name": "Counter",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

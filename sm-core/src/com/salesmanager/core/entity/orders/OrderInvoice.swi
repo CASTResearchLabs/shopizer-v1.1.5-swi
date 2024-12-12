@@ -4,77 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 33,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setStatusText",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderInvoice.setStatusText"
-                  },
-                  {
-                    "name": "setStatus",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderInvoice.setStatus"
-                  },
-                  {
-                    "name": "setOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderInvoice.setOrderTotal"
-                  },
-                  {
-                    "name": "setOrderSubTotals",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderInvoice.setOrderSubTotals"
-                  },
-                  {
-                    "name": "setOrderCredits",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderInvoice.setOrderCredits"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "setStatusText",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "OrderInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderInvoice.OrderInvoice"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "setStatus",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderInvoice"
-                  },
-                  {
-                    "name": "OrderInvoice",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderInvoice"
-                  },
-                  {
-                    "name": "OrderInvoice",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderInvoice"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "setOrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "setOrderSubTotals",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "setOrderCredits",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 37
           }
         ],
         "files_list_comment": "",

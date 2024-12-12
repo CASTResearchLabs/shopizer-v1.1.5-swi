@@ -4,150 +4,88 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/CreditCardUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getErrorType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.getErrorType"
-                  },
-                  {
-                    "name": "getMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.getMessage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validate",
+                "to_name": "DATE",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DATE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.DATE"
-                  },
-                  {
-                    "name": "CVV",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.CVV"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateCvv",
+                "to_name": "CVV",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException"
-                  },
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "validateCvv",
+                "to_name": "CreditCardUtilException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "validate",
+                "to_name": "CreditCardUtilException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "luhnValidate",
+                "to_name": "CreditCardUtilException",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 27
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DATE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.DATE"
-                  },
-                  {
-                    "name": "CVV",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.CVV"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCreditCard",
+                "to_name": "getErrorType",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.CreditCardUtilException"
-                  },
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.CreditCardUtilException"
-                  },
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.CreditCardUtilException"
-                  },
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.CreditCardUtilException"
-                  },
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException.CreditCardUtilException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCreditCard",
+                "to_name": "getMessage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException"
-                  },
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException"
-                  },
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException"
-                  },
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException"
-                  },
-                  {
-                    "name": "CreditCardUtilException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.util.CreditCardUtilException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateCreditCard",
+                "to_name": "DATE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateCreditCard",
+                "to_name": "CVV",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CheckoutBaseAction",
+                "to_name": "CreditCardUtilException",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/CreditCardUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           }
         ],
         "files_list_comment": "",

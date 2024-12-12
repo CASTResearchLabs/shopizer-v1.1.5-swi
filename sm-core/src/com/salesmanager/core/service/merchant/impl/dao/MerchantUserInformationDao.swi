@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByUserNameAndPassword",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantUserInformationDao.findByUserNameAndPassword"
-                  },
-                  {
-                    "name": "findByUserName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantUserInformationDao.findByUserName"
-                  },
-                  {
-                    "name": "findByAdminEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantUserInformationDao.findByAdminEmail"
-                  },
-                  {
-                    "name": "findByAdminEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantUserInformationDao.findByAdminEmail"
-                  },
-                  {
-                    "name": "findByMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantUserInformationDao.findByMerchantId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getMerchantInformationByUserNameAndPassword",
+                "to_name": "findByUserNameAndPassword",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "MerchantUserInformationDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantUserInformationDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getMerchantUserInformation",
+                "to_name": "findByUserName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "findByAdminEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getMerchantUserInformationByAdminEmail",
+                "to_name": "findByAdminEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getMerchantUserInfo",
+                "to_name": "findByMerchantId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 14
           }
         ],
         "files_list_comment": "",

@@ -4,110 +4,88 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "comitOrder",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitOrderAction.comitOrder"
-                  },
-                  {
-                    "name": "displayOrder",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitOrderAction.displayOrder"
-                  },
-                  {
-                    "name": "displayOrder",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitOrderAction.displayOrder"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "ComitOrderAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitOrderAction"
-                  },
-                  {
-                    "name": "ComitOrderAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitOrderAction"
-                  },
-                  {
-                    "name": "ComitOrderAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitOrderAction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitOrderAction.getOrderHistory"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "comitOrder",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "ComitOrderAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitOrderAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceConfirmation",
+                "to_name": "displayOrder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "displayOrder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "displayInvoiceConfirmation",
+                "to_name": "ComitOrderAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "displayOrder",
+                "to_name": "ComitOrderAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitInvoiceAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitInvoiceAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/comitOrder",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ComitOrderAction/CAST_Struts_Operation/comitOrder"
-                  },
-                  {
-                    "name": "/comitOrder",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.checkout.flow.ComitOrderAction/CAST_Struts_Operation/comitOrder"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "ComitInvoiceAction",
+                "to_name": "ComitOrderAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/checkout/components/confirmation.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/checkout/components/confirmation.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "comitOrder",
+                "to_name": "/comitOrder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "confirmation.jsp",
+                "to_name": "/comitOrder",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

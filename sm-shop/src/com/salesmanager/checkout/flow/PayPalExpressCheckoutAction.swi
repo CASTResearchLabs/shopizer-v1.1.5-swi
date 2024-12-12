@@ -4,75 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "payPalNotification",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PayPalExpressCheckoutAction.payPalNotification"
-                  },
-                  {
-                    "name": "preparePaypalResponse",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PayPalExpressCheckoutAction.preparePaypalResponse"
-                  },
-                  {
-                    "name": "preparePaypalResponse",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PayPalExpressCheckoutAction.preparePaypalResponse"
-                  },
-                  {
-                    "name": "preparePaypalRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PayPalExpressCheckoutAction.preparePaypalRequest"
-                  },
-                  {
-                    "name": "preparePaypalRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PayPalExpressCheckoutAction.preparePaypalRequest"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "payPalNotification",
+                "to_name": "payPalNotification",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PayPalExpressCheckoutAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PayPalExpressCheckoutAction"
-                  },
-                  {
-                    "name": "PayPalExpressCheckoutAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PayPalExpressCheckoutAction"
-                  },
-                  {
-                    "name": "PayPalExpressCheckoutAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PayPalExpressCheckoutAction"
-                  },
-                  {
-                    "name": "PayPalExpressCheckoutAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PayPalExpressCheckoutAction"
-                  },
-                  {
-                    "name": "PayPalExpressCheckoutAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.PayPalExpressCheckoutAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "payPalInvoiceExpressCheckoutReturn",
+                "to_name": "preparePaypalResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "payPalExpressCheckoutReturn",
+                "to_name": "preparePaypalResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "payPalExpressCheckout",
+                "to_name": "preparePaypalRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "payPalInvoiceExpressCheckout",
+                "to_name": "preparePaypalRequest",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
           }
         ],
         "files_list_comment": "",

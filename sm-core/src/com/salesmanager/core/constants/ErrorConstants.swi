@@ -4,514 +4,375 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DELAY_EXPIRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.DELAY_EXPIRED"
-                  },
-                  {
-                    "name": "MAXIMUM_ORDER_PRODUCT_DOWNLOAD_REACHED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.MAXIMUM_ORDER_PRODUCT_DOWNLOAD_REACHED"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/LocalFileImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVALID_CREDENTIALS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.INVALID_CREDENTIALS"
-                  },
-                  {
-                    "name": "TECHNICAL_DIFFICULTIES",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.TECHNICAL_DIFFICULTIES"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/logon/CustomLogonImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "PAYMENT_DUPLICATE_TRANSACTION",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.PAYMENT_DUPLICATE_TRANSACTION"
-                  },
-                  {
-                    "name": "PAYMENT_DUPLICATE_TRANSACTION",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.PAYMENT_DUPLICATE_TRANSACTION"
-                  },
-                  {
-                    "name": "PAYMENT_DUPLICATE_TRANSACTION",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.PAYMENT_DUPLICATE_TRANSACTION"
-                  },
-                  {
-                    "name": "PAYMENT_TRANSACTION_ERROR",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.PAYMENT_TRANSACTION_ERROR"
-                  },
-                  {
-                    "name": "PAYMENT_TRANSACTION_ERROR",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.PAYMENT_TRANSACTION_ERROR"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PaypalTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DELETE_UNSUCCESS_CATEGORY_NO_MERCHANT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.DELETE_UNSUCCESS_CATEGORY_NO_MERCHANT"
-                  },
-                  {
-                    "name": "DELETE_UNSUCCESS_PRODUCTS_ATTACHED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.DELETE_UNSUCCESS_PRODUCTS_ATTACHED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "refundTransaction",
+                "to_name": "PAYMENT_DUPLICATE_TRANSACTION",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DELETE_UNSUCCESS_CATEGORY_NO_MERCHANT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.DELETE_UNSUCCESS_CATEGORY_NO_MERCHANT"
-                  },
-                  {
-                    "name": "DELETE_UNSUCCESS_PRODUCTS_ATTACHED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.DELETE_UNSUCCESS_PRODUCTS_ATTACHED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "captureTransaction",
+                "to_name": "PAYMENT_DUPLICATE_TRANSACTION",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditCategoryAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MINIMALERROR",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.MINIMALERROR"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processTransaction",
+                "to_name": "PAYMENT_DUPLICATE_TRANSACTION",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/page/FbPageAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DELAY_EXPIRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.DELAY_EXPIRED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "refundTransaction",
+                "to_name": "PAYMENT_TRANSACTION_ERROR",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "captureTransaction",
+                "to_name": "PAYMENT_TRANSACTION_ERROR",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/files/FilesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/LocalFileImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVALID_CREDENTIALS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.INVALID_CREDENTIALS"
-                  },
-                  {
-                    "name": "INVALID_CREDENTIALS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.INVALID_CREDENTIALS"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getFileInputStream",
+                "to_name": "DELAY_EXPIRED",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getFileInputStream",
+                "to_name": "MAXIMUM_ORDER_PRODUCT_DOWNLOAD_REACHED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LocalFileImpl",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/logon/CustomerJAASLogonImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVALID_CREDENTIALS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.INVALID_CREDENTIALS"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "resetPassword",
+                "to_name": "INVALID_CREDENTIALS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "logon",
+                "to_name": "INVALID_CREDENTIALS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerJAASLogonImpl",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/logon/CustomLogonImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateUserNameAndPassword",
+                "to_name": "INVALID_CREDENTIALS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateUserNameAndPassword",
+                "to_name": "TECHNICAL_DIFFICULTIES",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomLogonImpl",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteCategory",
+                "to_name": "DELETE_UNSUCCESS_CATEGORY_NO_MERCHANT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateDeleteCategory",
+                "to_name": "DELETE_UNSUCCESS_PRODUCTS_ATTACHED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogService",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditCategoryAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteCategory",
+                "to_name": "DELETE_UNSUCCESS_CATEGORY_NO_MERCHANT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteCategory",
+                "to_name": "DELETE_UNSUCCESS_PRODUCTS_ATTACHED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditCategoryAction",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/page/FbPageAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "display",
+                "to_name": "MINIMALERROR",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbPageAction",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/files/FilesAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "accessUrl",
+                "to_name": "DELAY_EXPIRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "FilesAction",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/customer/profile/ProfileAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVALID_CREDENTIALS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.INVALID_CREDENTIALS"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "changePassword",
+                "to_name": "INVALID_CREDENTIALS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/customer/profile/LogonAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVALID_CREDENTIALS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.INVALID_CREDENTIALS"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "localLogon",
+                "to_name": "INVALID_CREDENTIALS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/profile/LogonAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INVALID_CREDENTIALS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.INVALID_CREDENTIALS"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "logon",
+                "to_name": "INVALID_CREDENTIALS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/www/AuthenticateCustomerAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "AJAX_CONTENT_ERROR_PAGE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.AJAX_CONTENT_ERROR_PAGE"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "logon",
+                "to_name": "INVALID_CREDENTIALS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "AuthenticateCustomerAction",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/integration/PortletConfigurationAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "EMAIL_ALREADY_EXISTS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.EMAIL_ALREADY_EXISTS"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayFields",
+                "to_name": "AJAX_CONTENT_ERROR_PAGE",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PortletConfigurationAction",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "EMAIL_ALREADY_EXISTS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants.EMAIL_ALREADY_EXISTS"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveMerchantStore",
+                "to_name": "EMAIL_ALREADY_EXISTS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ErrorConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ErrorConstants"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "EMAIL_ALREADY_EXISTS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

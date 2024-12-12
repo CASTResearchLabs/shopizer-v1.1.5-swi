@@ -4,71 +4,53 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/ProductImageUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "uploadFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.CoreFileImpl.uploadFile"
-                  },
-                  {
-                    "name": "uploadFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.CoreFileImpl.uploadFile"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadCropedProductImages",
+                "to_name": "uploadFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Rich Client",
-                "calling_elements": [
-                  {
-                    "name": "CoreFileImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.CoreFileImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadProductImages",
+                "to_name": "uploadFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Rich Client",
+                "to_type": "Java Class Rich Client",
+                "from_name": "ProductImageUtil",
+                "to_name": "CoreFileImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/ProductImageUtil.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "uploadFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.CoreFileImpl.uploadFile"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "persistUploadProduct",
+                "to_name": "uploadFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Rich Client",
-                "calling_elements": [
-                  {
-                    "name": "CoreFileImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.CoreFileImpl"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class Rich Client",
+                "from_name": "CatalogService",
+                "to_name": "CoreFileImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

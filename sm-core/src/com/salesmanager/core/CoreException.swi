@@ -4,86 +4,74 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/LocalFileImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CoreException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.CoreException.CoreException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getFileInputStream",
+                "to_name": "CoreException",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CoreException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.CoreException"
-                  },
-                  {
-                    "name": "CoreException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.CoreException"
-                  },
-                  {
-                    "name": "CoreException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.CoreException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getFileInputStream",
+                "to_name": "CoreException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LocalFileImpl",
+                "to_name": "CoreException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LocalFileImpl",
+                "to_name": "CoreException",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/LocalFileImpl.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/files/FilesAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CoreException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.CoreException.CoreException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "accessUrl",
+                "to_name": "CoreException",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CoreException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.CoreException"
-                  },
-                  {
-                    "name": "CoreException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.CoreException"
-                  },
-                  {
-                    "name": "CoreException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.CoreException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "accessUrl",
+                "to_name": "CoreException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "FilesAction",
+                "to_name": "CoreException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "FilesAction",
+                "to_name": "CoreException",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/files/FilesAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

@@ -1,0 +1,167 @@
+{
+  "dependency facts about source code file [sm-central/src/com/salesmanager/central/customer/CustomerDetailsAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-central/src/com/salesmanager/central/customer/CustomerDetailsAction.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-customer.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "editcustomer",
+                "to_name": "createCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "resetcustomerpassword",
+                "to_name": "resetPassword",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "customerdetails",
+                "to_name": "displayCustomerDetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "showcreatecustomer",
+                "to_name": "displayCustomerCreate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "showselectcompany",
+                "to_name": "displaySelectCompany",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
+          },
+          {
+            "from_file": "sm-central/WebContent/customer/customerdetails.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "customer/editcustomer.action",
+                "to_name": "/editcustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "customerdetails.jsp",
+                "to_name": "/editcustomer",
+                "calling_type": "POST"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "customer/showselectcompany.action",
+                "to_name": "/showselectcompany",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "customerdetails.jsp",
+                "to_name": "/showselectcompany",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-central/WebContent/customer/customerlist.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "showcreatecustomer.action",
+                "to_name": "/showcreatecustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "customerlist.jsp",
+                "to_name": "/showcreatecustomer",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "customer/customerdetails.action",
+                "to_name": "/customerdetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "customerlist.jsp",
+                "to_name": "/customerdetails",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-central/WebContent/customer/customerleftmenu.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "customer/resetcustomerpassword.action",
+                "to_name": "/resetcustomerpassword",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "customerleftmenu.jsp",
+                "to_name": "/resetcustomerpassword",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/WebContent/catalog/productreview.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "customer/customerdetails.action",
+                "to_name": "/customerdetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "productreview.jsp",
+                "to_name": "/customerdetails",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 5
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}

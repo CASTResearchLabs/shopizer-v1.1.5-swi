@@ -4,97 +4,67 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "matchPositiveInteger",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.common.CurrencyModuleUtil.matchPositiveInteger"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CurrencyModuleUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.common.CurrencyModuleUtil"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/currencies/USDCurrencyModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "matchPositiveInteger",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.common.CurrencyModuleUtil.matchPositiveInteger"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAmount",
+                "to_name": "matchPositiveInteger",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CurrencyModuleUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.common.CurrencyModuleUtil"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "USDCurrencyModule",
+                "to_name": "CurrencyModuleUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/currencies/GenericCurrencyModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "matchPositiveInteger",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.common.CurrencyModuleUtil.matchPositiveInteger"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAmount",
+                "to_name": "matchPositiveInteger",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CurrencyModuleUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.common.CurrencyModuleUtil"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "GenericCurrencyModule",
+                "to_name": "CurrencyModuleUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/currencies/EURCurrencyModule.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/currencies/EURCurrencyModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAmount",
+                "to_name": "matchPositiveInteger",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EURCurrencyModule",
+                "to_name": "CurrencyModuleUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

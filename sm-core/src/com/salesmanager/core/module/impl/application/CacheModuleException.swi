@@ -4,94 +4,88 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/utils/OsCacheCacheModuleImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException.CacheModuleException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getFromCache",
+                "to_name": "CacheModuleException",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException"
-                  },
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException"
-                  },
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException"
-                  },
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException"
-                  },
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getFromCache",
+                "to_name": "CacheModuleException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OsCacheCacheModuleImpl",
+                "to_name": "CacheModuleException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OsCacheCacheModuleImpl",
+                "to_name": "CacheModuleException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "putInCache",
+                "to_name": "CacheModuleException",
+                "calling_type": "THROW"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/utils/OsCacheCacheModuleImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/module/model/application/CacheModule.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException"
-                  },
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException"
-                  },
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException"
-                  },
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException"
-                  },
-                  {
-                    "name": "CacheModuleException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.module.impl.application.CacheModuleException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "putInCache",
+                "to_name": "CacheModuleException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getFromCache",
+                "to_name": "CacheModuleException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "flushCacheGroup",
+                "to_name": "CacheModuleException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "flushEntry",
+                "to_name": "CacheModuleException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "flushAll",
+                "to_name": "CacheModuleException",
+                "calling_type": "THROW"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/model/application/CacheModule.java",
-            "comment": "",
-            "nb_calling_element_types": 1
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           }
         ],
         "files_list_comment": "",

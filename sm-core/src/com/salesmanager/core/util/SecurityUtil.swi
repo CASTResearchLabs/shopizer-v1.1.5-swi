@@ -4,40 +4,32 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/util/SecurityUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isUserInRole",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.SecurityUtil.isUserInRole"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isUserInRole",
+                "to_name": "isUserInRole",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SecurityUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.SecurityUtil"
-                  },
-                  {
-                    "name": "SecurityUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.SecurityUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "isUserInRole",
+                "to_name": "SecurityUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SecurityUtil",
+                "to_name": "SecurityUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/util/SecurityUtil.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

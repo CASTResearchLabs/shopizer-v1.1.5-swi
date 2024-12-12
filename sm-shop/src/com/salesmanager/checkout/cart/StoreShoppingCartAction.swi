@@ -4,45 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "checkoutRemote",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.StoreShoppingCartAction.checkoutRemote"
-                  },
-                  {
-                    "name": "checkoutLocal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.StoreShoppingCartAction.checkoutLocal"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "checkoutRemote",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "StoreShoppingCartAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.StoreShoppingCartAction"
-                  },
-                  {
-                    "name": "StoreShoppingCartAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.StoreShoppingCartAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "checkoutLocal",
+                "to_name": "checkoutLocal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "checkoutLocal",
+                "to_name": "StoreShoppingCartAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "checkoutRemote",
+                "to_name": "StoreShoppingCartAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

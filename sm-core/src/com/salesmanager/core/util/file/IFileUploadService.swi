@@ -4,45 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/util/upload/GenericFileUploadAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "uploadProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.file.IFileUploadService.uploadProducts"
-                  },
-                  {
-                    "name": "uploadManufacturers",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.file.IFileUploadService.uploadManufacturers"
-                  },
-                  {
-                    "name": "uploadCategory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.file.IFileUploadService.uploadCategory"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadProducts",
+                "to_name": "uploadProducts",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "IFileUploadService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.file.IFileUploadService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadManufacturers",
+                "to_name": "uploadManufacturers",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadCategories",
+                "to_name": "uploadCategory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "GenericFileUploadAction",
+                "to_name": "IFileUploadService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/util/upload/GenericFileUploadAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

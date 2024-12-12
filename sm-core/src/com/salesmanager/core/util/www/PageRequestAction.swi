@@ -4,179 +4,137 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getPortlets",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction.getPortlets"
-                  },
-                  {
-                    "name": "getExecutionContext",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction.getExecutionContext"
-                  },
-                  {
-                    "name": "getPage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction.getPage"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PageRequestAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/integration/page/FbPageAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setExecutionContext",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction.setExecutionContext"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getPortlets",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PageRequestAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/FbPageInterceptor.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getStore",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction.getStore"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getExecutionContext",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PageRequestAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbProductSliderModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getStore",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction.getStore"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getPage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PageRequestAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbPageAction",
+                "to_name": "PageRequestAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbDownloadProducts.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "displayPage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction.displayPage"
-                  },
-                  {
-                    "name": "displayPage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction.displayPage"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PageRequestAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction"
-                  },
-                  {
-                    "name": "PageRequestAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.PageRequestAction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-integration.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "/page/*/",
+                "to_name": "displayPage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "/fbPage/*/",
+                "to_name": "displayPage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "/page/*/",
+                "to_name": "PageRequestAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "/fbPage/*/",
+                "to_name": "PageRequestAction",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/FbPageInterceptor.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "baseIntercept",
+                "to_name": "setExecutionContext",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "FbPageInterceptor",
+                "to_name": "PageRequestAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbProductSliderModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbProductSliderModule",
+                "to_name": "PageRequestAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbDownloadProducts.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbDownloadProducts",
+                "to_name": "PageRequestAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

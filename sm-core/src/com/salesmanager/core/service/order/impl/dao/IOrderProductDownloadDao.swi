@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "saveOrUpdateAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.IOrderProductDownloadDao.saveOrUpdateAll"
-                  },
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.IOrderProductDownloadDao.findById"
-                  },
-                  {
-                    "name": "saveOrUpdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.IOrderProductDownloadDao.saveOrUpdate"
-                  },
-                  {
-                    "name": "persist",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.IOrderProductDownloadDao.persist"
-                  },
-                  {
-                    "name": "persist",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.IOrderProductDownloadDao.persist"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetOrderDownloadCounters",
+                "to_name": "saveOrUpdateAll",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "IOrderProductDownloadDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.IOrderProductDownloadDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderProductDownload",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateOrderProductDownload",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "persist",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
           }
         ],
         "files_list_comment": "",

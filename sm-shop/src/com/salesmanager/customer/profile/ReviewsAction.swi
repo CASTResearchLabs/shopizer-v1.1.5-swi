@@ -4,127 +4,116 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "displayReviews",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction.displayReviews"
-                  },
-                  {
-                    "name": "removeReview",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction.removeReview"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "reviews",
+                "to_name": "displayReviews",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ReviewsAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction"
-                  },
-                  {
-                    "name": "ReviewsAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "removeReview",
+                "to_name": "removeReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "removeReview",
+                "to_name": "ReviewsAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "reviews",
+                "to_name": "ReviewsAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/removeReview",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction/CAST_Struts_Operation/removeReview"
-                  },
-                  {
-                    "name": "/removeReview",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction/CAST_Struts_Operation/removeReview"
-                  },
-                  {
-                    "name": "/reviews",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction/CAST_Struts_Operation/reviews"
-                  },
-                  {
-                    "name": "/reviews",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction/CAST_Struts_Operation/reviews"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/customer/reviews.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/removeReview",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction/CAST_Struts_Operation/removeReview"
-                  },
-                  {
-                    "name": "/removeReview",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction/CAST_Struts_Operation/removeReview"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "removeReview",
+                "to_name": "/removeReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "reviews.jsp",
+                "to_name": "/removeReview",
+                "calling_type": "POST"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "reviews",
+                "to_name": "/reviews",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "reviews.jsp",
+                "to_name": "/reviews",
+                "calling_type": "POST"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-central/WebContent/catalog/productreview.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/reviews",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction/CAST_Struts_Operation/reviews"
-                  },
-                  {
-                    "name": "/reviews",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.customer.profile.ReviewsAction/CAST_Struts_Operation/reviews"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "removeReview",
+                "to_name": "/removeReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "productreview.jsp",
+                "to_name": "/removeReview",
+                "calling_type": "POST"
               }
             ],
-            "from_file": "sm-shop/WebContent/customer/profileMenu.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/customer/profileMenu.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "profile/reviews.action",
+                "to_name": "/reviews",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "profileMenu.jsp",
+                "to_name": "/reviews",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

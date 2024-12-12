@@ -4,50 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.OffsystemPendingOrder.setMerchantId"
-                  },
-                  {
-                    "name": "setOffsystemModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.OffsystemPendingOrder.setOffsystemModule"
-                  },
-                  {
-                    "name": "setDateAdded",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.OffsystemPendingOrder.setDateAdded"
-                  },
-                  {
-                    "name": "setOffsystemPendingOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.OffsystemPendingOrder.setOffsystemPendingOrderId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateOffsystemPendingOrder",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OffsystemPendingOrder",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.payment.OffsystemPendingOrder"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateOffsystemPendingOrder",
+                "to_name": "setOffsystemModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateOffsystemPendingOrder",
+                "to_name": "setDateAdded",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateOffsystemPendingOrder",
+                "to_name": "setOffsystemPendingOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentService",
+                "to_name": "OffsystemPendingOrder",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
           }
         ],
         "files_list_comment": "",

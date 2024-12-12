@@ -4,93 +4,81 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "selectShipping",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ShippingAction.selectShipping"
-                  },
-                  {
-                    "name": "displayShipping",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ShippingAction.displayShipping"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "selectShippingMethod",
+                "to_name": "selectShipping",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "ShippingAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ShippingAction"
-                  },
-                  {
-                    "name": "ShippingAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ShippingAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "shipping",
+                "to_name": "displayShipping",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "selectShippingMethod",
+                "to_name": "ShippingAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "shipping",
+                "to_name": "ShippingAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/selectShippingMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ShippingAction/CAST_Struts_Operation/selectShippingMethod"
-                  },
-                  {
-                    "name": "/selectShippingMethod",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.checkout.flow.ShippingAction/CAST_Struts_Operation/selectShippingMethod"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/checkout/shipping/shipping.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/shipping",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.ShippingAction/CAST_Struts_Operation/shipping"
-                  },
-                  {
-                    "name": "/shipping",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.checkout.flow.ShippingAction/CAST_Struts_Operation/shipping"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "selectShippingMethod",
+                "to_name": "/selectShippingMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "shipping.jsp",
+                "to_name": "/selectShippingMethod",
+                "calling_type": "POST"
               }
             ],
-            "from_file": "sm-central/WebContent/shipping/shippingleftmenu.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/WebContent/shipping/shippingleftmenu.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "shipping/shipping.action",
+                "to_name": "/shipping",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "shippingleftmenu.jsp",
+                "to_name": "/shipping",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

@@ -4,72 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 7,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderAccountProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderAccount.getOrderAccountProducts"
-                  },
-                  {
-                    "name": "getOrderAccountProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderAccount.getOrderAccountProducts"
-                  },
-                  {
-                    "name": "getOrderAccountProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderAccount.getOrderAccountProducts"
-                  },
-                  {
-                    "name": "getOrderAccountProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderAccount.getOrderAccountProducts"
-                  },
-                  {
-                    "name": "setOrderAccountBillDay",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderAccount.setOrderAccountBillDay"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getOrderAccountProducts",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "OrderAccount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderAccount.OrderAccount"
-                  },
-                  {
-                    "name": "OrderAccount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderAccount.OrderAccount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getOrderAccountProducts",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderAccount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderAccount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteOrder",
+                "to_name": "getOrderAccountProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderPayment",
+                "to_name": "getOrderAccountProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderAccountBillDay",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 22
           }
         ],
         "files_list_comment": "",

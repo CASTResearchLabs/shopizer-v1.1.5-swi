@@ -4,1699 +4,1362 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 8,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletResponse",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletResponse"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/customer/profile/LogonAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setInputMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setInputMessage"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "generateCaptchaImage",
+                "to_name": "getServletResponse",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "generateCaptchaImage",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "registerCustomer",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayRegistration",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 16
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/CustomerInformationAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "setMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setMessage"
-                  },
-                  {
-                    "name": "addErrorMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.addErrorMessage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logonCustomer",
+                "to_name": "setInputMessage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/customer/profile/ProfileAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "setMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setMessage"
-                  },
-                  {
-                    "name": "addFieldMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.addFieldMessage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateShippingBilling",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/customer/profile/AddressAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logonCustomer",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletResponse",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletResponse"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "addErrorMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.addErrorMessage"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayCustomer",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 14
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletResponse",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletResponse"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/invoice/InvoiceAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "setMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setMessage"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displaySubscriptionForm",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/customer/profile/ReviewsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "addErrorMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.addErrorMessage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/PayPalExpressCheckoutAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "addErrorMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.addErrorMessage"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "subscribe",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePage",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/customer/profile/OrdersAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 13
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ShippingAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "addErrorMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.addErrorMessage"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/PaymentAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletResponse",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletResponse"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setErrorMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setErrorMessage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "emptyCart",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/MiniShoppingCartAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setErrorMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setErrorMessage"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/page/FbPageAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "addErrorMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.addErrorMessage"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitInvoiceAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "addFieldMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.addFieldMessage"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanShoppingCart",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProduct",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "reviewsForm",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayReviews",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/invoice/InvoiceAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "getServletResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoice",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "printInvoice",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoice",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPrincipal",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/store/LandingAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderTotal",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/store/ContactAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePayments",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCreditCard",
+                "to_name": "addFieldMessage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCreditCard",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/CheckoutAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/customer/profile/AddressAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeAddress",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeAddressForm",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeAddress",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeAddress",
+                "to_name": "setMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeAddress",
+                "to_name": "addFieldMessage",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/www/AuthenticateCustomerAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/PayPalExpressCheckoutAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "payPalNotification",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/files/FilesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "setTechnicalMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.setTechnicalMessage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFile",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/StoreShoppingCartAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewFiles",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/store/StorePageAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "accessUrl",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFile",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewFiles",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductCount",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setCategories",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayCategory",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setCategories",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getServletResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/customer/profile/ReviewsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayReviews",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeReview",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeReview",
+                "to_name": "setMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "reviewsQuery",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/customer/profile/ProfileAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProfile",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword",
+                "to_name": "setMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ShippingAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "selectShipping",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShipping",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "selectShipping",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShipping",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShipping",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/PaymentAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "selectPayment",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "selectPayment",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "selectPayment",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/store/SearchAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductCount",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "search",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "search",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/customer/profile/OrdersAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrders",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "ordersQuery",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "OrdersAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initCheckout",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initCheckout",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initCheckout",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initCheckout",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "InitCheckoutAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/www/AuthenticateCustomerAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logout",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendCustomerInformation",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "AuthenticateCustomerAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/MiniShoppingCartAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "getServletResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "setErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "MiniShoppingCartAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/page/FbPageAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "setErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "FbPageAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitInvoiceAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "ComitInvoiceAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/StoreShoppingCartAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutLocal",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "StoreShoppingCartAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/common/SalesManagerBaseAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setAuthorizationMessage",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ProcessOrderAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  },
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "reset",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "SalesManagerBaseAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/DisplayOrderSummaryAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayCartOrderSummaryAction",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/store/LanguageAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrderSummaryAction",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "DisplayOrderSummaryAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/store/StorePageAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "StorePageAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/store/LandingAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayLanding",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayLanding",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "LandingAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/store/ContactAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "ContactAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/CheckoutAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "CheckoutAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/www/PageRequestAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "PageRequestAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbProductSliderModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "FbProductSliderModule",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbDownloadProducts.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getPrincipal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getPrincipal"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "FbDownloadProducts",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/customer/ProfileInterceptor.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doIntercept",
+                "to_name": "getPrincipal",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "ProfileInterceptor",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/integration/page/PageAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "PageAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InvoicePaymentAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "InvoicePaymentAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/DisplayInvoiceSummaryAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getServletRequest",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction.getServletRequest"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrderSummaryAction",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "BaseAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.BaseAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "DisplayInvoiceSummaryAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/page/OauthRequestAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/page/OauthRequestAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "OauthRequestAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ProcessOrderAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrder",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "ProcessOrderAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/store/LanguageAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeLanguage",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "LanguageAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

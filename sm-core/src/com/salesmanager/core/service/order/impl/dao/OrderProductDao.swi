@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductDao.findById"
-                  },
-                  {
-                    "name": "deleteAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductDao.deleteAll"
-                  },
-                  {
-                    "name": "deleteAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductDao.deleteAll"
-                  },
-                  {
-                    "name": "saveOrUpdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductDao.saveOrUpdate"
-                  },
-                  {
-                    "name": "persist",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductDao.persist"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderProduct",
+                "to_name": "findById",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "OrderProductDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteOrder",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateOrderProduct",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           }
         ],
         "files_list_comment": "",

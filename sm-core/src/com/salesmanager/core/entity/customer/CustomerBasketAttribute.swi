@@ -4,28 +4,25 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/entity/customer/CustomerBasket.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerBasketAttribute",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerBasketAttribute"
-                  },
-                  {
-                    "name": "CustomerBasketAttribute",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerBasketAttribute"
-                  }
-                ]
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "customerBasketAttributes",
+                "to_name": "CustomerBasketAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerBasket",
+                "to_name": "CustomerBasketAttribute",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/entity/customer/CustomerBasket.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

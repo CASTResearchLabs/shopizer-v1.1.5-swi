@@ -4,66 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/DisplayInvoiceSummaryAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "displayCartOrderSummaryAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.DisplayOrderSummaryAction.displayCartOrderSummaryAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrderSummaryAction",
+                "to_name": "displayCartOrderSummaryAction",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "DisplayOrderSummaryAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.DisplayOrderSummaryAction"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DisplayInvoiceSummaryAction",
+                "to_name": "DisplayOrderSummaryAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/DisplayInvoiceSummaryAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "displayOrderSummaryAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.DisplayOrderSummaryAction.displayOrderSummaryAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "summary",
+                "to_name": "displayOrderSummaryAction",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "DisplayOrderSummaryAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.DisplayOrderSummaryAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "summary",
+                "to_name": "DisplayOrderSummaryAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

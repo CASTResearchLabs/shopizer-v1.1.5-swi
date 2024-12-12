@@ -4,173 +4,130 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getRole",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction.getRole"
-                  },
-                  {
-                    "name": "getCentralFunctionNewUntil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction.getCentralFunctionNewUntil"
-                  },
-                  {
-                    "name": "isCentralFunctionNew",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction.isCentralFunctionNew"
-                  },
-                  {
-                    "name": "getCentralFunctionUrl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction.getCentralFunctionUrl"
-                  },
-                  {
-                    "name": "isCentralFunctionVisible",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction.isCentralFunctionVisible"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  },
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  },
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  },
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/web/MenuFactory.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCentralFunctionUrl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction.getCentralFunctionUrl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setFunctions",
+                "to_name": "getRole",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setFunctions",
+                "to_name": "getCentralFunctionNewUntil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setFunctions",
+                "to_name": "isCentralFunctionNew",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setFunctions",
+                "to_name": "getCentralFunctionUrl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setFunctions",
+                "to_name": "isCentralFunctionVisible",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 14
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  },
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkConfiguration",
+                "to_name": "getCentralFunctionUrl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "DashboardAction",
+                "to_name": "CentralFunction",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/system/SystemService.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  },
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCentralFunctions",
+                "to_name": "CentralFunction",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SystemService",
+                "to_name": "CentralFunction",
+                "calling_type": "USE"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/ICentralMenuDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  },
-                  {
-                    "name": "CentralFunction",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.CentralFunction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "loadAllCentralFunction",
+                "to_name": "CentralFunction",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "ICentralMenuDao",
+                "to_name": "CentralFunction",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/CentralMenuDao.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/CentralMenuDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "loadAllCentralFunction",
+                "to_name": "CentralFunction",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "CentralMenuDao",
+                "to_name": "CentralFunction",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

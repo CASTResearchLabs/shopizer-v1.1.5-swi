@@ -1,0 +1,139 @@
+{
+  "dependency facts about source code file [sm-central/src/com/salesmanager/central/merchantstore/StoreFrontAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-central/src/com/salesmanager/central/merchantstore/StoreFrontAction.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "delete_file",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "editSlide",
+                "to_name": "editSlide",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "deleteSlide",
+                "to_name": "deleteSlide",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "viewSlide",
+                "to_name": "viewSlide",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "updateSlideList",
+                "to_name": "updateSlideList",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 14
+          },
+          {
+            "from_file": "sm-central/WebContent/merchantstore/storefront.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/deleteSlide.action",
+                "to_name": "/deleteSlide",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "storefront.jsp",
+                "to_name": "/deleteSlide",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "editSlide.action",
+                "to_name": "/editSlide",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "storefront.jsp",
+                "to_name": "/editSlide",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/viewSlide.action",
+                "to_name": "/viewSlide",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
+          },
+          {
+            "from_file": "sm-central/WebContent/common/upload.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "delete_file.action",
+                "to_name": "/delete_file",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "upload.jsp",
+                "to_name": "/delete_file",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/WebContent/merchantstore/slideDetails.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "editSlide",
+                "to_name": "/editSlide",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "slideDetails.jsp",
+                "to_name": "/editSlide",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 4
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}

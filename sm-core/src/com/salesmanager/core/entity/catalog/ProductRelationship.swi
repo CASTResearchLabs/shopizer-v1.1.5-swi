@@ -4,161 +4,137 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setRelationshipType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship.setRelationshipType"
-                  },
-                  {
-                    "name": "setRelatedProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship.setRelatedProductId"
-                  },
-                  {
-                    "name": "setProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship.setProductId"
-                  },
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship.setMerchantId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship.ProductRelationship"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/cart/AddProduct.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship.getProductId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addRelationshipItem",
+                "to_name": "setRelationshipType",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship"
-                  },
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship"
-                  },
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addRelationshipItem",
+                "to_name": "setRelatedProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addRelationshipItem",
+                "to_name": "setProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addRelationshipItem",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "addRelationshipItem",
+                "to_name": "ProductRelationship",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship"
-                  },
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship"
-                  },
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductRelationShip",
+                "to_name": "getProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogService",
+                "to_name": "ProductRelationship",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getProductRelationShip",
+                "to_name": "ProductRelationship",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogService",
+                "to_name": "ProductRelationship",
+                "calling_type": "USE"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/IProductRelationshipDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship"
-                  },
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship"
-                  },
-                  {
-                    "name": "ProductRelationship",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductRelationship"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByProductIdAndMerchantIdAndRelationTypeId",
+                "to_name": "ProductRelationship",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByMerchantIdAndRelationTypeId",
+                "to_name": "ProductRelationship",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "IProductRelationshipDao",
+                "to_name": "ProductRelationship",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ProductRelationshipDao.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ProductRelationshipDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByProductIdAndMerchantIdAndRelationTypeId",
+                "to_name": "ProductRelationship",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByMerchantIdAndRelationTypeId",
+                "to_name": "ProductRelationship",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "ProductRelationshipDao",
+                "to_name": "ProductRelationship",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

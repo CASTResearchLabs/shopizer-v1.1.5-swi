@@ -1,0 +1,83 @@
+{
+  "dependency facts about source code file [sm-central/src/com/salesmanager/central/web/Constants.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-central/src/com/salesmanager/central/web/Constants.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "setAdminTokenToSession",
+                "to_name": "ADMIN_TOKEN_PARAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "setAdminTokenToSession",
+                "to_name": "ADMIN_MERCHANT_REG_DEF_CODE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "BaseAction",
+                "to_name": "Constants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Field",
+                "from_name": "merchantRegistrationDefCodes",
+                "to_name": "MERCHANT_REG_DEF_CODES",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "Constants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/profile/StoreAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveStore",
+                "to_name": "ENGLISH_CODE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "StoreAction",
+                "to_name": "Constants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}

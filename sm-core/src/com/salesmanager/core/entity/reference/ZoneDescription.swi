@@ -4,74 +4,67 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getZoneName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneDescription.getZoneName"
-                  },
-                  {
-                    "name": "getId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneDescription.getId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setDescriptions",
+                "to_name": "ZoneDescription",
+                "calling_type": "USE"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ZoneDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneDescription"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getDescriptions",
+                "to_name": "ZoneDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "descriptions",
+                "to_name": "ZoneDescription",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "Zone",
+                "to_name": "ZoneDescription",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ZoneDescription",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneDescription"
-                  },
-                  {
-                    "name": "ZoneDescription",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneDescription"
-                  },
-                  {
-                    "name": "ZoneDescription",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneDescription"
-                  },
-                  {
-                    "name": "ZoneDescription",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneDescription"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCache",
+                "to_name": "getZoneName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCache",
+                "to_name": "getId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RefCache",
+                "to_name": "ZoneDescription",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

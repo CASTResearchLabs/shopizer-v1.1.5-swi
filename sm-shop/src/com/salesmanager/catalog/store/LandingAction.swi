@@ -4,88 +4,74 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/common/js/cart.js",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "displayLanding",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.store.LandingAction.displayLanding"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "landing",
+                "to_name": "/landing",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "LandingAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.store.LandingAction"
-                  }
-                ]
+                "from_type": "JavaScript Files",
+                "to_type": "Struts Operation",
+                "from_name": "cart.js",
+                "to_name": "/landing",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "Struts Operation",
+                "from_name": "calculate",
+                "to_name": "/landing",
+                "calling_type": "GET"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/landing",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.store.LandingAction/CAST_Struts_Operation/landing"
-                  },
-                  {
-                    "name": "/landing",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.catalog.store.LandingAction/CAST_Struts_Operation/landing"
-                  },
-                  {
-                    "name": "/landing",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.catalog.store.LandingAction/CAST_Struts_Operation/landing"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "landing",
+                "to_name": "displayLanding",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "landing",
+                "to_name": "LandingAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/common/js/cart.js",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/landing",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.store.LandingAction/CAST_Struts_Operation/landing"
-                  },
-                  {
-                    "name": "/landing",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.catalog.store.LandingAction/CAST_Struts_Operation/landing"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/header.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "landing",
+                "to_name": "/landing",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "header.jsp",
+                "to_name": "/landing",
+                "calling_type": "GET"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

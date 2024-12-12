@@ -4,234 +4,186 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "resetPassword",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction.resetPassword"
-                  },
-                  {
-                    "name": "registerCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction.registerCustomer"
-                  },
-                  {
-                    "name": "displayRegistration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction.displayRegistration"
-                  },
-                  {
-                    "name": "localLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction.localLogon"
-                  },
-                  {
-                    "name": "remoteLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction.remoteLogon"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "LogonAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction"
-                  },
-                  {
-                    "name": "LogonAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction"
-                  },
-                  {
-                    "name": "LogonAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction"
-                  },
-                  {
-                    "name": "LogonAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction"
-                  },
-                  {
-                    "name": "LogonAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "authenticateCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction.authenticateCustomer"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "resetPassword",
+                "to_name": "resetPassword",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "LogonAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction.LogonAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "register",
+                "to_name": "registerCustomer",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "LogonAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "displayRegistration",
+                "to_name": "displayRegistration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "localLogon",
+                "to_name": "localLogon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "remoteLogon",
+                "to_name": "remoteLogon",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/CustomerInformationAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/displayRegistration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/displayRegistration"
-                  },
-                  {
-                    "name": "/displayRegistration",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/displayRegistration"
-                  },
-                  {
-                    "name": "/resetPassword",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/resetPassword"
-                  },
-                  {
-                    "name": "/resetPassword",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/resetPassword"
-                  },
-                  {
-                    "name": "/localLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/localLogon"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/portlets/logonportlet.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/register",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/register"
-                  },
-                  {
-                    "name": "/register",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/register"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "displayRegistration",
+                "to_name": "/displayRegistration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "logonportlet.jsp",
+                "to_name": "/displayRegistration",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "resetPassword",
+                "to_name": "/resetPassword",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "logonportlet.jsp",
+                "to_name": "/resetPassword",
+                "calling_type": "POST"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "localLogon",
+                "to_name": "/localLogon",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/customer/registerCustomer.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/CustomerInformationAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/register",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/register"
-                  },
-                  {
-                    "name": "/register",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/register"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logonCustomer",
+                "to_name": "authenticateCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "logonCustomer",
+                "to_name": "LogonAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "CustomerInformationAction",
+                "to_name": "LogonAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/customer/registerConfirmation.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 3
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/resetPassword",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/resetPassword"
-                  },
-                  {
-                    "name": "/resetPassword",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/resetPassword"
-                  },
-                  {
-                    "name": "/resetPassword",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.customer.profile.LogonAction/CAST_Struts_Operation/resetPassword"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/WebContent/profile/logon.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JQuery GET resource service",
+                "to_type": "Struts Operation",
+                "from_name": "ajax/resetPassword.action",
+                "to_name": "/resetPassword",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "Struts Operation",
+                "from_name": "ready_PARAM_1",
+                "to_name": "/resetPassword",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "logon.jsp",
+                "to_name": "/resetPassword",
+                "calling_type": "GET"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/WebContent/customer/registerCustomer.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "register",
+                "to_name": "/register",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "registerCustomer.jsp",
+                "to_name": "/register",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/customer/registerConfirmation.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "register",
+                "to_name": "/register",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "registerConfirmation.jsp",
+                "to_name": "/register",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

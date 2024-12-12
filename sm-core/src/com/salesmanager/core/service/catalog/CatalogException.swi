@@ -4,183 +4,158 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getReason",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException.getReason"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "CATCH",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "CATCH",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditCategoryAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException.CatalogException"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "RAISE",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "CATCH",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "CATCH",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "validateDeleteCategory",
+                "to_name": "CatalogException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "deleteCategory",
+                "to_name": "CatalogException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "validateDeleteCategory",
+                "to_name": "CatalogException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteCategory",
+                "to_name": "CatalogException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogService",
+                "to_name": "CatalogException",
+                "calling_type": "RAISE"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 18
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditCategoryAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteCategory",
+                "to_name": "getReason",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteCategory",
+                "to_name": "CatalogException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditCategoryAction",
+                "to_name": "CatalogException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditCategoryAction",
+                "to_name": "CatalogException",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "CATCH",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "CATCH",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "uploadProducts",
+                "to_name": "CatalogException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CSVFileUploadImpl",
+                "to_name": "CatalogException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "uploadCategory",
+                "to_name": "CatalogException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CSVFileUploadImpl",
+                "to_name": "CatalogException",
+                "calling_type": "THROW"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/util/upload/GenericFileUploadAction.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  },
-                  {
-                    "name": "CatalogException",
-                    "calling_type": "THROW",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogException"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "uploadCategories",
+                "to_name": "CatalogException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "GenericFileUploadAction",
+                "to_name": "CatalogException",
+                "calling_type": "CATCH"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/file/IFileUploadService.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/file/IFileUploadService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "uploadCategory",
+                "to_name": "CatalogException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "IFileUploadService",
+                "to_name": "CatalogException",
+                "calling_type": "THROW"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

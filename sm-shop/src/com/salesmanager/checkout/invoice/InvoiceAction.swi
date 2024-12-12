@@ -4,195 +4,151 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "prepareInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction.prepareInvoice"
-                  },
-                  {
-                    "name": "prepareInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction.prepareInvoice"
-                  },
-                  {
-                    "name": "displayInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction.displayInvoice"
-                  },
-                  {
-                    "name": "displayInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction.displayInvoice"
-                  },
-                  {
-                    "name": "printInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction.printInvoice"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "prepareSimpleInvoice",
+                "to_name": "prepareInvoice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "InvoiceAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction"
-                  },
-                  {
-                    "name": "InvoiceAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction"
-                  },
-                  {
-                    "name": "InvoiceAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction"
-                  },
-                  {
-                    "name": "InvoiceAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction"
-                  },
-                  {
-                    "name": "InvoiceAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "viewInvoice",
+                "to_name": "prepareInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "displayInvoice",
+                "to_name": "displayInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "displaySimpleInvoice",
+                "to_name": "displayInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "printInvoice",
+                "to_name": "printInvoice",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/displayInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction/CAST_Struts_Operation/displayInvoice"
-                  },
-                  {
-                    "name": "/displayInvoice",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction/CAST_Struts_Operation/displayInvoice"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/checkout/components/invoiceConfirmation.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/printInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction/CAST_Struts_Operation/printInvoice"
-                  },
-                  {
-                    "name": "/printInvoice",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction/CAST_Struts_Operation/printInvoice"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "checkout/displayInvoice.action",
+                "to_name": "/displayInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "invoiceConfirmation.jsp",
+                "to_name": "/displayInvoice",
+                "calling_type": "GET"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/WebContent/checkout/invoice/invoicePayment.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/printInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction/CAST_Struts_Operation/printInvoice"
-                  },
-                  {
-                    "name": "/printInvoice",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction/CAST_Struts_Operation/printInvoice"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "checkout/printInvoice.action",
+                "to_name": "/printInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "invoicePayment.jsp",
+                "to_name": "/printInvoice",
+                "calling_type": "GET"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/WebContent/checkout/invoice/invoiceSummary.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/printInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction/CAST_Struts_Operation/printInvoice"
-                  },
-                  {
-                    "name": "/printInvoice",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction/CAST_Struts_Operation/printInvoice"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "checkout/printInvoice.action",
+                "to_name": "/printInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "invoiceSummary.jsp",
+                "to_name": "/printInvoice",
+                "calling_type": "GET"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/WebContent/checkout/invoice/invoiceThankYou.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/printInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction/CAST_Struts_Operation/printInvoice"
-                  },
-                  {
-                    "name": "/printInvoice",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.checkout.invoice.InvoiceAction/CAST_Struts_Operation/printInvoice"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "checkout/printInvoice.action",
+                "to_name": "/printInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "invoiceThankYou.jsp",
+                "to_name": "/printInvoice",
+                "calling_type": "GET"
               }
             ],
-            "from_file": "sm-shop/WebContent/checkout/invoice/invoice.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/checkout/invoice/invoice.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "cart/printInvoice.action",
+                "to_name": "/printInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "invoice.jsp",
+                "to_name": "/printInvoice",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

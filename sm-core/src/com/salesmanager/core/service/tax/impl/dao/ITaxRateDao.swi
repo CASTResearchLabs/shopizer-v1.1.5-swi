@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 11,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByZoneCountryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDao.findByZoneCountryId"
-                  },
-                  {
-                    "name": "findBySchemeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDao.findBySchemeId"
-                  },
-                  {
-                    "name": "findByCountryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDao.findByCountryId"
-                  },
-                  {
-                    "name": "findByCountryIdZoneIdAndClassId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDao.findByCountryIdZoneIdAndClassId"
-                  },
-                  {
-                    "name": "findByCountryIdZoneIdAndClassId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDao.findByCountryIdZoneIdAndClassId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findByGeoZoneCountryId",
+                "to_name": "findByZoneCountryId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "ITaxRateDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findBySchemeId",
+                "to_name": "findBySchemeId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateTaxRate",
+                "to_name": "findByCountryId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax",
+                "to_name": "findByCountryIdZoneIdAndClassId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTax",
+                "to_name": "findByCountryIdZoneIdAndClassId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 17
           }
         ],
         "files_list_comment": "",

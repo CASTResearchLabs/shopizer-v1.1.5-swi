@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 13,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByMerchantIdAndSeUrlAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.DynamicLabelDao.findByMerchantIdAndSeUrlAndLanguageId"
-                  },
-                  {
-                    "name": "findByMerchantIdAndTitleAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.DynamicLabelDao.findByMerchantIdAndTitleAndLanguageId"
-                  },
-                  {
-                    "name": "findByMerchantIdAndSectionIdAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.DynamicLabelDao.findByMerchantIdAndSectionIdAndLanguageId"
-                  },
-                  {
-                    "name": "findByMerchantIdAndTitleAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.DynamicLabelDao.findByMerchantIdAndTitleAndLanguageId"
-                  },
-                  {
-                    "name": "findByMerchantIdAndLabelIdAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.DynamicLabelDao.findByMerchantIdAndLabelIdAndLanguageId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getDynamicLabelByMerchantIdAndSeUrlAndLanguageId",
+                "to_name": "findByMerchantIdAndSeUrlAndLanguageId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "DynamicLabelDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.DynamicLabelDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getDynamicLabel",
+                "to_name": "findByMerchantIdAndTitleAndLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getDynamicLabels",
+                "to_name": "findByMerchantIdAndSectionIdAndLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getDynamicLabelsByTitles",
+                "to_name": "findByMerchantIdAndTitleAndLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getDynamicLabelsByIds",
+                "to_name": "findByMerchantIdAndLabelIdAndLanguageId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 17
           }
         ],
         "files_list_comment": "",

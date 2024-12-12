@@ -4,328 +4,256 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.deleteFile"
-                  },
-                  {
-                    "name": "uploadFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.uploadFile"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "FileModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "uploadFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.uploadFile"
-                  },
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.deleteFile"
-                  },
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.deleteFile"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "FileModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/merchantstore/StoreFrontAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "uploadFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.uploadFile"
-                  },
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.deleteFile"
-                  },
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.deleteFile"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editSlide",
+                "to_name": "uploadFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "FileModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteFile",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteSlide",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "StoreFrontAction",
+                "to_name": "FileModule",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/cart/CartPropertiesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "uploadFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.uploadFile"
-                  },
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.deleteFile"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCart",
+                "to_name": "uploadFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "FileModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductOptionsValuesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "copyFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.copyFile"
-                  },
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.deleteFile"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteFile",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "FileModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/BinUploadAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "uploadFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.uploadFile"
-                  },
-                  {
-                    "name": "uploadFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.uploadFile"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteImage",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "FileModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "CartPropertiesAction",
+                "to_name": "FileModule",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanupVirtualProduct",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "persistUploadProduct",
+                "to_name": "uploadFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CatalogService",
+                "to_name": "FileModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/ProductImageUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "copyFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.copyFile"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadCropedProductImages",
+                "to_name": "uploadFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "FileModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/CoreFileImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.deleteFile"
-                  },
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.deleteFile"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadProductImages",
+                "to_name": "uploadFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "FileModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule"
-                  }
-                ]
+                "from_type": "Java Class Rich Client",
+                "to_type": "Java Interface",
+                "from_name": "ProductImageUtil",
+                "to_name": "FileModule",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductOptionsValuesAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductOptionValue",
+                "to_name": "uploadFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductOptionsValues",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "EditProductOptionsValuesAction",
+                "to_name": "FileModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/BinUploadAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadToBin",
+                "to_name": "copyFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteFile",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "BinUploadAction",
+                "to_name": "FileModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule.deleteFile"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteProduct",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "FileModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.FileModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteFile",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "EditProductAction",
+                "to_name": "FileModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditImagesAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/CoreFileImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadFile",
+                "to_name": "copyFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Rich Client",
+                "to_type": "Java Interface",
+                "from_name": "CoreFileImpl",
+                "to_name": "FileModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditImagesAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteImage",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "EditImagesAction",
+                "to_name": "FileModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

@@ -1,0 +1,153 @@
+{
+  "dependency facts about source code file [sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchantStore",
+                "to_name": "deleteMerchant",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "viewMerchantStores",
+                "to_name": "viewMerchantStores",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "editmerchantstore",
+                "to_name": "fetchMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "saveMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "viewMerchantStores",
+                "to_name": "MerchantStoreAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
+          },
+          {
+            "from_file": "sm-central/WebContent/merchantstore/editmerchantstore.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/deleteMerchantStore.action",
+                "to_name": "/deleteMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "editmerchantstore.jsp",
+                "to_name": "/deleteMerchantStore",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "Struts Operation",
+                "from_name": "deleteAction",
+                "to_name": "/deleteMerchantStore",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/saveMerchantStore.action",
+                "to_name": "/saveMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "editmerchantstore.jsp",
+                "to_name": "/saveMerchantStore",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-central/WebContent/profile/profileleftmenu.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/viewMerchantStores.action",
+                "to_name": "/viewMerchantStores",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "profileleftmenu.jsp",
+                "to_name": "/viewMerchantStores",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/editmerchantstore.action",
+                "to_name": "/editmerchantstore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "profileleftmenu.jsp",
+                "to_name": "/editmerchantstore",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-central/WebContent/merchantstore/viewmerchantstore.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "merchantstore/editmerchantstore.action",
+                "to_name": "/editmerchantstore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "viewmerchantstore.jsp",
+                "to_name": "/editmerchantstore",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 4
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}

@@ -4,97 +4,67 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "serializeToJSON",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.MiniShoppingCartSerializationUtil.serializeToJSON"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MiniShoppingCartSerializationUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.MiniShoppingCartSerializationUtil"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/checkout/cart/AjaxShoppingCartUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "serializeToJSON",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.MiniShoppingCartSerializationUtil.serializeToJSON"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProduct",
+                "to_name": "serializeToJSON",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MiniShoppingCartSerializationUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.MiniShoppingCartSerializationUtil"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AjaxShoppingCartUtil",
+                "to_name": "MiniShoppingCartSerializationUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/common/AjaxCatalogUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "deserializeJSON",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.MiniShoppingCartSerializationUtil.deserializeJSON"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setMiniCartCookie",
+                "to_name": "serializeToJSON",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MiniShoppingCartSerializationUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.MiniShoppingCartSerializationUtil"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AjaxCatalogUtil",
+                "to_name": "MiniShoppingCartSerializationUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/CatalogInterceptor.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/CatalogInterceptor.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doIntercept",
+                "to_name": "deserializeJSON",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogInterceptor",
+                "to_name": "MiniShoppingCartSerializationUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

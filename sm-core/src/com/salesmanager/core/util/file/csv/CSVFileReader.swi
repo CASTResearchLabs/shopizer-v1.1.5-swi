@@ -4,45 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "processCSV",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVFileReader.processCSV"
-                  },
-                  {
-                    "name": "processCSV",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVFileReader.processCSV"
-                  },
-                  {
-                    "name": "processCSV",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVFileReader.processCSV"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadProducts",
+                "to_name": "processCSV",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CSVFileReader",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.file.csv.CSVFileReader"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadManufacturers",
+                "to_name": "processCSV",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadCategory",
+                "to_name": "processCSV",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CSVFileUploadImpl",
+                "to_name": "CSVFileReader",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

@@ -4,52 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setOrderTotals",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.CreateInvoiceWebServiceResponse.setOrderTotals"
-                  },
-                  {
-                    "name": "setInvoiceId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.CreateInvoiceWebServiceResponse.setInvoiceId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "setOrderTotals",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CreateInvoiceWebServiceResponse",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.CreateInvoiceWebServiceResponse.CreateInvoiceWebServiceResponse"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "setInvoiceId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CreateInvoiceWebServiceResponse",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.CreateInvoiceWebServiceResponse"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "createInvoice",
+                "to_name": "CreateInvoiceWebServiceResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerInvoiceWSImpl",
+                "to_name": "CreateInvoiceWebServiceResponse",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

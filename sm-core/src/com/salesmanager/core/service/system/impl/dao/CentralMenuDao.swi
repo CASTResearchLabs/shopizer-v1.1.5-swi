@@ -4,45 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/system/SystemService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "loadAllCentralGroup",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.impl.dao.CentralMenuDao.loadAllCentralGroup"
-                  },
-                  {
-                    "name": "loadAllCentralFunction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.impl.dao.CentralMenuDao.loadAllCentralFunction"
-                  },
-                  {
-                    "name": "loadAllCentralRegistrationAssociation",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.impl.dao.CentralMenuDao.loadAllCentralRegistrationAssociation"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCentralGroups",
+                "to_name": "loadAllCentralGroup",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "CentralMenuDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.impl.dao.CentralMenuDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCentralFunctions",
+                "to_name": "loadAllCentralFunction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCentralRegistrationAssociations",
+                "to_name": "loadAllCentralRegistrationAssociation",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class DAO",
+                "from_name": "SystemService",
+                "to_name": "CentralMenuDao",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/system/SystemService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

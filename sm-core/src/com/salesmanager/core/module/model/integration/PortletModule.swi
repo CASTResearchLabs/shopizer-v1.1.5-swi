@@ -4,40 +4,32 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/integration/page/FbPageAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "requiresAuthorization",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.integration.PortletModule.requiresAuthorization"
-                  },
-                  {
-                    "name": "display",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.integration.PortletModule.display"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "requiresAuthorization",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "PortletModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.integration.PortletModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "display",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "FbPageAction",
+                "to_name": "PortletModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/page/FbPageAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

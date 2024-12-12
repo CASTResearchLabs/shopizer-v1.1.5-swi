@@ -4,1110 +4,872 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 16,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_ESTIMATE_BYCOUNTRY",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ESTIMATE_BYCOUNTRY"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_MODULE_INDIC_NAME"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_MODULE_INDIC_NAME"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_INDIC_COUNTRIES_COSTS"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_INDIC_COUNTRIES_COSTS"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  },
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  },
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 7,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_MODULE_INDIC_NAME"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_INDIC_COUNTRIES_COSTS"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_ZONES_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ZONES_SHIPPING"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_DISPLAY_REALTIME_QUOTES",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_DISPLAY_REALTIME_QUOTES"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "MODULE_SHIPPING_ESTIMATE_BYCOUNTRY",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingRatesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 7,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_ZONES_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ZONES_SHIPPING"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_ZONES_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ZONES_SHIPPING"
-                  },
-                  {
-                    "name": "INTERNATIONAL_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.INTERNATIONAL_SHIPPING"
-                  },
-                  {
-                    "name": "DOMESTIC_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.DOMESTIC_SHIPPING"
-                  },
-                  {
-                    "name": "DOMESTIC_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.DOMESTIC_SHIPPING"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingModulesNamesConfigured",
+                "to_name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingModulesNamesConfigured",
+                "to_name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "updateShippingZonesAndCostsForDomestic",
+                "to_name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 25
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingZoneAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_ESTIMATE_BYCOUNTRY",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ESTIMATE_BYCOUNTRY"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_INDIC_COUNTRIES_COSTS"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_INDIC_COUNTRIES_COSTS"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_INDIC_COUNTRIES_COSTS"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_ZONES_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ZONES_SHIPPING"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveZones",
+                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayZones",
+                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveZones",
+                "to_name": "INTERNATIONAL_SHIPPING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "updateShippingZonesAndCostsForDomestic",
+                "to_name": "DOMESTIC_SHIPPING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveZones",
+                "to_name": "DOMESTIC_SHIPPING",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingCustomRatesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "TEST_ENVIRONMENT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.TEST_ENVIRONMENT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepare",
+                "to_name": "MODULE_SHIPPING_ESTIMATE_BYCOUNTRY",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/USPSQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "TEST_ENVIRONMENT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.TEST_ENVIRONMENT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepare",
+                "to_name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/UPSQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "TEST_ENVIRONMENT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.TEST_ENVIRONMENT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_DISPLAY_REALTIME_QUOTES",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_DISPLAY_REALTIME_QUOTES"
-                  },
-                  {
-                    "name": "NO_DISPLAY_RT_QUOTE_TIME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.NO_DISPLAY_RT_QUOTE_TIME"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "editTableRate",
+                "to_name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/CanadaPostQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_ZONES_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ZONES_SHIPPING"
-                  },
-                  {
-                    "name": "DOMESTIC_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.DOMESTIC_SHIPPING"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_TAX_CLASS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_TAX_CLASS"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_TAX_CLASS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_TAX_CLASS"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_HANDLING_FEES",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_HANDLING_FEES"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "add",
+                "to_name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepare",
+                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingRatesAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayShippingModules",
+                "to_name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayShippingModules",
+                "to_name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayShippingModules",
+                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayShippingModules",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayShippingModules",
+                "to_name": "MODULE_SHIPPING_DISPLAY_REALTIME_QUOTES",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingOtherOptionsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "TEST_ENVIRONMENT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.TEST_ENVIRONMENT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_DISPLAY_REALTIME_QUOTES",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_DISPLAY_REALTIME_QUOTES"
-                  },
-                  {
-                    "name": "NO_DISPLAY_RT_QUOTE_TIME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.NO_DISPLAY_RT_QUOTE_TIME"
-                  },
-                  {
-                    "name": "DISPLAY_RT_QUOTE_TIME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.DISPLAY_RT_QUOTE_TIME"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepare",
+                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexRequestQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_ESTIMATE_BYCOUNTRY",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ESTIMATE_BYCOUNTRY"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_MODULE_INDIC_NAME"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_INDIC_COUNTRIES_COSTS"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_ZONES_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ZONES_SHIPPING"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getFreeshipdest",
+                "to_name": "DOMESTIC_SHIPPING",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  },
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  },
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepare",
+                "to_name": "MODULE_SHIPPING_TAX_CLASS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "save",
+                "to_name": "MODULE_SHIPPING_TAX_CLASS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepare",
+                "to_name": "MODULE_SHIPPING_HANDLING_FEES",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/USPSQuotesImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "TEST_ENVIRONMENT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/UPSQuotesImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "TEST_ENVIRONMENT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/CanadaPostQuotesImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "TEST_ENVIRONMENT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "MODULE_SHIPPING_DISPLAY_REALTIME_QUOTES",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "NO_DISPLAY_RT_QUOTE_TIME",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/common/ShopInterceptor.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_ESTIMATE_BYCOUNTRY",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ESTIMATE_BYCOUNTRY"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_ESTIMATE_BYCOUNTRY",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ESTIMATE_BYCOUNTRY"
-                  },
-                  {
-                    "name": "MAX_PRICE_RANGE_COUNT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MAX_PRICE_RANGE_COUNT"
-                  },
-                  {
-                    "name": "MAX_PRICE_RANGE_COUNT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MAX_PRICE_RANGE_COUNT"
-                  },
-                  {
-                    "name": "MAX_PRICE_RANGE_COUNT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MAX_PRICE_RANGE_COUNT"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "baseIntercept",
+                "to_name": "MODULE_SHIPPING_ESTIMATE_BYCOUNTRY",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "baseIntercept",
+                "to_name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "baseIntercept",
+                "to_name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "baseIntercept",
+                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "baseIntercept",
+                "to_name": "ShippingConstants",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingAjaxUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_MODULE_INDIC_NAME"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_MODULE_INDIC_NAME"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_ZONES_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ZONES_SHIPPING"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "disableShippingEstimate",
+                "to_name": "MODULE_SHIPPING_ESTIMATE_BYCOUNTRY",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "enableShippingEstimate",
+                "to_name": "MODULE_SHIPPING_ESTIMATE_BYCOUNTRY",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "disableShippingEstimate",
+                "to_name": "MAX_PRICE_RANGE_COUNT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "enableShippingEstimate",
+                "to_name": "MAX_PRICE_RANGE_COUNT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "buildInitialLine",
+                "to_name": "MAX_PRICE_RANGE_COUNT",
+                "calling_type": "READ"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexRequestQuotesImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getQuote",
+                "to_name": "TEST_ENVIRONMENT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getQuote",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getQuote",
+                "to_name": "MODULE_SHIPPING_DISPLAY_REALTIME_QUOTES",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getQuote",
+                "to_name": "NO_DISPLAY_RT_QUOTE_TIME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "writeServiceOutput",
+                "to_name": "DISPLAY_RT_QUOTE_TIME",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingModuleAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_ZONES_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_ZONES_SHIPPING"
-                  },
-                  {
-                    "name": "DOMESTIC_SHIPPING",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.DOMESTIC_SHIPPING"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "save",
+                "to_name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepare",
+                "to_name": "MODULE_SHIPPING_RT_MODULE_INDIC_NAME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepare",
+                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingModuleAction",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/CustomerInformationAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_TAX_BASIS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_TAX_BASIS"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_TAX_CLASS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_TAX_CLASS"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayCustomer",
+                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayCustomer",
+                "to_name": "DOMESTIC_SHIPPING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CustomerInformationAction",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "TEST_ENVIRONMENT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.TEST_ENVIRONMENT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "calculateTax",
+                "to_name": "MODULE_TAX_BASIS",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "calculateTax",
+                "to_name": "MODULE_SHIPPING_TAX_CLASS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxService",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexQuotesStubImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getQuote",
+                "to_name": "TEST_ENVIRONMENT",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getQuote",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexQuotesStubImpl",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/ShippingUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "arrangeConfigurationsToSave",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "arrangeConfigurationsToSave",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingUtil",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexQuotesImpl",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexGroundQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexGroundQuotesImpl",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexExpressQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexExpressQuotesImpl",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippinguspsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveModule",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveModule",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippinguspsAction",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingupsxmlAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_PKG_DOM_INT"
-                  },
-                  {
-                    "name": "MODULE_SHIPPING_RT_CRED",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_CRED"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveModule",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveModule",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingupsxmlAction",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingcanadapostAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DEFAULT_PACKING_MODULE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.DEFAULT_PACKING_MODULE"
-                  },
-                  {
-                    "name": "INTEGRATION_SERVICE_SHIPPING_PACKING_SUBTYPE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.INTEGRATION_SERVICE_SHIPPING_PACKING_SUBTYPE"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveModule",
+                "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveModule",
+                "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingcanadapostAction",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/EditPackingAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "MODULE_SHIPPING_RT_QUOTES_FREE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.MODULE_SHIPPING_RT_QUOTES_FREE"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "display",
+                "to_name": "DEFAULT_PACKING_MODULE",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "display",
+                "to_name": "INTEGRATION_SERVICE_SHIPPING_PACKING_SUBTYPE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EditPackingAction",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/orders/EditCustomerAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INTEGRATION_SERVICE_SHIPPING_RT_QUOTE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.INTEGRATION_SERVICE_SHIPPING_RT_QUOTE"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "viewShippingCustomer",
+                "to_name": "MODULE_SHIPPING_RT_QUOTES_FREE",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditCustomerAction",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "INTEGRATION_SERVICE_SHIPPING_RT_QUOTE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants.INTEGRATION_SERVICE_SHIPPING_RT_QUOTE"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingModules",
+                "to_name": "INTEGRATION_SERVICE_SHIPPING_RT_QUOTE",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.ShippingConstants"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReferenceService",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/common/impl/ServicesUtil.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/common/impl/ServicesUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Initializer",
+                "to_type": "Java Field",
+                "from_name": "{(53:2)}",
+                "to_name": "INTEGRATION_SERVICE_SHIPPING_RT_QUOTE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ServicesUtil",
+                "to_name": "ShippingConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

@@ -4,87 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "sendOrderStatusEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl.sendOrderStatusEmail"
-                  },
-                  {
-                    "name": "sendOrderStatusEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl.sendOrderStatusEmail"
-                  },
-                  {
-                    "name": "sendResetDownloadCountrsEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl.sendResetDownloadCountrsEmail"
-                  },
-                  {
-                    "name": "sendResetDownloadCountrsEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl.sendResetDownloadCountrsEmail"
-                  },
-                  {
-                    "name": "sendOrderConfirmationEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl.sendOrderConfirmationEmail"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderStatus",
+                "to_name": "sendOrderStatusEmail",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "OrderImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl.OrderImpl"
-                  },
-                  {
-                    "name": "OrderImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl.OrderImpl"
-                  },
-                  {
-                    "name": "OrderImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl.OrderImpl"
-                  },
-                  {
-                    "name": "OrderImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl.OrderImpl"
-                  },
-                  {
-                    "name": "OrderImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl.OrderImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundOrder",
+                "to_name": "sendOrderStatusEmail",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.OrderImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendResetDownloadCountrsEmail",
+                "to_name": "sendResetDownloadCountrsEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetOrderDownloadCounters",
+                "to_name": "sendResetDownloadCountrsEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "sendOrderConfirmationEmail",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 15
           }
         ],
         "files_list_comment": "",

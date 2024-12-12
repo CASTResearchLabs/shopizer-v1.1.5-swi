@@ -4,259 +4,186 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setPriority",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.setPriority"
-                  },
-                  {
-                    "name": "setImage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.setImage"
-                  },
-                  {
-                    "name": "setShippingModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.setShippingModule"
-                  },
-                  {
-                    "name": "setShippingMethodName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.setShippingMethodName"
-                  },
-                  {
-                    "name": "setOptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.setOptions"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.ShippingMethod"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getPriority",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.getPriority"
-                  },
-                  {
-                    "name": "getShippingModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.getShippingModule"
-                  },
-                  {
-                    "name": "getOptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.getOptions"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "setPriority",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "setImage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "setShippingModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "setShippingMethodName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "setOptions",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ShippingAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getShippingModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.getShippingModule"
-                  },
-                  {
-                    "name": "getOptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.getOptions"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShipping",
+                "to_name": "getPriority",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShipping",
+                "to_name": "getShippingModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShipping",
+                "to_name": "getOptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingAction",
+                "to_name": "ShippingMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setShippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/EditShippingMethods.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod.getOptions"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShippingMethods",
+                "to_name": "getShippingModule",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShippingMethods",
+                "to_name": "getOptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EditShippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setShippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/entity/shipping/ShippingInformation.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  },
-                  {
-                    "name": "ShippingMethod",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingMethod"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setShippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "shippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingInformation",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/entity/shipping/ShippingInformation.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "getOptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerInvoiceWSImpl",
+                "to_name": "ShippingMethod",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

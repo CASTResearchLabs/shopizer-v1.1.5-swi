@@ -4,690 +4,480 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "LINEAGE_DELIMITER",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.LINEAGE_DELIMITER"
-                  },
-                  {
-                    "name": "LINEAGE_DELIMITER",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.LINEAGE_DELIMITER"
-                  },
-                  {
-                    "name": "LINEAGE_DELIMITER",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.LINEAGE_DELIMITER"
-                  },
-                  {
-                    "name": "ROOT_CATEGORY_ID",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.ROOT_CATEGORY_ID"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  },
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  },
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "LINEAGE_DELIMITER",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.LINEAGE_DELIMITER"
-                  },
-                  {
-                    "name": "ROOT_CATEGORY_ID",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.ROOT_CATEGORY_ID"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveOrUpdateCategory",
+                "to_name": "LINEAGE_DELIMITER",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "moveCategory",
+                "to_name": "LINEAGE_DELIMITER",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteCategory",
+                "to_name": "LINEAGE_DELIMITER",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveOrUpdateCategory",
+                "to_name": "ROOT_CATEGORY_ID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "saveOrUpdateCategory",
+                "to_name": "CatalogConstants",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/CategoryUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "CART_COOKIE_NAME",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.CART_COOKIE_NAME"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getCategoriesForDropDownBox",
+                "to_name": "LINEAGE_DELIMITER",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "LOCAL_CART",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.LOCAL_CART"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getCategoriesForDropDownBox",
+                "to_name": "ROOT_CATEGORY_ID",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CategoryUtil",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/CheckoutAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "LINEAGE_DELIMITER",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.LINEAGE_DELIMITER"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "SKU_COOKIE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.SKU_COOKIE"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/CatalogInterceptor.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "PRODUCT_RELATIONSHIP_FBPAGE_DOWNLOADS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.PRODUCT_RELATIONSHIP_FBPAGE_DOWNLOADS"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbDownloadProducts.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "PRODUCT_RELATIONSHIP_FBPAGE_ITEMS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.PRODUCT_RELATIONSHIP_FBPAGE_ITEMS"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbProductSliderModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "PRODUCT_RELATIONSHIP_RELATED_ITEMS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.PRODUCT_RELATIONSHIP_RELATED_ITEMS"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipcrosssellItemsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "PRODUCT_RELATIONSHIP_RELATED_ITEMS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.PRODUCT_RELATIONSHIP_RELATED_ITEMS"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "PRODUCT_RELATIONSHIP_FEATURED_ITEMS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.PRODUCT_RELATIONSHIP_FEATURED_ITEMS"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipfeaturedItemsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "PRODUCT_RELATIONSHIP_FEATURED_ITEMS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.PRODUCT_RELATIONSHIP_FEATURED_ITEMS"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/store/LandingAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "PRODUCT_RELATIONSHIP_FEATURED_ITEMS",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.PRODUCT_RELATIONSHIP_FEATURED_ITEMS"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STORE_FRONT_TEMPLATES_CODE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.STORE_FRONT_TEMPLATES_CODE"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/StoreFrontAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STORE_FRONT_TEMPLATES_CODE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.STORE_FRONT_TEMPLATES_CODE"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/common/TemplateResourceBundleLoader.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STORE_FRONT_TEMPLATES_CODE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.STORE_FRONT_TEMPLATES_CODE"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/web/TemplateResourceBundleLoader.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DEFAULT_MAX_ORDER_BY_PRODUCT",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.DEFAULT_MAX_ORDER_BY_PRODUCT"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/ProductUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "ROOT_CATEGORY_ID",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.ROOT_CATEGORY_ID"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "ROOT_CATEGORY_ID",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.ROOT_CATEGORY_ID"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/TopCategoriesTag.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "DEFAULT_TEMPLATE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.DEFAULT_TEMPLATE"
-                  },
-                  {
-                    "name": "DEFAULT_TEMPLATE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.DEFAULT_TEMPLATE"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/profile/StoreAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STORE_FRONT_PORTLETS_CODE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants.STORE_FRONT_PORTLETS_CODE"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveStore",
+                "to_name": "DEFAULT_TEMPLATE",
+                "calling_type": "READ"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogConstants",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.constants.CatalogConstants"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "fetchProfile",
+                "to_name": "DEFAULT_TEMPLATE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "StoreAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/StoreFrontPortletsAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/web/TemplateResourceBundleLoader.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "init",
+                "to_name": "STORE_FRONT_TEMPLATES_CODE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "TemplateResourceBundleLoader",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/ProductUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "initOrderProduct",
+                "to_name": "DEFAULT_MAX_ORDER_BY_PRODUCT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductUtil",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "uploadCategory",
+                "to_name": "ROOT_CATEGORY_ID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CSVFileUploadImpl",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/TopCategoriesTag.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "doTag",
+                "to_name": "ROOT_CATEGORY_ID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TopCategoriesTag",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/StoreFrontPortletsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "display",
+                "to_name": "STORE_FRONT_PORTLETS_CODE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "StoreFrontPortletsAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "comitOrder",
+                "to_name": "CART_COOKIE_NAME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ComitOrderAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/CheckoutAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "checkout",
+                "to_name": "LOCAL_CART",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CheckoutAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "setCategories",
+                "to_name": "LINEAGE_DELIMITER",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CategoryListAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/CatalogInterceptor.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "doIntercept",
+                "to_name": "SKU_COOKIE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogInterceptor",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbDownloadProducts.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "display",
+                "to_name": "PRODUCT_RELATIONSHIP_FBPAGE_DOWNLOADS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbDownloadProducts",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbProductSliderModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "display",
+                "to_name": "PRODUCT_RELATIONSHIP_FBPAGE_ITEMS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbProductSliderModule",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipcrosssellItemsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayItems",
+                "to_name": "PRODUCT_RELATIONSHIP_RELATED_ITEMS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RelationShipcrosssellItemsAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayProduct",
+                "to_name": "PRODUCT_RELATIONSHIP_RELATED_ITEMS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProductDetailsAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipfeaturedItemsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayItems",
+                "to_name": "PRODUCT_RELATIONSHIP_FEATURED_ITEMS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RelationShipfeaturedItemsAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/store/LandingAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayLanding",
+                "to_name": "PRODUCT_RELATIONSHIP_FEATURED_ITEMS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LandingAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Field",
+                "from_name": "relationShipType",
+                "to_name": "PRODUCT_RELATIONSHIP_FEATURED_ITEMS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RelationShipAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/StoreFrontAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepareContent",
+                "to_name": "STORE_FRONT_TEMPLATES_CODE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "StoreFrontAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/common/TemplateResourceBundleLoader.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "init",
+                "to_name": "STORE_FRONT_TEMPLATES_CODE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "TemplateResourceBundleLoader",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

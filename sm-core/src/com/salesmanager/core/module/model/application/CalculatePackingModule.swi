@@ -4,71 +4,53 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/shipping/EditPackingAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getConfigurationOptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CalculatePackingModule.getConfigurationOptions"
-                  },
-                  {
-                    "name": "getConfigurationOptionsFileName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CalculatePackingModule.getConfigurationOptionsFileName"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getConfigurationOptions",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "CalculatePackingModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CalculatePackingModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getConfigurationOptionsFileName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "EditPackingAction",
+                "to_name": "CalculatePackingModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/shipping/EditPackingAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "calculatePacking",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CalculatePackingModule.calculatePacking"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "calculatePacking",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "CalculatePackingModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.CalculatePackingModule"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ShippingService",
+                "to_name": "CalculatePackingModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

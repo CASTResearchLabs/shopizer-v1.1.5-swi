@@ -4,107 +4,74 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.common.model.ConfigurableModule.getConfiguration"
-                  },
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.common.model.ConfigurableModule.getConfiguration"
-                  },
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.common.model.ConfigurableModule.getConfiguration"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "ConfigurableModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.common.model.ConfigurableModule"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/MerchantConfigurationImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "storeConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.common.model.ConfigurableModule.storeConfiguration"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVOByModule",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "ConfigurableModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.common.model.ConfigurableModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVO",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "MerchantConfigurationImpl",
+                "to_name": "ConfigurableModule",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/EditPackingAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "storeConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.common.model.ConfigurableModule.storeConfiguration"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPackingOption",
+                "to_name": "storeConfiguration",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "ConfigurableModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.common.model.ConfigurableModule"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "EditPackingAction",
+                "to_name": "ConfigurableModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/payment/PaymentbeanstreamAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/payment/PaymentbeanstreamAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveModule",
+                "to_name": "storeConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "PaymentbeanstreamAction",
+                "to_name": "ConfigurableModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

@@ -4,137 +4,116 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMailSender",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.getMailSender"
-                  },
-                  {
-                    "name": "getFreemarkerTemplate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.getFreemarkerTemplate"
-                  },
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.getConfiguration"
-                  },
-                  {
-                    "name": "getFromAddress",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.getFromAddress"
-                  },
-                  {
-                    "name": "getFromEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.getFromEmail"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "EmailUtilImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/utils/SmtpMailModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getFreemarkerTemplate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.getFreemarkerTemplate"
-                  },
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.getConfiguration"
-                  },
-                  {
-                    "name": "getFromAddress",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.getFromAddress"
-                  },
-                  {
-                    "name": "getFromEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.getFromEmail"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send",
+                "to_name": "getMailSender",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "EmailUtilImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send",
+                "to_name": "getFreemarkerTemplate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send",
+                "to_name": "getFromAddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send",
+                "to_name": "getFromEmail",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/utils/SimpleSmtpMailModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setEmailTemplate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.setEmailTemplate"
-                  },
-                  {
-                    "name": "prepareEmailContext",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl.prepareEmailContext"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send",
+                "to_name": "getFreemarkerTemplate",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "EmailUtilImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.EmailUtilImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send",
+                "to_name": "getFromAddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "send",
+                "to_name": "getFromEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SimpleSmtpMailModule",
+                "to_name": "EmailUtilImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/common/CommonService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/common/CommonService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendHtmlEmail",
+                "to_name": "setEmailTemplate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendHtmlEmail",
+                "to_name": "prepareEmailContext",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CommonService",
+                "to_name": "EmailUtilImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

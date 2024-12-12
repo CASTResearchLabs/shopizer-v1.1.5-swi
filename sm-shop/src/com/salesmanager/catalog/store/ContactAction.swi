@@ -4,64 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/header.jsp",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "display",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.store.ContactAction.display"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "contact",
+                "to_name": "/contact",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ContactAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.store.ContactAction"
-                  }
-                ]
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "header.jsp",
+                "to_name": "/contact",
+                "calling_type": "GET"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/contact",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.store.ContactAction/CAST_Struts_Operation/contact"
-                  },
-                  {
-                    "name": "/contact",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.store.ContactAction/CAST_Struts_Operation/contact"
-                  },
-                  {
-                    "name": "/contact",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.catalog.store.ContactAction/CAST_Struts_Operation/contact"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "contact",
+                "to_name": "display",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "contact",
+                "to_name": "ContactAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/header.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

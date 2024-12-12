@@ -4,188 +4,151 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 8,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findListMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.findListMerchantId"
-                  },
-                  {
-                    "name": "deleteKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.deleteKey"
-                  },
-                  {
-                    "name": "deleteLikeModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.deleteLikeModule"
-                  },
-                  {
-                    "name": "deleteLike",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.deleteLike"
-                  },
-                  {
-                    "name": "deleteLike",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.deleteLike"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "MerchantConfigurationDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.findByModule"
-                  },
-                  {
-                    "name": "findByModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.findByModule"
-                  },
-                  {
-                    "name": "findListByKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.findListByKey"
-                  },
-                  {
-                    "name": "findListMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.findListMerchantId"
-                  },
-                  {
-                    "name": "findListByLike",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.findListByLike"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "findListMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "MerchantConfigurationDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/MerchantConfigurationImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.findByKey"
-                  },
-                  {
-                    "name": "findByKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.findByKey"
-                  },
-                  {
-                    "name": "deleteLike",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.deleteLike"
-                  },
-                  {
-                    "name": "saveOrUpdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.saveOrUpdate"
-                  },
-                  {
-                    "name": "saveOrUpdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.saveOrUpdate"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanConfigurationKey",
+                "to_name": "deleteKey",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "MerchantConfigurationDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanConfigurationLikeKeyModule",
+                "to_name": "deleteLikeModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanConfigurationLikeKey",
+                "to_name": "deleteLike",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanConfigurationKeys",
+                "to_name": "deleteLike",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findListByKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao.findListByKey"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateShippingZonesAndCostsForDomestic",
+                "to_name": "findByKey",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "MerchantConfigurationDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantConfigurationDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isShippingInternational",
+                "to_name": "findByKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateShippingZonesAndCostsForDomestic",
+                "to_name": "deleteLike",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setShippingTaxClass",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateShippingZonesAndCostsForDomestic",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/MerchantConfigurationImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVOByModule",
+                "to_name": "findByModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVO",
+                "to_name": "findByModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVO",
+                "to_name": "findListByKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVO",
+                "to_name": "findListMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVO",
+                "to_name": "findListByLike",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfiguredPaymentMethods",
+                "to_name": "findListByKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class DAO",
+                "from_name": "PaymentService",
+                "to_name": "MerchantConfigurationDao",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

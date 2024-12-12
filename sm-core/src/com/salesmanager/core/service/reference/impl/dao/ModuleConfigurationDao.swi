@@ -4,50 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.ModuleConfigurationDao.findById"
-                  },
-                  {
-                    "name": "findByModuleIds",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.ModuleConfigurationDao.findByModuleIds"
-                  },
-                  {
-                    "name": "findByConfigurationKeyAndCountryCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.ModuleConfigurationDao.findByConfigurationKeyAndCountryCode"
-                  },
-                  {
-                    "name": "findByConfigurationModuleAndCountryCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.ModuleConfigurationDao.findByConfigurationModuleAndCountryCode"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModuleConfiguration",
+                "to_name": "findById",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "ModuleConfigurationDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.ModuleConfigurationDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModuleConfigurations",
+                "to_name": "findByModuleIds",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModuleConfigurations",
+                "to_name": "findByConfigurationKeyAndCountryCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModuleConfigurationsKeyValue",
+                "to_name": "findByConfigurationModuleAndCountryCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class DAO",
+                "from_name": "ReferenceService",
+                "to_name": "ModuleConfigurationDao",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
           }
         ],
         "files_list_comment": "",

@@ -4,91 +4,74 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/CustomerInformationAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getZonesByCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.RefUtil.getZonesByCountry"
-                  },
-                  {
-                    "name": "getCountries",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.RefUtil.getCountries"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateShippingBilling",
+                "to_name": "getZonesByCountry",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "RefUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.RefUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logonCustomer",
+                "to_name": "getZonesByCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayCustomer",
+                "to_name": "getZonesByCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateShippingBilling",
+                "to_name": "getCountries",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logonCustomer",
+                "to_name": "getCountries",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getZonesByCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.RefUtil.getZonesByCountry"
-                  },
-                  {
-                    "name": "getZonesByCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.RefUtil.getZonesByCountry"
-                  },
-                  {
-                    "name": "getZonesByCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.RefUtil.getZonesByCountry"
-                  },
-                  {
-                    "name": "getCountries",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.RefUtil.getCountries"
-                  },
-                  {
-                    "name": "getCountries",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.RefUtil.getCountries"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getZonesByCountry",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "RefUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.util.RefUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getCountries",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "RefUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/CustomerInformationAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

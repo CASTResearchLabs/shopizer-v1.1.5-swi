@@ -4,91 +4,81 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/ConfigurationFieldUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setDefaultOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.FieldOption.setDefaultOption"
-                  },
-                  {
-                    "name": "setValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.FieldOption.setValue"
-                  },
-                  {
-                    "name": "setName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.FieldOption.setName"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseFields",
+                "to_name": "setDefaultOption",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "FieldOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.FieldOption.FieldOption"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseFields",
+                "to_name": "setValue",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FieldOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.system.FieldOption"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseFields",
+                "to_name": "setName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "parseFields",
+                "to_name": "FieldOption",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ConfigurationFieldUtil",
+                "to_name": "FieldOption",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/ConfigurationFieldUtil.java",
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 5
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/entity/system/Field.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FieldOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.FieldOption"
-                  },
-                  {
-                    "name": "FieldOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.FieldOption"
-                  },
-                  {
-                    "name": "FieldOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.FieldOption"
-                  },
-                  {
-                    "name": "FieldOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.system.FieldOption"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setOptions",
+                "to_name": "FieldOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getOptions",
+                "to_name": "FieldOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "options",
+                "to_name": "FieldOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "Field",
+                "to_name": "FieldOption",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/entity/system/Field.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

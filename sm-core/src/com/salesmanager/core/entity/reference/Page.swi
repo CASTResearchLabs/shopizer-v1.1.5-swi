@@ -4,278 +4,207 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 32,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getSecured",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getSecured"
-                  },
-                  {
-                    "name": "getPageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getPageId"
-                  },
-                  {
-                    "name": "getPageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getPageId"
-                  },
-                  {
-                    "name": "getPageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getPageId"
-                  },
-                  {
-                    "name": "setProperty3",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.setProperty3"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "Page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.Page"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/integration/FbPageAdminAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProperty6",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getProperty6"
-                  },
-                  {
-                    "name": "getProperty5",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getProperty5"
-                  },
-                  {
-                    "name": "getProperty4",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getProperty4"
-                  },
-                  {
-                    "name": "getProperty2",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getProperty2"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPageConfig",
+                "to_name": "getSecured",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPageConfig",
+                "to_name": "getPageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPageHeader",
+                "to_name": "getPageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getPageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPageConfig",
+                "to_name": "setProperty3",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 43
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/www/integration/fb/FacebookIntegrationFactory.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getPageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getPageId"
-                  },
-                  {
-                    "name": "getProperty1",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getProperty1"
-                  },
-                  {
-                    "name": "getTitle",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getTitle"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAuthorizationUrl",
+                "to_name": "getProperty6",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFacebookUser",
+                "to_name": "getProperty5",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFacebookUser",
+                "to_name": "getProperty4",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFacebookUser",
+                "to_name": "getProperty2",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FacebookIntegrationFactory",
+                "to_name": "Page",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/www/PageRequestAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getSecured",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getSecured"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getPageId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getProperty1",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PageRequestAction",
+                "to_name": "Page",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/integration/page/FbPageAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getSecured",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getSecured"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getSecured",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbPageAction",
+                "to_name": "Page",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/integration/FbPageInterceptor.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getPageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getPageId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "baseIntercept",
+                "to_name": "getSecured",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "FbPageInterceptor",
+                "to_name": "Page",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/integration/page/PageAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTitle",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page.getTitle"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getPageId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.Page"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PageAction",
+                "to_name": "Page",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deletePortlet",
+                "to_name": "getTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReferenceService",
+                "to_name": "Page",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

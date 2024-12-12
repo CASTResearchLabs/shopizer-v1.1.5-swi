@@ -4,323 +4,249 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isPaymentModuleCreditCardType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.isPaymentModuleCreditCardType"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isPaymentModuleCreditCardType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.isPaymentModuleCreditCardType"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isPaymentModuleCreditCardType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.isPaymentModuleCreditCardType"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  },
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isPaymentModuleCreditCardType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.isPaymentModuleCreditCardType"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessPayment.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isPaymentModuleCreditCardType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.isPaymentModuleCreditCardType"
-                  },
-                  {
-                    "name": "isPaymentModuleCreditCardType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.isPaymentModuleCreditCardType"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  },
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  },
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/PaymentAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isPaymentModuleCreditCardType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.isPaymentModuleCreditCardType"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "selectPayment",
+                "to_name": "isPaymentModuleCreditCardType",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isPaymentModuleCreditCardType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.isPaymentModuleCreditCardType"
-                  },
-                  {
-                    "name": "isPaymentModuleCreditCardType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.isPaymentModuleCreditCardType"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "isPaymentModuleCreditCardType",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  },
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  },
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "selectPayment",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "displayPayment",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentAction",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/CustomerInformationAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getPaymentMethods",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.getPaymentMethods"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateShippingBilling",
+                "to_name": "isPaymentModuleCreditCardType",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getPaymentMethods",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil.getPaymentMethods"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "isPaymentModuleCreditCardType",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  },
-                  {
-                    "name": "PaymentUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.PaymentUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "validateShippingBilling",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "prepare",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CustomerInformationAction",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "subscribe",
+                "to_name": "isPaymentModuleCreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "subscribe",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/util/PaymentUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPaymentMethods",
+                "to_name": "getPaymentMethods",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getPaymentMethods",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentUtil",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processPaymentTransaction",
+                "to_name": "isPaymentModuleCreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentService",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "isPaymentModuleCreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessPayment.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "isPaymentModuleCreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProcessPayment",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initCheckout",
+                "to_name": "isPaymentModuleCreditCardType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InitCheckoutAction",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "receiveInvoicePayment",
+                "to_name": "getPaymentMethods",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceDetailsAction",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

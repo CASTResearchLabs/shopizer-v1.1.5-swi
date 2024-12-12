@@ -4,205 +4,151 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCustomerShippingCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil.getCustomerShippingCountry"
-                  },
-                  {
-                    "name": "getCustomerShippingCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil.getCustomerShippingCountry"
-                  },
-                  {
-                    "name": "getCustomerBillingCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil.getCustomerBillingCountry"
-                  },
-                  {
-                    "name": "getCustomerBillingCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil.getCustomerBillingCountry"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "validateEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil.validateEmail"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getCustomerShippingCountry",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getCustomerShippingCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getCustomerBillingCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getCustomerBillingCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
+                "to_name": "CustomerUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "validateEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil.validateEmail"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCustomer",
+                "to_name": "validateEmail",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "CustomerUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/customer/profile/LogonAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "validateEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil.validateEmail"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "registerCustomer",
+                "to_name": "validateEmail",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "CustomerUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/customer/profile/AddressAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "validateEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil.validateEmail"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeAddress",
+                "to_name": "validateEmail",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AddressAction",
+                "to_name": "CustomerUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/CustomerInformationAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "validateEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil.validateEmail"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateShippingBilling",
+                "to_name": "validateEmail",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.CustomerUtil"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CustomerInformationAction",
+                "to_name": "CustomerUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/orders/EditCustomerAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/orders/EditCustomerAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editOrderEmailAddress",
+                "to_name": "validateEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditCustomerAction",
+                "to_name": "CustomerUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

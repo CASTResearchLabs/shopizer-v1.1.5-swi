@@ -4,57 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/orders/OrderListAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setMerchantStoreLogo",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.ReportHeader.setMerchantStoreLogo"
-                  },
-                  {
-                    "name": "setSearchReportCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.ReportHeader.setSearchReportCriteria"
-                  },
-                  {
-                    "name": "setStore",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.ReportHeader.setStore"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReportByCriteria",
+                "to_name": "setMerchantStoreLogo",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ReportHeader",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.ReportHeader.ReportHeader"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReportByCriteria",
+                "to_name": "setSearchReportCriteria",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ReportHeader",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.common.ReportHeader"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReportByCriteria",
+                "to_name": "setStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "createReportByCriteria",
+                "to_name": "ReportHeader",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderListAction",
+                "to_name": "ReportHeader",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/orders/OrderListAction.java",
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 5
           }
         ],
         "files_list_comment": "",

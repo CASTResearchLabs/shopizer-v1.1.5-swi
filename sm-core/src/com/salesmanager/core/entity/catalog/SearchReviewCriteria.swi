@@ -4,169 +4,116 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria.setCustomerId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchReviewCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria.SearchReviewCriteria"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchReviewCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/customer/profile/ReviewsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria.setProductId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "setCustomerId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchReviewCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria.SearchReviewCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getCriteria",
+                "to_name": "SearchReviewCriteria",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchReviewCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReviewsAction",
+                "to_name": "SearchReviewCriteria",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductReviewAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria.setProductId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "reviewProduct",
+                "to_name": "setProductId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchReviewCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria.SearchReviewCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "reviewProduct",
+                "to_name": "SearchReviewCriteria",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchReviewCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductReviewAction",
+                "to_name": "SearchReviewCriteria",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria.getProductId"
-                  },
-                  {
-                    "name": "getCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria.getCustomerId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayReviews",
+                "to_name": "setProductId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchReviewCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchReviewCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "displayReviews",
+                "to_name": "SearchReviewCriteria",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProductDetailsAction",
+                "to_name": "SearchReviewCriteria",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ReviewDao.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ReviewDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchByProductId",
+                "to_name": "getProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchByCustomerId",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "ReviewDao",
+                "to_name": "SearchReviewCriteria",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

@@ -4,185 +4,151 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "changePassword",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction.changePassword"
-                  },
-                  {
-                    "name": "changePasswordForm",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction.changePasswordForm"
-                  },
-                  {
-                    "name": "displayProfile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction.displayProfile"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "changePassword",
+                "to_name": "changePassword",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "ProfileAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction"
-                  },
-                  {
-                    "name": "ProfileAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction"
-                  },
-                  {
-                    "name": "ProfileAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "changePasswordForm",
+                "to_name": "changePasswordForm",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "profile",
+                "to_name": "displayProfile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "changePassword",
+                "to_name": "ProfileAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "changePasswordForm",
+                "to_name": "ProfileAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/changePassword",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/changePassword"
-                  },
-                  {
-                    "name": "/changePassword",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/changePassword"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/WebContent/customer/logon/changePassword.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/changePasswordForm",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/changePasswordForm"
-                  },
-                  {
-                    "name": "/changePasswordForm",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/changePasswordForm"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/WebContent/customer/profileMenu.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/profile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/profile"
-                  },
-                  {
-                    "name": "/profile",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/profile"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/WebContent/profile/profileleftmenu.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/profile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/profile"
-                  },
-                  {
-                    "name": "/profile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/profile"
-                  },
-                  {
-                    "name": "/profile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/profile"
-                  },
-                  {
-                    "name": "/profile",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/profile"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/header.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/profile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/profile"
-                  },
-                  {
-                    "name": "/profile",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.customer.profile.ProfileAction/CAST_Struts_Operation/profile"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "profile",
+                "to_name": "/profile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "header.jsp",
+                "to_name": "/profile",
+                "calling_type": "GET"
               }
             ],
-            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/portlets/logonportlet.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/WebContent/customer/logon/changePassword.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "changePassword",
+                "to_name": "/changePassword",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "changePassword.jsp",
+                "to_name": "/changePassword",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/customer/profileMenu.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "profile/changePasswordForm.action",
+                "to_name": "/changePasswordForm",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "profileMenu.jsp",
+                "to_name": "/changePasswordForm",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/WebContent/profile/profileleftmenu.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "profile/profile.action",
+                "to_name": "/profile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "profileleftmenu.jsp",
+                "to_name": "/profile",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/portlets/logonportlet.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "profile",
+                "to_name": "/profile",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "logonportlet.jsp",
+                "to_name": "/profile",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

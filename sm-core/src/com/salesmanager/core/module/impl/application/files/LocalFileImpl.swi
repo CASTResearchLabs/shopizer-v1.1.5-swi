@@ -4,76 +4,60 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "deleteFile",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.LocalFileImpl.deleteFile"
-                  },
-                  {
-                    "name": "setProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.LocalFileImpl.setProductId"
-                  },
-                  {
-                    "name": "setProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.LocalFileImpl.setProductId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanupVirtualProduct",
+                "to_name": "deleteFile",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "LocalFileImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.LocalFileImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanupVirtualProduct",
+                "to_name": "setProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "persistUploadProduct",
+                "to_name": "setProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogService",
+                "to_name": "LocalFileImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/OrderProductDownloadTag.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getFileUrl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.LocalFileImpl.getFileUrl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doStartTag",
+                "to_name": "getFileUrl",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "LocalFileImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.files.LocalFileImpl"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderProductDownloadTag",
+                "to_name": "LocalFileImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/OrderProductDownloadTag.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

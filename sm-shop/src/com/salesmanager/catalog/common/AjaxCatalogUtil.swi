@@ -4,78 +4,53 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/MiniShoppingCartAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "addProductToCart",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.common.AjaxCatalogUtil.addProductToCart"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "addProductToCart",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "AjaxCatalogUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.common.AjaxCatalogUtil.AjaxCatalogUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "addToCart",
+                "to_name": "AjaxCatalogUtil",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "AjaxCatalogUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.common.AjaxCatalogUtil"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MiniShoppingCartAction",
+                "to_name": "AjaxCatalogUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/MiniShoppingCartAction.java",
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 3
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/dwr.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.common.AjaxCatalogUtil.setPrice"
-                  }
-                ]
+                "from_type": "DWR Method",
+                "to_type": "Java Method",
+                "from_name": "Catalog.setPrice",
+                "to_name": "setPrice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "AjaxCatalogUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.common.AjaxCatalogUtil"
-                  }
-                ]
+                "from_type": "DWR Method",
+                "to_type": "Java Class",
+                "from_name": "Catalog.setPrice",
+                "to_name": "AjaxCatalogUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/dwr.xml",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

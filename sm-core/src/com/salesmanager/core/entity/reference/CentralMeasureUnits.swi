@@ -4,189 +4,151 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits.setLocale"
-                  },
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits.setLocale"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralMeasureUnits",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCentralMeasureUnitsCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits.getCentralMeasureUnitsCode"
-                  },
-                  {
-                    "name": "getCentralMeasureUnitsType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits.getCentralMeasureUnitsType"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralMeasureUnits",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits.setLocale"
-                  },
-                  {
-                    "name": "getDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits.getDescription"
-                  },
-                  {
-                    "name": "getDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits.getDescription"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralMeasureUnits",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/util/MeasureUnitsHelper.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralMeasureUnits",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits"
-                  },
-                  {
-                    "name": "CentralMeasureUnits",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displaySizeUnitSymbol",
+                "to_name": "setLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayWeightUnitSymbol",
+                "to_name": "getDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displaySizeUnitSymbol",
+                "to_name": "getDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MeasureUnitsHelper",
+                "to_name": "CentralMeasureUnits",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setLocaleToEntityCollection",
+                "to_name": "setLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "LocaleUtil",
+                "to_name": "CentralMeasureUnits",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCache",
+                "to_name": "getCentralMeasureUnitsCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCache",
+                "to_name": "getCentralMeasureUnitsType",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RefCache",
+                "to_name": "CentralMeasureUnits",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralMeasureUnits",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits"
-                  },
-                  {
-                    "name": "CentralMeasureUnits",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getMeasureUnits",
+                "to_name": "CentralMeasureUnits",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReferenceService",
+                "to_name": "CentralMeasureUnits",
+                "calling_type": "USE"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/reference/impl/dao/IGlobalReferenceDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CentralMeasureUnits",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits"
-                  },
-                  {
-                    "name": "CentralMeasureUnits",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.CentralMeasureUnits"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getMeasureUnits",
+                "to_name": "CentralMeasureUnits",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "IGlobalReferenceDao",
+                "to_name": "CentralMeasureUnits",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/reference/impl/dao/GlobalReferenceDao.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/reference/impl/dao/GlobalReferenceDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getMeasureUnits",
+                "to_name": "CentralMeasureUnits",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "GlobalReferenceDao",
+                "to_name": "CentralMeasureUnits",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

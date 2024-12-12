@@ -4,151 +4,109 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setFileid",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.setFileid"
-                  },
-                  {
-                    "name": "setFileid",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.setFileid"
-                  },
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.setMerchantId"
-                  },
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.setMerchantId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "FileHistoryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.FileHistoryId"
-                  },
-                  {
-                    "name": "FileHistoryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.FileHistoryId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FileHistoryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setFileid",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.setFileid"
-                  },
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.setMerchantId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFileHistory",
+                "to_name": "setFileid",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "FileHistoryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.FileHistoryId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateDeleteVirtualProductFileData",
+                "to_name": "setFileid",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FileHistoryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFileHistory",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateDeleteVirtualProductFileData",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getFileHistory",
+                "to_name": "FileHistoryId",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "equals",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.equals"
-                  },
-                  {
-                    "name": "hashCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId.hashCode"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "persistUploadProduct",
+                "to_name": "setFileid",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FileHistoryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.FileHistoryId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "persistUploadProduct",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "persistUploadProduct",
+                "to_name": "FileHistoryId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogService",
+                "to_name": "FileHistoryId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/entity/orders/FileHistory.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/entity/orders/FileHistory.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "equals",
+                "to_name": "equals",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "hashCode",
+                "to_name": "hashCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FileHistory",
+                "to_name": "FileHistoryId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

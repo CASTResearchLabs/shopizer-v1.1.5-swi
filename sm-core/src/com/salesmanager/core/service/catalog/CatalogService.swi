@@ -4,1826 +4,1460 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCategoriesByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getCategoriesByLang"
-                  },
-                  {
-                    "name": "getCategoriesByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getCategoriesByLang"
-                  },
-                  {
-                    "name": "getCategoryDescriptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getCategoryDescriptions"
-                  },
-                  {
-                    "name": "getSubCategoriesByCategoryAndLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getSubCategoriesByCategoryAndLang"
-                  },
-                  {
-                    "name": "getCategoryDescriptionByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getCategoryDescriptionByLang"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditCategoryAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "saveOrUpdateOptionValueDescriptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateOptionValueDescriptions"
-                  },
-                  {
-                    "name": "saveOrUpdateProductOptionValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProductOptionValue"
-                  },
-                  {
-                    "name": "getProductOptionValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductOptionValue"
-                  },
-                  {
-                    "name": "getProductOptionValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductOptionValue"
-                  },
-                  {
-                    "name": "getProductOptionWithValues",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductOptionWithValues"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductAttributesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 8,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "deleteProductOptionValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteProductOptionValue"
-                  },
-                  {
-                    "name": "saveOrUpdateProductOptionValueToProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "saveOrUpdateProductOptionValueToProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "removeProductOptionValueToProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.removeProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "associateProductOptionValueToProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.associateProductOptionValueToProductOption"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProductOptionTextValues",
+                "to_name": "saveOrUpdateOptionValueDescriptions",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductAttributes",
+                "to_name": "saveOrUpdateProductOptionValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductOptionTextValues",
+                "to_name": "getProductOptionValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProductOptionTextValues",
+                "to_name": "getProductOptionValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProductAttributes",
+                "to_name": "getProductOptionWithValues",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductOptionsValuesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 8,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "countAverageRatingPerProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.countAverageRatingPerProduct"
-                  },
-                  {
-                    "name": "countAverageRatingPerProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.countAverageRatingPerProduct"
-                  },
-                  {
-                    "name": "addProductReview",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.addProductReview"
-                  },
-                  {
-                    "name": "getProductByMerchantIdAndSeoURLAndByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductByMerchantIdAndSeoURLAndByLang"
-                  },
-                  {
-                    "name": "searchProductReviewsByProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.searchProductReviewsByProduct"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductOptionsValues",
+                "to_name": "deleteProductOptionValue",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductOptionValue",
+                "to_name": "saveOrUpdateProductOptionValueToProductOption",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductOptionsValues",
+                "to_name": "saveOrUpdateProductOptionValueToProductOption",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductOptionsValues",
+                "to_name": "removeProductOptionValueToProductOption",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "associateProductOptionValue",
+                "to_name": "associateProductOptionValueToProductOption",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditCategoryAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showEditCategory",
+                "to_name": "getCategoriesByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCategory",
+                "to_name": "getCategoriesByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showEditCategory",
+                "to_name": "getCategoryDescriptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getSubCategoriesByCategoryAndLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getCategoryDescriptionByLang",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "saveOrUpdateProductPriceSpecial",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProductPriceSpecial"
-                  },
-                  {
-                    "name": "deleteProductPriceSpecial",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteProductPriceSpecial"
-                  },
-                  {
-                    "name": "getProductPriceSpecial",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductPriceSpecial"
-                  },
-                  {
-                    "name": "getProductPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductPrice"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayReviews",
+                "to_name": "countAverageRatingPerProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductPriceDiscountAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProductPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductPrice"
-                  },
-                  {
-                    "name": "saveOrUpdateProductPrices",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProductPrices"
-                  },
-                  {
-                    "name": "saveOrUpdateProductPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProductPrice"
-                  },
-                  {
-                    "name": "deleteProductPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteProductPrice"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "countAverageRatingPerProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductPriceAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "deleteProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteProduct"
-                  },
-                  {
-                    "name": "saveOrUpdateProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProduct"
-                  },
-                  {
-                    "name": "saveOrUpdateProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProduct"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "addProductReview",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProduct",
+                "to_name": "getProductByMerchantIdAndSeoURLAndByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayReviews",
+                "to_name": "searchProductReviewsByProduct",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductsByMerchantIdAndCategoryIdAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductsByMerchantIdAndCategoryIdAndLanguageId"
-                  },
-                  {
-                    "name": "getProductsByMerchantIdAndCategoryIdAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductsByMerchantIdAndCategoryIdAndLanguageId"
-                  },
-                  {
-                    "name": "saveOrUpdateProductRelationship",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProductRelationship"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProductRelationship",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductRelationship"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteProduct",
+                "to_name": "deleteProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProduct",
+                "to_name": "saveOrUpdateProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteFile",
+                "to_name": "saveOrUpdateProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showCropProductImage",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cropProductImage",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/cart/AddProduct.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductOptionTypes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductOptionTypes"
-                  },
-                  {
-                    "name": "saveOrUpdateProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProductOption"
-                  },
-                  {
-                    "name": "saveOrUpdateProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProductOption"
-                  },
-                  {
-                    "name": "deleteProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteProductOption"
-                  },
-                  {
-                    "name": "getProductOptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductOptions"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductsByCategoryId",
+                "to_name": "getProductsByMerchantIdAndCategoryIdAndLanguageId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductOptionsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isProductSubscribtion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.isProductSubscribtion"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProductAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttributes"
-                  },
-                  {
-                    "name": "getProductAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttributes"
-                  },
-                  {
-                    "name": "getProductAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttributes"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductsHtmlListByCategoryId",
+                "to_name": "getProductsByMerchantIdAndCategoryIdAndLanguageId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addRelationshipItem",
+                "to_name": "saveOrUpdateProductRelationship",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addRelationshipItem",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addRelationshipItem",
+                "to_name": "getProductRelationship",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/CheckoutUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "uploadCategories",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.uploadCategories"
-                  },
-                  {
-                    "name": "saveOrUpdateManufacturers",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateManufacturers"
-                  },
-                  {
-                    "name": "getCategory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getCategory"
-                  },
-                  {
-                    "name": "saveOrUpdateProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProduct"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createOrderProduct",
+                "to_name": "isProductSubscribtion",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createOrderProduct",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addAttributesToProduct",
+                "to_name": "getProductAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createOrderProduct",
+                "to_name": "getProductAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addAttributesFromRawObjects",
+                "to_name": "getProductAttributes",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductPriceDiscountAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "deleteSpecial",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteSpecial"
-                  },
-                  {
-                    "name": "saveOrUpdateSpecial",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateSpecial"
-                  },
-                  {
-                    "name": "getSpecial",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getSpecial"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareProductPriceDiscountDetails",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductPriceDiscount",
+                "to_name": "saveOrUpdateProductPriceSpecial",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteProductPriceDiscount",
+                "to_name": "deleteProductPriceSpecial",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteProductPriceDiscount",
+                "to_name": "getProductPriceSpecial",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareProductPriceDiscountDetails",
+                "to_name": "getProductPrice",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditDiscountAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductPriceAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "searchProductReviewsByProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.searchProductReviewsByProduct"
-                  },
-                  {
-                    "name": "getProductReview",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductReview"
-                  },
-                  {
-                    "name": "deleteProductReview",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteProductReview"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePriceDetails",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductPrice",
+                "to_name": "getProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductPrice",
+                "to_name": "saveOrUpdateProductPrices",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductPrice",
+                "to_name": "saveOrUpdateProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductPrice",
+                "to_name": "deleteProductPrice",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductReviewAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductOptionsAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductsByMerchantIdAndCategoryIdAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductsByMerchantIdAndCategoryIdAndLanguageId"
-                  },
-                  {
-                    "name": "getProductByLanguage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductByLanguage"
-                  },
-                  {
-                    "name": "getProductRelationShip",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductRelationShip"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "getProductOptionTypes",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductOption",
+                "to_name": "saveOrUpdateProductOption",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductOptions",
+                "to_name": "saveOrUpdateProductOption",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductOptions",
+                "to_name": "deleteProductOption",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "getProductOptions",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipcrosssellItemsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductsByMerchantIdAndCategoryIdAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductsByMerchantIdAndCategoryIdAndLanguageId"
-                  },
-                  {
-                    "name": "getProductByLanguage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductByLanguage"
-                  },
-                  {
-                    "name": "getProductRelationShip",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductRelationShip"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "persistUploadProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.persistUploadProduct"
-                  },
-                  {
-                    "name": "getProductDownload",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductDownload"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductUploadAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "searchProductReviewsByCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.searchProductReviewsByCustomer"
-                  },
-                  {
-                    "name": "getProductReview",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductReview"
-                  },
-                  {
-                    "name": "deleteProductReview",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteProductReview"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/customer/profile/ReviewsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "countProductsPerCategoryAndSubCategories",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.countProductsPerCategoryAndSubCategories"
-                  },
-                  {
-                    "name": "findCategoriesByMerchantIdAndLineageAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.findCategoriesByMerchantIdAndLineageAndLanguageId"
-                  },
-                  {
-                    "name": "getCategoriesByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getCategoriesByLang"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/CategoryUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCategoryByMerchantIdAndSeoURLAndByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getCategoryByMerchantIdAndSeoURLAndByLang"
-                  },
-                  {
-                    "name": "findProductsByCategoryList",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.findProductsByCategoryList"
-                  },
-                  {
-                    "name": "findCategoriesByMerchantIdAndLineageAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.findCategoriesByMerchantIdAndLineageAndLanguageId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getAllCategoriesByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getAllCategoriesByLang"
-                  },
-                  {
-                    "name": "getCategory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getCategory"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/CategoryCacheImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "deleteAllCategories",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteAllCategories"
-                  },
-                  {
-                    "name": "deleteAllProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteAllProducts"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findSubCategories",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.findSubCategories"
-                  },
-                  {
-                    "name": "getCategoriesByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getCategoriesByLang"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ProductDao.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "saveOrUpdateAllProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateAllProducts"
-                  },
-                  {
-                    "name": "getProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProducts"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProducts"
-                  },
-                  {
-                    "name": "getProductAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttributes"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/MiniShoppingCartSerializationUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductAttributeByOptionValueAndProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttributeByOptionValueAndProduct"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttributes"
-                  },
-                  {
-                    "name": "getProductAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttributes"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/common/AjaxCatalogUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProductAttribute",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttribute"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProductAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttributes"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "loadCategoriesCache",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.loadCategoriesCache"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.CatalogService"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/web/ReferenceLoaderServlet.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductAttribute",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttribute"
-                  },
-                  {
-                    "name": "getProductAttribute",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttribute"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCategoriesByLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getCategoriesByLang"
-                  },
-                  {
-                    "name": "getProductsByMerchantIdAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductsByMerchantIdAndLanguageId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/cart/SiteMapAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "updateProductListAvailability",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.updateProductListAvailability"
-                  },
-                  {
-                    "name": "findProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.findProducts"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductListAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductsByMerchantIdAndCategoryIdAndLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductsByMerchantIdAndCategoryIdAndLanguageId"
-                  },
-                  {
-                    "name": "getProductRelationShip",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductRelationShip"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipfeaturedItemsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "saveOrUpdateProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProduct"
-                  },
-                  {
-                    "name": "saveOrUpdateProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProduct"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/catalog/EditImagesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  },
-                  {
-                    "name": "getProductAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductAttributes"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveImages",
+                "to_name": "saveOrUpdateProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductPreviewAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductOptionTypes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductOptionTypes"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteImage",
+                "to_name": "saveOrUpdateProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/ref/RefAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveImages",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/ProductUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProduct"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayImages",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteImage",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductUploadAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductCount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductCount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadProduct",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showUploadForm",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadProduct",
+                "to_name": "persistUploadProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showUploadForm",
+                "to_name": "getProductDownload",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditProductUploadAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductRelationShip",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductRelationShip"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadCategory",
+                "to_name": "uploadCategories",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadManufacturers",
+                "to_name": "saveOrUpdateManufacturers",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadCategory",
+                "to_name": "getCategory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadProducts",
+                "to_name": "saveOrUpdateProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CSVFileUploadImpl",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbProductSliderModule.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/catalog/common/AjaxCatalogUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductRelationShip",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductRelationShip"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToCart",
+                "to_name": "getProductAttributes",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setPrice",
+                "to_name": "getProductAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToCart",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setPrice",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AjaxCatalogUtil",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbDownloadProducts.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditDiscountAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductRelationShip",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductRelationShip"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showDiscount",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteDiscount",
+                "to_name": "deleteSpecial",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveDiscount",
+                "to_name": "saveOrUpdateSpecial",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showDiscount",
+                "to_name": "getSpecial",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditDiscountAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/store/LandingAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getProductOptionWithValues",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getProductOptionWithValues"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "getProductAttribute",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "getProductAttribute",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddItem",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/UpdateOptionsValues.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductReviewAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getSubCategoriesByParentCategoryAndLang",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.getSubCategoriesByParentCategoryAndLang"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "reviewProduct",
+                "to_name": "searchProductReviewsByProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeReview",
+                "to_name": "getProductReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeReview",
+                "to_name": "deleteProductReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductReviewAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/TopCategoriesTag.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipcrosssellItemsAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "searchProductsForText",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.searchProductsForText"
-                  },
-                  {
-                    "name": "searchProductsForText",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService.searchProductsForText"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayItems",
+                "to_name": "getProductsByMerchantIdAndCategoryIdAndLanguageId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CatalogService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.catalog.CatalogService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayItems",
+                "to_name": "getProductByLanguage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayItems",
+                "to_name": "getProductRelationShip",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RelationShipcrosssellItemsAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getProductsByMerchantIdAndCategoryIdAndLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getProductByLanguage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getProductRelationShip",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RelationShipAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/customer/profile/ReviewsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "reviewsQuery",
+                "to_name": "searchProductReviewsByCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeReview",
+                "to_name": "getProductReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeReview",
+                "to_name": "deleteProductReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReviewsAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/CategoryUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getItemPerCategoryCount",
+                "to_name": "countProductsPerCategoryAndSubCategories",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategoriesForDropDownBox",
+                "to_name": "findCategoriesByMerchantIdAndLineageAndLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategoryPath",
+                "to_name": "getCategoriesByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CategoryUtil",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayCategory",
+                "to_name": "getCategoryByMerchantIdAndSeoURLAndByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setCategories",
+                "to_name": "findProductsByCategoryList",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setCategories",
+                "to_name": "findCategoriesByMerchantIdAndLineageAndLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CategoryListAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/CategoryCacheImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadCategoriesInCache",
+                "to_name": "getAllCategoriesByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadCategoriesInCache",
+                "to_name": "getCategory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CategoryCacheImpl",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/store/SearchAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "search",
+                "to_name": "searchProductsForText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "searchProductsForText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SearchAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "deleteAllCategories",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "deleteAllProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ProductDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchProduct",
+                "to_name": "findSubCategories",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchProduct",
+                "to_name": "getCategoriesByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "ProductDao",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "saveOrUpdateAllProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/MiniShoppingCartSerializationUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deserializeJSON",
+                "to_name": "getProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deserializeJSON",
+                "to_name": "getProductAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MiniShoppingCartSerializationUtil",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "getProductAttributeByOptionValueAndProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddSubscription",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isValidInvoice",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isValidInvoice",
+                "to_name": "getProductAttribute",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerInvoiceWSImpl",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceDetails",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceDetails",
+                "to_name": "getProductAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceDetailsAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/web/ReferenceLoaderServlet.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "init",
+                "to_name": "loadCategoriesCache",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "init",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReferenceLoaderServlet",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/cart/SiteMapAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "getCategoriesByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "getProductsByMerchantIdAndLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SiteMapAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductListAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateavailability",
+                "to_name": "updateProductListAvailability",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "show",
+                "to_name": "findProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductListAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipfeaturedItemsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayItems",
+                "to_name": "getProductsByMerchantIdAndCategoryIdAndLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayItems",
+                "to_name": "getProductRelationShip",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RelationShipfeaturedItemsAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductPreviewAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getProductAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductPreviewAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/ref/RefAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductOptionTypes",
+                "to_name": "getProductOptionTypes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RefAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/ProductUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initOrderProduct",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductUtil",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ComitOrderAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkConfiguration",
+                "to_name": "getProductCount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "DashboardAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbProductSliderModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getProductRelationShip",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbProductSliderModule",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbDownloadProducts.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getProductRelationShip",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbDownloadProducts",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/store/LandingAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayLanding",
+                "to_name": "getProductRelationShip",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LandingAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/UpdateOptionsValues.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOptionsValues",
+                "to_name": "getProductOptionWithValues",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UpdateOptionsValues",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/TopCategoriesTag.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doTag",
+                "to_name": "getSubCategoriesByParentCategoryAndLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TopCategoriesTag",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

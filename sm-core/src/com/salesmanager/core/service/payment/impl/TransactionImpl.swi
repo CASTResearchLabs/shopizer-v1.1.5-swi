@@ -4,67 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTransactionType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.TransactionImpl.getTransactionType"
-                  },
-                  {
-                    "name": "getTransactionType",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.TransactionImpl.getTransactionType"
-                  },
-                  {
-                    "name": "getTransactions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.TransactionImpl.getTransactions"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCapturableTransaction",
+                "to_name": "getTransactionType",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "TransactionImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.TransactionImpl.TransactionImpl"
-                  },
-                  {
-                    "name": "TransactionImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.TransactionImpl.TransactionImpl"
-                  },
-                  {
-                    "name": "TransactionImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.TransactionImpl.TransactionImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getRefundableTransaction",
+                "to_name": "getTransactionType",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "TransactionImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.TransactionImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTransactions",
+                "to_name": "getTransactions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getTransactions",
+                "to_name": "TransactionImpl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getCapturableTransaction",
+                "to_name": "TransactionImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           }
         ],
         "files_list_comment": "",

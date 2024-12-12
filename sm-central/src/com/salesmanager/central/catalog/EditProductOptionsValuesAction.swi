@@ -1,0 +1,118 @@
+{
+  "dependency facts about source code file [sm-central/src/com/salesmanager/central/catalog/EditProductOptionsValuesAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-central/src/com/salesmanager/central/catalog/EditProductOptionsValuesAction.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "addproductoptionvalue",
+                "to_name": "addProductOptionValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "editproductoptionsvalues",
+                "to_name": "editProductOptionsValues",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "addproductoptionvalueid",
+                "to_name": "associateProductOptionValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "productoptionvalues",
+                "to_name": "displayProductOptionsValues",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "addproductoptionvalueid",
+                "to_name": "EditProductOptionsValuesAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
+          },
+          {
+            "from_file": "sm-central/WebContent/catalog/productoptionsvalues.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "addproductoptionvalueid",
+                "to_name": "/addproductoptionvalueid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "productoptionsvalues.jsp",
+                "to_name": "/addproductoptionvalueid",
+                "calling_type": "POST"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "addproductoptionvalue",
+                "to_name": "/addproductoptionvalue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "productoptionsvalues.jsp",
+                "to_name": "/addproductoptionvalue",
+                "calling_type": "POST"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "editproductoptionsvalues",
+                "to_name": "/editproductoptionsvalues",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
+            "from_file": "sm-central/WebContent/catalog/productoptions.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "catalog/productoptionvalues.action",
+                "to_name": "/productoptionvalues",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "productoptions.jsp",
+                "to_name": "/productoptionvalues",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}

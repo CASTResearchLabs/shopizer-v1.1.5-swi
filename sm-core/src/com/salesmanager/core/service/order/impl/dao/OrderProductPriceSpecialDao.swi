@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "deleteByOrderProductPriceIds",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductPriceSpecialDao.deleteByOrderProductPriceIds"
-                  },
-                  {
-                    "name": "deleteByOrderProductPriceIds",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductPriceSpecialDao.deleteByOrderProductPriceIds"
-                  },
-                  {
-                    "name": "findById",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductPriceSpecialDao.findById"
-                  },
-                  {
-                    "name": "persist",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductPriceSpecialDao.persist"
-                  },
-                  {
-                    "name": "persist",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductPriceSpecialDao.persist"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "deleteByOrderProductPriceIds",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "OrderProductPriceSpecialDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderProductPriceSpecialDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteOrder",
+                "to_name": "deleteByOrderProductPriceIds",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderProductPriceSpecial",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "persist",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           }
         ],
         "files_list_comment": "",

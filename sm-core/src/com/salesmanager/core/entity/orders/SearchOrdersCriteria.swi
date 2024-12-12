@@ -4,270 +4,200 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 10,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setSdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setSdate"
-                  },
-                  {
-                    "name": "setSdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setSdate"
-                  },
-                  {
-                    "name": "setEdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setEdate"
-                  },
-                  {
-                    "name": "setEdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setEdate"
-                  },
-                  {
-                    "name": "setOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setOrderId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchOrdersCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.SearchOrdersCriteria"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchOrdersCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/orders/OrderListAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setSdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setSdate"
-                  },
-                  {
-                    "name": "setEdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setEdate"
-                  },
-                  {
-                    "name": "setOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setOrderId"
-                  },
-                  {
-                    "name": "getSdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.getSdate"
-                  },
-                  {
-                    "name": "getEdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.getEdate"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrdersList",
+                "to_name": "setSdate",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchOrdersCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.SearchOrdersCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildCriteria",
+                "to_name": "setSdate",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchOrdersCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrdersList",
+                "to_name": "setEdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildCriteria",
+                "to_name": "setEdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReportByCriteria",
+                "to_name": "setOrderId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceListAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 18
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.getCustomerId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.getOrderId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.getOrderId"
-                  },
-                  {
-                    "name": "getCustomerName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.getCustomerName"
-                  },
-                  {
-                    "name": "getCustomerName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.getCustomerName"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchOrdersCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderDao.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setCustomerId"
-                  },
-                  {
-                    "name": "setSdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setSdate"
-                  },
-                  {
-                    "name": "setEdate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.setEdate"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchOrdersCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.SearchOrdersCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrder",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchOrdersCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchInvoice",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrder",
+                "to_name": "getCustomerName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchInvoice",
+                "to_name": "getCustomerName",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceListAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceList",
+                "to_name": "setSdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceList",
+                "to_name": "setEdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceList",
+                "to_name": "setOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceList",
+                "to_name": "getSdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceList",
+                "to_name": "getEdate",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/customer/profile/OrdersAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchOrdersCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.SearchOrdersCriteria"
-                  },
-                  {
-                    "name": "SearchOrdersCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria.SearchOrdersCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "setCustomerId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchOrdersCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.SearchOrdersCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "setSdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "setEdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getCriteria",
+                "to_name": "SearchOrdersCriteria",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrdersAction",
+                "to_name": "SearchOrdersCriteria",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "showOrderSummary",
+                "to_name": "SearchOrdersCriteria",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "checkSales",
+                "to_name": "SearchOrdersCriteria",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "DashboardAction",
+                "to_name": "SearchOrdersCriteria",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

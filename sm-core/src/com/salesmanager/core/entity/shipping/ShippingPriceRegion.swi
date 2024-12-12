@@ -4,242 +4,158 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 11,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setMaxDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.setMaxDays"
-                  },
-                  {
-                    "name": "setMinDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.setMinDays"
-                  },
-                  {
-                    "name": "setPriceLine",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.setPriceLine"
-                  },
-                  {
-                    "name": "getPriceLine",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.getPriceLine"
-                  },
-                  {
-                    "name": "setCountryline",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.setCountryline"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.ShippingPriceRegion"
-                  },
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.ShippingPriceRegion"
-                  },
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.ShippingPriceRegion"
-                  },
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.ShippingPriceRegion"
-                  },
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.ShippingPriceRegion"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingCustomRatesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setMaxDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.setMaxDays"
-                  },
-                  {
-                    "name": "setMinDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.setMinDays"
-                  },
-                  {
-                    "name": "setCountryline",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.setCountryline"
-                  },
-                  {
-                    "name": "addCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.addCountry"
-                  },
-                  {
-                    "name": "setEstimatedTimeEnabled",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.setEstimatedTimeEnabled"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildPriceRegionWithEstimatedCosts",
+                "to_name": "setMaxDays",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.ShippingPriceRegion"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildPriceRegionWithEstimatedCosts",
+                "to_name": "setMinDays",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildPriceRegionWithPrice",
+                "to_name": "setPriceLine",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "modifyCostLine",
+                "to_name": "getPriceLine",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildPriceRegionWithRegion",
+                "to_name": "setCountryline",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/ShippingUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 19
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMaxDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.getMaxDays"
-                  },
-                  {
-                    "name": "getMinDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.getMinDays"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMaxDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.getMaxDays"
-                  },
-                  {
-                    "name": "getMinDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion.getMinDays"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion"
-                  },
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion"
-                  },
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion"
-                  },
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion"
-                  },
-                  {
-                    "name": "ShippingPriceRegion",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.shipping.ShippingPriceRegion"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/entity/shipping/ShippingEstimate.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingEstimateDescription",
+                "to_name": "getMaxDays",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingEstimateDescription",
+                "to_name": "getMinDays",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingEstimate",
+                "to_name": "ShippingPriceRegion",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setRegions",
+                "to_name": "ShippingPriceRegion",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getRegions",
+                "to_name": "ShippingPriceRegion",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/ShippingUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildShippingPriceRegionMap",
+                "to_name": "setMaxDays",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildShippingPriceRegionMap",
+                "to_name": "setMinDays",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildShippingPriceRegionMap",
+                "to_name": "setCountryline",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildShippingPriceRegionMap",
+                "to_name": "addCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildShippingPriceRegionMap",
+                "to_name": "setEstimatedTimeEnabled",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getMaxDays",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getMinDays",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingService",
+                "to_name": "ShippingPriceRegion",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

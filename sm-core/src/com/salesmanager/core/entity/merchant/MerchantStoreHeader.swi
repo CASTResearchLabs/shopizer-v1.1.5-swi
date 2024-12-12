@@ -4,106 +4,81 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setStorename",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader.setStorename"
-                  },
-                  {
-                    "name": "setAdminEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader.setAdminEmail"
-                  },
-                  {
-                    "name": "setAdminName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader.setAdminName"
-                  },
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader.setMerchantId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAllMerchantStores",
+                "to_name": "setStorename",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "MerchantStoreHeader",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader.MerchantStoreHeader"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAllMerchantStores",
+                "to_name": "setAdminEmail",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MerchantStoreHeader",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader"
-                  },
-                  {
-                    "name": "MerchantStoreHeader",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader"
-                  },
-                  {
-                    "name": "MerchantStoreHeader",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAllMerchantStores",
+                "to_name": "setAdminName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAllMerchantStores",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getAllMerchantStores",
+                "to_name": "MerchantStoreHeader",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "MerchantStoreHeader",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader"
-                  },
-                  {
-                    "name": "MerchantStoreHeader",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader"
-                  },
-                  {
-                    "name": "MerchantStoreHeader",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader"
-                  },
-                  {
-                    "name": "MerchantStoreHeader",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.merchant.MerchantStoreHeader"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setMerchantStoreHeaderList",
+                "to_name": "MerchantStoreHeader",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getMerchantStoreHeaderList",
+                "to_name": "MerchantStoreHeader",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "merchantStoreHeaderList",
+                "to_name": "MerchantStoreHeader",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "MerchantStoreHeader",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

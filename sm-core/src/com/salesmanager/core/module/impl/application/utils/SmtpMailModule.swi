@@ -4,35 +4,25 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/common/CommonService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "send",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.utils.SmtpMailModule.send"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendHtmlEmail",
+                "to_name": "send",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SmtpMailModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.utils.SmtpMailModule"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CommonService",
+                "to_name": "SmtpMailModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/common/CommonService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

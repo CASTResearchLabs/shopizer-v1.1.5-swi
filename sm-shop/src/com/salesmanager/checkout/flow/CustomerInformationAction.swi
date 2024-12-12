@@ -4,156 +4,137 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "validateShippingBilling",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction.validateShippingBilling"
-                  },
-                  {
-                    "name": "logonCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction.logonCustomer"
-                  },
-                  {
-                    "name": "displayCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction.displayCustomer"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "validateCustomer",
+                "to_name": "validateShippingBilling",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "CustomerInformationAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction"
-                  },
-                  {
-                    "name": "CustomerInformationAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction"
-                  },
-                  {
-                    "name": "CustomerInformationAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "logonCustomer",
+                "to_name": "logonCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "customer",
+                "to_name": "displayCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "logonCustomer",
+                "to_name": "CustomerInformationAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "validateCustomer",
+                "to_name": "CustomerInformationAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/logonCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction/CAST_Struts_Operation/logonCustomer"
-                  },
-                  {
-                    "name": "/logonCustomer",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction/CAST_Struts_Operation/logonCustomer"
-                  },
-                  {
-                    "name": "/logonCustomer",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction/CAST_Struts_Operation/logonCustomer"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/checkout/components/customer.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/validateCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction/CAST_Struts_Operation/validateCustomer"
-                  },
-                  {
-                    "name": "/validateCustomer",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction/CAST_Struts_Operation/validateCustomer"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "checkout/logonCustomer.action",
+                "to_name": "/logonCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "Struts Operation",
+                "from_name": "authenticate",
+                "to_name": "/logonCustomer",
+                "calling_type": "POST"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "customer.jsp",
+                "to_name": "/logonCustomer",
+                "calling_type": "POST"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-shop/WebContent/checkout/customer/billing.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/customer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction/CAST_Struts_Operation/customer"
-                  },
-                  {
-                    "name": "/customer",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction/CAST_Struts_Operation/customer"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "validateCustomer",
+                "to_name": "/validateCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "billing.jsp",
+                "to_name": "/validateCustomer",
+                "calling_type": "POST"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/WebContent/checkout/components/shipping.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/customer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction/CAST_Struts_Operation/customer"
-                  },
-                  {
-                    "name": "/customer",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.checkout.flow.CustomerInformationAction/CAST_Struts_Operation/customer"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "checkout/customer.action",
+                "to_name": "/customer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "shipping.jsp",
+                "to_name": "/customer",
+                "calling_type": "GET"
               }
             ],
-            "from_file": "sm-shop/WebContent/checkout/components/confirmation.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/checkout/components/confirmation.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "checkout/customer.action",
+                "to_name": "/customer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "confirmation.jsp",
+                "to_name": "/customer",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

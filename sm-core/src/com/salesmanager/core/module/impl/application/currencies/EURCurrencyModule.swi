@@ -4,86 +4,67 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 7,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCurrencySymbol",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.currencies.EURCurrencyModule.getCurrencySymbol"
-                  },
-                  {
-                    "name": "getFormatedAmountWithCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.currencies.EURCurrencyModule.getFormatedAmountWithCurrency"
-                  },
-                  {
-                    "name": "getFormatedAmountWithCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.currencies.EURCurrencyModule.getFormatedAmountWithCurrency"
-                  },
-                  {
-                    "name": "getFormatedAmount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.currencies.EURCurrencyModule.getFormatedAmount"
-                  },
-                  {
-                    "name": "getFormatedAmount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.currencies.EURCurrencyModule.getFormatedAmount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayEditablePriceWithCurrency",
+                "to_name": "getCurrencySymbol",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "EURCurrencyModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.currencies.EURCurrencyModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayFormatedCssAmountWithCurrency",
+                "to_name": "getFormatedAmountWithCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayFormatedAmountWithCurrency",
+                "to_name": "getFormatedAmountWithCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayEditablePriceWithCurrency",
+                "to_name": "getFormatedAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayFormatedAmount",
+                "to_name": "getFormatedAmount",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PaypalTransactionImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getAmount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.currencies.EURCurrencyModule.getAmount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "getAmount",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "EURCurrencyModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.currencies.EURCurrencyModule"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaypalTransactionImpl",
+                "to_name": "EURCurrencyModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PaypalTransactionImpl.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

@@ -4,45 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/dwr.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "logout",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.ajax.CustomerUtil.logout"
-                  },
-                  {
-                    "name": "setGeoLocationCustomerInformation",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.ajax.CustomerUtil.setGeoLocationCustomerInformation"
-                  }
-                ]
+                "from_type": "DWR Method",
+                "to_type": "Java Method",
+                "from_name": "Customer.logout",
+                "to_name": "logout",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.ajax.CustomerUtil"
-                  },
-                  {
-                    "name": "CustomerUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.ajax.CustomerUtil"
-                  }
-                ]
+                "from_type": "DWR Method",
+                "to_type": "Java Method",
+                "from_name": "Customer.setGeoLocationCustomerInformation",
+                "to_name": "setGeoLocationCustomerInformation",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "DWR Method",
+                "to_type": "Java Class",
+                "from_name": "Customer.setGeoLocationCustomerInformation",
+                "to_name": "CustomerUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "DWR Method",
+                "to_type": "Java Class",
+                "from_name": "Customer.logout",
+                "to_name": "CustomerUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/dwr.xml",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

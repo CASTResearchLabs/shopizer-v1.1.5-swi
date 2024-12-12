@@ -4,135 +4,116 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption.setId"
-                  },
-                  {
-                    "name": "setId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption.setId"
-                  },
-                  {
-                    "name": "setId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption.setId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption.ProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption.ProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption.ProductOptionValueToProductOption"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateProductOptionValueToProductOption",
+                "to_name": "setId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProductOptionValueToProductOption",
+                "to_name": "setId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "associateProductOptionValueToProductOption",
+                "to_name": "setId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "saveOrUpdateProductOptionValueToProductOption",
+                "to_name": "ProductOptionValueToProductOption",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "removeProductOptionValueToProductOption",
+                "to_name": "ProductOptionValueToProductOption",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/IProductOptionValueToProductOptionDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption"
-                  },
-                  {
-                    "name": "ProductOptionValueToProductOption",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.ProductOptionValueToProductOption"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteAll",
+                "to_name": "ProductOptionValueToProductOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByIdProductOptionValueId",
+                "to_name": "ProductOptionValueToProductOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByIdProductOptionId",
+                "to_name": "ProductOptionValueToProductOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "IProductOptionValueToProductOptionDao",
+                "to_name": "ProductOptionValueToProductOption",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ProductOptionValueToProductOptionDao.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ProductOptionValueToProductOptionDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByIdProductOptionValueId",
+                "to_name": "ProductOptionValueToProductOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByIdProductOptionId",
+                "to_name": "ProductOptionValueToProductOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteAll",
+                "to_name": "ProductOptionValueToProductOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "ProductOptionValueToProductOptionDao",
+                "to_name": "ProductOptionValueToProductOption",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

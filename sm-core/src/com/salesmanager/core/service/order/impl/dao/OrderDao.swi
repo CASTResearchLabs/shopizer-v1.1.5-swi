@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 11,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "searchOrderByCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderDao.searchOrderByCustomer"
-                  },
-                  {
-                    "name": "searchOrder",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderDao.searchOrder"
-                  },
-                  {
-                    "name": "searchInvoice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderDao.searchInvoice"
-                  },
-                  {
-                    "name": "findInvoicesByCustomerAndStartDate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderDao.findInvoicesByCustomerAndStartDate"
-                  },
-                  {
-                    "name": "findInvoicesByCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderDao.findInvoicesByCustomer"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrdersByCustomer",
+                "to_name": "searchOrderByCustomer",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "OrderDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.order.impl.dao.OrderDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrders",
+                "to_name": "searchOrder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchInvoices",
+                "to_name": "searchInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findInvoicesByCustomerAndStartDate",
+                "to_name": "findInvoicesByCustomerAndStartDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findInvoicesByCustomer",
+                "to_name": "findInvoicesByCustomer",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 18
           }
         ],
         "files_list_comment": "",

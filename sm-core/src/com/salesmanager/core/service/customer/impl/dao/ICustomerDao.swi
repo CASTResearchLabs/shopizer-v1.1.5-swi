@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 14,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findCustomers",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.ICustomerDao.findCustomers"
-                  },
-                  {
-                    "name": "findCustomerbyUserName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.ICustomerDao.findCustomerbyUserName"
-                  },
-                  {
-                    "name": "findCustomerbyEmail",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.ICustomerDao.findCustomerbyEmail"
-                  },
-                  {
-                    "name": "findCustomersHavingCompany",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.ICustomerDao.findCustomersHavingCompany"
-                  },
-                  {
-                    "name": "findByCompanyName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.ICustomerDao.findByCompanyName"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchCustomers",
+                "to_name": "findCustomers",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "ICustomerDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.customer.impl.dao.ICustomerDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findCustomerByUserName",
+                "to_name": "findCustomerbyUserName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findCustomerByEmail",
+                "to_name": "findCustomerbyEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCustomersHavingCompanies",
+                "to_name": "findCustomersHavingCompany",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCustomersByCompanyName",
+                "to_name": "findByCompanyName",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 18
           }
         ],
         "files_list_comment": "",

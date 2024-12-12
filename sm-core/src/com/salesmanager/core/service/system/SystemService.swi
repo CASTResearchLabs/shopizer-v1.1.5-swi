@@ -4,231 +4,165 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCentralGroups",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService.getCentralGroups"
-                  },
-                  {
-                    "name": "getCentralFunctions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService.getCentralFunctions"
-                  },
-                  {
-                    "name": "getCentralRegistrationAssociations",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService.getCentralRegistrationAssociations"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SystemService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/web/ReferenceLoaderServlet.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "logServiceMessage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService.logServiceMessage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "init",
+                "to_name": "getCentralGroups",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SystemService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "init",
+                "to_name": "getCentralFunctions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "init",
+                "to_name": "getCentralRegistrationAssociations",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ReferenceLoaderServlet",
+                "to_name": "SystemService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/LogMerchantUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getIntegrationErrors",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService.getIntegrationErrors"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "log",
+                "to_name": "logServiceMessage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SystemService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LogMerchantUtil",
+                "to_name": "SystemService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/cart/IntegrationAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getNextOrderIdSequence",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService.getNextOrderIdSequence"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayErrors",
+                "to_name": "getIntegrationErrors",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SystemService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "IntegrationAction",
+                "to_name": "SystemService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getNextOrderIdSequence",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService.getNextOrderIdSequence"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "getNextOrderIdSequence",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SystemService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerInvoiceWSImpl",
+                "to_name": "SystemService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getNextOrderIdSequence",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService.getNextOrderIdSequence"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getNextOrderIdSequence",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SystemService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ComitOrderAction",
+                "to_name": "SystemService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ProcessOrderAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getNextOrderIdSequence",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService.getNextOrderIdSequence"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrder",
+                "to_name": "getNextOrderIdSequence",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SystemService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.SystemService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProcessOrderAction",
+                "to_name": "SystemService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createInvoice",
+                "to_name": "getNextOrderIdSequence",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceDetailsAction",
+                "to_name": "SystemService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

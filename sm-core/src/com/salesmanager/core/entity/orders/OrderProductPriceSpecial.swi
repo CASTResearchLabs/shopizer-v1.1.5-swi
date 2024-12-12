@@ -4,181 +4,144 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setOrderProductSpecialDurationDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.setOrderProductSpecialDurationDays"
-                  },
-                  {
-                    "name": "setOrderProductSpecialDurationDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.setOrderProductSpecialDurationDays"
-                  },
-                  {
-                    "name": "setOrderProductSpecialEndDate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.setOrderProductSpecialEndDate"
-                  },
-                  {
-                    "name": "setOrderProductSpecialEndDate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.setOrderProductSpecialEndDate"
-                  },
-                  {
-                    "name": "setOrderProductPriceSpecialStartDate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.setOrderProductPriceSpecialStartDate"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "OrderProductPriceSpecial",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.OrderProductPriceSpecial"
-                  },
-                  {
-                    "name": "OrderProductPriceSpecial",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.OrderProductPriceSpecial"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderProductPriceSpecial",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderProductSpecialDurationDays",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.getOrderProductSpecialDurationDays"
-                  },
-                  {
-                    "name": "getOrderProductSpecialEndDate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.getOrderProductSpecialEndDate"
-                  },
-                  {
-                    "name": "getOrderProductPriceSpecialStartDate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.getOrderProductPriceSpecialStartDate"
-                  },
-                  {
-                    "name": "getOriginalPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.getOriginalPrice"
-                  },
-                  {
-                    "name": "getSpecialNewProductPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial.getSpecialNewProductPrice"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderProductSpecialDurationDays",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderProductPriceSpecial",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "setOrderProductSpecialDurationDays",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderProductSpecialEndDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "setOrderProductSpecialEndDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderProductPriceSpecialStartDate",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 15
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/ProductUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderProductPriceSpecial",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial"
-                  },
-                  {
-                    "name": "OrderProductPriceSpecial",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial"
-                  },
-                  {
-                    "name": "OrderProductPriceSpecial",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initOrderProduct",
+                "to_name": "getOrderProductSpecialDurationDays",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initOrderProduct",
+                "to_name": "getOrderProductSpecialEndDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initOrderProduct",
+                "to_name": "getOrderProductPriceSpecialStartDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initOrderProduct",
+                "to_name": "getOriginalPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initOrderProduct",
+                "to_name": "getSpecialNewProductPrice",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderProductPriceSpecialDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderProductPriceSpecial",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial"
-                  },
-                  {
-                    "name": "OrderProductPriceSpecial",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial"
-                  },
-                  {
-                    "name": "OrderProductPriceSpecial",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.OrderProductPriceSpecial"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteAll",
+                "to_name": "OrderProductPriceSpecial",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "saveOrUpdateAll",
+                "to_name": "OrderProductPriceSpecial",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "IOrderProductPriceSpecialDao",
+                "to_name": "OrderProductPriceSpecial",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderProductPriceSpecialDao.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderProductPriceSpecialDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteAll",
+                "to_name": "OrderProductPriceSpecial",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "saveOrUpdateAll",
+                "to_name": "OrderProductPriceSpecial",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "OrderProductPriceSpecialDao",
+                "to_name": "OrderProductPriceSpecial",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

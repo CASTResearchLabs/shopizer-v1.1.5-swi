@@ -4,45 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "OrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.OrderTotal.OrderTotal"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "processNewInvoice",
+                "to_name": "OrderTotal",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "OrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.OrderTotal"
-                  },
-                  {
-                    "name": "OrderTotal",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.OrderTotal"
-                  },
-                  {
-                    "name": "OrderTotal",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.OrderTotal"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerInvoiceWSImpl",
+                "to_name": "OrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processNewInvoice",
+                "to_name": "OrderTotal",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerInvoiceWSImpl",
+                "to_name": "OrderTotal",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

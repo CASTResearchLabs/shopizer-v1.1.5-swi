@@ -4,257 +4,179 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setLastModified",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setLastModified"
-                  },
-                  {
-                    "name": "setDateAdded",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setDateAdded"
-                  },
-                  {
-                    "name": "setReviewRating",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setReviewRating"
-                  },
-                  {
-                    "name": "setCustomerName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setCustomerName"
-                  },
-                  {
-                    "name": "setCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setCustomerId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "Review",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.Review"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Review",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 10,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setProductName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setProductName"
-                  },
-                  {
-                    "name": "setDescriptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setDescriptions"
-                  },
-                  {
-                    "name": "setDescriptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setDescriptions"
-                  },
-                  {
-                    "name": "setCustomer",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setCustomer"
-                  },
-                  {
-                    "name": "getLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.getLocale"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Review",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setLocale"
-                  },
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review.setLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchProductReviewsByCustomer",
+                "to_name": "setProductName",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Review",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductReview",
+                "to_name": "setDescriptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteProductReview",
+                "to_name": "setDescriptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteProductReview",
+                "to_name": "setCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductReview",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 16
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "setLastModified",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "setDateAdded",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "setReviewRating",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "setCustomerName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "setCustomerId",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 14
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/IReviewDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  },
-                  {
-                    "name": "Review",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.catalog.Review"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByProductId",
+                "to_name": "Review",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByCustomerId",
+                "to_name": "Review",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteAll",
+                "to_name": "Review",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "IReviewDao",
+                "to_name": "Review",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ReviewDao.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ReviewDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByProductId",
+                "to_name": "Review",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByCustomerId",
+                "to_name": "Review",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteAll",
+                "to_name": "Review",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "ReviewDao",
+                "to_name": "Review",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setLocaleToEntityCollection",
+                "to_name": "setLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "LocaleUtil",
+                "to_name": "Review",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

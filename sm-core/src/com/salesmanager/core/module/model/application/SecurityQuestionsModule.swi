@@ -4,86 +4,67 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/profile/ProfileAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getQuestionText",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.SecurityQuestionsModule.getQuestionText"
-                  },
-                  {
-                    "name": "getQuestionText",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.SecurityQuestionsModule.getQuestionText"
-                  },
-                  {
-                    "name": "getSecurityQuestions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.SecurityQuestionsModule.getSecurityQuestions"
-                  },
-                  {
-                    "name": "getSecurityQuestions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.SecurityQuestionsModule.getSecurityQuestions"
-                  },
-                  {
-                    "name": "getSecurityQuestions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.SecurityQuestionsModule.getSecurityQuestions"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "answerQuestions",
+                "to_name": "getQuestionText",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "SecurityQuestionsModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.SecurityQuestionsModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayResetPassword",
+                "to_name": "getQuestionText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getSecurityQuestions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProfile",
+                "to_name": "getSecurityQuestions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "answerQuestions",
+                "to_name": "getSecurityQuestions",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/profile/ProfileAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getSecurityQuestions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.SecurityQuestionsModule.getSecurityQuestions"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getSecurityQuestions",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "SecurityQuestionsModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.application.SecurityQuestionsModule"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "DashboardAction",
+                "to_name": "SecurityQuestionsModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

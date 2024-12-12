@@ -4,40 +4,32 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByMerchantIdAndOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.dao.IMerchantPaymentGatewayTrxDao.findByMerchantIdAndOrderId"
-                  },
-                  {
-                    "name": "persist",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.dao.IMerchantPaymentGatewayTrxDao.persist"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findMerchantPaymentGatewayTrxByMerchantIdAndOrderId",
+                "to_name": "findByMerchantIdAndOrderId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "IMerchantPaymentGatewayTrxDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.impl.dao.IMerchantPaymentGatewayTrxDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantPaymentGatewayTrx",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "PaymentService",
+                "to_name": "IMerchantPaymentGatewayTrxDao",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

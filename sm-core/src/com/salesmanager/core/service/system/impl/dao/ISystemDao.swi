@@ -4,35 +4,25 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/system/SystemService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "incrementOrderIdCounter",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.impl.dao.ISystemDao.incrementOrderIdCounter"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getNextOrderIdSequence",
+                "to_name": "incrementOrderIdCounter",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "ISystemDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.system.impl.dao.ISystemDao"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "SystemService",
+                "to_name": "ISystemDao",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/system/SystemService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

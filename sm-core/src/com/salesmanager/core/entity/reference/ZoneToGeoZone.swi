@@ -4,156 +4,123 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setGeoZoneId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone.setGeoZoneId"
-                  },
-                  {
-                    "name": "getGeoZoneId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone.getGeoZoneId"
-                  },
-                  {
-                    "name": "setZoneId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone.setZoneId"
-                  },
-                  {
-                    "name": "getZoneId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone.getZoneId"
-                  },
-                  {
-                    "name": "setZoneCountryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone.setZoneCountryId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ZoneToGeoZone",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone.ZoneToGeoZone"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ZoneToGeoZone",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getZoneId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone.getZoneId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateTaxRate",
+                "to_name": "setGeoZoneId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ZoneToGeoZone",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateTax",
+                "to_name": "getGeoZoneId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateTaxRate",
+                "to_name": "setZoneId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateTaxRate",
+                "to_name": "getZoneId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateTaxRate",
+                "to_name": "setZoneCountryId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/tax/CanadianTaxModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ZoneToGeoZone",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone"
-                  },
-                  {
-                    "name": "ZoneToGeoZone",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone"
-                  },
-                  {
-                    "name": "ZoneToGeoZone",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/reference/impl/dao/IZoneToGeoZoneDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ZoneToGeoZone",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone"
-                  },
-                  {
-                    "name": "ZoneToGeoZone",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone"
-                  },
-                  {
-                    "name": "ZoneToGeoZone",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.reference.ZoneToGeoZone"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByMerchantId",
+                "to_name": "ZoneToGeoZone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteAll",
+                "to_name": "ZoneToGeoZone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "IZoneToGeoZoneDao",
+                "to_name": "ZoneToGeoZone",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/reference/impl/dao/ZoneToGeoZoneDao.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/reference/impl/dao/ZoneToGeoZoneDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByMerchantId",
+                "to_name": "ZoneToGeoZone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteAll",
+                "to_name": "ZoneToGeoZone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "ZoneToGeoZoneDao",
+                "to_name": "ZoneToGeoZone",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/tax/CanadianTaxModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "adjustTaxRate",
+                "to_name": "getZoneId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CanadianTaxModule",
+                "to_name": "ZoneToGeoZone",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

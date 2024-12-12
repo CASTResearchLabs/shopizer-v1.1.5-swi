@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "deleteAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.IDynamicLabelDescriptionDao.deleteAll"
-                  },
-                  {
-                    "name": "deleteAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.IDynamicLabelDescriptionDao.deleteAll"
-                  },
-                  {
-                    "name": "deleteAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.IDynamicLabelDescriptionDao.deleteAll"
-                  },
-                  {
-                    "name": "deleteAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.IDynamicLabelDescriptionDao.deleteAll"
-                  },
-                  {
-                    "name": "saveOrUpdateAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.IDynamicLabelDescriptionDao.saveOrUpdateAll"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteAllDynamicLabel",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "IDynamicLabelDescriptionDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.dao.IDynamicLabelDescriptionDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteDynamicLabelDescriptions",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteDynamicLabel",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateDynamicLabel",
+                "to_name": "saveOrUpdateAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ReferenceService",
+                "to_name": "IDynamicLabelDescriptionDao",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           }
         ],
         "files_list_comment": "",

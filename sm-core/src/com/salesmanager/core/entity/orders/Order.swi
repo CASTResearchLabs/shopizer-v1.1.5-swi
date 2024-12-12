@@ -4,2255 +4,1782 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 65,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderHistory"
-                  },
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderHistory"
-                  },
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  },
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  },
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.Order"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 29,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setLocale"
-                  },
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderHistory"
-                  },
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  },
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  },
-                  {
-                    "name": "getOrderProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderProducts"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteOrder",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareOrderListReport",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteOrder",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 140
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 28,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getShippingModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getShippingModuleCode"
-                  },
-                  {
-                    "name": "setCustomerEmailAddress",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setCustomerEmailAddress"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/orders/EditCustomerAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 26,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderHistory"
-                  },
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderHistory"
-                  },
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  },
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  },
-                  {
-                    "name": "getOrderProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderProducts"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/order/impl/OrderImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 23,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  },
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "setOrderTax",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setOrderTax"
-                  },
-                  {
-                    "name": "setTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setTotal"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderProblemEmail",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderProblemEmail",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getOrderProducts",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 56
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 16,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "setPaymentModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setPaymentModuleCode"
-                  },
-                  {
-                    "name": "setPaymentMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setPaymentMethod"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceDetails",
+                "to_name": "setLocale",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceDetails",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processInvoicePayment",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceDetails",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceDetails",
+                "to_name": "getOrderProducts",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/CreditCardGatewayTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 50
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/orders/EditCustomerAction.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 11,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCurrency"
-                  },
-                  {
-                    "name": "getCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCurrency"
-                  },
-                  {
-                    "name": "getCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCurrency"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewShippingCustomer",
+                "to_name": "getShippingModuleCode",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editOrderEmailAddress",
+                "to_name": "setCustomerEmailAddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editBilling",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewBillingCustomer",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editShipping",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/BeanStreamTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 42
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 11,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setLocale"
-                  },
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderHistory"
-                  },
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  },
-                  {
-                    "name": "getOrderProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderProducts"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/invoice/InvoiceAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 10,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderHistory"
-                  },
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  },
-                  {
-                    "name": "getOrderProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderProducts"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCurrency"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 10,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PaypalTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCurrency"
-                  },
-                  {
-                    "name": "getCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCustomerId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingDetails",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PsigateTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCustomerId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getPaymentModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getPaymentModuleCode"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initTransaction",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/AuthorizeNetTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderHistory"
-                  },
-                  {
-                    "name": "getOrderTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderTotal"
-                  },
-                  {
-                    "name": "getOrderProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderProducts"
-                  },
-                  {
-                    "name": "getOrderStatus",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderStatus"
-                  },
-                  {
-                    "name": "getCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCustomerId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/orders/EditOrderDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setPaymentModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setPaymentModuleCode"
-                  },
-                  {
-                    "name": "setPaymentMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setPaymentMethod"
-                  },
-                  {
-                    "name": "setCcOwner",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setCcOwner"
-                  },
-                  {
-                    "name": "setCcNumber",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setCcNumber"
-                  },
-                  {
-                    "name": "setCcExpires",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setCcExpires"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "captureTransaction",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessPayment.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 31
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 7,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getDeliveryCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getDeliveryCountry"
-                  },
-                  {
-                    "name": "getDeliveryState",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getDeliveryState"
-                  },
-                  {
-                    "name": "getDeliveryPostcode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getDeliveryPostcode"
-                  },
-                  {
-                    "name": "getDeliveryCity",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getDeliveryCity"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "setOrderTax",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "setTotal",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/orders/AddressValidationAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 25
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/CreditCardGatewayTransactionImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 7,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "setPaymentModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setPaymentModuleCode"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processRefund",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processCapture",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "setPaymentModuleCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "setPaymentMethod",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 23
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/BeanStreamTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendTransaction",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "makeTransaction",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "captureTransaction",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 20
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 7,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCustomerId"
-                  },
-                  {
-                    "name": "getCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCustomerId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processPaymentTransaction",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateOffsystemPendingOrder",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "captureTransaction",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processPaymentTransaction",
+                "to_name": "setPaymentModuleCode",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 18
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/orders/EditOrderDetailsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareOrderDetails",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareOrderDetails",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareOrderDetails",
+                "to_name": "getOrderProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareOrderDetails",
+                "to_name": "getOrderStatus",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "generateDownload",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 17
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/AuthorizeNetTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getPaymentModuleCode",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 15
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PsigateTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 14
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/MonerisTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "setPaymentModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setPaymentModuleCode"
-                  },
-                  {
-                    "name": "setPaymentMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setPaymentMethod"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "setOrderProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setOrderProducts"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "makeTransaction",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitInvoiceAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 14
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/invoice/InvoiceAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setOrderTax",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setOrderTax"
-                  },
-                  {
-                    "name": "setTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setTotal"
-                  },
-                  {
-                    "name": "getCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCurrency"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "setRecursiveAmount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setRecursiveAmount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "setLocale",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoice",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "getOrderProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/AjaxShoppingCartUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 13
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setTotal"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "setRecursiveAmount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setRecursiveAmount"
-                  },
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setLocale"
-                  },
-                  {
-                    "name": "setCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setCurrency"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "getOrderTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "getOrderProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessPayment.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setMerchantId"
-                  },
-                  {
-                    "name": "setDatePurchased",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setDatePurchased"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "setPaymentModuleCode",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "setPaymentMethod",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "setCcOwner",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "setCcNumber",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "setCcExpires",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setMerchantId"
-                  },
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setMerchantId"
-                  },
-                  {
-                    "name": "setDatePurchased",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setDatePurchased"
-                  },
-                  {
-                    "name": "setDatePurchased",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setDatePurchased"
-                  },
-                  {
-                    "name": "setCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setCurrency"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.Order"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderHistory"
-                  },
-                  {
-                    "name": "setPaymentModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setPaymentModuleCode"
-                  },
-                  {
-                    "name": "setPaymentMethod",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setPaymentMethod"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/DisplayInvoiceSummaryAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setMerchantId"
-                  },
-                  {
-                    "name": "setOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setOrderId"
-                  },
-                  {
-                    "name": "setCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setCurrency"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ProcessOrderAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getPaymentModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getPaymentModuleCode"
-                  },
-                  {
-                    "name": "getPaymentModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getPaymentModuleCode"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "setDatePurchased",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setOrderTax",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setOrderTax"
-                  },
-                  {
-                    "name": "setTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setTotal"
-                  },
-                  {
-                    "name": "getCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCurrency"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "setDatePurchased",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "setCurrency",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/cart/AddProduct.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/orders/AddressValidationAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCurrency",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCurrency"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getTotal"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAddressMatch",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAddressMatch",
+                "to_name": "getDeliveryCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAddressMatch",
+                "to_name": "getDeliveryState",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAddressMatch",
+                "to_name": "getDeliveryPostcode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAddressMatch",
+                "to_name": "getDeliveryCity",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/orders/TransactionDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setPaymentModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setPaymentModuleCode"
-                  },
-                  {
-                    "name": "getChannel",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getChannel"
-                  },
-                  {
-                    "name": "getPaymentModuleCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getPaymentModuleCode"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/PayPalExpressCheckoutAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setTotal"
-                  },
-                  {
-                    "name": "getChannel",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getChannel"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayTransactions",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getCustomerId"
-                  },
-                  {
-                    "name": "getTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getTotal"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/shipping/EditShippingMethods.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "setOrderStatus",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setOrderStatus"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareOrderDetails",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getTotal",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/MoneyOrderTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "setOrderStatus",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setOrderStatus"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderTotal",
+                "to_name": "setTotal",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderTotal",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderTotal",
+                "to_name": "setRecursiveAmount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderTotal",
+                "to_name": "setLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderTotal",
+                "to_name": "setCurrency",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/FreeTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getBillingCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getBillingCountry"
-                  },
-                  {
-                    "name": "getBillingCountry",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getBillingCountry"
-                  },
-                  {
-                    "name": "getBillingCity",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getBillingCity"
-                  },
-                  {
-                    "name": "getBillingCity",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getBillingCity"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTransactionType",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTransactions",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTransactionType",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTransactionType",
+                "to_name": "getPaymentModuleCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTransactions",
+                "to_name": "getPaymentModuleCode",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitInvoiceAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setLocale"
-                  },
-                  {
-                    "name": "setLocale",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setLocale"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "setPaymentModuleCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "setPaymentMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "setOrderProducts",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/AjaxShoppingCartUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderProducts",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderProducts"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "setOrderTax",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "setTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "setRecursiveAmount",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/files/FilesAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "setDatePurchased",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "addItem",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "Order",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  },
-                  {
-                    "name": "getOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getInvoiceUrl",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/SendEmail.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderDownloadFileUrl",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/OrderProductDownloadTag.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getInvoiceUrl",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/SaveOrder.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getMerchantId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderDownloadFileUrl",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FileUtil",
+                "to_name": "Order",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessOrder.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setCustomerId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/customer/GetCustomer.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTotal",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getTotal"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/CodTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getDatePurchased",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getDatePurchased"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/prices/OneTimePriceModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getDatePurchased",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getDatePurchased"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/prices/MonthlyPriceModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCustomerId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.setCustomerId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessCustomer.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getOrderHistory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order.getOrderHistory"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InvoicePaymentAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findInvoicesByCustomerAndStartDate",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findOrdersByMerchant",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findInvoicesByCustomer",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findOrdersByCustomer",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Interface",
+                "to_type": "Java Class",
+                "from_name": "IOrderDao",
+                "to_name": "Order",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/entity/orders/SearchOrderResponse.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 5
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderReport.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderDao.java",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  },
-                  {
-                    "name": "Order",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.Order"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findInvoicesByCustomerAndStartDate",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findInvoicesByCustomer",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findOrdersByMerchant",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findOrdersByCustomer",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "OrderDao",
+                "to_name": "Order",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/reports/invoice/InvoiceInformationFactory.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showOrderSummary",
+                "to_name": "getBillingCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkSales",
+                "to_name": "getBillingCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showOrderSummary",
+                "to_name": "getBillingCity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkSales",
+                "to_name": "getBillingCity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "DashboardAction",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/PayPalExpressCheckoutAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "setPaymentModuleCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getChannel",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getPaymentModuleCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/DisplayInvoiceSummaryAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrderSummaryAction",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrderSummaryAction",
+                "to_name": "setPaymentModuleCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrderSummaryAction",
+                "to_name": "setPaymentMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DisplayInvoiceSummaryAction",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ProcessOrderAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrder",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrder",
+                "to_name": "setOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processOrder",
+                "to_name": "setCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProcessOrderAction",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/cart/AddProduct.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "setOrderTax",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "setTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AddProduct",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderReport.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getOrders",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setOrders",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "orders",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderReport",
+                "to_name": "Order",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/entity/orders/SearchOrderResponse.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setOrders",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "orders",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SearchOrderResponse",
+                "to_name": "Order",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setLocaleToEntityCollection",
+                "to_name": "setLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "LocaleUtil",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/files/FilesAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewFiles",
+                "to_name": "getOrderProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewFiles",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "FilesAction",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initCheckout",
+                "to_name": "setTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initCheckout",
+                "to_name": "getChannel",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InitCheckoutAction",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/shipping/EditShippingMethods.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShippingMethods",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShippingMethods",
+                "to_name": "getTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EditShippingMethods",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/MoneyOrderTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "setOrderStatus",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MoneyOrderTransactionImpl",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/FreeTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "setOrderStatus",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FreeTransactionImpl",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/SendEmail.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SendEmail",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/OrderProductDownloadTag.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doStartTag",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderProductDownloadTag",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/SaveOrder.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SaveOrder",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessOrder.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProcessOrder",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/customer/GetCustomer.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCustomerByCustomerId",
+                "to_name": "setCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "GetCustomer",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/reports/invoice/InvoiceInformationFactory.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "orders",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InvoiceInformationFactory",
+                "to_name": "Order",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/CodTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "getTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CodTransactionImpl",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/prices/OneTimePriceModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderPrice",
+                "to_name": "getDatePurchased",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OneTimePriceModule",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/prices/MonthlyPriceModule.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderPrice",
+                "to_name": "getDatePurchased",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MonthlyPriceModule",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessCustomer.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "setCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProcessCustomer",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/InvoicePaymentAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "getOrderHistory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "InvoicePaymentAction",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

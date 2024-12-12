@@ -4,40 +4,32 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "processRefund",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.integration.CreditCardPaymentModule.processRefund"
-                  },
-                  {
-                    "name": "processCapture",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.integration.CreditCardPaymentModule.processCapture"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "processRefund",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "CreditCardPaymentModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.model.integration.CreditCardPaymentModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "captureTransaction",
+                "to_name": "processCapture",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "PaymentService",
+                "to_name": "CreditCardPaymentModule",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

@@ -1,0 +1,90 @@
+{
+  "dependency facts about source code file [sm-central/src/com/salesmanager/central/shipping/EditShippingMethods.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-central/src/com/salesmanager/central/shipping/EditShippingMethods.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/WebContent/common/js/cart.js",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "invoice/showshippingmethods.action",
+                "to_name": "/showshippingmethods",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "Struts Operation",
+                "from_name": "setCalculate",
+                "to_name": "/showshippingmethods",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript Files",
+                "to_type": "Struts Operation",
+                "from_name": "cart.js",
+                "to_name": "/showshippingmethods",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/WebContent/common/js/cart.js",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "invoice/showshippingmethods.action",
+                "to_name": "/showshippingmethods",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript Files",
+                "to_type": "Struts Operation",
+                "from_name": "cart.js",
+                "to_name": "/showshippingmethods",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "Struts Operation",
+                "from_name": "setCalculate",
+                "to_name": "/showshippingmethods",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-invoice.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "showshippingmethods",
+                "to_name": "displayShippingMethods",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "showshippingmethods",
+                "to_name": "EditShippingMethods",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ],
+    "Misc. Information": "1. all detail lists are truncated to show the first [15] entries only.\n2. all nested detail lists are truncated to show the first [5] entries only."
+  }
+}

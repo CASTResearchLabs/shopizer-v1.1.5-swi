@@ -4,191 +4,130 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 9,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setLikesPage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser.setLikesPage"
-                  },
-                  {
-                    "name": "setApplicationKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser.setApplicationKey"
-                  },
-                  {
-                    "name": "setAuthorized",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser.setAuthorized"
-                  },
-                  {
-                    "name": "setExpires",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser.setExpires"
-                  },
-                  {
-                    "name": "setOauth_token",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser.setOauth_token"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "FacebookUser",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser.FacebookUser"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FacebookUser",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/util/www/integration/fb/FacebookIntegrationFactory.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isLikesPage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser.isLikesPage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFacebookUser",
+                "to_name": "setLikesPage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FacebookUser",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFacebookUser",
+                "to_name": "setApplicationKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFacebookUser",
+                "to_name": "setAuthorized",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFacebookUser",
+                "to_name": "setExpires",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFacebookUser",
+                "to_name": "setOauth_token",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 11
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbFanContent.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isLikesPage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser.isLikesPage"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "isLikesPage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FacebookUser",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbFanContent",
+                "to_name": "FacebookUser",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/integration/modules/FbAnonymousContent.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isAuthorized",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser.isAuthorized"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "isLikesPage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FacebookUser",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbAnonymousContent",
+                "to_name": "FacebookUser",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/integration/page/FbPageAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isAuthorized",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser.isAuthorized"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "isAuthorized",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "FacebookUser",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.www.integration.fb.FacebookUser"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbPageAction",
+                "to_name": "FacebookUser",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/integration/FbPageInterceptor.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/integration/FbPageInterceptor.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "baseIntercept",
+                "to_name": "isAuthorized",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "FbPageInterceptor",
+                "to_name": "FacebookUser",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

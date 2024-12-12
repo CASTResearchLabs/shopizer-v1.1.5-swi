@@ -4,45 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/CountryUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getZoneCodeByName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.ReferenceServiceImpl.getZoneCodeByName"
-                  },
-                  {
-                    "name": "getZoneCodeByCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.ReferenceServiceImpl.getZoneCodeByCode"
-                  },
-                  {
-                    "name": "getCountryByName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.ReferenceServiceImpl.getCountryByName"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getZoneCodeByName",
+                "to_name": "getZoneCodeByName",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ReferenceServiceImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.reference.impl.ReferenceServiceImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getZoneCodeByCode",
+                "to_name": "getZoneCodeByCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountryByName",
+                "to_name": "getCountryByName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountryUtil",
+                "to_name": "ReferenceServiceImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/CountryUtil.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

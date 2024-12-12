@@ -4,171 +4,130 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "displayProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction.displayProduct"
-                  },
-                  {
-                    "name": "reviewsForm",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction.reviewsForm"
-                  },
-                  {
-                    "name": "displayReviews",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction.displayReviews"
-                  },
-                  {
-                    "name": "createReview",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction.createReview"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "*",
+                "to_name": "displayProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "ProductDetailsAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction"
-                  },
-                  {
-                    "name": "ProductDetailsAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction"
-                  },
-                  {
-                    "name": "ProductDetailsAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction"
-                  },
-                  {
-                    "name": "ProductDetailsAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "reviewsForm",
+                "to_name": "reviewsForm",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "reviews",
+                "to_name": "displayReviews",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "createReview",
+                "to_name": "createReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "createReview",
+                "to_name": "ProductDetailsAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/createReview",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction/CAST_Struts_Operation/createReview"
-                  },
-                  {
-                    "name": "/createReview",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction/CAST_Struts_Operation/createReview"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/WebContent/components/catalog/reviewsForm.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/reviewsForm",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction/CAST_Struts_Operation/reviewsForm"
-                  },
-                  {
-                    "name": "/reviewsForm",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction/CAST_Struts_Operation/reviewsForm"
-                  },
-                  {
-                    "name": "/reviewsForm",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction/CAST_Struts_Operation/reviewsForm"
-                  },
-                  {
-                    "name": "/reviewsForm",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction/CAST_Struts_Operation/reviewsForm"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/components/catalog/reviews.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/reviews",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction/CAST_Struts_Operation/reviews"
-                  },
-                  {
-                    "name": "/reviews",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction/CAST_Struts_Operation/reviews"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "product/reviewsForm.action",
+                "to_name": "/reviewsForm",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "reviews.jsp",
+                "to_name": "/reviewsForm",
+                "calling_type": "GET"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/WebContent/components/catalog/reviewsForm.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "createReview",
+                "to_name": "/createReview",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "reviewsForm.jsp",
+                "to_name": "/createReview",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/WebContent/customer/reviews.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/reviews",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction/CAST_Struts_Operation/reviews"
-                  },
-                  {
-                    "name": "/reviews",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.catalog.product.ProductDetailsAction/CAST_Struts_Operation/reviews"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "reviews",
+                "to_name": "/reviews",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "reviews.jsp",
+                "to_name": "/reviews",
+                "calling_type": "POST"
               }
             ],
-            "from_file": "sm-shop/WebContent/customer/profileMenu.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/customer/profileMenu.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "profile/reviews.action",
+                "to_name": "/reviews",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "profileMenu.jsp",
+                "to_name": "/reviews",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

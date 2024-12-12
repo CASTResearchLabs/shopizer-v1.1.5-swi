@@ -4,130 +4,81 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCroppedImage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.getCroppedImage"
-                  },
-                  {
-                    "name": "initCropImage",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.initCropImage"
-                  },
-                  {
-                    "name": "uploadCropedProductImages",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.uploadCropedProductImages"
-                  },
-                  {
-                    "name": "uploadProductImages",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.uploadProductImages"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cropProductImage",
+                "to_name": "getCroppedImage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ProductImageUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.ProductImageUtil"
-                  },
-                  {
-                    "name": "ProductImageUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.ProductImageUtil"
-                  },
-                  {
-                    "name": "ProductImageUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.ProductImageUtil"
-                  },
-                  {
-                    "name": "ProductImageUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.ProductImageUtil"
-                  },
-                  {
-                    "name": "ProductImageUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.ProductImageUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showCropProductImage",
+                "to_name": "initCropImage",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Rich Client",
-                "calling_elements": [
-                  {
-                    "name": "ProductImageUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cropProductImage",
+                "to_name": "uploadCropedProductImages",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProduct",
+                "to_name": "uploadProductImages",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "deleteProduct",
+                "to_name": "ProductImageUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditImagesAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "uploadProductImages",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.uploadProductImages"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveImages",
+                "to_name": "uploadProductImages",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ProductImageUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.ProductImageUtil"
-                  },
-                  {
-                    "name": "ProductImageUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil.ProductImageUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "saveImages",
+                "to_name": "ProductImageUtil",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Rich Client",
-                "calling_elements": [
-                  {
-                    "name": "ProductImageUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductImageUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "deleteImage",
+                "to_name": "ProductImageUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Rich Client",
+                "from_name": "EditImagesAction",
+                "to_name": "ProductImageUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditImagesAction.java",
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

@@ -4,45 +4,39 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "processRefund",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CreditCardGatewayTransactionImpl.processRefund"
-                  },
-                  {
-                    "name": "processCapture",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CreditCardGatewayTransactionImpl.processCapture"
-                  },
-                  {
-                    "name": "processTransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CreditCardGatewayTransactionImpl.processTransaction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "processRefund",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CreditCardGatewayTransactionImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CreditCardGatewayTransactionImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "captureTransaction",
+                "to_name": "processCapture",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processPaymentTransaction",
+                "to_name": "processTransaction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentService",
+                "to_name": "CreditCardGatewayTransactionImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

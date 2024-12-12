@@ -4,492 +4,382 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  },
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  },
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  },
-                  {
-                    "name": "hasDiscount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.hasDiscount"
-                  },
-                  {
-                    "name": "getDiscountEndDate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.getDiscountEndDate"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/prices/OneTimePriceModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  },
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  },
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  },
-                  {
-                    "name": "hasDiscount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.hasDiscount"
-                  },
-                  {
-                    "name": "getDiscountEndDate",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.getDiscountEndDate"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderPrice",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getHtmlPriceFormated",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPrice",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getHtmlPriceFormated",
+                "to_name": "hasDiscount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getHtmlPriceFormated",
+                "to_name": "getDiscountEndDate",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/prices/MonthlyPriceModule.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  },
-                  {
-                    "name": "determinePriceWithAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePriceWithAttributes"
-                  },
-                  {
-                    "name": "formatHTMLProductPriceWithAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.formatHTMLProductPriceWithAttributes"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderPrice",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/common/AjaxCatalogUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  },
-                  {
-                    "name": "formatHTMLProductPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.formatHTMLProductPrice"
-                  },
-                  {
-                    "name": "formatHTMLProductPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.formatHTMLProductPrice"
-                  },
-                  {
-                    "name": "hasDiscount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.hasDiscount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getHtmlPriceFormated",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPrice",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getHtmlPriceFormated",
+                "to_name": "hasDiscount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getHtmlPriceFormated",
+                "to_name": "getDiscountEndDate",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  },
-                  {
-                    "name": "determinePriceWithAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePriceWithAttributes"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPrice",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFormatHTMLShortProductPrice",
+                "to_name": "formatHTMLProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFormatHTMLProductPrice",
+                "to_name": "formatHTMLProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isDiscount",
+                "to_name": "hasDiscount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "Product",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/common/AjaxCatalogUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToCart",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToCart",
+                "to_name": "determinePriceWithAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setPrice",
+                "to_name": "formatHTMLProductPriceWithAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AjaxCatalogUtil",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/MiniShoppingCartSerializationUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  },
-                  {
-                    "name": "hasDiscount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.hasDiscount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deserializeJSON",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deserializeJSON",
+                "to_name": "determinePriceWithAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MiniShoppingCartSerializationUtil",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/ProductPriceSpecialTag.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "formatHTMLProductPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.formatHTMLProductPrice"
-                  },
-                  {
-                    "name": "formatHTMLProductPriceWithAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.formatHTMLProductPriceWithAttributes"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doStartTag",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doStartTag",
+                "to_name": "hasDiscount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductPriceSpecialTag",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductPreviewAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "formatHTMLProductPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.formatHTMLProductPrice"
-                  },
-                  {
-                    "name": "formatHTMLProductPriceWithAttributes",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.formatHTMLProductPriceWithAttributes"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "formatHTMLProductPrice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "formatHTMLProductPriceWithAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductPreviewAction",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/product/ProductDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "determinePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePrice"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProduct",
+                "to_name": "formatHTMLProductPrice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProduct",
+                "to_name": "formatHTMLProductPriceWithAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProductDetailsAction",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/ProductFinalPriceTag.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "initOrderProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.initOrderProduct"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doStartTag",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductFinalPriceTag",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/invoice/InvoiceAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "initOrderProduct",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.initOrderProduct"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "initOrderProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceAction",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "determinePriceNoDiscount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePriceNoDiscount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoiceDetails",
+                "to_name": "initOrderProduct",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceDetailsAction",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/CheckoutUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "determinePriceNoDiscount",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil.determinePriceNoDiscount"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createOrderProduct",
+                "to_name": "determinePriceNoDiscount",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ProductUtil",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.util.ProductUtil"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CheckoutUtil",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/ProductPriceTag.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/ProductPriceTag.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doStartTag",
+                "to_name": "determinePriceNoDiscount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductPriceTag",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

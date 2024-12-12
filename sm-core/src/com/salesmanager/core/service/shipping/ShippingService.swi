@@ -4,293 +4,207 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getShippingModulesNamesConfigured",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.getShippingModulesNamesConfigured"
-                  },
-                  {
-                    "name": "isShippingInternational",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.isShippingInternational"
-                  },
-                  {
-                    "name": "isShippingInternational",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.isShippingInternational"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setShippingTaxClass",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.setShippingTaxClass"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkConfiguration",
+                "to_name": "getShippingModulesNamesConfigured",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showOrderSummary",
+                "to_name": "isShippingInternational",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkSales",
+                "to_name": "isShippingInternational",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "DashboardAction",
+                "to_name": "ShippingService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "updateShippingZonesAndCostsForDomestic",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.updateShippingZonesAndCostsForDomestic"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteTaxClass",
+                "to_name": "setShippingTaxClass",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TaxService",
+                "to_name": "ShippingService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingZoneAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getShippingQuote",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.getShippingQuote"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateShippingZonesAndCostsForDomestic",
+                "to_name": "updateShippingZonesAndCostsForDomestic",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingZoneAction",
+                "to_name": "ShippingService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getShippingQuote",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.getShippingQuote"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "getShippingQuote",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerInvoiceWSImpl",
+                "to_name": "ShippingService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/shipping/EditShippingMethods.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getShippingQuote",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.getShippingQuote"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShippingMethods",
+                "to_name": "getShippingQuote",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EditShippingMethods",
+                "to_name": "ShippingService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ShippingAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getRealTimeQuoteShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.getRealTimeQuoteShippingService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShipping",
+                "to_name": "getShippingQuote",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingAction",
+                "to_name": "ShippingService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexRequestQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getRealTimeQuoteShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.getRealTimeQuoteShippingService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getQuote",
+                "to_name": "getRealTimeQuoteShippingService",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexRequestQuotesImpl",
+                "to_name": "ShippingService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexQuotesStubImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getRealTimeQuoteShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService.getRealTimeQuoteShippingService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getQuote",
+                "to_name": "getRealTimeQuoteShippingService",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShippingService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.shipping.ShippingService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexQuotesStubImpl",
+                "to_name": "ShippingService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/CanadaPostQuotesImpl.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/CanadaPostQuotesImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getRealTimeQuoteShippingService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CanadaPostQuotesImpl",
+                "to_name": "ShippingService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

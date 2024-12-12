@@ -4,208 +4,130 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 10,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getReturnUrl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.getReturnUrl"
-                  },
-                  {
-                    "name": "setCountryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.setCountryId"
-                  },
-                  {
-                    "name": "getCountryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.getCountryId"
-                  },
-                  {
-                    "name": "setReturnUrl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.setReturnUrl"
-                  },
-                  {
-                    "name": "getQty",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.getQty"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CheckoutParams",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.CheckoutParams"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CheckoutParams",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams"
-                  },
-                  {
-                    "name": "CheckoutParams",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 8,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getReturnUrl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.getReturnUrl"
-                  },
-                  {
-                    "name": "getAttributeValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.getAttributeValue"
-                  },
-                  {
-                    "name": "setCountryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.setCountryId"
-                  },
-                  {
-                    "name": "getQty",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.getQty"
-                  },
-                  {
-                    "name": "getAttributeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.getAttributeId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "getReturnUrl",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CheckoutParams",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.CheckoutParams"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddSubscription",
+                "to_name": "setCountryId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CheckoutParams",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams"
-                  },
-                  {
-                    "name": "CheckoutParams",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams"
-                  },
-                  {
-                    "name": "CheckoutParams",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getCountryId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "setReturnUrl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "getQty",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 17
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setAttributeValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.setAttributeValue"
-                  },
-                  {
-                    "name": "getAttributeValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.getAttributeValue"
-                  },
-                  {
-                    "name": "setQty",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.setQty"
-                  },
-                  {
-                    "name": "setAttributeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.setAttributeId"
-                  },
-                  {
-                    "name": "getAttributeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.getAttributeId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "getReturnUrl",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CheckoutParams",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams.CheckoutParams"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "getAttributeValue",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CheckoutParams",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.CheckoutParams"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddItem",
+                "to_name": "setCountryId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "getQty",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "getAttributeId",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 16
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/checkout/cart/StoreShoppingCartAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "setAttributeValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "getAttributeValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "setQty",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "setAttributeId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "getAttributeId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
           }
         ],
         "files_list_comment": "",

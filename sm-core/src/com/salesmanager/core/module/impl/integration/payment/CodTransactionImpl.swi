@@ -4,117 +4,88 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "processTransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CodTransactionImpl.processTransaction"
-                  },
-                  {
-                    "name": "initTransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CodTransactionImpl.initTransaction"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CodTransactionImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CodTransactionImpl"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CodTransactionImpl.getConfiguration"
-                  },
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CodTransactionImpl.getConfiguration"
-                  },
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CodTransactionImpl.getConfiguration"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CodTransactionImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CodTransactionImpl"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/MerchantConfigurationImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "retreiveTransactions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CodTransactionImpl.retreiveTransactions"
-                  },
-                  {
-                    "name": "retreiveTransactions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CodTransactionImpl.retreiveTransactions"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVOByModule",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CodTransactionImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.payment.CodTransactionImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVO",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantConfigurationImpl",
+                "to_name": "CodTransactionImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionImpl.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTransactionType",
+                "to_name": "retreiveTransactions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTransactions",
+                "to_name": "retreiveTransactions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TransactionImpl",
+                "to_name": "CodTransactionImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processPaymentTransaction",
+                "to_name": "processTransaction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preInitializePayment",
+                "to_name": "initTransaction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentService",
+                "to_name": "CodTransactionImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

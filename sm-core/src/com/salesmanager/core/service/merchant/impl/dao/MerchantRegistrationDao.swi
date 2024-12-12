@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantRegistrationDao.findByMerchantId"
-                  },
-                  {
-                    "name": "findByMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantRegistrationDao.findByMerchantId"
-                  },
-                  {
-                    "name": "findByMerchantId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantRegistrationDao.findByMerchantId"
-                  },
-                  {
-                    "name": "delete",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantRegistrationDao.delete"
-                  },
-                  {
-                    "name": "persist",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantRegistrationDao.persist"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getMerchantRegistration",
+                "to_name": "findByMerchantId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class DAO",
-                "calling_elements": [
-                  {
-                    "name": "MerchantRegistrationDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.MerchantRegistrationDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "findByMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "findByMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "delete",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "persist",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           }
         ],
         "files_list_comment": "",

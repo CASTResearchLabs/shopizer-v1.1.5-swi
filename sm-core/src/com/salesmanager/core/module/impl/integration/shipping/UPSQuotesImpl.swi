@@ -4,139 +4,102 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getErrorCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSParsedElements.getErrorCode"
-                  },
-                  {
-                    "name": "getError",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSParsedElements.getError"
-                  },
-                  {
-                    "name": "getStatusCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSParsedElements.getStatusCode"
-                  },
-                  {
-                    "name": "getOptions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSParsedElements.getOptions"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "UPSParsedElements",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSParsedElements.UPSParsedElements"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "UPSParsedElements",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSParsedElements"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/USPSQuotesImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getShippingQuote",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSQuotesImpl.getShippingQuote"
-                  },
-                  {
-                    "name": "getShippingMethodDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSQuotesImpl.getShippingMethodDescription"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getErrorCode",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "UPSQuotesImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSQuotesImpl"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSQuotesImpl.getConfiguration"
-                  },
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSQuotesImpl.getConfiguration"
-                  },
-                  {
-                    "name": "getConfiguration",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSQuotesImpl.getConfiguration"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getError",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "UPSQuotesImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.integration.shipping.UPSQuotesImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getStatusCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getOptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getShippingQuote",
+                "to_name": "UPSParsedElements",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/MerchantConfigurationImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVOByModule",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationVO",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantConfigurationImpl",
+                "to_name": "UPSQuotesImpl",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getShippingQuote",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getShippingMethodDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingService",
+                "to_name": "UPSQuotesImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

@@ -4,116 +4,88 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "assembleItems",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction.assembleItems"
-                  },
-                  {
-                    "name": "assembleShoppingCartItems",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction.assembleShoppingCartItems"
-                  },
-                  {
-                    "name": "cleanShoppingCart",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction.cleanShoppingCart"
-                  },
-                  {
-                    "name": "prepareStore",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction.prepareStore"
-                  },
-                  {
-                    "name": "prepareStore",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction.prepareStore"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "emptyCart",
+                "to_name": "emptyCart",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "ShoppingCartAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "showCart",
+                "to_name": "displayCart",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "addToCart",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "showCart",
+                "to_name": "ShoppingCartAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "emptyCart",
+                "to_name": "ShoppingCartAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/StoreShoppingCartAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/StoreShoppingCartAction.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "emptyCart",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction.emptyCart"
-                  },
-                  {
-                    "name": "emptyCart",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction.emptyCart"
-                  },
-                  {
-                    "name": "displayCart",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction.displayCart"
-                  },
-                  {
-                    "name": "addToCart",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction.addToCart"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "assembleItems",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class Struts",
-                "calling_elements": [
-                  {
-                    "name": "ShoppingCartAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction"
-                  },
-                  {
-                    "name": "ShoppingCartAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction"
-                  },
-                  {
-                    "name": "ShoppingCartAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction"
-                  },
-                  {
-                    "name": "ShoppingCartAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutLocal",
+                "to_name": "assembleShoppingCartItems",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "cleanShoppingCart",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutRemote",
+                "to_name": "prepareStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkoutLocal",
+                "to_name": "prepareStore",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           }
         ],
         "files_list_comment": "",

@@ -4,188 +4,123 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "elements list is truncated to first 5 items",
-                "nb_calling_elements": 6,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCustomerInfoDateAccountCreated",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.setCustomerInfoDateAccountCreated"
-                  },
-                  {
-                    "name": "setCustomerInfoNumberOfLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.setCustomerInfoNumberOfLogon"
-                  },
-                  {
-                    "name": "setCustomerInfoNumberOfLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.setCustomerInfoNumberOfLogon"
-                  },
-                  {
-                    "name": "getCustomerInfoNumberOfLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.getCustomerInfoNumberOfLogon"
-                  },
-                  {
-                    "name": "getCustomerInfoNumberOfLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.getCustomerInfoNumberOfLogon"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CustomerInfo",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.CustomerInfo"
-                  },
-                  {
-                    "name": "CustomerInfo",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.CustomerInfo"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerInfo",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCustomerInfoNumberOfLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.setCustomerInfoNumberOfLogon"
-                  },
-                  {
-                    "name": "getCustomerInfoNumberOfLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.getCustomerInfoNumberOfLogon"
-                  },
-                  {
-                    "name": "setCustomerInfoDateOfLastLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.setCustomerInfoDateOfLastLogon"
-                  },
-                  {
-                    "name": "setCustomerInfoId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.setCustomerInfoId"
-                  },
-                  {
-                    "name": "setCustomerInfoId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.setCustomerInfoId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processLastLoggedInDate",
+                "to_name": "setCustomerInfoDateAccountCreated",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CustomerInfo",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.CustomerInfo"
-                  },
-                  {
-                    "name": "CustomerInfo",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.CustomerInfo"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processLastLoggedInDate",
+                "to_name": "setCustomerInfoNumberOfLogon",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerInfo",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "setCustomerInfoNumberOfLogon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processLastLoggedInDate",
+                "to_name": "getCustomerInfoNumberOfLogon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "getCustomerInfoNumberOfLogon",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 13
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/www/AuthenticateCustomerAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCustomerInfoDateOfLastLogon",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.setCustomerInfoDateOfLastLogon"
-                  },
-                  {
-                    "name": "setCustomerInfoId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.setCustomerInfoId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "setCustomerInfoNumberOfLogon",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CustomerInfo",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo.CustomerInfo"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "getCustomerInfoNumberOfLogon",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomerInfo",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.customer.CustomerInfo"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logout",
+                "to_name": "setCustomerInfoDateOfLastLogon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "setCustomerInfoId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logout",
+                "to_name": "setCustomerInfoId",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/www/ajax/CustomerUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logout",
+                "to_name": "setCustomerInfoDateOfLastLogon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logout",
+                "to_name": "setCustomerInfoId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "logout",
+                "to_name": "CustomerInfo",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerUtil",
+                "to_name": "CustomerInfo",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 4
           }
         ],
         "files_list_comment": "",

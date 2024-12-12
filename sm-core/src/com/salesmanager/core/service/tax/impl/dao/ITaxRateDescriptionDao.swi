@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findByTaxRateId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDescriptionDao.findByTaxRateId"
-                  },
-                  {
-                    "name": "findByTaxRateId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDescriptionDao.findByTaxRateId"
-                  },
-                  {
-                    "name": "deleteAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDescriptionDao.deleteAll"
-                  },
-                  {
-                    "name": "deleteAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDescriptionDao.deleteAll"
-                  },
-                  {
-                    "name": "saveOrUpdateAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDescriptionDao.saveOrUpdateAll"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTaxRate",
+                "to_name": "findByTaxRateId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "ITaxRateDescriptionDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.tax.impl.dao.ITaxRateDescriptionDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteTaxConfiguration",
+                "to_name": "findByTaxRateId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteTaxRate",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteTaxConfiguration",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateTaxRate",
+                "to_name": "saveOrUpdateAll",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           }
         ],
         "files_list_comment": "",

@@ -4,196 +4,144 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCountryIsoCode2",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.setCountryIsoCode2"
-                  },
-                  {
-                    "name": "setConfigurationKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.setConfigurationKey"
-                  },
-                  {
-                    "name": "setConfigurationModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.setConfigurationModule"
-                  },
-                  {
-                    "name": "getConfigurationKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.getConfigurationKey"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ModuleConfigurationId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.ModuleConfigurationId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ModuleConfigurationId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getConfigurationKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.getConfigurationKey"
-                  },
-                  {
-                    "name": "getConfigurationModule",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.getConfigurationModule"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModuleConfiguration",
+                "to_name": "setCountryIsoCode2",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ModuleConfigurationId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/integration/FbPageAdminAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCountryIsoCode2",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.getCountryIsoCode2"
-                  },
-                  {
-                    "name": "getCountryIsoCode2",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.getCountryIsoCode2"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModuleConfiguration",
+                "to_name": "setConfigurationKey",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ModuleConfigurationId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModuleConfiguration",
+                "to_name": "setConfigurationModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModuleConfigurationsKeyValue",
+                "to_name": "getConfigurationKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getModuleConfiguration",
+                "to_name": "ModuleConfigurationId",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/reference/impl/dao/ModuleConfigurationDao.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getConfigurationKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.getConfigurationKey"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findByConfigurationKeyAndCountryCode",
+                "to_name": "getCountryIsoCode2",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ModuleConfigurationId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findByConfigurationModuleAndCountryCode",
+                "to_name": "getCountryIsoCode2",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "ModuleConfigurationDao",
+                "to_name": "ModuleConfigurationId",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/integration/FbPageAdminAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getConfigurationKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getConfigurationModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbPageAdminAction",
+                "to_name": "ModuleConfigurationId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/integration/PortletConfigurationAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getConfigurationKey",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId.getConfigurationKey"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayFields",
+                "to_name": "getConfigurationKey",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ModuleConfigurationId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.reference.ModuleConfigurationId"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PortletConfigurationAction",
+                "to_name": "ModuleConfigurationId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-central/src/com/salesmanager/central/util/store/StoreFront.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/util/store/StoreFront.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "selectTemplate",
+                "to_name": "getConfigurationKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "StoreFront",
+                "to_name": "ModuleConfigurationId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

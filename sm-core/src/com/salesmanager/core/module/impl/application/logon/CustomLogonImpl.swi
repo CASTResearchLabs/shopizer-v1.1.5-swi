@@ -4,71 +4,53 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/util/SecurityUtil.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getUser",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.logon.CustomLogonImpl.getUser"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isCustomerInRole",
+                "to_name": "isUserInRole",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomLogonImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.logon.CustomLogonImpl"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isUserInRole",
+                "to_name": "isUserInRole",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SecurityUtil",
+                "to_name": "CustomLogonImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 3
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "isUserInRole",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.logon.CustomLogonImpl.isUserInRole"
-                  },
-                  {
-                    "name": "isUserInRole",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.logon.CustomLogonImpl.isUserInRole"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getUser",
+                "to_name": "getUser",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CustomLogonImpl",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.module.impl.application.logon.CustomLogonImpl"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "CustomLogonImpl",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/SecurityUtil.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

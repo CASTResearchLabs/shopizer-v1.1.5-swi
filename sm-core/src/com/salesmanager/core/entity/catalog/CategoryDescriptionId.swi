@@ -4,186 +4,137 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "equals",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId.equals"
-                  },
-                  {
-                    "name": "hashCode",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId.hashCode"
-                  },
-                  {
-                    "name": "getCategoryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId.getCategoryId"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CategoryDescriptionId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/entity/catalog/CategoryDescription.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId.setLanguageId"
-                  },
-                  {
-                    "name": "getLanguageId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId.getLanguageId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "equals",
+                "to_name": "equals",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CategoryDescriptionId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId.CategoryDescriptionId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "hashCode",
+                "to_name": "hashCode",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CategoryDescriptionId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getUrl",
+                "to_name": "getCategoryId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CategoryDescription",
+                "to_name": "CategoryDescriptionId",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/catalog/EditCategoryAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCategoryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId.setCategoryId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCategory",
+                "to_name": "setLanguageId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CategoryDescriptionId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showEditCategory",
+                "to_name": "getLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "saveCategory",
+                "to_name": "CategoryDescriptionId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditCategoryAction",
+                "to_name": "CategoryDescriptionId",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCategoryId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId.getCategoryId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateCategory",
+                "to_name": "setCategoryId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CategoryDescriptionId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CatalogService",
+                "to_name": "CategoryDescriptionId",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/CategoryCacheImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "CategoryDescriptionId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId.CategoryDescriptionId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "loadCategoriesInCache",
+                "to_name": "getCategoryId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CategoryDescriptionId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.CategoryDescriptionId"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CategoryCacheImpl",
+                "to_name": "CategoryDescriptionId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileUploadImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "uploadCategory",
+                "to_name": "CategoryDescriptionId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CSVFileUploadImpl",
+                "to_name": "CategoryDescriptionId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

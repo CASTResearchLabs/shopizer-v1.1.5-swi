@@ -4,221 +4,186 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setAttributeValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.setAttributeValue"
-                  },
-                  {
-                    "name": "setAttributeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.setAttributeId"
-                  },
-                  {
-                    "name": "setTextValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.setTextValue"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ShoppingCartProductAttribute",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.ShoppingCartProductAttribute"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShoppingCartProductAttribute",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/catalog/common/AjaxCatalogUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getAttributeValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.getAttributeValue"
-                  },
-                  {
-                    "name": "setAttributeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.setAttributeId"
-                  },
-                  {
-                    "name": "getAttributeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.getAttributeId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToCart",
+                "to_name": "setAttributeValue",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "ShoppingCartProductAttribute",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.ShoppingCartProductAttribute"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToCart",
+                "to_name": "setAttributeId",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShoppingCartProductAttribute",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToCart",
+                "to_name": "setTextValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "addProductToCart",
+                "to_name": "ShoppingCartProductAttribute",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AjaxCatalogUtil",
+                "to_name": "ShoppingCartProductAttribute",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
             "from_file": "sm-core/src/com/salesmanager/core/util/MiniShoppingCartSerializationUtil.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 3,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getAttributeValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.getAttributeValue"
-                  },
-                  {
-                    "name": "getAttributeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.getAttributeId"
-                  },
-                  {
-                    "name": "getTextValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.getTextValue"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "serializeToJSON",
+                "to_name": "getAttributeValue",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShoppingCartProductAttribute",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deserializeJSON",
+                "to_name": "setAttributeId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deserializeJSON",
+                "to_name": "getAttributeId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "deserializeJSON",
+                "to_name": "ShoppingCartProductAttribute",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MiniShoppingCartSerializationUtil",
+                "to_name": "ShoppingCartProductAttribute",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
             "from_file": "sm-shop/src/com/salesmanager/catalog/cart/CheckoutAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getAttributeId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.getAttributeId"
-                  },
-                  {
-                    "name": "getTextValue",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute.getTextValue"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout",
+                "to_name": "getAttributeValue",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShoppingCartProductAttribute",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout",
+                "to_name": "getAttributeId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout",
+                "to_name": "getTextValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CheckoutAction",
+                "to_name": "ShoppingCartProductAttribute",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 4
           },
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/entity/orders/ShoppingCartProduct.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "ShoppingCartProductAttribute",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute"
-                  },
-                  {
-                    "name": "ShoppingCartProductAttribute",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute"
-                  },
-                  {
-                    "name": "ShoppingCartProductAttribute",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute"
-                  },
-                  {
-                    "name": "ShoppingCartProductAttribute",
-                    "calling_type": "USE",
-                    "full_name": "com.salesmanager.core.entity.orders.ShoppingCartProductAttribute"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setAttributes",
+                "to_name": "ShoppingCartProductAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getAttributes",
+                "to_name": "ShoppingCartProductAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "attributes",
+                "to_name": "ShoppingCartProductAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartProduct",
+                "to_name": "ShoppingCartProductAttribute",
+                "calling_type": "USE"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/entity/orders/ShoppingCartProduct.java",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "getAttributeId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "getTextValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartAction",
+                "to_name": "ShoppingCartProductAttribute",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

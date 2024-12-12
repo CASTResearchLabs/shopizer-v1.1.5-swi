@@ -4,506 +4,361 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getCapturableTransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.getCapturableTransaction"
-                  },
-                  {
-                    "name": "getRefundableTransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.getRefundableTransaction"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.PaymentService"
-                  },
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.PaymentService"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/CreditCardGatewayTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTransactions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.getTransactions"
-                  },
-                  {
-                    "name": "captureTransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.captureTransaction"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processCapture",
+                "to_name": "getCapturableTransaction",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/orders/TransactionDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getPaymentMethodsList",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.getPaymentMethodsList"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processRefund",
+                "to_name": "getRefundableTransaction",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getTransactions",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.getTransactions"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "processRefund",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-central/src/com/salesmanager/central/orders/EditOrderDetailsAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "findMerchantPaymentGatewayTrxByMerchantIdAndOrderId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.findMerchantPaymentGatewayTrxByMerchantIdAndOrderId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "processCapture",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CreditCardGatewayTransactionImpl",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionHelper.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 5
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "refundTransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.refundTransaction"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "preInitializePayment",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.preInitializePayment"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/PayPalExpressCheckoutAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "processPaymentTransaction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.processPaymentTransaction"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessPayment.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "saveMerchantPaymentGatewayTrx",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.saveMerchantPaymentGatewayTrx"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PsigateTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "saveMerchantPaymentGatewayTrx",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.saveMerchantPaymentGatewayTrx"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/MonerisTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "saveMerchantPaymentGatewayTrx",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.saveMerchantPaymentGatewayTrx"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/BeanStreamTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "saveMerchantPaymentGatewayTrx",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.saveMerchantPaymentGatewayTrx"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/AuthorizeNetTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "saveMerchantPaymentGatewayTrx",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.saveMerchantPaymentGatewayTrx"
-                  },
-                  {
-                    "name": "saveMerchantPaymentGatewayTrx",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.saveMerchantPaymentGatewayTrx"
-                  },
-                  {
-                    "name": "saveMerchantPaymentGatewayTrx",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.saveMerchantPaymentGatewayTrx"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PaypalTransactionImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getConfiguredPaymentMethods",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.getConfiguredPaymentMethods"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "saveMerchantPaymentGatewayTrx",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "captureTransaction",
+                "to_name": "saveMerchantPaymentGatewayTrx",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "saveMerchantPaymentGatewayTrx",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaypalTransactionImpl",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/orders/TransactionDetailsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayTransactions",
+                "to_name": "getTransactions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "captureTransaction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TransactionDetailsAction",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/invoice/InvoiceDetailsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "receiveInvoicePayment",
+                "to_name": "getPaymentMethodsList",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceDetailsAction",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/orders/EditOrderDetailsAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showOrderDetails",
+                "to_name": "getTransactions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EditOrderDetailsAction",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionHelper.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSentData",
+                "to_name": "findMerchantPaymentGatewayTrxByMerchantIdAndOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TransactionHelper",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundOrder",
+                "to_name": "refundTransaction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/PayPalExpressCheckoutAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "preInitializePayment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessPayment.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "execute",
+                "to_name": "processPaymentTransaction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProcessPayment",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PsigateTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "saveMerchantPaymentGatewayTrx",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PsigateTransactionImpl",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/MonerisTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "saveMerchantPaymentGatewayTrx",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MonerisTransactionImpl",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/BeanStreamTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "saveMerchantPaymentGatewayTrx",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "BeanStreamTransactionImpl",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/AuthorizeNetTransactionImpl.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "saveMerchantPaymentGatewayTrx",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthorizeNetTransactionImpl",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/profile/DashboardAction.java",
-            "comment": "",
-            "nb_calling_element_types": 2
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getPaymentMethods",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService.getPaymentMethods"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkConfiguration",
+                "to_name": "getConfiguredPaymentMethods",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "PaymentService",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.payment.PaymentService"
-                  }
-                ]
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "DashboardAction",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/util/PaymentUtil.java",
             "comment": "",
-            "nb_calling_element_types": 2
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/PaymentUtil.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isPaymentModuleCreditCardType",
+                "to_name": "getPaymentMethods",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentUtil",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getQuantity",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Product.getQuantity"
-                  },
-                  {
-                    "name": "isOverWritePrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Product.isOverWritePrice"
-                  },
-                  {
-                    "name": "getPrice",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Product.getPrice"
-                  },
-                  {
-                    "name": "getProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Product.getProductId"
-                  },
-                  {
-                    "name": "getProductId",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Product.getProductId"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "getQuantity",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "Product",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.orders.ws.Product"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "isOverWritePrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "getPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isValidInvoice",
+                "to_name": "getProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processNewInvoice",
+                "to_name": "getProductId",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8
           }
         ],
         "files_list_comment": "",

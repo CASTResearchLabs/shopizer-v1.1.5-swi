@@ -4,241 +4,158 @@
       {
         "files": [
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 5,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "getStatus",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.getStatus"
-                  },
-                  {
-                    "name": "getDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.getDescription"
-                  },
-                  {
-                    "name": "getDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.getDescription"
-                  },
-                  {
-                    "name": "getVisible",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.getVisible"
-                  },
-                  {
-                    "name": "getCategoryid",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.getCategoryid"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Field",
-                "calling_elements": [
-                  {
-                    "name": "STATUSINSTOCK",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.STATUSINSTOCK"
-                  },
-                  {
-                    "name": "STATUSALL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.STATUSALL"
-                  },
-                  {
-                    "name": "VISIBLETRUE",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.VISIBLETRUE"
-                  },
-                  {
-                    "name": "VISIBLEALL",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.VISIBLEALL"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchProductCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria"
-                  },
-                  {
-                    "name": "SearchProductCriteria",
-                    "calling_type": "READ",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ProductDao.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.setDescription"
-                  },
-                  {
-                    "name": "setStatus",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.setStatus"
-                  },
-                  {
-                    "name": "setVisible",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.setVisible"
-                  },
-                  {
-                    "name": "setCategoryid",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.setCategoryid"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchProduct",
+                "to_name": "getStatus",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchProductCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.SearchProductCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findProductsByDescription",
+                "to_name": "getDescription",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchProductCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchProduct",
+                "to_name": "getDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchProduct",
+                "to_name": "getVisible",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchProduct",
+                "to_name": "getCategoryid",
+                "calling_type": "CALL"
               }
             ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12
+          },
+          {
             "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductListAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setCategoryList",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.setCategoryList"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "show",
+                "to_name": "setDescription",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchProductCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.SearchProductCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "show",
+                "to_name": "setStatus",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchProductCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "show",
+                "to_name": "setVisible",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "show",
+                "to_name": "setCategoryid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "show",
+                "to_name": "SearchProductCriteria",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
-            "comment": "",
-            "nb_calling_element_types": 3
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "setDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.setDescription"
-                  },
-                  {
-                    "name": "setDescription",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.setDescription"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Constructor",
-                "calling_elements": [
-                  {
-                    "name": "SearchProductCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.SearchProductCriteria"
-                  },
-                  {
-                    "name": "SearchProductCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria.SearchProductCriteria"
-                  }
-                ]
-              },
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "SearchProductCriteria",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.entity.catalog.SearchProductCriteria"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/src/com/salesmanager/catalog/store/SearchAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "search",
+                "to_name": "setDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "setDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "search",
+                "to_name": "SearchProductCriteria",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "page",
+                "to_name": "SearchProductCriteria",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SearchAction",
+                "to_name": "SearchProductCriteria",
+                "calling_type": "CALL"
+              }
+            ],
             "comment": "",
-            "nb_calling_element_types": 3
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setCategories",
+                "to_name": "setCategoryList",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "setCategories",
+                "to_name": "SearchProductCriteria",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CategoryListAction",
+                "to_name": "SearchProductCriteria",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
           }
         ],
         "files_list_comment": "",

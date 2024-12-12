@@ -4,55 +4,46 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 4,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "saveOrUpdateAll",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.IMerchantUserRoleDao.saveOrUpdateAll"
-                  },
-                  {
-                    "name": "deleteByUserName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.IMerchantUserRoleDao.deleteByUserName"
-                  },
-                  {
-                    "name": "deleteByUserName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.IMerchantUserRoleDao.deleteByUserName"
-                  },
-                  {
-                    "name": "deleteByUserName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.IMerchantUserRoleDao.deleteByUserName"
-                  },
-                  {
-                    "name": "findByUserName",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.IMerchantUserRoleDao.findByUserName"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateRoles",
+                "to_name": "saveOrUpdateAll",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Interface",
-                "calling_elements": [
-                  {
-                    "name": "IMerchantUserRoleDao",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.core.service.merchant.impl.dao.IMerchantUserRoleDao"
-                  }
-                ]
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteUserRoles",
+                "to_name": "deleteByUserName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "deleteByUserName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchantUserInformation",
+                "to_name": "deleteByUserName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getUserRoles",
+                "to_name": "findByUserName",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
           }
         ],
         "files_list_comment": "",

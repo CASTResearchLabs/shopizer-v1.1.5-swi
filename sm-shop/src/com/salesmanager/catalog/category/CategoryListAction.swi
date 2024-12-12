@@ -4,185 +4,151 @@
       {
         "files": [
           {
-            "calling_element_types": [
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml",
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 2,
-                "type": "Java Method",
-                "calling_elements": [
-                  {
-                    "name": "displayCategory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction.displayCategory"
-                  },
-                  {
-                    "name": "displayCategory",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction.displayCategory"
-                  },
-                  {
-                    "name": "page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction.page"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "category",
+                "to_name": "displayCategory",
+                "calling_type": "CALL"
               },
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Java Class",
-                "calling_elements": [
-                  {
-                    "name": "CategoryListAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction"
-                  },
-                  {
-                    "name": "CategoryListAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction"
-                  },
-                  {
-                    "name": "CategoryListAction",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction"
-                  }
-                ]
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "*",
+                "to_name": "displayCategory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "page",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "page",
+                "to_name": "CategoryListAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "category",
+                "to_name": "CategoryListAction",
+                "calling_type": "CALL"
               }
             ],
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml",
-            "comment": "",
-            "nb_calling_element_types": 2
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
           },
           {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/page"
-                  },
-                  {
-                    "name": "/page",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/page"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/category.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/page",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/page"
-                  },
-                  {
-                    "name": "/page",
-                    "calling_type": "POST",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/page"
-                  }
-                ]
-              }
-            ],
-            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/search.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
-              {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/category",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/category"
-                  },
-                  {
-                    "name": "/category",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/category"
-                  },
-                  {
-                    "name": "/category",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/category"
-                  }
-                ]
-              }
-            ],
             "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/header.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/category",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/category"
-                  },
-                  {
-                    "name": "/category",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/category"
-                  },
-                  {
-                    "name": "/category",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/category"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "${contextPath}/category/{}",
+                "to_name": "/category",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "header.jsp",
+                "to_name": "/category",
+                "calling_type": "GET"
               }
             ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
             "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/leftcolumn.jsp",
-            "comment": "",
-            "nb_calling_element_types": 1
-          },
-          {
-            "calling_element_types": [
+            "calls_between_elements": [
               {
-                "comment": "",
-                "nb_calling_elements": 1,
-                "type": "Struts Operation",
-                "calling_elements": [
-                  {
-                    "name": "/category",
-                    "calling_type": "CALL",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/category"
-                  },
-                  {
-                    "name": "/category",
-                    "calling_type": "GET",
-                    "full_name": "com.salesmanager.catalog.category.CategoryListAction/CAST_Struts_Operation/category"
-                  }
-                ]
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "category/{}",
+                "to_name": "/category",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "leftcolumn.jsp",
+                "to_name": "/category",
+                "calling_type": "GET"
               }
             ],
-            "from_file": "sm-central/WebContent/catalog/category.jsp",
             "comment": "",
-            "nb_calling_element_types": 1
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/category.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "page",
+                "to_name": "/page",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "category.jsp",
+                "to_name": "/page",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/search.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "page",
+                "to_name": "/page",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "search.jsp",
+                "to_name": "/page",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-central/WebContent/catalog/category.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "category.action",
+                "to_name": "/category",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "category.jsp",
+                "to_name": "/category",
+                "calling_type": "GET"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",
