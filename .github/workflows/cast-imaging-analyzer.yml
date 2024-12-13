@@ -2,11 +2,13 @@ name: Imaging Cloud Analyzer Action
 env:
   version: 1
 on:
-  push:
-    branches:
+  # push:
+  #   branches:
+  #     - master
+  #     - main
+  workflow_dispatch:
       - master
       - main
-  workflow_dispatch:
 jobs:
   run-imaging-cloud-analyzer:
     runs-on: ubuntu-latest
