@@ -1,0 +1,488 @@
+{
+  "main facts about source code file [sm-shop/src/com/salesmanager/checkout/flow/PayPalExpressCheckoutAction.java]": {
+    "00. file [sm-shop/src/com/salesmanager/checkout/flow/PayPalExpressCheckoutAction.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "payPalNotification",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "preparePaypalResponse",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "preparePaypalResponse",
+                "to_name": "PAYMENTERROR",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "preparePaypalResponse",
+                "to_name": "SUMMARY",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "preparePaypalRequest",
+                "to_name": "PAYMENTERROR",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 18,
+            "to_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "setCustomerBillingCompany",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "setCustomerStreetAddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "setCustomerPostalCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "setCustomerCity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "setCustomerLang",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 17,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getPaymentMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "getPaymentMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getShippingInformation",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10,
+            "to_file": "sm-core/src/com/salesmanager/core/util/www/SessionUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "payPalNotification",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8,
+            "to_file": "sm-core/src/com/salesmanager/core/util/www/BaseAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "preparePaypalRequest",
+                "to_name": "PaymentService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "preparePaypalResponse",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "ServiceFactory",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "addInfo",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "addInfo",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "getPaymentModuleName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "PaymentMethod",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/payment/PaymentMethod.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getChannel",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getPaymentModuleCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "setPaymentModuleCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/Order.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getCountryName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "CountryDescription",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/CountryDescription.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getCoreModuleService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "ReferenceService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "preInitializePayment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getCountryByIsoCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "CountryUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/CountryUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getShippingDetails",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "PaypalTransactionImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/module/impl/integration/payment/PaypalTransactionImpl.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getCountryId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "CountryDescriptionId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/CountryDescriptionId.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getBean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "SpringUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/SpringUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "MerchantStore",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "preparePaypalResponse",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/OrderConstants.java"
+          }
+        ],
+        "files_list_comment": "files list is truncated to first 15 items",
+        "nb_files_with_calling_elements": 16
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/util/EmailUtil.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/com/salesmanager/core/util/EmailUtil.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/common/CommonService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendHtmlEmail",
+                "to_name": "setEmailTemplate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendHtmlEmail",
+                "to_name": "send",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendHtmlEmail",
+                "to_name": "prepareEmailContext",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CommonService",
+                "to_name": "EmailUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

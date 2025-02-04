@@ -1,0 +1,404 @@
+{
+  "main facts about source code file [sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java]": {
+    "00. file [sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isValidMerchantInfo",
+                "to_name": "addActionError",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "addActionError",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "addActionError",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "fetchMerchantStore",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 21,
+            "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isValidMerchantInfo",
+                "to_name": "getUserlang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "fetchMerchantStore",
+                "to_name": "getMerchantUserId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "getMerchantUserId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "fetchMerchantStore",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 20,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantUserInformation.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "viewMerchantStores",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "deleteMerchant",
+                "to_name": "unauthorized",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "deleteMerchant",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "saveMerchantStore",
+                "to_name": "unauthorized",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "saveMerchantStore",
+                "to_name": "error",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 14,
+            "to_file": "sm-central/WebContent/WEB-INF/classes/struts.xml"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewMerchantStores",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "fetchMerchantStore",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteMerchant",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "fetchMerchantStore",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "fetchMerchantStore",
+                "to_name": "getMerchantUserInformation",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "getMerchantUserInformation",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "fetchMerchantStore",
+                "to_name": "getMerchantRegistration",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "isExistingStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewMerchantStores",
+                "to_name": "isExistingStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "fetchMerchantStore",
+                "to_name": "isExistingStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "isExistingStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "fetchMerchantStore",
+                "to_name": "getZoneid",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8,
+            "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "getReason",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "saveMerchantStore",
+                "to_name": "ServiceException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "ServiceException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setMerchantStoreHeaderList",
+                "to_name": "MerchantStoreHeader",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getMerchantStoreHeaderList",
+                "to_name": "MerchantStoreHeader",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "merchantStoreHeaderList",
+                "to_name": "MerchantStoreHeader",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "MerchantStoreHeader",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStoreHeader.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "fetchMerchantStore",
+                "to_name": "prepareSelections",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "prepareSelections",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "CountrySelectBaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-central/src/com/salesmanager/central/CountrySelectBaseAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveMerchantStore",
+                "to_name": "EMAIL_ALREADY_EXISTS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/ErrorConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Field",
+                "from_name": "merchantRegistrationDefCodes",
+                "to_name": "MERCHANT_REG_DEF_CODES",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "Constants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-central/src/com/salesmanager/central/web/Constants.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 11
+      }
+    ]
+  }
+}

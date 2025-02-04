@@ -1,0 +1,194 @@
+{
+  "main facts about source code file [sm-central/src/com/salesmanager/central/CountrySelectBaseAction.java]": {
+    "00. file [sm-central/src/com/salesmanager/central/CountrySelectBaseAction.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareSelections",
+                "to_name": "getAllcountriesmap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareSelections",
+                "to_name": "getFilterdByCountryZones",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountrySelectBaseAction",
+                "to_name": "RefCache",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setZones",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getZones",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "zones",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountrySelectBaseAction",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setCountries",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountries",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "countries",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountrySelectBaseAction",
+                "to_name": "Country",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Country.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareSelections",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "CountrySelectBaseAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareSelections",
+                "to_name": "getLanguageNumberCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountrySelectBaseAction",
+                "to_name": "LanguageUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareSelections",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountrySelectBaseAction",
+                "to_name": "PropertiesUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepareSelections",
+                "to_name": "US_COUNTRY_ID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CountrySelectBaseAction",
+                "to_name": "Constants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/Constants.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 7
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "main facts about source code file [sm-shop/src/com/salesmanager/catalog/store/LanguageAction.java]": {
+    "00. file [sm-shop/src/com/salesmanager/catalog/store/LanguageAction.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeLanguage",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LanguageAction",
+                "to_name": "SessionUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/www/SessionUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeLanguage",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "LanguageAction",
+                "to_name": "BaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/www/BaseAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "changeLanguage",
+                "to_name": "landing",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Struts Action",
+                "from_name": "LanguageAction",
+                "to_name": "changeLanguage",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ]
+  }
+}

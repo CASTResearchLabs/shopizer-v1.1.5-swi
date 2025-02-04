@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-shop/src/com/salesmanager/checkout/flow/ComitInvoiceAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/com/salesmanager/checkout/flow/ComitInvoiceAction.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "comitInvoice",
+                "to_name": "comitOrder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "comitInvoice",
+                "to_name": "ComitInvoiceAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/checkout/components/invoiceConfirmation.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript HttpRequest Post Service",
+                "to_type": "Struts Operation",
+                "from_name": "comitInvoice",
+                "to_name": "/comitInvoice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "Struts Operation",
+                "from_name": "invoiceConfirmation.jsp",
+                "to_name": "/comitInvoice",
+                "calling_type": "POST"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

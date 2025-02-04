@@ -1,0 +1,40 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/entity/system/CentralSequencer.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/com/salesmanager/core/entity/system/CentralSequencer.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/SystemDao.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "incrementOrderIdCounter",
+                "to_name": "setOrderIdNextValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "incrementOrderIdCounter",
+                "to_name": "getOrderIdNextValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "SystemDao",
+                "to_name": "CentralSequencer",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

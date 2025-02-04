@@ -1,0 +1,61 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/constants/IntegrationConstants.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/com/salesmanager/core/constants/IntegrationConstants.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/integration/FbPageAdminAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayPage",
+                "to_name": "FB_PAGE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createPage",
+                "to_name": "FB_PAGE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbPageAdminAction",
+                "to_name": "IntegrationConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/integration/PortletConfigurationAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayFields",
+                "to_name": "FIELDS_KEY",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PortletConfigurationAction",
+                "to_name": "IntegrationConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

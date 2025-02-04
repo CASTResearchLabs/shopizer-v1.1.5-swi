@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/CategoryDao.java]": {
+    "00. dependencies between elements defined in file [sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/CategoryDao.java]": [
+      {
+        "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "findSubCategoriesByLang",
+            "to_name": "select c from Category",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "findCategoryByMerchantIdAndSeoURLAndByLang",
+            "to_name": "select c from Category",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "findByMerchantIdAndLineage",
+            "to_name": "select c from Category",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "findByMerchantIdAndLanguageIdAndLineage",
+            "to_name": "select c from Category",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "findByMerchantIdAndLanguageId",
+            "to_name": "select c from Category",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JDBC SQL Query",
+            "from_name": "save",
+            "to_name": "insert into categories(categories_id,categories_image,parent_id,sort_order,date_added,last_modified,categories_status,visible,RefCategoryID,RefCategoryLevel,RefCategoryName,RefCategoryParentID,RefExpired,merchantid,depth,lineage) values(?,?,?,?,?,?,?,?,?,",
+            "calling_type": "CALL"
+          }
+        ],
+        "calls_between_elements_list_comment": "",
+        "nb_calls_between_elements": 6
+      }
+    ]
+  }
+}

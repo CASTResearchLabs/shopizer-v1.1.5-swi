@@ -1,0 +1,124 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/CategoryDao.java]": {
+    "00. file [sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/CategoryDao.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "getLineage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "getParentId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "getCategoryId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "getDepth",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 28,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/Category.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findSubCategoriesByLang",
+                "to_name": "GLOBAL_MERCHANT_ID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findByMerchantIdAndLanguage",
+                "to_name": "GLOBAL_MERCHANT_ID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findByMerchantIdAndLanguageId",
+                "to_name": "GLOBAL_MERCHANT_ID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findByMerchantIdAndLanguageIdAndLineage",
+                "to_name": "GLOBAL_MERCHANT_ID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findByMerchantId",
+                "to_name": "GLOBAL_MERCHANT_ID",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/Constants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "save",
+                "to_name": "CATEGORIES",
+                "calling_type": "INSERT"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "MySQL Table",
+                "from_name": "CategoryDao",
+                "to_name": "CATEGORIES",
+                "calling_type": "INSERT"
+              },
+              {
+                "from_type": "JDBC SQL Query",
+                "to_type": "MySQL Table",
+                "from_name": "insert into categories(categories_id,categories_image,parent_id,sort_order,date_added,last_modified,categories_status,visible,RefCategoryID,RefCategoryLevel,RefCategoryName,RefCategoryParentID,RefExpired,merchantid,depth,lineage) values(?,?,?,?,?,?,?,?,?,",
+                "to_name": "CATEGORIES",
+                "calling_type": "INSERT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ]
+  }
+}

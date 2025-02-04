@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-shop/src/com/salesmanager/checkout/flow/DisplayOrderSummaryAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/src/com/salesmanager/checkout/flow/DisplayOrderSummaryAction.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/DisplayInvoiceSummaryAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrderSummaryAction",
+                "to_name": "displayCartOrderSummaryAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DisplayInvoiceSummaryAction",
+                "to_name": "DisplayOrderSummaryAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "summary",
+                "to_name": "displayOrderSummaryAction",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class",
+                "from_name": "summary",
+                "to_name": "DisplayOrderSummaryAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

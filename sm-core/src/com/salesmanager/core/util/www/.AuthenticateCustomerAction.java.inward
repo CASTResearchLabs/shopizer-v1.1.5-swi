@@ -1,0 +1,68 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/util/www/AuthenticateCustomerAction.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/com/salesmanager/core/util/www/AuthenticateCustomerAction.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/com/salesmanager/customer/profile/LogonAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "localLogon",
+                "to_name": "logon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "remoteLogon",
+                "to_name": "logon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "authenticateCustomer",
+                "to_name": "logonCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "LogonAction",
+                "to_name": "AuthenticateCustomerAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml",
+            "calls_between_elements": [
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Method",
+                "from_name": "logout",
+                "to_name": "logout",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Struts Action",
+                "to_type": "Java Class Struts",
+                "from_name": "logout",
+                "to_name": "AuthenticateCustomerAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/util/www/SessionUtil.java]": {
+    "00. file [sm-core/src/com/salesmanager/core/util/www/SessionUtil.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetProduct",
+                "to_name": "setProductQuantity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetProduct",
+                "to_name": "getProductQuantity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addOrderProduct",
+                "to_name": "getProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addOrderProduct",
+                "to_name": "setLineId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addOrderTotalLine",
+                "to_name": "setLineId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderProduct.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "cleanCart",
+                "to_name": "MERCHANT_STORE",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "SessionUtil",
+                "to_name": "MERCHANT_STORE",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "getOrderTotalSummary",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "setOrderTotalSummary",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "SessionUtil",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addOrderProduct",
+                "to_name": "getProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addOrderProduct",
+                "to_name": "setMainCartLine",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SessionUtil",
+                "to_name": "ShoppingCartProduct",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/ShoppingCartProduct.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addOrderProduct",
+                "to_name": "getProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SessionUtil",
+                "to_name": "ShoppingCart",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/ShoppingCart.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 4
+      }
+    ]
+  }
+}

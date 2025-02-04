@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/CategoryDao.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/CategoryDao.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategoryByMerchantIdAndSeoURLAndByLang",
+                "to_name": "findCategoryByMerchantIdAndSeoURLAndByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSubCategoriesByParentCategoryAndLang",
+                "to_name": "findSubCategoriesByLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findSubCategories",
+                "to_name": "findSubCategories",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findCategoriesByMerchantIdAndLineageAndLanguageId",
+                "to_name": "findByMerchantIdAndLanguageIdAndLineage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "walkCategoriesForGettingNumberOfProducts",
+                "to_name": "findByMerchantIdAndLineage",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 13
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

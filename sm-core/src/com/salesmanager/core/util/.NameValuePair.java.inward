@@ -1,0 +1,47 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/util/NameValuePair.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/com/salesmanager/core/util/NameValuePair.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/CheckoutAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout",
+                "to_name": "setValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "checkout",
+                "to_name": "setKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "checkout",
+                "to_name": "NameValuePair",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CheckoutAction",
+                "to_name": "NameValuePair",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

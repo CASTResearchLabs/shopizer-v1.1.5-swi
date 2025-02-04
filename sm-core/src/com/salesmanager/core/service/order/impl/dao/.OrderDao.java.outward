@@ -1,0 +1,299 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderDao.java]": {
+    "00. file [sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderDao.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "getQuantity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrder",
+                "to_name": "getQuantity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchInvoice",
+                "to_name": "getQuantity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrder",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 13,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/common/SearchCriteria.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrder",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchInvoice",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrder",
+                "to_name": "getCustomerName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchInvoice",
+                "to_name": "getCustomerName",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/SearchOrdersCriteria.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "setOrders",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrder",
+                "to_name": "setOrders",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchInvoice",
+                "to_name": "setOrders",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "SearchOrderResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "searchOrder",
+                "to_name": "SearchOrderResponse",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/SearchOrderResponse.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "searchInvoice",
+                "to_name": "STATUSINVOICED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "searchInvoice",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findInvoicesByCustomerAndStartDate",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findInvoicesByCustomer",
+                "to_name": "INVOICE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "ONLINE_CHANNEL",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/OrderConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "createRawOrder",
+                "to_name": "ORDERS",
+                "calling_type": "INSERT"
+              },
+              {
+                "from_type": "JPA SQL Query",
+                "to_type": "MySQL Table",
+                "from_name": "INSERT INTO orders(orders_id) values",
+                "to_name": "ORDERS",
+                "calling_type": "INSERT"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "MySQL Table",
+                "from_name": "OrderDao",
+                "to_name": "ORDERS",
+                "calling_type": "INSERT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "searchInvoice",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "MySQL Table",
+                "from_name": "OrderDao",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findInvoicesByCustomerAndStartDate",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findInvoicesByCustomer",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findOrdersByMerchant",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findOrdersByCustomer",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "OrderDao",
+                "to_name": "Order",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/Order.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "setCount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrder",
+                "to_name": "setCount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchInvoice",
+                "to_name": "setCount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "OrderDao",
+                "to_name": "SearchResponse",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/common/SearchResponse.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 7
+      }
+    ]
+  }
+}

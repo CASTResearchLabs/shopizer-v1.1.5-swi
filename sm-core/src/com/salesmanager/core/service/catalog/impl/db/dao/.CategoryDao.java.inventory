@@ -1,0 +1,104 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/CategoryDao.java]": {
+    "00. file [sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/CategoryDao.java] defines following code elements": [
+      {
+        "types": [
+          {
+            "comment": "elements list is truncated to first 5 items",
+            "nb_elements": 17,
+            "type": "Java Method",
+            "elements": [
+              {
+                "name": "findCategoryByMerchantIdAndSeoURLAndByLang",
+                "signature": "findCategoryByMerchantIdAndSeoURLAndByLang(int,java.lang.String,int) return com.salesmanager.core.entity.catalog.Category"
+              },
+              {
+                "name": "findSubCategoriesByLang",
+                "signature": "findSubCategoriesByLang(int,long,int) return java.util.List.List\u003ccom.salesmanager.core.entity.catalog.Category\u003e"
+              },
+              {
+                "name": "findSubCategories",
+                "signature": "findSubCategories(long) return java.util.List.List\u003ccom.salesmanager.core.entity.catalog.Category\u003e"
+              },
+              {
+                "name": "findByMerchantIdAndLanguage",
+                "signature": "findByMerchantIdAndLanguage(int,int) return java.util.List.List\u003ccom.salesmanager.core.entity.catalog.Category\u003e"
+              },
+              {
+                "name": "findByMerchantIdAndLanguageId",
+                "signature": "findByMerchantIdAndLanguageId(int,int) return java.util.Collection.Collection\u003ccom.salesmanager.core.entity.catalog.Category\u003e"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 5,
+            "type": "JPQL Query",
+            "elements": [
+              {
+                "name": "select c from Category",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Field",
+            "elements": [
+              {
+                "name": "log",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "",
+            "elements": [
+              {
+                "name": "CategoryDao.java",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Constructor",
+            "elements": [
+              {
+                "name": "CategoryDao",
+                "signature": "CategoryDao(org.hibernate.SessionFactory)"
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "Java Class DAO",
+            "elements": [
+              {
+                "name": "CategoryDao",
+                "signature": ""
+              }
+            ]
+          },
+          {
+            "comment": "",
+            "nb_elements": 1,
+            "type": "JDBC SQL Query",
+            "elements": [
+              {
+                "name": "insert into categories(categories_id,categories_image,parent_id,sort_order,date_added,last_modified,categories_status,visible,RefCategoryID,RefCategoryLevel,RefCategoryName,RefCategoryParentID,RefExpired,merchantid,depth,lineage) values(?,?,?,?,?,?,?,?,?,",
+                "signature": ""
+              }
+            ]
+          }
+        ],
+        "files_list_comment": ""
+      }
+    ]
+  }
+}

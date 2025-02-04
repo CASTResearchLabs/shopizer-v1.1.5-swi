@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/service/reference/impl/dao/ICoreModuleServiceDao.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/com/salesmanager/core/service/reference/impl/dao/ICoreModuleServiceDao.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCoreModuleServices",
+                "to_name": "getCoreModulesServices",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCoreModules",
+                "to_name": "findByServiceTypeAndByRegion",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCoreModuleService",
+                "to_name": "findByModuleAndRegion",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingModules",
+                "to_name": "findByServiceTypeAndSubTypeByRegion",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "ReferenceService",
+                "to_name": "ICoreModuleServiceDao",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

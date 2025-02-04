@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/module/impl/application/currencies/EURCurrencyModule.java]": {
+    "00. file [sm-core/src/com/salesmanager/core/module/impl/application/currencies/EURCurrencyModule.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setCurrency",
+                "to_name": "getSuffix",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EURCurrencyModule",
+                "to_name": "Currency",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Currency.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAmount",
+                "to_name": "matchPositiveInteger",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "EURCurrencyModule",
+                "to_name": "CurrencyModuleUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/module/impl/common/CurrencyModuleUtil.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/entity/shipping/ShippingType.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/com/salesmanager/core/entity/shipping/ShippingType.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/src/com/salesmanager/common/ShopInterceptor.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Enum",
+                "from_name": "ShopInterceptor",
+                "to_name": "ShippingType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "baseIntercept",
+                "to_name": "INTERNATIONAL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "baseIntercept",
+                "to_name": "NATIONAL",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/entity/shipping/ShippingEstimate.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ShippingEstimate",
+                "to_name": "ShippingType",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "getShippingTypeDescription",
+                "to_name": "NATIONAL",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

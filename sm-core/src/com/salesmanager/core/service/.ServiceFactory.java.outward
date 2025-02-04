@@ -1,0 +1,68 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/service/ServiceFactory.java]": {
+    "00. file [sm-core/src/com/salesmanager/core/service/ServiceFactory.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "MySQL Table",
+                "from_name": "CustomerService",
+                "to_name": "CUSTOMERS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "ServiceFactory",
+                "to_name": "CUSTOMERS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "MySQL Table",
+                "from_name": "OrderService",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "ServiceFactory",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getService",
+                "to_name": "getBean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ServiceFactory",
+                "to_name": "SpringUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/SpringUtil.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

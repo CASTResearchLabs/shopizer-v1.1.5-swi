@@ -1,0 +1,26 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderDao.java]": {
+    "00. dependencies between elements defined in file [sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderDao.java]": [
+      {
+        "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "createRawOrder",
+            "to_name": "findById",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPA SQL Query",
+            "from_name": "createRawOrder",
+            "to_name": "INSERT INTO orders(orders_id) values",
+            "calling_type": "CALL"
+          }
+        ],
+        "calls_between_elements_list_comment": "",
+        "nb_calls_between_elements": 2
+      }
+    ]
+  }
+}

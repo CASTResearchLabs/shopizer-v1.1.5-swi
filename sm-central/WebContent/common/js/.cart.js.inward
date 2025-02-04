@@ -1,0 +1,47 @@
+{
+  "main facts about source code file [sm-central/WebContent/common/js/cart.js]": {
+    "00. source files defining elements dependent on elements defined in file [sm-central/WebContent/common/js/cart.js]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/WebContent/invoice/invoicedetails.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JavaScript function",
+                "to_type": "JavaScript function",
+                "from_name": "handleShipping",
+                "to_name": "setShippingModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "JavaScript Files",
+                "from_name": "invoicedetails.jsp",
+                "to_name": "cart.js",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "JavaScript function",
+                "from_name": "handleProductSelection",
+                "to_name": "addCartLine",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "JavaScript function",
+                "from_name": "handleAttributesSelection",
+                "to_name": "setAttributes",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

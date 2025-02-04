@@ -1,0 +1,54 @@
+{
+  "main facts about source code file [sm-central/src/com/salesmanager/central/web/AuthFilter.java]": {
+    "00. file [sm-central/src/com/salesmanager/central/web/AuthFilter.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "doFilter",
+                "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthFilter",
+                "to_name": "Context",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "doFilter",
+                "to_name": "context",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AuthFilter",
+                "to_name": "ProfileConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

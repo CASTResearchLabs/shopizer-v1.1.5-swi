@@ -1,0 +1,89 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/util/file/csv/CSVConstants.java]": {
+    "00. source files defining elements dependent on elements defined in file [sm-core/src/com/salesmanager/core/util/file/csv/CSVConstants.java]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-central/src/com/salesmanager/central/util/upload/GenericFileUploadAction.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "isValidFile",
+                "to_name": "CSV_SUFFIX",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "uploadManufacturers",
+                "to_name": "INVALID_FILE_EXCEPTION_MSG",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "uploadProducts",
+                "to_name": "INVALID_FILE_EXCEPTION_MSG",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "uploadCategories",
+                "to_name": "INVALID_FILE_EXCEPTION_MSG",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "GenericFileUploadAction",
+                "to_name": "CSVConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "from_file": "sm-core/src/com/salesmanager/core/util/file/csv/CSVFileReader.java",
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "parseRow",
+                "to_name": "DOUBLEQUOTE_STR",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "parseRow",
+                "to_name": "COMMA_STR",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Constructor",
+                "to_type": "Java Field",
+                "from_name": "CSVFileReader",
+                "to_name": "CSV_PATTERN",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "CSVFileReader",
+                "to_name": "CSVConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

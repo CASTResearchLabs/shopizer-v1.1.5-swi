@@ -1,0 +1,40 @@
+{
+  "main facts about source code file [sm-shop/WebContent/common/js/customer.js]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/WebContent/common/js/customer.js]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/WebContent/checkout/components/customer.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JSP Pages",
+                "to_type": "JavaScript Files",
+                "from_name": "customer.jsp",
+                "to_name": "customer.js",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "JavaScript function",
+                "from_name": "each_PARAM_1",
+                "to_name": "fillBillingInfo",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "JavaScript function",
+                "from_name": "authenticate2",
+                "to_name": "fillBillingInfo",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

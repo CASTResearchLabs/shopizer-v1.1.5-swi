@@ -1,0 +1,61 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/service/common/impl/EasySSLProtocolSocketFactory.java]": {
+    "00. dependencies between elements defined in file [sm-core/src/com/salesmanager/core/service/common/impl/EasySSLProtocolSocketFactory.java]": [
+      {
+        "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "createSocket",
+            "to_name": "getSSLContext",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "getSSLContext",
+            "to_name": "createEasySSLContext",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Constructor",
+            "to_type": "Java Field",
+            "from_name": "EasyX509TrustManager",
+            "to_name": "standardTrustManager",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getSSLContext",
+            "to_name": "sslcontext",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getSSLContext",
+            "to_name": "sslcontext",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Constructor",
+            "from_name": "createEasySSLContext",
+            "to_name": "EasyX509TrustManager",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Class",
+            "to_type": "Java Class",
+            "from_name": "EasySSLProtocolSocketFactory",
+            "to_name": "EasyX509TrustManager",
+            "calling_type": "CALL"
+          }
+        ],
+        "calls_between_elements_list_comment": "",
+        "nb_calls_between_elements": 10
+      }
+    ]
+  }
+}

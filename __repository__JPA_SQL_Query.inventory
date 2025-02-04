@@ -1,0 +1,43 @@
+{
+  "main facts about type [JPA SQL Query]": {
+    "00. samples of [JPA SQL Query] element type in application [SWintel115]": {
+      "elements": [
+        {
+          "full_name": "com.salesmanager.core.service.order.impl.dao.OrderDao.createRawOrder.INSERT INTO orders(orders_id) values ()",
+          "signature": "",
+          "name": "INSERT INTO orders(orders_id) values",
+          "nb_callers": 1,
+          "main_properties": [
+            {}
+          ],
+          "used_in_graphs": 1,
+          "nb_callees": 1
+        },
+        {
+          "full_name": "com.salesmanager.core.service.customer.impl.dao.CustomerDao.findUniqueCompanyName.select distinct c.customers_company from customers c where c.merchantId\u003d:p and c.customers_company IS NOT NULL order by c.customers_company asc",
+          "signature": "",
+          "name": "select distinct c.customers_company from",
+          "nb_callers": 1,
+          "main_properties": [
+            {}
+          ],
+          "used_in_graphs": 1,
+          "nb_callees": 1
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ReviewDescriptionDao.findById.com.salesmanager.core.entity.catalog.ReviewsDescription",
+          "signature": "",
+          "name": "com.salesmanager.core.entity.catalog.ReviewsDescription",
+          "nb_callers": 1,
+          "main_properties": [
+            {}
+          ],
+          "used_in_graphs": 0,
+          "nb_callees": 1
+        }
+      ],
+      "total_nb": 3,
+      "elements_list_comment": ""
+    }
+  }
+}

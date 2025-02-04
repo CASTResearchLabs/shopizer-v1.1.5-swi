@@ -1,0 +1,40 @@
+{
+  "main facts about source code file [schema/upgrade/v1.1.4-TO-v1.1.5.sql]": {
+    "00. file [schema/upgrade/v1.1.4-TO-v1.1.5.sql] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Oracle SQL Script",
+                "to_type": "MySQL Table",
+                "from_name": "v1.1.4-TO-v1.1.5.sql",
+                "to_name": "CENTRAL_FUNCTION",
+                "calling_type": "UPDATE"
+              },
+              {
+                "from_type": "Oracle SQL Script",
+                "to_type": "MySQL Table",
+                "from_name": "v1.1.4-TO-v1.1.5.sql",
+                "to_name": "MERCHANT_USER_ROLE_DEF",
+                "calling_type": "INSERT"
+              },
+              {
+                "from_type": "Oracle SQL Script",
+                "to_type": "MySQL Table",
+                "from_name": "v1.1.4-TO-v1.1.5.sql",
+                "to_name": "MERCHANT_USER_ROLE_DEF",
+                "calling_type": "DELETE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 1
+      }
+    ]
+  }
+}

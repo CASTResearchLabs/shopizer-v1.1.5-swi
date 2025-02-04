@@ -1,0 +1,175 @@
+{
+  "main facts about type [JPQL Query]": {
+    "00. samples of [JPQL Query] element type in application [SWintel115]": {
+      "elements": [
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ReviewDao.searchByCustomerId.select r from Review r join fetch r.customer c where r.customerId\u003d:cId order by r.reviewId desc",
+          "signature": "",
+          "name": "select r from Review",
+          "nb_callers": 1,
+          "used_in_graphs": 7,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDao.findCategoryByMerchantIdAndSeoURLAndByLang.select c from Category c left join fetch c.descriptions s where c.merchantId\u003d:mId and s.seUrl\u003d:sText and s.id.languageId\u003d:lId order by c.sortOrder",
+          "signature": "",
+          "name": "select c from Category",
+          "nb_callers": 1,
+          "used_in_graphs": 6,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDao.findByMerchantIdAndLanguageIdAndLineage.select c from Category c left join fetch c.descriptions s join fetch c.parent where c.merchantId in (:mId) and s.id.languageId\u003d:lId and c.lineage like :l",
+          "signature": "",
+          "name": "select c from Category",
+          "nb_callers": 1,
+          "used_in_graphs": 6,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao.findProductsByAvailabilityCategoriesIdAndMerchantIdAndLanguageId.select count(p) from Product p left join p.descriptions s where p.merchantId\u003d:mId and p.masterCategoryId in(:cId) and s.id.langua",
+          "signature": "",
+          "name": "select count(p) from Product",
+          "nb_callers": 1,
+          "used_in_graphs": 6,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao.findProductsByAvailabilityCategoriesIdAndMerchantIdAndLanguageId.select p from Product p left join fetch p.descriptions s left join fetch p.specials y left join fetch p.prices r left join fetch ",
+          "signature": "",
+          "name": "select p from Product",
+          "nb_callers": 1,
+          "used_in_graphs": 6,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.reference.impl.dao.DynamicLabelDao.findByMerchantIdAndTitleAndLanguageId.select d from DynamicLabel d left join fetch d.descriptions s where d.merchantId\u003d:mId and s.id.languageId\u003d:lId and d.title in (:sTitles) order by d.sort",
+          "signature": "",
+          "name": "select d from DynamicLabel",
+          "nb_callers": 1,
+          "used_in_graphs": 2,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.reference.impl.dao.DynamicLabelDao.findByMerchantIdAndLabelIdAndLanguageId.select d from DynamicLabel d left join fetch d.descriptions s where d.merchantId\u003d:mId and s.id.languageId\u003d:lId and d.dynamicLabelId in (:sIds) order b",
+          "signature": "",
+          "name": "select d from DynamicLabel",
+          "nb_callers": 1,
+          "used_in_graphs": 2,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductAttributeDao.findAttributesByIds.select a from ProductAttribute a left join fetch a.productOption o left join fetch o.descriptions od left join fetch a.productOptionValue v left join fetch v.descrip",
+          "signature": "",
+          "name": "select a from ProductAttribute",
+          "nb_callers": 1,
+          "used_in_graphs": 1,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.reference.impl.dao.DynamicLabelDao.findByMerchantIdAndSeUrlAndLanguageId.select d from DynamicLabel d left join fetch d.descriptions s where d.merchantId\u003d:mId and s.id.languageId\u003d:lId and s.seUrl\u003d:sUrl",
+          "signature": "",
+          "name": "select d from DynamicLabel",
+          "nb_callers": 1,
+          "used_in_graphs": 1,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.reference.impl.dao.PortletDao.getDynamicLabels.select p from Portlet p where p.merchantId\u003d:mId and p.labelId in (:lIds) order by sortOrder",
+          "signature": "",
+          "name": "select p from Portlet",
+          "nb_callers": 1,
+          "used_in_graphs": 1,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao.findProductByMerchantIdAndSeoURLAndByLang.select p from Product p left join fetch p.descriptions s left join fetch p.specials y left join fetch p.prices r left join fetch r.priceDescriptions rp ",
+          "signature": "",
+          "name": "select p from Product",
+          "nb_callers": 1,
+          "used_in_graphs": 1,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDescriptionDao.findByMerchantIdAndCategoryId.from ProductDescription d inner join fetch d.product prod where d.id.languageId\u003d:l and prod.merchantId \u003d :m and prod.masterCategoryId \u003d :c",
+          "signature": "",
+          "name": "from ProductDescription d inner",
+          "nb_callers": 1,
+          "used_in_graphs": 0,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDescriptionDao.findByMerchantIdAndCategoriesId.from ProductDescription d inner join fetch d.product prod where d.id.languageId\u003d:l and prod.merchantId \u003d :m and prod.masterCategoryId in(,)",
+          "signature": "",
+          "name": "from ProductDescription d inner",
+          "nb_callers": 1,
+          "used_in_graphs": 0,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDescriptionDao.findByMerchantIdAndCategoriesId.from ProductDescription d inner join fetch d.product prod where d.id.languageId\u003d:l and prod.merchantId \u003d :m and prod.masterCategoryId in()",
+          "signature": "",
+          "name": "from ProductDescription d inner",
+          "nb_callers": 1,
+          "used_in_graphs": 0,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        },
+        {
+          "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductOptionDao.findAllProductOptionTypes.from ProductOptionType p",
+          "signature": "",
+          "name": "from ProductOptionType p",
+          "nb_callers": 1,
+          "used_in_graphs": 0,
+          "main_properties": [
+            {}
+          ],
+          "nb_callees": 0
+        }
+      ],
+      "total_nb": 72,
+      "elements_list_comment": "JPQL Query element list is truncated to first 15 items"
+    }
+  }
+}

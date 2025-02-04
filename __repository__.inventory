@@ -1,0 +1,2103 @@
+{
+  "main facts about application [SWintel115]": {
+    "00. application [SWintel115] basic stats": {
+      "application_analysis_name": "Onboarding-202501241132",
+      "CRUD_data_access_types": "",
+      "data_sensitivity_levels": [
+        "Sensitive Data"
+      ],
+      "nb_source_applications": 0,
+      "nb_elements": 24778,
+      "technology_list": [
+        "ansi sql",
+        "apache struts",
+        "apache tiles",
+        "azure sdk for java",
+        "direct web remoting",
+        "html",
+        "html templates",
+        "java",
+        "java server pages",
+        "java soap",
+        "javascript",
+        "jquery",
+        "sql"
+      ],
+      "application_analysis_date": "2025-01-24T11:32:00",
+      "nb_links": 77253,
+      "linked_application_stats": {
+        "called_applications": {
+          "nb_applications": 0,
+          "nb_links": 0
+        },
+        "calling_applications": {
+          "nb_applications": 0,
+          "nb_links": 0
+        }
+      }
+    },
+    "01. application [SWintel115] composition": [
+      {
+        "nb_elements": 9379,
+        "element_type": "Java Property Mapping"
+      },
+      {
+        "nb_elements": 7567,
+        "element_type": "Java Method"
+      },
+      {
+        "nb_elements": 3323,
+        "element_type": "Java Field"
+      },
+      {
+        "nb_elements": 908,
+        "element_type": "Java Constructor"
+      },
+      {
+        "nb_elements": 899,
+        "element_type": "Java Class"
+      },
+      {
+        "nb_elements": 795,
+        "element_type": "MySQL Table Column"
+      },
+      {
+        "nb_elements": 579,
+        "element_type": "Struts Result"
+      },
+      {
+        "nb_elements": 536,
+        "element_type": "JSP Pages"
+      },
+      {
+        "nb_elements": 486,
+        "element_type": "JavaScript function"
+      },
+      {
+        "nb_elements": 375,
+        "element_type": "Struts Operation"
+      },
+      {
+        "nb_elements": 268,
+        "element_type": "eFile"
+      },
+      {
+        "nb_elements": 264,
+        "element_type": "Java Interface"
+      },
+      {
+        "nb_elements": 261,
+        "element_type": "Struts Action"
+      },
+      {
+        "nb_elements": 236,
+        "element_type": "MySQL Unique Constraint"
+      },
+      {
+        "nb_elements": 184,
+        "element_type": "JavaScript HttpRequest Get Service"
+      }
+    ],
+    "02. application [SWintel115] graphs representing semantic aggregations": [
+      {
+        "nb_graphs": 19,
+        "samples_list_comment": "Package list is truncated to first 5 items",
+        "graph_nature": "Package",
+        "samples": [
+          {
+            "name": "org.apache.struts:struts2-core",
+            "starting_element_type": ""
+          },
+          {
+            "name": "org.codehaus.jackson:jackson-mapper-lgpl",
+            "starting_element_type": ""
+          },
+          {
+            "name": "org.apache.lucene:lucene-core",
+            "starting_element_type": ""
+          },
+          {
+            "name": "commons-digester:commons-digester",
+            "starting_element_type": ""
+          },
+          {
+            "name": "commons-beanutils:commons-beanutils",
+            "starting_element_type": ""
+          }
+        ]
+      },
+      {
+        "nb_graphs": 434,
+        "samples_list_comment": "Transaction list is truncated to first 5 items",
+        "graph_nature": "Transaction",
+        "samples": [
+          {
+            "name": "invoicedetails.jsp",
+            "full_name": "[sm-central/WebContent/invoice/invoicedetails.jsp]",
+            "starting_element_type": "JSP Pages",
+            "size": 1470
+          },
+          {
+            "name": "createInvoice",
+            "full_name": "SalesManagerCustomerWSImplService.SalesManagerInvoiceWS.createInvoice",
+            "starting_element_type": "SOAP Java Operation",
+            "size": 1351
+          },
+          {
+            "name": "orderdetails.jsp",
+            "full_name": "[sm-central/WebContent/orders/orderdetails.jsp]",
+            "starting_element_type": "JSP Pages",
+            "size": 1161
+          },
+          {
+            "name": "dashboard.jsp",
+            "full_name": "[sm-central/WebContent/dashboard/dashboard.jsp]",
+            "starting_element_type": "JSP Pages",
+            "size": 1132
+          },
+          {
+            "name": "/Subscription!addSubscriptionItem",
+            "full_name": "com.salesmanager.checkout.subscription.SubscriptionAction/CAST_Struts_Operation/Subscription!addSubscriptionItem",
+            "starting_element_type": "Struts Operation",
+            "size": 1040
+          }
+        ]
+      },
+      {
+        "nb_graphs": 81,
+        "samples_list_comment": "DataGraph list is truncated to first 5 items",
+        "graph_nature": "DataGraph",
+        "samples": [
+          {
+            "name": "CURRENCIES",
+            "full_name": "DEFAULT.CURRENCIES",
+            "starting_element_type": "MySQL Table",
+            "size": 916
+          },
+          {
+            "name": "ORDERS",
+            "full_name": "DEFAULT.ORDERS",
+            "starting_element_type": "MySQL Table",
+            "size": 880
+          },
+          {
+            "name": "CUSTOMERS",
+            "full_name": "DEFAULT.CUSTOMERS",
+            "starting_element_type": "MySQL Table",
+            "size": 801
+          },
+          {
+            "name": "PAGE",
+            "full_name": "DEFAULT.PAGE",
+            "starting_element_type": "MySQL Table",
+            "size": 677
+          },
+          {
+            "name": "PAGE",
+            "full_name": "DEFAULT.PAGE",
+            "starting_element_type": "Oracle Table",
+            "size": 677
+          }
+        ]
+      }
+    ],
+    "03. properties of application [SWintel115] main elements": [
+      {
+        "elements_with_properties": [
+          {
+            "name": "getShippingQuote",
+            "properties": [
+              {
+                "property": "Annotation:",
+                "value": "@Transactional"
+              },
+              {
+                "property": "AnnotationValue",
+                "value": ""
+              },
+              {
+                "property": "Number of code lines",
+                "value": 1647
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.shipping.ShippingService.getShippingQuote"
+          },
+          {
+            "name": "formatHTMLProductPriceWithAttributes",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 444
+              }
+            ],
+            "full_name": "com.salesmanager.core.util.ProductUtil.formatHTMLProductPriceWithAttributes"
+          },
+          {
+            "name": "equals",
+            "properties": [
+              {
+                "property": "Annotation:",
+                "value": "@Override"
+              },
+              {
+                "property": "AnnotationValue",
+                "value": ""
+              },
+              {
+                "property": "Number of code lines",
+                "value": 247
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 144
+              }
+            ],
+            "full_name": "com.salesmanager.core.entity.orders.Order.equals"
+          },
+          {
+            "name": "createOrderProduct",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 375
+              }
+            ],
+            "full_name": "com.salesmanager.core.util.CheckoutUtil.createOrderProduct"
+          },
+          {
+            "name": "formatHTMLProductPrice",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 375
+              }
+            ],
+            "full_name": "com.salesmanager.core.util.ProductUtil.formatHTMLProductPrice"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 6843,
+        "element_type": "Java Method"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "OrderService",
+            "properties": [
+              {
+                "property": "Annotation:",
+                "value": "@Service"
+              },
+              {
+                "property": "AnnotationValue",
+                "value": ""
+              },
+              {
+                "property": "Number of code lines",
+                "value": 1403
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 35
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.order.OrderService"
+          },
+          {
+            "name": "CatalogService",
+            "properties": [
+              {
+                "property": "Annotation:",
+                "value": "@Service"
+              },
+              {
+                "property": "AnnotationValue",
+                "value": ""
+              },
+              {
+                "property": "Number of code lines",
+                "value": 1224
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 26
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.catalog.CatalogService"
+          },
+          {
+            "name": "Order",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 1000
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 9
+              }
+            ],
+            "full_name": "com.salesmanager.core.entity.orders.Order"
+          },
+          {
+            "name": "ShippingService",
+            "properties": [
+              {
+                "property": "Annotation:",
+                "value": "@Service"
+              },
+              {
+                "property": "AnnotationValue",
+                "value": ""
+              },
+              {
+                "property": "Number of code lines",
+                "value": 747
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 23
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.shipping.ShippingService"
+          },
+          {
+            "name": "ProductUtil",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 704
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 13
+              }
+            ],
+            "full_name": "com.salesmanager.core.util.ProductUtil"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 457,
+        "element_type": "Java Class"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "decotemplate-fb.css",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 1103
+              }
+            ],
+            "full_name": "sm-shop/WebContent/common/css/templates/catalog/decotemplate-fb.css"
+          },
+          {
+            "name": "decotemplate.css",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 1095
+              }
+            ],
+            "full_name": "sm-shop/WebContent/common/css/templates/catalog/decotemplate.css"
+          },
+          {
+            "name": "cart.js",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 373
+              }
+            ],
+            "full_name": "sm-shop/WebContent/common/js/cart.js"
+          },
+          {
+            "name": "cart.js",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 347
+              }
+            ],
+            "full_name": "sm-central/WebContent/common/js/cart.js"
+          },
+          {
+            "name": "thickbox-noconflict.js",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 276
+              }
+            ],
+            "full_name": "sm-central/WebContent/common/js/thickbox-noconflict.js"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 117,
+        "element_type": ""
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "decotemplate-fb.css",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 1103
+              }
+            ],
+            "full_name": "sm-shop/WebContent/common/css/templates/catalog/decotemplate-fb.css"
+          },
+          {
+            "name": "decotemplate.css",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 1095
+              }
+            ],
+            "full_name": "sm-shop/WebContent/common/css/templates/catalog/decotemplate.css"
+          },
+          {
+            "name": "customer.css",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 208
+              }
+            ],
+            "full_name": "sm-shop/WebContent/common/css/customer.css"
+          },
+          {
+            "name": "skin.css",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 138
+              }
+            ],
+            "full_name": "sm-central/WebContent/common/css/skin.css"
+          },
+          {
+            "name": "typo.css",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 137
+              }
+            ],
+            "full_name": "sm-central/WebContent/common/styles/typo.css"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 36,
+        "element_type": "CSS Files"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "EditProductAction",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 981
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 23
+              }
+            ],
+            "full_name": "com.salesmanager.central.catalog.EditProductAction"
+          },
+          {
+            "name": "ShippingCustomRatesAction",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 871
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 12
+              }
+            ],
+            "full_name": "com.salesmanager.central.shipping.ShippingCustomRatesAction"
+          },
+          {
+            "name": "InvoiceDetailsAction",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 725
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 25
+              }
+            ],
+            "full_name": "com.salesmanager.central.invoice.InvoiceDetailsAction"
+          },
+          {
+            "name": "SubscriptionAction",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 658
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 22
+              }
+            ],
+            "full_name": "com.salesmanager.checkout.subscription.SubscriptionAction"
+          },
+          {
+            "name": "ProfileAction",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 649
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 17
+              }
+            ],
+            "full_name": "com.salesmanager.central.profile.ProfileAction"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 77,
+        "element_type": "Java Class Struts"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "ProductDao",
+            "properties": [
+              {
+                "property": "Annotation:",
+                "value": "@Repository"
+              },
+              {
+                "property": "AnnotationValue",
+                "value": "value\u003d"
+              },
+              {
+                "property": "Number of code lines",
+                "value": 493
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 15
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ProductDao"
+          },
+          {
+            "name": "OrderDao",
+            "properties": [
+              {
+                "property": "Annotation:",
+                "value": "@Repository"
+              },
+              {
+                "property": "AnnotationValue",
+                "value": "value\u003d"
+              },
+              {
+                "property": "Number of code lines",
+                "value": 314
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 11
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.order.impl.dao.OrderDao"
+          },
+          {
+            "name": "CategoryDao",
+            "properties": [
+              {
+                "property": "Annotation:",
+                "value": "@Repository"
+              },
+              {
+                "property": "AnnotationValue",
+                "value": "value\u003d"
+              },
+              {
+                "property": "Number of code lines",
+                "value": 254
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 10
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDao"
+          },
+          {
+            "name": "CustomerDao",
+            "properties": [
+              {
+                "property": "Annotation:",
+                "value": "@Repository"
+              },
+              {
+                "property": "AnnotationValue",
+                "value": "value\u003d"
+              },
+              {
+                "property": "Number of code lines",
+                "value": 215
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 9
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.customer.impl.dao.CustomerDao"
+          },
+          {
+            "name": "DynamicLabelDao",
+            "properties": [
+              {
+                "property": "Annotation:",
+                "value": "@Repository"
+              },
+              {
+                "property": "AnnotationValue",
+                "value": "value\u003d"
+              },
+              {
+                "property": "Number of code lines",
+                "value": 212
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 8
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.reference.impl.dao.DynamicLabelDao"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 63,
+        "element_type": "Java Class DAO"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "customer.jsp",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 439
+              }
+            ],
+            "full_name": "[sm-shop/WebContent/checkout/components/customer.jsp]"
+          },
+          {
+            "name": "shippingcustomrates.jsp",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 406
+              }
+            ],
+            "full_name": "[sm-central/WebContent/shipping/shippingcustomrates.jsp]"
+          },
+          {
+            "name": "modalselectattributes.jsp",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 372
+              }
+            ],
+            "full_name": "[sm-central/WebContent/invoice/modalselectattributes.jsp]"
+          },
+          {
+            "name": "invoicedetails.jsp",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 351
+              }
+            ],
+            "full_name": "[sm-central/WebContent/invoice/invoicedetails.jsp]"
+          },
+          {
+            "name": "orderdetails.jsp",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 341
+              }
+            ],
+            "full_name": "[sm-central/WebContent/orders/orderdetails.jsp]"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 264,
+        "element_type": "eFile"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "cart.js",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 373
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 1
+              }
+            ],
+            "full_name": "sm-shop/WebContent/common/js/cart.js"
+          },
+          {
+            "name": "cart.js",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 347
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 1
+              }
+            ],
+            "full_name": "sm-central/WebContent/common/js/cart.js"
+          },
+          {
+            "name": "thickbox-noconflict.js",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 276
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 1
+              }
+            ],
+            "full_name": "sm-central/WebContent/common/js/thickbox-noconflict.js"
+          },
+          {
+            "name": "picker.js",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 148
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 1
+              }
+            ],
+            "full_name": "sm-central/WebContent/common/js/picker.js"
+          },
+          {
+            "name": "functions.js",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 116
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 1
+              }
+            ],
+            "full_name": "sm-shop/WebContent/common/js/functions.js"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 15,
+        "element_type": "JavaScript Files"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "ProductImageUtil",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 251
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 10
+              }
+            ],
+            "full_name": "com.salesmanager.core.util.ProductImageUtil"
+          },
+          {
+            "name": "CoreFileImpl",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 66
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 9
+              }
+            ],
+            "full_name": "com.salesmanager.core.module.impl.application.files.CoreFileImpl"
+          }
+        ],
+        "elements_with_properties_list_comment": "",
+        "nb_elements": 2,
+        "element_type": "Java Class Rich Client"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "setCalculate",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 105
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 24
+              }
+            ],
+            "full_name": "sm-shop/WebContent/common/js/cart.js.setCalculate"
+          },
+          {
+            "name": "tb_show",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 96
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 23
+              },
+              {
+                "property": "Number of Commented Code Lines",
+                "value": 4
+              }
+            ],
+            "full_name": "sm-central/WebContent/common/js/thickbox-noconflict.js.tb_show"
+          },
+          {
+            "name": "setCalculate",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 97
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 21
+              }
+            ],
+            "full_name": "sm-central/WebContent/common/js/cart.js.setCalculate"
+          },
+          {
+            "name": "getAttributes",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 45
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 10
+              }
+            ],
+            "full_name": "sm-shop/WebContent/common/js/functions.js.getAttributes"
+          },
+          {
+            "name": "cookie",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 34
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 10
+              }
+            ],
+            "full_name": "sm-central/WebContent/common/js/cookie.js.cookie"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 486,
+        "element_type": "JavaScript function"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "email_template_checkout.ftl",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 106
+              }
+            ],
+            "full_name": "sm-central/WebContent/WEB-INF/classes/template/mail/email_template_checkout.ftl"
+          },
+          {
+            "name": "email_template_checkout.ftl",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 106
+              }
+            ],
+            "full_name": "sm-core/conf/templates/template/mail/email_template_checkout.ftl"
+          },
+          {
+            "name": "email_template_checkout.ftl",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 106
+              }
+            ],
+            "full_name": "sm-shop/WebContent/WEB-INF/classes/template/mail/email_template_checkout.ftl"
+          },
+          {
+            "name": "smcheckbox.ftl",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 86
+              }
+            ],
+            "full_name": "sm-central/WebContent/WEB-INF/classes/template/xhtml/smcheckbox.ftl"
+          },
+          {
+            "name": "smcheckbox.ftl",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 86
+              }
+            ],
+            "full_name": "sm-core/conf/templates/template/xhtml/smcheckbox.ftl"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 65,
+        "element_type": "HTML Pages"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "Order",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 75
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 1
+              }
+            ],
+            "full_name": "com.salesmanager.core.entity.orders.Order.Order"
+          },
+          {
+            "name": "CoreModuleService",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 32
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 1
+              }
+            ],
+            "full_name": "com.salesmanager.core.entity.reference.CoreModuleService.CoreModuleService"
+          },
+          {
+            "name": "MerchantStore",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 30
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 1
+              }
+            ],
+            "full_name": "com.salesmanager.core.entity.merchant.MerchantStore.MerchantStore"
+          },
+          {
+            "name": "CentralSequencer",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 26
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 1
+              }
+            ],
+            "full_name": "com.salesmanager.core.entity.system.CentralSequencer.CentralSequencer"
+          },
+          {
+            "name": "MerchantPaymentGatewayTrx",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 23
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 1
+              }
+            ],
+            "full_name": "com.salesmanager.core.entity.payment.MerchantPaymentGatewayTrx.MerchantPaymentGatewayTrx"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 395,
+        "element_type": "Java Constructor"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "ORDERS",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 63
+              }
+            ],
+            "full_name": "DEFAULT.ORDERS"
+          },
+          {
+            "name": "PRODUCTS",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 57
+              }
+            ],
+            "full_name": "DEFAULT.PRODUCTS"
+          },
+          {
+            "name": "CUSTOMERS",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 47
+              }
+            ],
+            "full_name": "DEFAULT.CUSTOMERS"
+          },
+          {
+            "name": "CENTRAL_SEQUENCER",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 46
+              }
+            ],
+            "full_name": "DEFAULT.CENTRAL_SEQUENCER"
+          },
+          {
+            "name": "MERCHANT_USER_INFORMATION",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 31
+              }
+            ],
+            "full_name": "DEFAULT.MERCHANT_USER_INFORMATION"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 90,
+        "element_type": "MySQL Table"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "{(83:2)}",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 41
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 9
+              }
+            ],
+            "full_name": "com.salesmanager.central.merchantstore.ContentAction.{(83:2)}"
+          },
+          {
+            "name": "{(156:2)}",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 41
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 9
+              }
+            ],
+            "full_name": "com.salesmanager.central.catalog.EditProductAction.{(156:2)}"
+          },
+          {
+            "name": "{(72:2)}",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 41
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 9
+              }
+            ],
+            "full_name": "com.salesmanager.central.catalog.EditImagesAction.{(72:2)}"
+          },
+          {
+            "name": "{(42:2)}",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 39
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 8
+              }
+            ],
+            "full_name": "com.salesmanager.core.util.CurrencyUtil.{(42:2)}"
+          },
+          {
+            "name": "{(37:2)}",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 38
+              },
+              {
+                "property": "Cyclomatic Complexity",
+                "value": 6
+              }
+            ],
+            "full_name": "com.salesmanager.core.util.PropertiesUtil.{(37:2)}"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 29,
+        "element_type": "Java Initializer"
+      },
+      {
+        "elements_with_properties": [
+          {
+            "name": "IProductDao",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 36
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 3
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.IProductDao"
+          },
+          {
+            "name": "IDynamicLabelDao",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 26
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 3
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.reference.impl.dao.IDynamicLabelDao"
+          },
+          {
+            "name": "ICategoryDao",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 25
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 3
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ICategoryDao"
+          },
+          {
+            "name": "ICustomerDao",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 24
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 3
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.customer.impl.dao.ICustomerDao"
+          },
+          {
+            "name": "ICategoryDescriptionDao",
+            "properties": [
+              {
+                "property": "Number of code lines",
+                "value": 21
+              },
+              {
+                "property": "Efferent Coupling (CE)",
+                "value": 3
+              }
+            ],
+            "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.ICategoryDescriptionDao"
+          }
+        ],
+        "elements_with_properties_list_comment": "element list is truncated to first 5 items",
+        "nb_elements": 95,
+        "element_type": "Java Interface"
+      }
+    ],
+    "04. findings about application [SWintel115] main elements": [
+      {
+        "element_findings": [
+          {
+            "nb_findings": 55,
+            "category_findings": [
+              {
+                "finding": "CVE-2011-1772"
+              },
+              {
+                "finding": "CVE-2011-2087"
+              },
+              {
+                "finding": "CVE-2011-3923"
+              },
+              {
+                "finding": "CVE-2011-5057"
+              },
+              {
+                "finding": "CVE-2012-0391"
+              }
+            ],
+            "category_findings_list_comment": "finding list is truncated to first 5 items",
+            "category": "Vulnerability"
+          }
+        ],
+        "nb_findings": 55,
+        "elements": [
+          {
+            "nb_elements": 41,
+            "element_type": "Java Method",
+            "elements_with_findings": [
+              {
+                "name": "setActionErrors",
+                "full_name": "com.opensymphony.xwork2.ActionSupport.setActionErrors"
+              },
+              {
+                "name": "getSession",
+                "full_name": "com.opensymphony.xwork2.ActionContext.getSession"
+              },
+              {
+                "name": "getContext",
+                "full_name": "com.opensymphony.xwork2.ActionContext.getContext"
+              },
+              {
+                "name": "getText",
+                "full_name": "com.opensymphony.xwork2.TextProvider.getText"
+              },
+              {
+                "name": "addFieldError",
+                "full_name": "com.opensymphony.xwork2.ValidationAware.addFieldError"
+              }
+            ],
+            "elements_with_findings_list_comment": "element list is truncated to first 5 items"
+          },
+          {
+            "nb_elements": 2,
+            "element_type": "Java Constructor",
+            "elements_with_findings": [
+              {
+                "name": "TextProviderFactory",
+                "full_name": "com.opensymphony.xwork2.TextProviderFactory.TextProviderFactory"
+              },
+              {
+                "name": "ValidationException",
+                "full_name": "com.opensymphony.xwork2.validator.ValidationException.ValidationException"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 7,
+            "element_type": "Java Interface",
+            "elements_with_findings": [
+              {
+                "name": "Interceptor",
+                "full_name": "com.opensymphony.xwork2.interceptor.Interceptor"
+              },
+              {
+                "name": "ActionInvocation",
+                "full_name": "com.opensymphony.xwork2.ActionInvocation"
+              },
+              {
+                "name": "LocaleProvider",
+                "full_name": "com.opensymphony.xwork2.LocaleProvider"
+              },
+              {
+                "name": "TextProvider",
+                "full_name": "com.opensymphony.xwork2.TextProvider"
+              },
+              {
+                "name": "Action",
+                "full_name": "com.opensymphony.xwork2.Action"
+              }
+            ],
+            "elements_with_findings_list_comment": "element list is truncated to first 5 items"
+          },
+          {
+            "nb_elements": 5,
+            "element_type": "Java Class",
+            "elements_with_findings": [
+              {
+                "name": "TextProviderFactory",
+                "full_name": "com.opensymphony.xwork2.TextProviderFactory"
+              },
+              {
+                "name": "LocalizedTextUtil",
+                "full_name": "com.opensymphony.xwork2.util.LocalizedTextUtil"
+              },
+              {
+                "name": "ActionContext",
+                "full_name": "com.opensymphony.xwork2.ActionContext"
+              },
+              {
+                "name": "ValidatorSupport",
+                "full_name": "com.opensymphony.xwork2.validator.validators.ValidatorSupport"
+              },
+              {
+                "name": "ValidationException",
+                "full_name": "com.opensymphony.xwork2.validator.ValidationException"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 2,
+            "element_type": "Java Class Struts",
+            "elements_with_findings": [
+              {
+                "name": "ActionSupport",
+                "full_name": "com.opensymphony.xwork2.ActionSupport"
+              },
+              {
+                "name": "FieldValidatorSupport",
+                "full_name": "com.opensymphony.xwork2.validator.validators.FieldValidatorSupport"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 2,
+            "element_type": "Generic Java Interface",
+            "elements_with_findings": [
+              {
+                "name": "Validator\u003cT extends java.lang.Object\u003e",
+                "full_name": "com.opensymphony.xwork2.validator.Validator"
+              },
+              {
+                "name": "ModelDriven\u003cT extends java.lang.Object\u003e",
+                "full_name": "com.opensymphony.xwork2.ModelDriven"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 3,
+            "element_type": "Java Field",
+            "elements_with_findings": [
+              {
+                "name": "INPUT",
+                "full_name": "com.opensymphony.xwork2.Action.INPUT"
+              },
+              {
+                "name": "ERROR",
+                "full_name": "com.opensymphony.xwork2.Action.ERROR"
+              },
+              {
+                "name": "SUCCESS",
+                "full_name": "com.opensymphony.xwork2.Action.SUCCESS"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": "element type list is truncated to first 5 items"
+      },
+      {
+        "element_findings": [
+          {
+            "nb_findings": 54,
+            "category_findings": [
+              {
+                "finding": "CVE-2011-1772"
+              },
+              {
+                "finding": "CVE-2011-2087"
+              },
+              {
+                "finding": "CVE-2011-3923"
+              },
+              {
+                "finding": "CVE-2011-5057"
+              },
+              {
+                "finding": "CVE-2012-0391"
+              }
+            ],
+            "category_findings_list_comment": "finding list is truncated to first 5 items",
+            "category": "Vulnerability"
+          }
+        ],
+        "nb_findings": 54,
+        "elements": [
+          {
+            "nb_elements": 15,
+            "element_type": "Java Field",
+            "elements_with_findings": [
+              {
+                "name": "includeContext",
+                "full_name": "org.apache.struts2.views.jsp.URLTag.includeContext"
+              },
+              {
+                "name": "encode",
+                "full_name": "org.apache.struts2.views.jsp.URLTag.encode"
+              },
+              {
+                "name": "method",
+                "full_name": "org.apache.struts2.views.jsp.URLTag.method"
+              },
+              {
+                "name": "namespace",
+                "full_name": "org.apache.struts2.views.jsp.URLTag.namespace"
+              },
+              {
+                "name": "action",
+                "full_name": "org.apache.struts2.views.jsp.URLTag.action"
+              }
+            ],
+            "elements_with_findings_list_comment": "element list is truncated to first 5 items"
+          },
+          {
+            "nb_elements": 28,
+            "element_type": "Java Method",
+            "elements_with_findings": [
+              {
+                "name": "setPortletMode",
+                "full_name": "org.apache.struts2.components.URL.setPortletMode"
+              },
+              {
+                "name": "setIncludeContext",
+                "full_name": "org.apache.struts2.components.URL.setIncludeContext"
+              },
+              {
+                "name": "setEncode",
+                "full_name": "org.apache.struts2.components.URL.setEncode"
+              },
+              {
+                "name": "setMethod",
+                "full_name": "org.apache.struts2.components.URL.setMethod"
+              },
+              {
+                "name": "setNamespace",
+                "full_name": "org.apache.struts2.components.URL.setNamespace"
+              }
+            ],
+            "elements_with_findings_list_comment": "element list is truncated to first 5 items"
+          },
+          {
+            "nb_elements": 5,
+            "element_type": "Java Interface",
+            "elements_with_findings": [
+              {
+                "name": "PrincipalAware",
+                "full_name": "org.apache.struts2.interceptor.PrincipalAware"
+              },
+              {
+                "name": "ServletContextAware",
+                "full_name": "org.apache.struts2.util.ServletContextAware"
+              },
+              {
+                "name": "ServletResponseAware",
+                "full_name": "org.apache.struts2.interceptor.ServletResponseAware"
+              },
+              {
+                "name": "ServletRequestAware",
+                "full_name": "org.apache.struts2.interceptor.ServletRequestAware"
+              },
+              {
+                "name": "PrincipalProxy",
+                "full_name": "org.apache.struts2.interceptor.PrincipalProxy"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 6,
+            "element_type": "Java Class",
+            "elements_with_findings": [
+              {
+                "name": "URLTag",
+                "full_name": "org.apache.struts2.views.jsp.URLTag"
+              },
+              {
+                "name": "ComponentTagSupport",
+                "full_name": "org.apache.struts2.views.jsp.ComponentTagSupport"
+              },
+              {
+                "name": "ParamTag",
+                "full_name": "org.apache.struts2.views.jsp.ParamTag"
+              },
+              {
+                "name": "URL",
+                "full_name": "org.apache.struts2.components.URL"
+              },
+              {
+                "name": "Component",
+                "full_name": "org.apache.struts2.components.Component"
+              }
+            ],
+            "elements_with_findings_list_comment": "element list is truncated to first 5 items"
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": ""
+      },
+      {
+        "element_findings": [
+          {
+            "nb_findings": 6,
+            "category_findings": [
+              {
+                "finding": "CVE-2012-5784"
+              },
+              {
+                "finding": "CVE-2014-3596"
+              },
+              {
+                "finding": "CVE-2018-8032"
+              },
+              {
+                "finding": "CVE-2019-0227"
+              },
+              {
+                "finding": "CVE-2023-40743"
+              }
+            ],
+            "category_findings_list_comment": "finding list is truncated to first 5 items",
+            "category": "Vulnerability"
+          }
+        ],
+        "nb_findings": 6,
+        "elements": [
+          {
+            "nb_elements": 1,
+            "element_type": "Java Constructor",
+            "elements_with_findings": [
+              {
+                "name": "NonNegativeInteger",
+                "full_name": "org.apache.axis.types.NonNegativeInteger.NonNegativeInteger"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 1,
+            "element_type": "Java Class",
+            "elements_with_findings": [
+              {
+                "name": "NonNegativeInteger",
+                "full_name": "org.apache.axis.types.NonNegativeInteger"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": ""
+      },
+      {
+        "element_findings": [
+          {
+            "nb_findings": 2,
+            "category_findings": [
+              {
+                "finding": "CVE-2015-6420"
+              },
+              {
+                "finding": "CVE-2015-7501"
+              }
+            ],
+            "category_findings_list_comment": "",
+            "category": "Vulnerability"
+          }
+        ],
+        "nb_findings": 2,
+        "elements": [
+          {
+            "nb_elements": 2,
+            "element_type": "Java Method",
+            "elements_with_findings": [
+              {
+                "name": "inverseBidiMap",
+                "full_name": "org.apache.commons.collections.BidiMap.inverseBidiMap"
+              },
+              {
+                "name": "put",
+                "full_name": "org.apache.commons.collections.BidiMap.put"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 1,
+            "element_type": "Java Constructor",
+            "elements_with_findings": [
+              {
+                "name": "TreeBidiMap",
+                "full_name": "org.apache.commons.collections.bidimap.TreeBidiMap.TreeBidiMap"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 1,
+            "element_type": "Java Interface",
+            "elements_with_findings": [
+              {
+                "name": "BidiMap",
+                "full_name": "org.apache.commons.collections.BidiMap"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 1,
+            "element_type": "Java Class",
+            "elements_with_findings": [
+              {
+                "name": "TreeBidiMap",
+                "full_name": "org.apache.commons.collections.bidimap.TreeBidiMap"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": ""
+      },
+      {
+        "element_findings": [
+          {
+            "nb_findings": 2,
+            "category_findings": [
+              {
+                "finding": "CloudReady - Using file system"
+              },
+              {
+                "finding": "Container - Using file system"
+              }
+            ],
+            "category_findings_list_comment": "",
+            "category": "Execution Environment"
+          }
+        ],
+        "nb_findings": 2,
+        "elements": [
+          {
+            "nb_elements": 2,
+            "element_type": "",
+            "elements_with_findings": [
+              {
+                "name": "build.xml",
+                "full_name": "[sm-core/build.xml]"
+              },
+              {
+                "name": "build.xml",
+                "full_name": "[media/build.xml]"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": ""
+      },
+      {
+        "element_findings": [
+          {
+            "nb_findings": 2,
+            "category_findings": [
+              {
+                "finding": "CVE-2014-0114"
+              },
+              {
+                "finding": "CVE-2019-10086"
+              }
+            ],
+            "category_findings_list_comment": "",
+            "category": "Vulnerability"
+          }
+        ],
+        "nb_findings": 2,
+        "elements": [
+          {
+            "nb_elements": 1,
+            "element_type": "Java Method",
+            "elements_with_findings": [
+              {
+                "name": "copyProperties",
+                "full_name": "org.apache.commons.beanutils.BeanUtils.copyProperties"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 1,
+            "element_type": "Java Constructor",
+            "elements_with_findings": [
+              {
+                "name": "BeanUtils",
+                "full_name": "org.apache.commons.beanutils.BeanUtils.BeanUtils"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 1,
+            "element_type": "Java Class",
+            "elements_with_findings": [
+              {
+                "name": "BeanUtils",
+                "full_name": "org.apache.commons.beanutils.BeanUtils"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": ""
+      },
+      {
+        "element_findings": [
+          {
+            "nb_findings": 1,
+            "category_findings": [
+              {
+                "finding": "CVE-2012-5783"
+              }
+            ],
+            "category_findings_list_comment": "",
+            "category": "Vulnerability"
+          }
+        ],
+        "nb_findings": 1,
+        "elements": [
+          {
+            "nb_elements": 9,
+            "element_type": "Java Method",
+            "elements_with_findings": [
+              {
+                "name": "createSocket",
+                "full_name": "org.apache.commons.httpclient.protocol.ProtocolSocketFactory.createSocket"
+              },
+              {
+                "name": "createSocket",
+                "full_name": "org.apache.commons.httpclient.protocol.ProtocolSocketFactory.createSocket"
+              },
+              {
+                "name": "createSocket",
+                "full_name": "org.apache.commons.httpclient.protocol.ProtocolSocketFactory.createSocket"
+              },
+              {
+                "name": "createSocket",
+                "full_name": "org.apache.commons.httpclient.protocol.SecureProtocolSocketFactory.createSocket"
+              },
+              {
+                "name": "getConnectionTimeout",
+                "full_name": "org.apache.commons.httpclient.params.HttpConnectionParams.getConnectionTimeout"
+              }
+            ],
+            "elements_with_findings_list_comment": "element list is truncated to first 5 items"
+          },
+          {
+            "nb_elements": 3,
+            "element_type": "Java Interface",
+            "elements_with_findings": [
+              {
+                "name": "RequestEntity",
+                "full_name": "org.apache.commons.httpclient.methods.RequestEntity"
+              },
+              {
+                "name": "ProtocolSocketFactory",
+                "full_name": "org.apache.commons.httpclient.protocol.ProtocolSocketFactory"
+              },
+              {
+                "name": "SecureProtocolSocketFactory",
+                "full_name": "org.apache.commons.httpclient.protocol.SecureProtocolSocketFactory"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 5,
+            "element_type": "Java Constructor",
+            "elements_with_findings": [
+              {
+                "name": "HttpClientError",
+                "full_name": "org.apache.commons.httpclient.HttpClientError.HttpClientError"
+              },
+              {
+                "name": "StringRequestEntity",
+                "full_name": "org.apache.commons.httpclient.methods.StringRequestEntity.StringRequestEntity"
+              },
+              {
+                "name": "HttpClient",
+                "full_name": "org.apache.commons.httpclient.HttpClient.HttpClient"
+              },
+              {
+                "name": "GetMethod",
+                "full_name": "org.apache.commons.httpclient.methods.GetMethod.GetMethod"
+              },
+              {
+                "name": "PostMethod",
+                "full_name": "org.apache.commons.httpclient.methods.PostMethod.PostMethod"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          },
+          {
+            "nb_elements": 9,
+            "element_type": "Java Class",
+            "elements_with_findings": [
+              {
+                "name": "HttpMethodBase",
+                "full_name": "org.apache.commons.httpclient.HttpMethodBase"
+              },
+              {
+                "name": "HttpClientError",
+                "full_name": "org.apache.commons.httpclient.HttpClientError"
+              },
+              {
+                "name": "EntityEnclosingMethod",
+                "full_name": "org.apache.commons.httpclient.methods.EntityEnclosingMethod"
+              },
+              {
+                "name": "StringRequestEntity",
+                "full_name": "org.apache.commons.httpclient.methods.StringRequestEntity"
+              },
+              {
+                "name": "ConnectTimeoutException",
+                "full_name": "org.apache.commons.httpclient.ConnectTimeoutException"
+              }
+            ],
+            "elements_with_findings_list_comment": "element list is truncated to first 5 items"
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": ""
+      },
+      {
+        "element_findings": [
+          {
+            "nb_findings": 1,
+            "category_findings": [
+              {
+                "finding": "Avoid SQL injection"
+              }
+            ],
+            "category_findings_list_comment": "",
+            "category": "Structural Flaw"
+          }
+        ],
+        "nb_findings": 1,
+        "elements": [
+          {
+            "nb_elements": 4,
+            "element_type": "Java Method",
+            "elements_with_findings": [
+              {
+                "name": "saveInvoiceDetails",
+                "full_name": "com.salesmanager.core.service.order.OrderService.saveInvoiceDetails"
+              },
+              {
+                "name": "saveOrder",
+                "full_name": "com.salesmanager.core.service.order.OrderService.saveOrder"
+              },
+              {
+                "name": "sendEmailInvoice",
+                "full_name": "com.salesmanager.core.service.order.OrderService.sendEmailInvoice"
+              },
+              {
+                "name": "refundOrder",
+                "full_name": "com.salesmanager.core.service.order.OrderService.refundOrder"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": ""
+      },
+      {
+        "element_findings": [
+          {
+            "nb_findings": 1,
+            "category_findings": [
+              {
+                "finding": "Avoid direct or indirect remote calls inside a loop"
+              }
+            ],
+            "category_findings_list_comment": "",
+            "category": "Structural Flaw"
+          }
+        ],
+        "nb_findings": 1,
+        "elements": [
+          {
+            "nb_elements": 8,
+            "element_type": "Java Method",
+            "elements_with_findings": [
+              {
+                "name": "loadCategoriesInCache",
+                "full_name": "com.salesmanager.core.service.catalog.impl.CategoryCacheImpl.loadCategoriesInCache"
+              },
+              {
+                "name": "searchProductReviewsByCustomer",
+                "full_name": "com.salesmanager.core.service.catalog.CatalogService.searchProductReviewsByCustomer"
+              },
+              {
+                "name": "deleteAllProducts",
+                "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteAllProducts"
+              },
+              {
+                "name": "addItem",
+                "full_name": "com.salesmanager.checkout.subscription.SubscriptionAction.addItem"
+              },
+              {
+                "name": "assembleItems",
+                "full_name": "com.salesmanager.checkout.cart.ShoppingCartAction.assembleItems"
+              }
+            ],
+            "elements_with_findings_list_comment": "element list is truncated to first 5 items"
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": ""
+      },
+      {
+        "element_findings": [
+          {
+            "nb_findings": 1,
+            "category_findings": [
+              {
+                "finding": "Avoid second order SQL injection"
+              }
+            ],
+            "category_findings_list_comment": "",
+            "category": "Structural Flaw"
+          }
+        ],
+        "nb_findings": 1,
+        "elements": [
+          {
+            "nb_elements": 1,
+            "element_type": "Java Method",
+            "elements_with_findings": [
+              {
+                "name": "findByMerchantIdAndLineage",
+                "full_name": "com.salesmanager.core.service.catalog.impl.db.dao.CategoryDao.findByMerchantIdAndLineage"
+              }
+            ],
+            "elements_with_findings_list_comment": ""
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": ""
+      },
+      {
+        "element_findings": [
+          {
+            "nb_findings": 1,
+            "category_findings": [
+              {
+                "finding": "Avoid running SQL queries inside a loop"
+              }
+            ],
+            "category_findings_list_comment": "",
+            "category": "Structural Flaw"
+          }
+        ],
+        "nb_findings": 1,
+        "elements": [
+          {
+            "nb_elements": 7,
+            "element_type": "Java Method",
+            "elements_with_findings": [
+              {
+                "name": "cleanupVirtualProduct",
+                "full_name": "com.salesmanager.core.service.catalog.CatalogService.cleanupVirtualProduct"
+              },
+              {
+                "name": "uploadCategories",
+                "full_name": "com.salesmanager.core.service.catalog.CatalogService.uploadCategories"
+              },
+              {
+                "name": "saveOrUpdateProduct",
+                "full_name": "com.salesmanager.core.service.catalog.CatalogService.saveOrUpdateProduct"
+              },
+              {
+                "name": "deleteTaxClass",
+                "full_name": "com.salesmanager.core.service.tax.TaxService.deleteTaxClass"
+              },
+              {
+                "name": "deleteProduct",
+                "full_name": "com.salesmanager.core.service.catalog.CatalogService.deleteProduct"
+              }
+            ],
+            "elements_with_findings_list_comment": "element list is truncated to first 5 items"
+          }
+        ],
+        "element_findings_list_comment": "",
+        "elements_list_comment": ""
+      }
+    ]
+  }
+}

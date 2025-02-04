@@ -1,0 +1,68 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/entity/orders/OrderStatus.java]": {
+    "00. file [sm-core/src/com/salesmanager/core/entity/orders/OrderStatus.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "MySQL Table",
+                "from_name": "PROP_ORDER_STATUS_NAME",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "MySQL Table",
+                "from_name": "REF",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "OrderStatus",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "hashCode",
+                "to_name": "hashCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "equals",
+                "to_name": "equals",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderStatus",
+                "to_name": "OrderStatusId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderStatusId.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

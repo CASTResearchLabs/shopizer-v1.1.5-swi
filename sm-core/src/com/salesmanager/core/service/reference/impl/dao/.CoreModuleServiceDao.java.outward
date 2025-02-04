@@ -1,0 +1,89 @@
+{
+  "main facts about source code file [sm-core/src/com/salesmanager/core/service/reference/impl/dao/CoreModuleServiceDao.java]": {
+    "00. file [sm-core/src/com/salesmanager/core/service/reference/impl/dao/CoreModuleServiceDao.java] defines elements relying on elements defined following source files": [
+      {
+        "files": [
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findByModuleAndRegion",
+                "to_name": "getCountryIsoCode2",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findByServiceTypeAndByRegion",
+                "to_name": "getCountryIsoCode2",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findByServiceTypeAndSubTypeByRegion",
+                "to_name": "getCountryIsoCode2",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "CoreModuleServiceDao",
+                "to_name": "CoreModuleService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByServiceTypeAndByRegion",
+                "to_name": "CoreModuleService",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/CoreModuleService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findByModuleAndRegion",
+                "to_name": "ALLCOUNTRY_ISOCODE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findByServiceTypeAndByRegion",
+                "to_name": "ALLCOUNTRY_ISOCODE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "findByServiceTypeAndSubTypeByRegion",
+                "to_name": "ALLCOUNTRY_ISOCODE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "Java Class",
+                "from_name": "CoreModuleServiceDao",
+                "to_name": "Constants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/Constants.java"
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 2
+      }
+    ]
+  }
+}

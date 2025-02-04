@@ -1,0 +1,103 @@
+{
+  "main facts about source code file [sm-shop/WebContent/common/js/functions.js]": {
+    "00. source files defining elements dependent on elements defined in file [sm-shop/WebContent/common/js/functions.js]": [
+      {
+        "files": [
+          {
+            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/scripts.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JSP Pages",
+                "to_type": "JavaScript Files",
+                "from_name": "scripts.jsp",
+                "to_name": "functions.js",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "JavaScript function",
+                "from_name": "handleCart",
+                "to_name": "setShoppingCartCookie",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "JavaScript function",
+                "from_name": "click_PARAM_1",
+                "to_name": "getAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript function",
+                "to_type": "JavaScript function",
+                "from_name": "ready_PARAM_1",
+                "to_name": "getAttributes",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/product.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JSP Pages",
+                "to_type": "JavaScript Files",
+                "from_name": "product.jsp",
+                "to_name": "functions.js",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "JavaScript function",
+                "from_name": "product.jsp",
+                "to_name": "setPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "JavaScript function",
+                "from_name": "product.jsp",
+                "to_name": "toggleTAB",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "from_file": "sm-shop/WebContent/checkout/thankyou/thankyou.jsp",
+            "calls_between_elements": [
+              {
+                "from_type": "JSP Pages",
+                "to_type": "JavaScript Files",
+                "from_name": "thankyou.jsp",
+                "to_name": "functions.js",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript Source Code Fragment",
+                "to_type": "JavaScript function",
+                "from_name": "thankyou",
+                "to_name": "setShoppingCartCookie",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JSP Pages",
+                "to_type": "JavaScript function",
+                "from_name": "thankyou.jsp",
+                "to_name": "setShoppingCartCookie",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3
+          }
+        ],
+        "files_list_comment": "",
+        "nb_files_with_calling_elements": 3
+      }
+    ]
+  }
+}

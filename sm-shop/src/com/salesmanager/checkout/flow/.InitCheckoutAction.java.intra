@@ -1,0 +1,75 @@
+{
+  "main facts about source code file [sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java]": {
+    "00. dependencies between elements defined in file [sm-shop/src/com/salesmanager/checkout/flow/InitCheckoutAction.java]": [
+      {
+        "calls_between_elements": [
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "initCheckout",
+            "to_name": "setPaymentMethod",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "initCheckout",
+            "to_name": "getPaymentMethod",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/initInvoiceCheckout",
+            "to_name": "initCheckout",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/checkout",
+            "to_name": "initCheckout",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getPaymentMethod",
+            "to_name": "paymentMethod",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "initCheckout",
+            "to_name": "paymentMethod",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setPaymentMethod",
+            "to_name": "paymentMethod",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Class",
+            "from_name": "/initInvoiceCheckout",
+            "to_name": "InitCheckoutAction",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Class",
+            "from_name": "/checkout",
+            "to_name": "InitCheckoutAction",
+            "calling_type": "CALL"
+          }
+        ],
+        "calls_between_elements_list_comment": "",
+        "nb_calls_between_elements": 9
+      }
+    ]
+  }
+}
