@@ -56,17 +56,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "saveModule",
                 "to_name": "MerchantService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "getService",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -245,6 +245,41 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "saveModule",
+                "to_name": "ValidationException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "saveModule",
+                "to_name": "ValidationException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "PaymentpsigateAction",
+                "to_name": "ValidationException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "PaymentpsigateAction",
+                "to_name": "ValidationException",
+                "calling_type": "RAISE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-central/src/com/salesmanager/central/util/ValidationException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "saveModule",
                 "to_name": "context",
@@ -280,41 +315,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "saveModule",
-                "to_name": "ValidationException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "PaymentpsigateAction",
-                "to_name": "ValidationException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "saveModule",
-                "to_name": "ValidationException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "PaymentpsigateAction",
-                "to_name": "ValidationException",
-                "calling_type": "RAISE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-central/src/com/salesmanager/central/util/ValidationException.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "displayModule",
                 "to_name": "getConfiguration",
@@ -344,34 +344,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getConfigurationByModule",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveModule",
-                "to_name": "saveOrUpdateMerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "PaymentpsigateAction",
-                "to_name": "MerchantService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveModule",
                 "to_name": "encrypt",
                 "calling_type": "CALL"
@@ -394,6 +366,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/util/EncryptionUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveModule",
+                "to_name": "saveOrUpdateMerchantConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "getConfigurationByModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "PaymentpsigateAction",
+                "to_name": "MerchantService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
           },
           {
             "calls_between_elements": [

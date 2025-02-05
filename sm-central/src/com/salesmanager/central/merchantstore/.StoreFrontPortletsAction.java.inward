@@ -4,107 +4,47 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "saveStoreFrontPortlets",
-                "to_name": "save",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "deleteCustomPortlet",
-                "to_name": "deleteCustomPortlet",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "updateCustomPortletsList",
-                "to_name": "saveCustomPortlets",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "savePortlet",
-                "to_name": "savePortlet",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "customPortletDetails",
-                "to_name": "customPortletsDetails",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts.xml",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 12
           },
           {
-            "from_file": "sm-central/WebContent/merchantstore/portlets.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "customPortletDetails.action",
-                "to_name": "/customPortletDetails",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "merchantstore/customPortletDetails.action",
-                "to_name": "/customPortletDetails",
-                "calling_type": "CALL"
+                "calling_type": "GET",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "portlets.jsp",
-                "to_name": "/customPortletDetails",
-                "calling_type": "GET"
-              },
-              {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "merchantstore/deleteCustomPortlet.action",
-                "to_name": "/deleteCustomPortlet",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "portlets.jsp",
-                "to_name": "/deleteCustomPortlet",
-                "calling_type": "GET"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 2
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/WebContent/merchantstore/portlets.jsp",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 9
           },
           {
-            "from_file": "sm-central/WebContent/merchantstore/customPortletDetails.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "savePortlet",
-                "to_name": "/savePortlet",
-                "calling_type": "CALL"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "customPortletDetails.jsp",
-                "to_name": "/savePortlet",
-                "calling_type": "POST"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/WebContent/merchantstore/customPortletDetails.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

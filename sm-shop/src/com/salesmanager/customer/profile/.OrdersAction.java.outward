@@ -22,15 +22,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayOrders",
-                "to_name": "setPageStartNumber",
+                "from_name": "ordersQuery",
+                "to_name": "setListingCount",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "ordersQuery",
-                "to_name": "setListingCount",
+                "from_name": "displayOrders",
+                "to_name": "setPageStartNumber",
                 "calling_type": "CALL"
               },
               {
@@ -141,13 +141,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayOrders",
-                "to_name": "setTechnicalMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getCriteria",
                 "to_name": "getLocale",
                 "calling_type": "CALL"
@@ -157,6 +150,13 @@
                 "to_type": "Java Method",
                 "from_name": "ordersQuery",
                 "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrders",
+                "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               },
               {
@@ -192,14 +192,14 @@
                 "to_type": "Java Class",
                 "from_name": "OrdersAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrdersAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -233,6 +233,69 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/util/www/SessionUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrdersAction",
+                "to_name": "Customer",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "getLanguageNumberCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrdersAction",
+                "to_name": "LanguageUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrdersAction",
+                "to_name": "MerchantStore",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -322,64 +385,22 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCriteria",
-                "to_name": "getCustomerId",
+                "to_type": "Struts Result",
+                "from_name": "displayOrders",
+                "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "Struts Action",
                 "from_name": "OrdersAction",
-                "to_name": "Customer",
+                "to_name": "orders",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCriteria",
-                "to_name": "getLanguageNumberCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrdersAction",
-                "to_name": "LanguageUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCriteria",
-                "to_name": "getMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrdersAction",
-                "to_name": "MerchantStore",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
+            "to_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml"
           },
           {
             "calls_between_elements": [
@@ -401,27 +422,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-shop/src/com/salesmanager/common/util/PropertiesHelper.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "displayOrders",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Struts Action",
-                "from_name": "OrdersAction",
-                "to_name": "orders",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml"
           }
         ],
         "files_list_comment": "",

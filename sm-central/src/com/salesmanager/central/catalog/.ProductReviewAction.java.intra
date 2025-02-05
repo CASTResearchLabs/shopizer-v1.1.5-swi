@@ -5,51 +5,9 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "removeReview",
-            "to_name": "getReviewId",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "reviewProduct",
-            "to_name": "getProduct",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "removeReview",
-            "to_name": "reviewProduct",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/productreview",
-            "to_name": "reviewProduct",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/removeReview",
-            "to_name": "removeReview",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "reviewProduct",
-            "to_name": "size",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Initializer",
-            "to_type": "Java Field",
-            "from_name": "{(46:2)}",
-            "to_name": "size",
+            "from_name": "setReviewId",
+            "to_name": "reviewId",
             "calling_type": "WRITE"
           },
           {
@@ -62,8 +20,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setReviewId",
-            "to_name": "reviewId",
+            "from_name": "setReviews",
+            "to_name": "reviews",
             "calling_type": "WRITE"
           },
           {
@@ -76,22 +34,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "reviewProduct",
-            "to_name": "reviews",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setReviews",
-            "to_name": "reviews",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "reviewProduct",
-            "to_name": "reviews",
+            "from_name": "setProduct",
+            "to_name": "product",
             "calling_type": "WRITE"
           },
           {
@@ -103,10 +47,66 @@
           },
           {
             "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "reviewProduct",
+            "to_name": "getProduct",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setProduct",
-            "to_name": "product",
+            "from_name": "reviewProduct",
+            "to_name": "size",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "reviewProduct",
+            "to_name": "reviews",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "reviewProduct",
+            "to_name": "reviews",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "removeReview",
+            "to_name": "getReviewId",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "removeReview",
+            "to_name": "reviewProduct",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Initializer",
+            "to_type": "Java Field",
+            "from_name": "{(46:2)}",
+            "to_name": "size",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/removeReview",
+            "to_name": "removeReview",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Class",
+            "from_name": "/removeReview",
+            "to_name": "ProductReviewAction",
+            "calling_type": "CALL"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

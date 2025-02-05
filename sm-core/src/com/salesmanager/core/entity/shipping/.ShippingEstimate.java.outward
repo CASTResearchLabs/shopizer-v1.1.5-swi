@@ -8,7 +8,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getShippingEstimateDescription",
+                "from_name": "getShippingTypeDescription",
                 "to_name": "getText",
                 "calling_type": "CALL"
               },
@@ -16,7 +16,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getShippingTypeDescription",
-                "to_name": "getText",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
@@ -29,15 +29,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getShippingEstimateDescription",
-                "to_name": "setLocale",
+                "from_name": "getShippingCompany",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getShippingTypeDescription",
-                "to_name": "getInstance",
+                "from_name": "getShippingEstimateDescription",
+                "to_name": "getText",
                 "calling_type": "CALL"
               }
             ],
@@ -47,6 +47,13 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setRegions",
+                "to_name": "ShippingPriceRegion",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -62,23 +69,16 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingEstimate",
-                "to_name": "ShippingPriceRegion",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "setRegions",
+                "from_name": "getRegions",
                 "to_name": "ShippingPriceRegion",
                 "calling_type": "USE"
               },
               {
-                "from_type": "Java Method",
+                "from_type": "Java Field",
                 "to_type": "Java Class",
-                "from_name": "getRegions",
+                "from_name": "regions",
                 "to_name": "ShippingPriceRegion",
                 "calling_type": "USE"
               }
@@ -90,17 +90,17 @@
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "ShippingEstimate",
-                "to_name": "ShippingType",
-                "calling_type": "READ"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Enum Item",
                 "from_name": "getShippingTypeDescription",
                 "to_name": "NATIONAL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "ShippingEstimate",
+                "to_name": "ShippingType",
                 "calling_type": "READ"
               }
             ],

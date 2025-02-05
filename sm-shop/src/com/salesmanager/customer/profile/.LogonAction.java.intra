@@ -5,6 +5,13 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getZones",
+            "to_name": "zones",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "registerCustomer",
             "to_name": "generateCaptchaImage",
@@ -13,64 +20,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "displayRegistration",
-            "to_name": "generateCaptchaImage",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/resetPassword",
-            "to_name": "resetPassword",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/register",
-            "to_name": "registerCustomer",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/displayRegistration",
-            "to_name": "displayRegistration",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
             "from_name": "registerCustomer",
             "to_name": "prepareZones",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "displayRegistration",
-            "to_name": "prepareZones",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/localLogon",
-            "to_name": "localLogon",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/remoteLogon",
-            "to_name": "remoteLogon",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "displayRegistration",
-            "to_name": "setCustomer",
             "calling_type": "CALL"
           },
           {
@@ -78,6 +29,48 @@
             "to_type": "Java Method",
             "from_name": "registerCustomer",
             "to_name": "getCustomer",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "registerCustomer",
+            "to_name": "getFormstate",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "registerCustomer",
+            "to_name": "getCustomerEmailAddressRepeat",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "registerCustomer",
+            "to_name": "customer",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "displayRegistration",
+            "to_name": "generateCaptchaImage",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "displayRegistration",
+            "to_name": "prepareZones",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "displayRegistration",
+            "to_name": "setCustomer",
             "calling_type": "CALL"
           },
           {
@@ -96,17 +89,24 @@
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "registerCustomer",
-            "to_name": "getFormstate",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "authenticateCustomer",
+            "to_name": "customer",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "registerCustomer",
-            "to_name": "getCustomerEmailAddressRepeat",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "authenticateCustomer",
+            "to_name": "customer",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCustomer",
+            "to_name": "customer",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

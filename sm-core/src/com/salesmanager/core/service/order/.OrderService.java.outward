@@ -7,6 +7,27 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findInvoicesByCustomerAndStartDate",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findInvoicesByCustomer",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findOrdersByCustomer",
+                "to_name": "Order",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
                 "to_name": "setCurrency",
@@ -15,29 +36,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "setCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
                 "to_name": "getOrderHistory",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "getOrderHistory",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "getOrderTotal",
                 "calling_type": "CALL"
               }
             ],
@@ -50,21 +50,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendEmailInvoice",
-                "to_name": "getName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
-                "to_name": "getCustomerBillingLastName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
                 "to_name": "getCustomerBillingLastName",
                 "calling_type": "CALL"
               },
@@ -78,8 +64,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "getCustomerBillingFirstName",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getCustomerBillingZoneId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getCustomerBillingStreetAddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getCustomerBillingState",
                 "calling_type": "CALL"
               }
             ],
@@ -91,10 +91,10 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateOrderTotal",
-                "to_name": "isShipping",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "OrderProduct",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
@@ -106,22 +106,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "getOrderattributes",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getOrderProductId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "getOrderattributes",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getDownloads",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "calculateOrderTotal",
-                "to_name": "getProductPrice",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "isProductSubscribtion",
                 "calling_type": "CALL"
               }
             ],
@@ -131,6 +131,13 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "OrderInvoice",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -158,13 +165,6 @@
                 "from_name": "prepareInvoiceReport",
                 "to_name": "setOrderTotal",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareInvoiceReport",
-                "to_name": "setOrderSubTotals",
-                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -190,22 +190,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "setComments",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setDateAdded",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendEmailInvoice",
-                "to_name": "setComments",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderStatusId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "updateOrderStatus",
-                "to_name": "setComments",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderId",
                 "calling_type": "CALL"
               }
             ],
@@ -215,6 +215,13 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "OrderTotal",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -242,13 +249,6 @@
                 "from_name": "prepareOrderListReport",
                 "to_name": "setSortOrder",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refundOrder",
-                "to_name": "setSortOrder",
-                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -259,46 +259,18 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "getOrderAccountProducts",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "getFileHistory",
+                "to_name": "OrderException",
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "getOrderAccountProducts",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "createVirtualProductFileData",
+                "to_name": "OrderException",
+                "calling_type": "THROW"
               },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "getOrderAccountProducts",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateOrderPayment",
-                "to_name": "getOrderAccountProducts",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "setOrderAccountBillDay",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 22,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderAccount.java"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
@@ -308,36 +280,64 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "sendResetDownloadCountrsEmail",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "resetOrderDownloadCounters",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
                 "to_type": "Java Class",
-                "from_name": "OrderService",
+                "from_name": "sendOrderProblemEmail",
                 "to_name": "OrderException",
-                "calling_type": "CALL"
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "sendOrderProblemEmail",
+                "to_name": "OrderException",
+                "calling_type": "RAISE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 22,
             "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getOrderAccountProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderAccountBillDay",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderAccountEndDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderAccountStartDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderAccountStatusId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 22,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderAccount.java"
           },
           {
             "calls_between_elements": [
@@ -358,22 +358,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "refundOrder",
-                "to_name": "OT_REFUND",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "STATUSACCOUNTINYTERM",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "prepareInvoiceReport",
-                "to_name": "OT_RECURING",
+                "from_name": "saveOrder",
+                "to_name": "STATUSACCOUNTINYTERM",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "prepareInvoiceReport",
-                "to_name": "OT_CREDITS",
+                "from_name": "saveOrder",
+                "to_name": "STATUSPROCESSING",
                 "calling_type": "READ"
               }
             ],
@@ -386,27 +386,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "searchOrdersByCustomer",
-                "to_name": "searchOrderByCustomer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchOrders",
-                "to_name": "searchOrder",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchInvoices",
-                "to_name": "searchInvoice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "findInvoicesByCustomerAndStartDate",
                 "to_name": "findInvoicesByCustomerAndStartDate",
                 "calling_type": "CALL"
@@ -414,8 +393,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "findInvoicesByCustomer",
+                "to_name": "findInvoicesByCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "findOrdersByCustomer",
+                "to_name": "findOrdersByCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteAllOrders",
                 "to_name": "findOrdersByMerchant",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               }
             ],
@@ -427,10 +427,24 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "OrderService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
                 "to_name": "getService",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveOrder",
+                "to_name": "CatalogService",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
@@ -443,20 +457,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "calculateOrderTotal",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendEmailInvoice",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateOrderStatus",
                 "to_name": "getService",
                 "calling_type": "CALL"
               }
@@ -470,22 +470,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "calculateOrderTotal",
-                "to_name": "setShippingTotal",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateOrderTotal",
-                "to_name": "getShippingTotal",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getTotal",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
-                "to_name": "getTotal",
+                "to_name": "getTaxTotal",
                 "calling_type": "CALL"
               },
               {
@@ -498,8 +491,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
+                "from_name": "saveOrder",
                 "to_name": "getTaxTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderTotal",
+                "to_name": "setShippingTotal",
                 "calling_type": "CALL"
               }
             ],
@@ -512,20 +512,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendEmailInvoice",
-                "to_name": "getStoreemailaddress",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareInvoiceReport",
-                "to_name": "getStoreemailaddress",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
                 "to_name": "getCurrency",
                 "calling_type": "CALL"
@@ -540,8 +526,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareInvoiceReport",
-                "to_name": "getCurrency",
+                "from_name": "saveOrder",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendEmailInvoice",
+                "to_name": "getStoreemailaddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendEmailInvoice",
+                "to_name": "getStorename",
                 "calling_type": "CALL"
               }
             ],
@@ -554,15 +554,57 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "updateOrderStatus",
-                "to_name": "sendOrderStatusEmail",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderProductSpecialDurationDays",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "refundOrder",
-                "to_name": "sendOrderStatusEmail",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderProductSpecialEndDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderProductPriceSpecialStartDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOriginalPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setSpecialNewProductPrice",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 15,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderProductPriceSpecial.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderProblemEmail",
+                "to_name": "sendOrderProblemEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "sendOrderProblemEmail",
+                "to_name": "OrderImpl",
                 "calling_type": "CALL"
               },
               {
@@ -574,9 +616,9 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetOrderDownloadCounters",
-                "to_name": "sendResetDownloadCountrsEmail",
+                "to_type": "Java Constructor",
+                "from_name": "sendResetDownloadCountrsEmail",
+                "to_name": "OrderImpl",
                 "calling_type": "CALL"
               },
               {
@@ -597,55 +639,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
-                "to_name": "setOrderProductSpecialDurationDays",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "setOrderProductSpecialDurationDays",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "setOrderProductSpecialEndDate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "setOrderProductSpecialEndDate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "setOrderProductPriceSpecialStartDate",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 15,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderProductPriceSpecial.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "setOrderProductPrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
                 "to_name": "setOrderProductPrice",
                 "calling_type": "CALL"
               },
@@ -659,15 +652,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "getOrderProductPrice",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getSpecial",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "getOrderProductPrice",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderId",
                 "calling_type": "CALL"
               }
             ],
@@ -680,42 +680,42 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "setOrderAccountId",
+                "from_name": "sendEmailInvoice",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "setOrderAccountId",
+                "from_name": "sendEmailInvoice",
+                "to_name": "setLocale",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "setOrderAccountProductStartDate",
+                "from_name": "sendEmailInvoice",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "setOrderAccountProductStartDate",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "updateOrderPayment",
-                "to_name": "setOrderAccountProductStartDate",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 12,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderAccountProduct.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
           },
           {
             "calls_between_elements": [
@@ -729,21 +729,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "saveOrUpdateOrderAccount",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
-                "to_name": "findByOrderId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "findByOrderId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteOrder",
                 "to_name": "findByOrderId",
                 "calling_type": "CALL"
               },
@@ -752,6 +745,13 @@
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
                 "to_name": "delete",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               }
             ],
@@ -763,58 +763,23 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "saveOrUpdateOrderAccountProducts",
+                "to_name": "OrderAccountProduct",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendEmailInvoice",
-                "to_name": "getText",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderAccountId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "refundOrder",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareInvoiceReport",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendEmailInvoice",
-                "to_name": "setLocale",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refundOrder",
-                "to_name": "setLocale",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 12,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetOrderDownloadCounters",
-                "to_name": "setDownloadCount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetOrderDownloadCounters",
-                "to_name": "setDownloadMaxdays",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderAccountProductStartDate",
                 "calling_type": "CALL"
               },
               {
@@ -826,8 +791,29 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "OrderAccountProduct",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderAccountProduct.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getOrderProductDownloads",
+                "to_name": "OrderProductDownload",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
+                "from_name": "saveInvoiceDetails",
                 "to_name": "setOrderProductId",
                 "calling_type": "CALL"
               },
@@ -836,6 +822,20 @@
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
                 "to_name": "setOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "setOrderProductDownloadId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "setOrderProductId",
                 "calling_type": "CALL"
               }
             ],
@@ -855,21 +855,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "getOriginalPriceAmount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
-                "to_name": "getProductPriceSpecialAmount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
                 "to_name": "getProductPriceSpecialAmount",
                 "calling_type": "CALL"
               },
@@ -878,6 +864,20 @@
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
                 "to_name": "getProductPriceSpecialDurationDays",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getProductPriceSpecialEndDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getProductPriceSpecialStartDate",
                 "calling_type": "CALL"
               }
             ],
@@ -890,15 +890,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "deleteAll",
+                "from_name": "getOrderProductDownload",
+                "to_name": "findById",
                 "calling_type": "CALL"
               },
               {
@@ -911,15 +904,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetOrderDownloadCounters",
-                "to_name": "findByOrderId",
+                "from_name": "saveOrUpdateOrderProductDownload",
+                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetOrderDownloadCounters",
-                "to_name": "saveOrUpdateAll",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
                 "calling_type": "CALL"
               }
             ],
@@ -929,55 +929,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "saveOrUpdateAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "saveOrUpdate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "saveOrUpdate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addOrderStatusHistory",
-                "to_name": "saveOrUpdate",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 9,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderStatusHistoryDao.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchOrdersByCustomer",
-                "to_name": "searchOrderByCustomer",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -995,6 +946,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "findOrdersByCustomer",
+                "to_name": "findOrdersByCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteAllOrders",
                 "to_name": "findOrdersByMerchant",
                 "calling_type": "CALL"
@@ -1002,8 +960,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getOrders",
-                "to_name": "findOrdersByMerchant",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               }
             ],
@@ -1023,14 +981,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "findByOrderId",
+                "from_name": "saveOrUpdateOrderAccount",
+                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
+                "from_name": "saveInvoiceDetails",
                 "to_name": "findByOrderId",
                 "calling_type": "CALL"
               },
@@ -1044,8 +1002,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "delete",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               }
             ],
@@ -1059,7 +1017,63 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
+                "to_name": "saveOrUpdateAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendEmailInvoice",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateOrderStatus",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderStatusHistoryDao.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateOrderAccountProducts",
+                "to_name": "saveOrUpdateAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
                 "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
                 "calling_type": "CALL"
               },
               {
@@ -1072,22 +1086,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateOrderAccountProducts",
-                "to_name": "saveOrUpdateAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateOrderPayment",
-                "to_name": "saveOrUpdateAll",
+                "from_name": "saveOrder",
+                "to_name": "persist",
                 "calling_type": "CALL"
               }
             ],
@@ -1100,29 +1100,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "getOrderProductDownload",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderProductDownloads",
+                "to_name": "findByOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateOrderProductDownload",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
                 "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateOrderTotal",
-                "to_name": "saveOrUpdate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refundOrder",
-                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               },
               {
@@ -1135,15 +1135,15 @@
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderTotalDao.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderProductDownloadDao.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getOrderProduct",
-                "to_name": "findById",
+                "from_name": "saveOrUpdateOrderTotal",
+                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               },
               {
@@ -1156,10 +1156,31 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteOrder",
                 "to_name": "deleteAll",
                 "calling_type": "CALL"
-              },
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderTotalDao.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -1171,7 +1192,28 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
                 "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderProduct",
+                "to_name": "findById",
                 "calling_type": "CALL"
               }
             ],
@@ -1191,15 +1233,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "getShippingModule",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getShippingDescription",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "getShippingDescription",
+                "from_name": "saveOrder",
+                "to_name": "getShippingModule",
                 "calling_type": "CALL"
               },
               {
@@ -1233,21 +1275,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "setOrderProductId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
-                "to_name": "setOrderProductAttributeId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
                 "to_name": "setOrderProductAttributeId",
                 "calling_type": "CALL"
               },
@@ -1256,6 +1284,20 @@
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
                 "to_name": "setOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "setOrderProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "setOrderProductAttributeId",
                 "calling_type": "CALL"
               }
             ],
@@ -1275,21 +1317,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "updateDeleteVirtualProductFileData",
-                "to_name": "setFileid",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getFileHistory",
-                "to_name": "setMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateDeleteVirtualProductFileData",
                 "to_name": "setMerchantId",
                 "calling_type": "CALL"
               },
@@ -1299,179 +1327,25 @@
                 "from_name": "getFileHistory",
                 "to_name": "FileHistoryId",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateDeleteVirtualProductFileData",
+                "to_name": "setFileid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateDeleteVirtualProductFileData",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core/src/com/salesmanager/core/entity/orders/FileHistoryId.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getOrderProductDownload",
-                "to_name": "findById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateOrderProductDownload",
-                "to_name": "saveOrUpdate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 7,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderProductDownloadDao.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getOrderProduct",
-                "to_name": "findById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateOrderProduct",
-                "to_name": "saveOrUpdate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderProductDao.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "deleteByOrderProductPriceIds",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "deleteByOrderProductPriceIds",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getOrderProductPriceSpecial",
-                "to_name": "findById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderProductPriceSpecialDao.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getFileHistory",
-                "to_name": "findById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateDeleteVirtualProductFileData",
-                "to_name": "findById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateFileHistory",
-                "to_name": "saveOrUpdate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateDeleteVirtualProductFileData",
-                "to_name": "saveOrUpdate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createVirtualProductFileData",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IFileHistoryDao.java"
           },
           {
             "calls_between_elements": [
@@ -1520,17 +1394,87 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "deleteAll",
+                "from_name": "getFileHistory",
+                "to_name": "findById",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "deleteAll",
+                "from_name": "saveOrUpdateFileHistory",
+                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createVirtualProductFileData",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateDeleteVirtualProductFileData",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateDeleteVirtualProductFileData",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IFileHistoryDao.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFileHistory",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateFileHistory",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createVirtualProductFileData",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateDeleteVirtualProductFileData",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateDeleteVirtualProductFileData",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/FileHistoryDao.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -1542,7 +1486,21 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveInvoiceDetails",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
                 "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "deleteAll",
                 "calling_type": "CALL"
               },
               {
@@ -1562,45 +1520,10 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getFileHistory",
-                "to_name": "findById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateDeleteVirtualProductFileData",
-                "to_name": "findById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateFileHistory",
+                "from_name": "saveOrUpdateOrderProduct",
                 "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateDeleteVirtualProductFileData",
-                "to_name": "saveOrUpdate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createVirtualProductFileData",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/FileHistoryDao.java"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -1611,8 +1534,127 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderProduct",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderProductDao.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "deleteByOrderProductPriceIds",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderProductPriceSpecial",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteOrder",
+                "to_name": "deleteByOrderProductPriceIds",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderProductPriceSpecialDao.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getCustomerShippingCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getCustomerBillingCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getCustomerShippingCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getCustomerBillingCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
+                "to_name": "CustomerUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/util/CustomerUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "saveOrUpdateOrderTotal",
                 "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "deleteAll",
                 "calling_type": "CALL"
               },
               {
@@ -1646,126 +1688,42 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "deleteByOrderProductPriceIds",
+                "from_name": "prepareOrderListReport",
+                "to_name": "setTotals",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getOrderProductPriceSpecial",
-                "to_name": "findById",
+                "from_name": "prepareOrderListReport",
+                "to_name": "getOrders",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "persist",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "prepareOrderListReport",
+                "to_name": "OrderReport",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class DAO",
+                "to_type": "Java Class",
                 "from_name": "OrderService",
-                "to_name": "OrderProductPriceSpecialDao",
+                "to_name": "OrderReport",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
+                "to_name": "OrderReport",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderProductPriceSpecialDao.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "OrderService",
-                "to_name": "IOrderProductPriceDao",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderProductPriceDao.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteOrder",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "OrderService",
-                "to_name": "IOrderProductAttributeDao",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderProductAttributeDao.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderReport.java"
           },
           {
             "calls_between_elements": [
@@ -1814,48 +1772,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "getCustomerShippingCountry",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "getCustomerShippingCountry",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "getCustomerBillingCountry",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "getCustomerBillingCountry",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderService",
-                "to_name": "CustomerUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CustomerUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "calculateOrderTotal",
                 "to_name": "setText",
                 "calling_type": "CALL"
@@ -1898,42 +1814,126 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareOrderListReport",
-                "to_name": "setTotals",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "deleteAll",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareOrderListReport",
-                "to_name": "getOrders",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderService",
-                "to_name": "OrderReport",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "prepareOrderListReport",
-                "to_name": "OrderReport",
-                "calling_type": "USE"
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteOrder",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "Java Interface",
                 "from_name": "OrderService",
-                "to_name": "OrderReport",
-                "calling_type": "USE"
+                "to_name": "IOrderProductPriceDao",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderReport.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderProductPriceDao.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteOrder",
+                "to_name": "deleteAll",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "OrderService",
+                "to_name": "IOrderProductAttributeDao",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderProductAttributeDao.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "deleteByOrderProductPriceIds",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "persist",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderProductPriceSpecial",
+                "to_name": "findById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class DAO",
+                "from_name": "OrderService",
+                "to_name": "OrderProductPriceSpecialDao",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderProductPriceSpecialDao.java"
           },
           {
             "calls_between_elements": [
@@ -2115,56 +2115,49 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "saveOrUpdateAllProducts",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "getProducts",
+                "from_name": "saveInvoice",
+                "to_name": "getDefaultLocale",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "Java Class Struts",
                 "from_name": "OrderService",
-                "to_name": "CatalogService",
+                "to_name": "LocaleUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "getOrderTotals",
+                "from_name": "sendEmailInvoice",
+                "to_name": "getInvoiceUrl",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "getOrderTotals",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "getBrandingFilePath",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderService",
-                "to_name": "OrderUtil",
+                "to_name": "FileUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/OrderUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java"
           },
           {
             "calls_between_elements": [
@@ -2199,21 +2192,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveInvoice",
-                "to_name": "getDefaultLocale",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getOrderTotals",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrder",
+                "to_name": "getOrderTotals",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class Struts",
+                "to_type": "Java Class",
                 "from_name": "OrderService",
-                "to_name": "LocaleUtil",
+                "to_name": "OrderUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/OrderUtil.java"
           },
           {
             "calls_between_elements": [
@@ -2304,91 +2304,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareInvoiceReport",
-                "to_name": "getBrandingFilePath",
+                "from_name": "saveOrder",
+                "to_name": "saveOrUpdateAllProducts",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendEmailInvoice",
-                "to_name": "getInvoiceUrl",
+                "from_name": "saveOrder",
+                "to_name": "getProducts",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderService",
-                "to_name": "FileUtil",
+                "to_name": "CatalogService",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareInvoiceReport",
-                "to_name": "findByMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "OrderService",
-                "to_name": "IMerchantStoreDao",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/dao/IMerchantStoreDao.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateOrderTotal",
-                "to_name": "calculateTax",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderService",
-                "to_name": "TaxService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refundOrder",
-                "to_name": "refundTransaction",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderService",
-                "to_name": "PaymentService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
           },
           {
             "calls_between_elements": [
@@ -2416,27 +2353,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "calculateOrderTotal",
-                "to_name": "calculateOrderPrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "OrderService",
-                "to_name": "PriceModule",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/module/model/application/PriceModule.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "updateDeleteVirtualProductFileData",
                 "to_name": "setDateDeleted",
                 "calling_type": "CALL"
@@ -2452,6 +2368,69 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/orders/FileHistory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderTotal",
+                "to_name": "calculateTax",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
+                "to_name": "TaxService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderTotal",
+                "to_name": "getBean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderService",
+                "to_name": "SpringUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/SpringUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderTotal",
+                "to_name": "calculateOrderPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "OrderService",
+                "to_name": "PriceModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/module/model/application/PriceModule.java"
           },
           {
             "calls_between_elements": [
@@ -2500,21 +2479,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareInvoiceReport",
-                "to_name": "getCountryIsoCodeById",
+                "from_name": "saveInvoiceDetails",
+                "to_name": "getDate",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderService",
-                "to_name": "CountryUtil",
+                "to_name": "DateUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CountryUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/DateUtil.java"
           },
           {
             "calls_between_elements": [
@@ -2542,42 +2521,63 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "calculateOrderTotal",
-                "to_name": "getBean",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "getCountryIsoCodeById",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderService",
-                "to_name": "SpringUtil",
+                "to_name": "CountryUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/SpringUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/CountryUtil.java"
           },
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Field",
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "conf",
-                "to_name": "getConfiguration",
+                "from_name": "prepareInvoiceReport",
+                "to_name": "findByMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "OrderService",
+                "to_name": "IMerchantStoreDao",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/dao/IMerchantStoreDao.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundOrder",
+                "to_name": "refundTransaction",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderService",
-                "to_name": "PropertiesUtil",
+                "to_name": "PaymentService",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java"
           },
           {
             "calls_between_elements": [
@@ -2603,23 +2603,23 @@
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Method",
+                "from_type": "Java Field",
                 "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "getDate",
+                "from_name": "conf",
+                "to_name": "getConfiguration",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderService",
-                "to_name": "DateUtil",
+                "to_name": "PropertiesUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/DateUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

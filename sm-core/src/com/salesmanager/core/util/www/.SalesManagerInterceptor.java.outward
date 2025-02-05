@@ -15,15 +15,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "intercept",
-                "to_name": "getTemplateModule",
+                "from_name": "setMerchantStore",
+                "to_name": "getCountry",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "setMerchantStore",
-                "to_name": "getCountry",
+                "from_name": "intercept",
+                "to_name": "getTemplateModule",
                 "calling_type": "CALL"
               },
               {
@@ -73,14 +73,14 @@
                 "to_type": "Java Class",
                 "from_name": "SalesManagerInterceptor",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "SalesManagerInterceptor",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -120,27 +120,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "intercept",
-                "to_name": "baseIntercept",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SalesManagerInterceptor",
-                "to_name": "PageInterceptor",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/com/salesmanager/integration/PageInterceptor.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "setMerchantStore",
                 "to_name": "getMerchantStore",
                 "calling_type": "CALL"
@@ -162,27 +141,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "intercept",
-                "to_name": "baseIntercept",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "SalesManagerInterceptor",
-                "to_name": "URLInterceptor",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/com/salesmanager/catalog/URLInterceptor.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "setMerchantStore",
                 "to_name": "getModuleConfigurationsKeyValue",
                 "calling_type": "CALL"
@@ -198,6 +156,48 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "intercept",
+                "to_name": "baseIntercept",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerInterceptor",
+                "to_name": "PageInterceptor",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-shop/src/com/salesmanager/integration/PageInterceptor.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "intercept",
+                "to_name": "baseIntercept",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "SalesManagerInterceptor",
+                "to_name": "URLInterceptor",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-shop/src/com/salesmanager/catalog/URLInterceptor.java"
           },
           {
             "calls_between_elements": [
@@ -287,27 +287,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "intercept",
-                "to_name": "DEFAULT_MERCHANT_ID",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SalesManagerInterceptor",
-                "to_name": "Constants",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/Constants.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "intercept",
                 "to_name": "SalesManagerPrincipalProxy",
@@ -324,6 +303,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/www/SalesManagerPrincipalProxy.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "intercept",
+                "to_name": "DEFAULT_MERCHANT_ID",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerInterceptor",
+                "to_name": "Constants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/Constants.java"
           }
         ],
         "files_list_comment": "",

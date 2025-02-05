@@ -20,13 +20,6 @@
                 "calling_type": "THROW"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "WebServiceUtils",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "validateCredentials",
@@ -38,7 +31,14 @@
                 "to_type": "Java Class",
                 "from_name": "WebServiceUtils",
                 "to_name": "ServiceException",
-                "calling_type": "RAISE"
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "WebServiceUtils",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",

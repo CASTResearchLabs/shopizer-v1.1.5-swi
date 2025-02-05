@@ -56,17 +56,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getPaymentMethods",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "isPaymentModuleCreditCardType",
                 "to_name": "PaymentService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPaymentMethods",
+                "to_name": "getService",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -134,13 +134,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPaymentMethods",
-                "to_name": "getCoreModuleServiceLogoPath",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "isPaymentModuleCreditCardType",
                 "to_name": "getCoreModuleName",
                 "calling_type": "CALL"
@@ -157,6 +150,13 @@
                 "to_type": "Java Method",
                 "from_name": "isPaymentModuleCreditCardType",
                 "to_name": "getCoreModuleServiceSubtype",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPaymentMethods",
+                "to_name": "getCoreModuleServiceLogoPath",
                 "calling_type": "CALL"
               },
               {
@@ -205,6 +205,27 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/constants/PaymentConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isPaymentModuleCreditCardType",
+                "to_name": "getPaymentMethods",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentUtil",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java"
           },
           {
             "calls_between_elements": [
@@ -352,27 +373,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/MerchantConfigurationUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "isPaymentModuleCreditCardType",
-                "to_name": "getPaymentMethods",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PaymentUtil",
-                "to_name": "PaymentService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java"
           },
           {
             "calls_between_elements": [

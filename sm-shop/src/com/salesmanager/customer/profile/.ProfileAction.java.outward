@@ -57,13 +57,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayProfile",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "changePassword",
                 "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
@@ -80,6 +73,13 @@
                 "to_type": "Java Method",
                 "from_name": "changePassword",
                 "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword",
+                "to_name": "addFieldMessage",
                 "calling_type": "CALL"
               }
             ],
@@ -127,41 +127,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayProfile",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "displayProfile",
-                "to_name": "CustomerService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ProfileAction",
-                "to_name": "ServiceFactory",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ProfileAction",
-                "to_name": "ServiceFactory",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "changePassword",
                 "to_name": "setCustomer",
                 "calling_type": "CALL"
@@ -197,6 +162,41 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "displayProfile",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayProfile",
+                "to_name": "CustomerService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "ServiceFactory",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "ServiceFactory",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "changePassword",
                 "to_name": "getBean",
                 "calling_type": "CALL"
@@ -225,27 +225,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayProfile",
-                "to_name": "findCustomerInfoById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ProfileAction",
-                "to_name": "CustomerService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "changePassword",
                 "to_name": "resetPassword",
                 "calling_type": "CALL"
@@ -261,27 +240,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/module/model/application/CustomerLogonModule.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayProfile",
-                "to_name": "getCustomerId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ProfileAction",
-                "to_name": "Customer",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java"
           },
           {
             "calls_between_elements": [
@@ -303,6 +261,48 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/constants/ErrorConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProfile",
+                "to_name": "findCustomerInfoById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "CustomerService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProfile",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "Customer",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java"
           }
         ],
         "files_list_comment": "",

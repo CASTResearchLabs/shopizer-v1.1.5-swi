@@ -4,58 +4,28 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-invoice.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "invoicereset",
-                "to_name": "resetInvoiceList",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "invoicelist",
-                "to_name": "displayInvoiceList",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "invoicereset",
-                "to_name": "InvoiceListAction",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "invoicelist",
-                "to_name": "InvoiceListAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-invoice.xml",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-central/WebContent/invoice/invoicelist.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "invoice/invoicelist.action",
-                "to_name": "/invoicelist",
-                "calling_type": "CALL"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "invoicelist.jsp",
-                "to_name": "/invoicelist",
-                "calling_type": "POST"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/WebContent/invoice/invoicelist.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

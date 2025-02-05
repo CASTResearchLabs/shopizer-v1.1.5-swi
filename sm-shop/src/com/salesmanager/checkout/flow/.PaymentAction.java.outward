@@ -78,8 +78,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayPayment",
-                "to_name": "getConfig",
+                "from_name": "selectPayment",
+                "to_name": "getPaymentModuleName",
                 "calling_type": "CALL"
               }
             ],
@@ -99,13 +99,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayPayment",
-                "to_name": "setCreditCard",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "selectPayment",
                 "to_name": "validateCreditCard",
                 "calling_type": "CALL"
@@ -113,15 +106,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayPayment",
-                "to_name": "prepareCreditCards",
+                "from_name": "selectPayment",
+                "to_name": "preparePayments",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "selectPayment",
-                "to_name": "preparePayments",
+                "from_name": "displayPayment",
+                "to_name": "setCreditCard",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "prepareCreditCards",
                 "calling_type": "CALL"
               }
             ],
@@ -141,21 +141,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayPayment",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "selectPayment",
-                "to_name": "setTechnicalMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPayment",
                 "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               },
@@ -164,6 +150,20 @@
                 "to_type": "Java Method",
                 "from_name": "selectPayment",
                 "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               }
             ],
@@ -182,16 +182,16 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPayment",
-                "to_name": "isPaymentModuleCreditCardType",
+                "to_type": "Java Class",
+                "from_name": "selectPayment",
+                "to_name": "PaymentUtil",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "selectPayment",
-                "to_name": "PaymentUtil",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "isPaymentModuleCreditCardType",
                 "calling_type": "CALL"
               },
               {
@@ -218,13 +218,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayPayment",
-                "to_name": "getPaymentMethod",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "selectPayment",
                 "to_name": "setPaymentMethod",
                 "calling_type": "CALL"
@@ -234,6 +227,13 @@
                 "to_type": "Java Method",
                 "from_name": "selectPayment",
                 "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPayment",
+                "to_name": "getPaymentMethod",
                 "calling_type": "CALL"
               },
               {

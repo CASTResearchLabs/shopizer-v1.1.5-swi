@@ -15,20 +15,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "updateavailability",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateavailability",
-                "to_name": "setSuccessMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "show",
                 "to_name": "setPageTitle",
                 "calling_type": "CALL"
@@ -36,8 +22,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "show",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "show",
+                "to_name": "getContext",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "updateavailability",
-                "to_name": "setPageTitle",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
             ],
@@ -182,17 +182,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateavailability",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "show",
                 "to_name": "CatalogService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "updateavailability",
+                "to_name": "getService",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -206,7 +206,7 @@
                 "to_type": "Java Class",
                 "from_name": "ProductListAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -295,14 +295,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "updateavailability",
+                "from_name": "show",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "show",
+                "from_name": "updateavailability",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -330,15 +330,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "updateavailability",
-                "to_name": "updateProductListAvailability",
+                "from_name": "show",
+                "to_name": "findProducts",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "show",
-                "to_name": "findProducts",
+                "from_name": "updateavailability",
+                "to_name": "updateProductListAvailability",
                 "calling_type": "CALL"
               },
               {
@@ -448,27 +448,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "show",
-                "to_name": "PRODUCTS",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "MySQL Table",
-                "from_name": "ProductListAction",
-                "to_name": "PRODUCTS",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "show",
                 "to_name": "getLanguageNumberCode",
@@ -485,6 +464,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "show",
+                "to_name": "PRODUCTS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "ProductListAction",
+                "to_name": "PRODUCTS",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [

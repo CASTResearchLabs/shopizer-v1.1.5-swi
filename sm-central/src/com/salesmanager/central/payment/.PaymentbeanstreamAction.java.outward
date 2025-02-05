@@ -15,6 +15,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "saveModule",
+                "to_name": "getContext",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "prepareModule",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
@@ -24,13 +31,6 @@
                 "to_type": "Java Method",
                 "from_name": "deleteModule",
                 "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveModule",
-                "to_name": "getContext",
                 "calling_type": "CALL"
               },
               {
@@ -44,41 +44,6 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "prepareModule",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PaymentbeanstreamAction",
-                "to_name": "ServiceFactory",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PaymentbeanstreamAction",
-                "to_name": "ServiceFactory",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
           },
           {
             "calls_between_elements": [
@@ -119,6 +84,41 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepareModule",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentbeanstreamAction",
+                "to_name": "ServiceFactory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentbeanstreamAction",
+                "to_name": "ServiceFactory",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "prepareModule",
                 "to_name": "context",
@@ -148,27 +148,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getCurrentModuleName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PaymentbeanstreamAction",
-                "to_name": "PaymentModuleAction",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-central/src/com/salesmanager/central/payment/PaymentModuleAction.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveModule",
                 "to_name": "getBean",
                 "calling_type": "CALL"
@@ -184,6 +163,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/SpringUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveModule",
+                "to_name": "storeConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "PaymentbeanstreamAction",
+                "to_name": "ConfigurableModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/common/model/ConfigurableModule.java"
           },
           {
             "calls_between_elements": [
@@ -212,6 +212,27 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepareModule",
+                "to_name": "getCurrentModuleName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentbeanstreamAction",
+                "to_name": "PaymentModuleAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-central/src/com/salesmanager/central/payment/PaymentModuleAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
                 "to_name": "getConfigurationByModule",
                 "calling_type": "CALL"
               },
@@ -226,48 +247,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveModule",
-                "to_name": "storeConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "PaymentbeanstreamAction",
-                "to_name": "ConfigurableModule",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/common/model/ConfigurableModule.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Constructor",
-                "from_name": "properties",
-                "to_name": "IntegrationProperties",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PaymentbeanstreamAction",
-                "to_name": "IntegrationProperties",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/common/model/IntegrationProperties.java"
           },
           {
             "calls_between_elements": [
@@ -289,6 +268,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/common/model/IntegrationKeys.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Constructor",
+                "from_name": "properties",
+                "to_name": "IntegrationProperties",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PaymentbeanstreamAction",
+                "to_name": "IntegrationProperties",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/common/model/IntegrationProperties.java"
           }
         ],
         "files_list_comment": "",

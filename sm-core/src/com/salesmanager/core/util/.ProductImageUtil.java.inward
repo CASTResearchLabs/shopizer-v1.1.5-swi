@@ -4,79 +4,36 @@
       {
         "files": [
           {
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "cropProductImage",
-                "to_name": "getCroppedImage",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "cropProductImage",
-                "to_name": "uploadCropedProductImages",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveProduct",
-                "to_name": "uploadProductImages",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "showCropProductImage",
-                "to_name": "initCropImage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "deleteProduct",
-                "to_name": "ProductImageUtil",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditProductAction.java",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 10
           },
           {
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditImagesAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveImages",
-                "to_name": "uploadProductImages",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "saveImages",
-                "to_name": "ProductImageUtil",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "deleteImage",
-                "to_name": "ProductImageUtil",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Rich Client",
-                "from_name": "EditImagesAction",
-                "to_name": "ProductImageUtil",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/EditImagesAction.java",
             "comment": "",
             "nb_calls_between_elements": 4
           }

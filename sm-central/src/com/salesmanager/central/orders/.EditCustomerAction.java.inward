@@ -4,177 +4,88 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-order.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "editbilling",
-                "to_name": "editBilling",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "editcustomerbilling",
-                "to_name": "viewBillingCustomer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "editshipping",
-                "to_name": "editShipping",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "editcustomershipping",
-                "to_name": "viewShippingCustomer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "displaymailaddress",
-                "to_name": "displayOrderEmailAddress",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-order.xml",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 12
           },
           {
-            "from_file": "sm-central/WebContent/orders/orderdetails.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "orders/displaymailaddress.action",
-                "to_name": "/displaymailaddress",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "orderdetails.jsp",
-                "to_name": "/displaymailaddress",
-                "calling_type": "GET"
-              },
-              {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "orders/editcustomerbilling.action",
-                "to_name": "/editcustomerbilling",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "orderdetails.jsp",
-                "to_name": "/editcustomerbilling",
-                "calling_type": "GET"
-              },
-              {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "orders/editcustomershipping.action",
-                "to_name": "/editcustomershipping",
-                "calling_type": "CALL"
+                "calling_type": "GET",
+                "nb_calls_between_elements": 3
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/WebContent/orders/orderdetails.jsp",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-central/src/com/salesmanager/central/orders/AddressValidationAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAddressMatch",
-                "to_name": "getOrder",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAddressMatch",
-                "to_name": "viewShippingCustomer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class Struts",
-                "from_name": "AddressValidationAction",
-                "to_name": "EditCustomerAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/src/com/salesmanager/central/orders/AddressValidationAction.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-central/WebContent/orders/editorderemailaddress.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "editemailaddress",
-                "to_name": "/editemailaddress",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "editorderemailaddress.jsp",
-                "to_name": "/editemailaddress",
-                "calling_type": "POST"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-central/WebContent/orders/editcustomerbilling.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "editbilling",
-                "to_name": "/editbilling",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "editcustomerbilling.jsp",
-                "to_name": "/editbilling",
-                "calling_type": "POST"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
             "from_file": "sm-central/WebContent/orders/editcustomershipping.jsp",
-            "calls_between_elements": [
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "orders/editshipping.action",
-                "to_name": "/editshipping",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "editcustomershipping.jsp",
-                "to_name": "/editshipping",
-                "calling_type": "POST"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/WebContent/orders/editcustomerbilling.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

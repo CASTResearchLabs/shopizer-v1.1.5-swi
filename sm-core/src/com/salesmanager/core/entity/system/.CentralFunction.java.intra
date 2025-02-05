@@ -4,24 +4,17 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Java Class",
-            "to_type": "Java Method",
-            "from_name": "CentralFunction",
-            "to_name": "getLastModified",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getRole",
-            "to_name": "role",
-            "calling_type": "READ"
-          },
-          {
             "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "setRole",
             "to_name": "role",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setLastModified",
+            "to_name": "lastModified",
             "calling_type": "WRITE"
           },
           {
@@ -34,16 +27,72 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setLastModified",
-            "to_name": "lastModified",
+            "from_name": "setCentralFunctionNewUntil",
+            "to_name": "centralFunctionNewUntil",
             "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Constructor",
+            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "CentralFunction",
-            "to_name": "lastModified",
+            "from_name": "setCentralFunctionNew",
+            "to_name": "centralFunctionNew",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralFunctionUrl",
+            "to_name": "centralFunctionUrl",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralFunctionVisible",
+            "to_name": "centralFunctionVisible",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralFunctionPosition",
+            "to_name": "centralFunctionPosition",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralFunctionDescription",
+            "to_name": "centralFunctionDescription",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralGroupCode",
+            "to_name": "centralGroupCode",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralFunctionCode",
+            "to_name": "centralFunctionCode",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralFunctionId",
+            "to_name": "centralFunctionId",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCentralFunctionId",
+            "to_name": "centralFunctionId",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -55,58 +104,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setCentralFunctionNewUntil",
-            "to_name": "centralFunctionNewUntil",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "CentralFunction",
-            "to_name": "centralFunctionNewUntil",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "isCentralFunctionNew",
-            "to_name": "centralFunctionNew",
+            "from_name": "getRole",
+            "to_name": "role",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setCentralFunctionNew",
-            "to_name": "centralFunctionNew",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "CentralFunction",
-            "to_name": "centralFunctionNew",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getCentralFunctionUrl",
-            "to_name": "centralFunctionUrl",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setCentralFunctionUrl",
-            "to_name": "centralFunctionUrl",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "CentralFunction",
-            "to_name": "centralFunctionUrl",
-            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

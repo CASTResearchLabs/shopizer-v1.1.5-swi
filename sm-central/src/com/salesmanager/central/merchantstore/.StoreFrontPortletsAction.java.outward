@@ -8,13 +8,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "savePortlet",
-                "to_name": "addFieldError",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "save",
                 "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
@@ -22,21 +15,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "setSuccessMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "getContext",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteCustomPortlet",
-                "to_name": "setTechnicalMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveCustomPortlets",
-                "to_name": "setTechnicalMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "savePortlet",
                 "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               }
@@ -50,15 +50,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "savePortlet",
-                "to_name": "getTitle",
+                "from_name": "deleteCustomPortlet",
+                "to_name": "getDynamicLabelId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "deleteCustomPortlet",
-                "to_name": "getDynamicLabelId",
+                "to_name": "getMerchantId",
                 "calling_type": "CALL"
               },
               {
@@ -71,16 +71,16 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "savePortlet",
-                "to_name": "getDynamicLabelId",
+                "from_name": "saveCustomPortlets",
+                "to_name": "setVisible",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "customPortletsDetails",
-                "to_name": "getDynamicLabelId",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "saveCustomPortlets",
+                "to_name": "DynamicLabel",
+                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -98,6 +98,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "save",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "deleteCustomPortlet",
                 "to_name": "getService",
@@ -105,22 +112,15 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteCustomPortlet",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveCustomPortlets",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "savePortlet",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "customPortletsDetails",
                 "to_name": "getService",
                 "calling_type": "CALL"
               }
@@ -134,21 +134,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "customPortletsDetails",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "savePortlet",
+                "from_name": "save",
                 "to_name": "input",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "savePortlet",
+                "from_name": "save",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -165,6 +158,13 @@
                 "from_name": "saveCustomPortlets",
                 "to_name": "input",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "saveCustomPortlets",
+                "to_name": "success",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -173,20 +173,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getConfigurationValue",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getConfigurationKey",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -207,6 +193,20 @@
                 "from_name": "save",
                 "to_name": "setConfigurationValue",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "setConfigurationKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "setMerchantId",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -215,27 +215,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getCoreModules",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "savePortlet",
-                "to_name": "saveOrUpdateDynamicLabel",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveCustomPortlets",
-                "to_name": "saveDynamicLabel",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -249,6 +228,27 @@
                 "from_name": "deleteCustomPortlet",
                 "to_name": "getDynamicLabel",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCustomPortlets",
+                "to_name": "saveDynamicLabel",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCustomPortlets",
+                "to_name": "getDynamicLabels",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "savePortlet",
+                "to_name": "saveOrUpdateDynamicLabel",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -259,11 +259,46 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "customPortletsDetails",
-                "to_name": "getDynamicLabelDescription",
-                "calling_type": "CALL"
+                "to_type": "Java Field",
+                "from_name": "saveCustomPortlets",
+                "to_name": "STORE_FRONT_CUSTOM_PORTLETS",
+                "calling_type": "READ"
               },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "savePortlet",
+                "to_name": "STORE_FRONT_CUSTOM_PORTLETS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "preparePortletsPositions",
+                "to_name": "LABEL_POSITION_RIGHT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "preparePortletsPositions",
+                "to_name": "LABEL_POSITION_BOTTOM_LANDING",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "preparePortletsPositions",
+                "to_name": "LABEL_POSITION_LEFT",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/LabelConstants.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -287,57 +322,22 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "savePortlet",
+                "to_name": "DynamicLabelDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "customPortletsDetails",
-                "to_name": "getId",
+                "to_name": "getDynamicLabelDescription",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core/src/com/salesmanager/core/entity/reference/DynamicLabelDescription.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "saveCustomPortlets",
-                "to_name": "STORE_FRONT_CUSTOM_PORTLETS",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "savePortlet",
-                "to_name": "STORE_FRONT_CUSTOM_PORTLETS",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "display",
-                "to_name": "STORE_FRONT_CUSTOM_PORTLETS",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "preparePortletsPositions",
-                "to_name": "LABEL_POSITION_RIGHT",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "preparePortletsPositions",
-                "to_name": "LABEL_POSITION_BOTTOM_LANDING",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 7,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/LabelConstants.java"
           },
           {
             "calls_between_elements": [
@@ -393,13 +393,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "customPortletsDetails",
-                "to_name": "getLanguageId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "savePortlet",
                 "to_name": "setDynamicLabelId",
                 "calling_type": "CALL"
@@ -409,6 +402,13 @@
                 "to_type": "Java Constructor",
                 "from_name": "savePortlet",
                 "to_name": "DynamicLabelDescriptionId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "customPortletsDetails",
+                "to_name": "getLanguageId",
                 "calling_type": "CALL"
               },
               {
@@ -435,15 +435,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getConfigurationList",
+                "from_name": "save",
+                "to_name": "buildConfigurationLine",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "buildConfigurationLine",
+                "from_name": "display",
+                "to_name": "getConfigurationList",
                 "calling_type": "CALL"
               },
               {
@@ -463,13 +463,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "save",
                 "to_name": "saveOrUpdateMerchantConfiguration",
                 "calling_type": "CALL"
@@ -479,6 +472,13 @@
                 "to_type": "Java Method",
                 "from_name": "save",
                 "to_name": "deleteMerchantConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getConfiguration",
                 "calling_type": "CALL"
               },
               {
@@ -532,34 +532,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "preparePortletsPositions",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "preparePortletsPositions",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "StoreFrontPortletsAction",
-                "to_name": "LabelUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "save",
                 "to_name": "STORE_PORTLETS_",
@@ -589,6 +561,34 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "preparePortletsPositions",
+                "to_name": "getText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePortletsPositions",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "StoreFrontPortletsAction",
+                "to_name": "LabelUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "display",
                 "to_name": "getMerchantConfigurationList",
                 "calling_type": "CALL"
@@ -604,27 +604,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "display",
-                "to_name": "STORE_FRONT_PORTLETS_CODE",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "StoreFrontPortletsAction",
-                "to_name": "CatalogConstants",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/CatalogConstants.java"
           },
           {
             "calls_between_elements": [
@@ -646,6 +625,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationRequest.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "display",
+                "to_name": "STORE_FRONT_PORTLETS_CODE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "StoreFrontPortletsAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/CatalogConstants.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

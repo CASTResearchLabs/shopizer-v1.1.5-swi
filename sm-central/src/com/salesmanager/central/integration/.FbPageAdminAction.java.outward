@@ -22,28 +22,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editPageHeader",
-                "to_name": "getPageId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "getPageId",
+                "from_name": "editPageConfig",
+                "to_name": "setProperty9",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "editPageConfig",
-                "to_name": "setProperty9",
+                "to_name": "setProperty10",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPageConfig",
+                "to_name": "getProperty10",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 43,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Page.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Page.java",
+            "nb_calls_between_elements": 43
           },
           {
             "calls_between_elements": [
@@ -65,13 +65,6 @@
                 "from_type": "Java Method",
                 "to_type": "Oracle Table",
                 "from_name": "displayPage",
-                "to_name": "PAGE",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Oracle Table",
-                "from_name": "FbPageAdminAction",
                 "to_name": "PAGE",
                 "calling_type": "USE"
               },
@@ -81,53 +74,18 @@
                 "from_name": "displayPage",
                 "to_name": "PORTLET",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Oracle Table",
+                "from_name": "FbPageAdminAction",
+                "to_name": "PAGE",
+                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 12,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/upgrade/v1.1.2-TO-v1.1.3.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "getPage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "getPortlets",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "getCoreModules",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editPageConfig",
-                "to_name": "saveOrUpdatePage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editPageHeader",
-                "to_name": "saveOrUpdatePage",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 11,
-            "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java"
+            "to_file": "schema/upgrade/v1.1.2-TO-v1.1.3.sql",
+            "nb_calls_between_elements": 12
           },
           {
             "calls_between_elements": [
@@ -135,27 +93,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "editPageConfig",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editPageHeader",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createPage",
                 "to_name": "getService",
                 "calling_type": "CALL"
               },
@@ -165,26 +102,89 @@
                 "from_name": "editPageConfig",
                 "to_name": "ReferenceService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPageHeader",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "editPageHeader",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayPage",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 11,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java",
+            "nb_calls_between_elements": 11
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "getServletRequest",
+                "from_name": "editPageConfig",
+                "to_name": "saveOrUpdatePage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "editPageConfig",
+                "to_name": "getPage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPageHeader",
+                "to_name": "saveOrUpdatePage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPageHeader",
+                "to_name": "getPage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getPage",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
+            "nb_calls_between_elements": 11
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPageConfig",
                 "to_name": "setSuccessMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editPageConfig",
+                "to_name": "getContext",
                 "calling_type": "CALL"
               },
               {
@@ -197,21 +197,63 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "setPageTitle",
+                "from_name": "editPageHeader",
+                "to_name": "getContext",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createPage",
-                "to_name": "setPageTitle",
+                "from_name": "displayPage",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 10,
-            "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java"
+            "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
+            "nb_calls_between_elements": 10
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "editPageConfig",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "editPageHeader",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "displayPage",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "createPage",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Struts Action",
+                "from_name": "FbPageAdminAction",
+                "to_name": "fbPageConfig",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "to_file": "sm-central/WebContent/WEB-INF/classes/struts-integration.xml",
+            "nb_calls_between_elements": 8
           },
           {
             "calls_between_elements": [
@@ -252,50 +294,8 @@
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Portlet.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "editPageConfig",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "editPageHeader",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "createPage",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "displayPage",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Struts Action",
-                "from_name": "FbPageAdminAction",
-                "to_name": "fbPageConfig",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-central/WebContent/WEB-INF/classes/struts-integration.xml"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Portlet.java",
+            "nb_calls_between_elements": 8
           },
           {
             "calls_between_elements": [
@@ -317,13 +317,6 @@
                 "from_type": "Java Method",
                 "to_type": "MySQL Table",
                 "from_name": "displayPage",
-                "to_name": "PAGE",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "MySQL Table",
-                "from_name": "FbPageAdminAction",
                 "to_name": "PAGE",
                 "calling_type": "USE"
               },
@@ -333,11 +326,18 @@
                 "from_name": "displayPage",
                 "to_name": "PORTLET",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "FbPageAdminAction",
+                "to_name": "PAGE",
+                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
+            "to_file": "schema/sql/shopizer_schema_mysql.sql",
+            "nb_calls_between_elements": 6
           },
           {
             "calls_between_elements": [
@@ -378,8 +378,43 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
+            "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java",
+            "nb_calls_between_elements": 5
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "displayPage",
+                "to_name": "MerchantConfiguration",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getConfigurationValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbPageAdminAction",
+                "to_name": "MerchantConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbPageAdminAction",
+                "to_name": "MerchantConfiguration",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantConfiguration.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -413,8 +448,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/LabelConstants.java"
+            "to_file": "sm-core/src/com/salesmanager/core/constants/LabelConstants.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -448,43 +483,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/DynamicLabel.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "getConfigurationValue",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FbPageAdminAction",
-                "to_name": "MerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "displayPage",
-                "to_name": "MerchantConfiguration",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FbPageAdminAction",
-                "to_name": "MerchantConfiguration",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantConfiguration.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/DynamicLabel.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -518,36 +518,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/util/ConfigurationFieldUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "getCoreModuleName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "getCoreModuleServiceDescription",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FbPageAdminAction",
-                "to_name": "CoreModuleService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/CoreModuleService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/ConfigurationFieldUtil.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -574,8 +546,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -602,8 +574,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -630,8 +602,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/ModuleConfigurationId.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/ModuleConfigurationId.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -658,8 +630,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/ModuleConfiguration.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/ModuleConfiguration.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -686,29 +658,36 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/IntegrationConstants.java"
+            "to_file": "sm-core/src/com/salesmanager/core/constants/IntegrationConstants.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
+                "to_type": "Java Method",
                 "from_name": "displayPage",
-                "to_name": "ConfigurationRequest",
+                "to_name": "getCoreModuleName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getCoreModuleServiceDescription",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "FbPageAdminAction",
-                "to_name": "ConfigurationRequest",
+                "to_name": "CoreModuleService",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationRequest.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/CoreModuleService.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -728,8 +707,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/system/Field.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/system/Field.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -749,8 +728,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CountryUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/CountryUtil.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -770,8 +749,29 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "displayPage",
+                "to_name": "ConfigurationRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FbPageAdminAction",
+                "to_name": "ConfigurationRequest",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationRequest.java",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

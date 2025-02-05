@@ -8,21 +8,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "calculate",
-                "to_name": "setOrderTotals",
+                "from_name": "synchronizeProductList",
+                "to_name": "getOrderProducts",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "removeProduct",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculate",
                 "to_name": "getMerchantStore",
                 "calling_type": "CALL"
               },
@@ -38,6 +31,13 @@
                 "to_type": "Java Method",
                 "from_name": "removeProduct",
                 "to_name": "getMiniShoppingCart",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProduct",
+                "to_name": "removeOrderTotalLine",
                 "calling_type": "CALL"
               }
             ],
@@ -371,23 +371,16 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculate",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "calculate",
                 "to_name": "OrderService",
                 "calling_type": "READ"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AjaxShoppingCartUtil",
-                "to_name": "ServiceFactory",
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "getService",
                 "calling_type": "CALL"
               },
               {
@@ -396,39 +389,18 @@
                 "from_name": "AjaxShoppingCartUtil",
                 "to_name": "ServiceFactory",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AjaxShoppingCartUtil",
+                "to_name": "ServiceFactory",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeProduct",
-                "to_name": "getLocale",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculate",
-                "to_name": "getLocale",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class Struts",
-                "from_name": "AjaxShoppingCartUtil",
-                "to_name": "LocaleUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
           },
           {
             "calls_between_elements": [
@@ -457,6 +429,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-shop/src/com/salesmanager/checkout/util/MiniShoppingCartUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeProduct",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "AjaxShoppingCartUtil",
+                "to_name": "LocaleUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
           },
           {
             "calls_between_elements": [
@@ -492,20 +492,20 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "calculate",
-                "to_name": "getOrderTotals",
+                "to_name": "getCurrency",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "AjaxShoppingCartUtil",
-                "to_name": "OrderUtil",
+                "to_name": "MerchantStore",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/OrderUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
           },
           {
             "calls_between_elements": [
@@ -527,6 +527,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/MiniShoppingCartSerializationUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculate",
+                "to_name": "getOrderTotals",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AjaxShoppingCartUtil",
+                "to_name": "OrderUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/OrderUtil.java"
           },
           {
             "calls_between_elements": [
@@ -569,27 +590,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculate",
-                "to_name": "getCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AjaxShoppingCartUtil",
-                "to_name": "MerchantStore",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

@@ -15,6 +15,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "getPriceSuffixText",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "getPriceText",
                 "to_name": "getText",
                 "calling_type": "CALL"
@@ -22,22 +29,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "getPriceText",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "getHtmlPriceFormated",
                 "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateOrderPrice",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getPriceSuffixText",
-                "to_name": "getInstance",
                 "calling_type": "CALL"
               }
             ],
@@ -134,21 +134,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "calculateOrderPrice",
-                "to_name": "determinePrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getHtmlPriceFormated",
-                "to_name": "determinePrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getPrice",
                 "to_name": "determinePrice",
                 "calling_type": "CALL"
               },
@@ -164,6 +150,20 @@
                 "to_type": "Java Method",
                 "from_name": "getHtmlPriceFormated",
                 "to_name": "getDiscountEndDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPrice",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "calculateOrderPrice",
+                "to_name": "determinePrice",
                 "calling_type": "CALL"
               }
             ],
@@ -267,15 +267,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "calculateOrderPrice",
-                "to_name": "displayFormatedAmountWithCurrency",
+                "from_name": "getHtmlPriceFormated",
+                "to_name": "getDefaultCurrency",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getHtmlPriceFormated",
-                "to_name": "getDefaultCurrency",
+                "from_name": "calculateOrderPrice",
+                "to_name": "displayFormatedAmountWithCurrency",
                 "calling_type": "CALL"
               },
               {

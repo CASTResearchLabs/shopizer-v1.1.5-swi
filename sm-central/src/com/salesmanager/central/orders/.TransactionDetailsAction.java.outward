@@ -8,6 +8,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "displayTransactions",
+                "to_name": "setAuthorizationMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayTransactions",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "processTransaction",
                 "to_name": "addFieldError",
                 "calling_type": "CALL"
@@ -17,20 +31,6 @@
                 "to_type": "Java Method",
                 "from_name": "processTransaction",
                 "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareOrderDetails",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayTransactions",
-                "to_name": "setAuthorizationMessage",
                 "calling_type": "CALL"
               },
               {
@@ -56,20 +56,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareOrderDetails",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "displayTransactions",
                 "to_name": "PaymentService",
@@ -77,9 +63,23 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "processTransaction",
                 "to_name": "PaymentService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processTransaction",
+                "to_name": "OrderService",
                 "calling_type": "READ"
               }
             ],
@@ -92,20 +92,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "processTransaction",
-                "to_name": "input",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "processTransaction",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
                 "from_name": "displayTransactions",
                 "to_name": "success",
                 "calling_type": "CALL"
@@ -115,6 +101,20 @@
                 "to_type": "Struts Result",
                 "from_name": "displayTransactions",
                 "to_name": "AUTHORIZATIONEXCEPTION",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "processTransaction",
+                "to_name": "input",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "processTransaction",
+                "to_name": "success",
                 "calling_type": "CALL"
               },
               {
@@ -134,13 +134,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "processTransaction",
-                "to_name": "getCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "displayTransactions",
                 "to_name": "getOrderId",
                 "calling_type": "CALL"
@@ -149,13 +142,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "processTransaction",
-                "to_name": "getOrderId",
+                "to_name": "getCurrency",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareOrderDetails",
+                "from_name": "processTransaction",
                 "to_name": "getOrderId",
                 "calling_type": "CALL"
               },
@@ -164,6 +157,13 @@
                 "to_type": "Java Method",
                 "from_name": "processTransaction",
                 "to_name": "getTotal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareOrderDetails",
+                "to_name": "getOrderId",
                 "calling_type": "CALL"
               }
             ],
@@ -177,13 +177,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "displayTransactions",
-                "to_name": "REFUND",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "processTransaction",
                 "to_name": "REFUND",
                 "calling_type": "READ"
               },
@@ -207,6 +200,13 @@
                 "from_name": "displayTransactions",
                 "to_name": "CAPTURE",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "processTransaction",
+                "to_name": "REFUND",
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -215,6 +215,20 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "displayTransactions",
+                "to_name": "AuthorizationException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "processTransaction",
+                "to_name": "AuthorizationException",
+                "calling_type": "CATCH"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
@@ -235,20 +249,6 @@
                 "from_name": "TransactionDetailsAction",
                 "to_name": "AuthorizationException",
                 "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "displayTransactions",
-                "to_name": "AuthorizationException",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "processTransaction",
-                "to_name": "AuthorizationException",
-                "calling_type": "CATCH"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -295,15 +295,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareOrderDetails",
-                "to_name": "getCurrency",
+                "from_name": "processTransaction",
+                "to_name": "getMerchantid",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "processTransaction",
-                "to_name": "getMerchantid",
+                "from_name": "prepareOrderDetails",
+                "to_name": "getCurrency",
                 "calling_type": "CALL"
               },
               {
@@ -324,90 +324,6 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class Struts",
-                "from_name": "TransactionDetailsAction",
-                "to_name": "LabelUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareOrderDetails",
-                "to_name": "displayFormatedAmountNoCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction",
-                "to_name": "validateCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TransactionDetailsAction",
-                "to_name": "CurrencyUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareOrderDetails",
-                "to_name": "getOrder",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processTransaction",
-                "to_name": "refundOrder",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "TransactionDetailsAction",
-                "to_name": "OrderService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
           },
           {
             "calls_between_elements": [
@@ -443,6 +359,62 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "processTransaction",
+                "to_name": "getText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "TransactionDetailsAction",
+                "to_name": "LabelUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "validateCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareOrderDetails",
+                "to_name": "displayFormatedAmountNoCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TransactionDetailsAction",
+                "to_name": "CurrencyUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
                 "to_name": "getErrorcode",
                 "calling_type": "CALL"
               },
@@ -471,20 +443,27 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "processTransaction",
-                "to_name": "getMerchantStore",
+                "to_name": "refundOrder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareOrderDetails",
+                "to_name": "getOrder",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "TransactionDetailsAction",
-                "to_name": "MerchantService",
+                "to_name": "OrderService",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
           },
           {
             "calls_between_elements": [
@@ -506,6 +485,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/payment/GatewayTransactionVO.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processTransaction",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "TransactionDetailsAction",
+                "to_name": "MerchantService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
           },
           {
             "calls_between_elements": [

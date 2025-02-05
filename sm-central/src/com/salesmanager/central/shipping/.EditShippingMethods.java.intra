@@ -4,11 +4,11 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/showshippingmethods",
-            "to_name": "displayShippingMethods",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setShippingMethods",
+            "to_name": "shippingMethods",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -27,13 +27,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setShippingMethods",
-            "to_name": "shippingMethods",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "displayShippingMethods",
             "to_name": "shippingMethods",
             "calling_type": "WRITE"
@@ -42,13 +35,6 @@
             "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "displayShippingMethods",
-            "to_name": "shippingInformation",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getShippingInformation",
             "to_name": "shippingInformation",
             "calling_type": "READ"
           },
@@ -65,6 +51,20 @@
             "from_name": "setShippingInformation",
             "to_name": "shippingInformation",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getShippingInformation",
+            "to_name": "shippingInformation",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/showshippingmethods",
+            "to_name": "displayShippingMethods",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Struts Operation",

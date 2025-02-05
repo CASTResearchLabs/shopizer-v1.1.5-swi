@@ -4,45 +4,18 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateOrderStatus",
-                "to_name": "sendOrderStatusEmail",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refundOrder",
-                "to_name": "sendOrderStatusEmail",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendResetDownloadCountrsEmail",
-                "to_name": "sendResetDownloadCountrsEmail",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetOrderDownloadCounters",
-                "to_name": "sendResetDownloadCountrsEmail",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "sendOrderConfirmationEmail",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 15
           }
         ],

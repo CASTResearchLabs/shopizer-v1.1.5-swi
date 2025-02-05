@@ -22,13 +22,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "page",
-                "to_name": "setRealCount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "search",
                 "to_name": "setPageElements",
                 "calling_type": "CALL"
@@ -36,8 +29,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "page",
-                "to_name": "setPageElements",
+                "from_name": "search",
+                "to_name": "setPageStartNumber",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "search",
+                "to_name": "setListingCount",
                 "calling_type": "CALL"
               }
             ],
@@ -57,21 +57,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "page",
-                "to_name": "setStartindex",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "search",
-                "to_name": "setQuantity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "page",
                 "to_name": "setQuantity",
                 "calling_type": "CALL"
               },
@@ -80,6 +66,20 @@
                 "to_type": "Java Method",
                 "from_name": "search",
                 "to_name": "setMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "search",
+                "to_name": "setLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "setStartindex",
                 "calling_type": "CALL"
               }
             ],
@@ -106,13 +106,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "page",
-                "to_name": "getCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "search",
                 "to_name": "getStorename",
                 "calling_type": "CALL"
@@ -120,56 +113,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "search",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "page",
-                "to_name": "getStorename",
+                "to_name": "getCurrency",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 8,
             "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "search",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "page",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "search",
-                "to_name": "CatalogService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "page",
-                "to_name": "CatalogService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SearchAction",
-                "to_name": "ServiceFactory",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
           },
           {
             "calls_between_elements": [
@@ -190,15 +148,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "page",
-                "to_name": "getServletRequest",
+                "from_name": "search",
+                "to_name": "getLocale",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "search",
-                "to_name": "getLocale",
+                "from_name": "page",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               },
               {
@@ -219,13 +177,48 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "search",
-                "to_name": "setDescription",
+                "to_name": "getService",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "search",
+                "to_name": "CatalogService",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "page",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "page",
+                "to_name": "CatalogService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SearchAction",
+                "to_name": "ServiceFactory",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "search",
                 "to_name": "setDescription",
                 "calling_type": "CALL"
               },
@@ -234,6 +227,13 @@
                 "to_type": "Java Constructor",
                 "from_name": "search",
                 "to_name": "SearchProductCriteria",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "page",
+                "to_name": "setDescription",
                 "calling_type": "CALL"
               },
               {
@@ -260,14 +260,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "page",
+                "from_name": "search",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "search",
+                "from_name": "page",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -512,7 +512,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [

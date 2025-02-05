@@ -7,37 +7,37 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setMerchantUserInformations",
+                "to_name": "MerchantUserInformation",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getMerchantUserInformations",
+                "to_name": "MerchantUserInformation",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "getUserlang",
+                "from_name": "deleteUser",
+                "to_name": "getMerchantUserId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveProfile",
-                "to_name": "getUserlang",
+                "from_name": "saveUser",
+                "to_name": "getMerchantUserId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveSecurityQuestions",
-                "to_name": "setSecurityAnswer3",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getSecurityAnswer3",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "answerQuestions",
-                "to_name": "getSecurityAnswer3",
+                "from_name": "saveUser",
+                "to_name": "getAdminEmail",
                 "calling_type": "CALL"
               }
             ],
@@ -50,36 +50,36 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayResetPassword",
-                "to_name": "setActionErrors",
+                "from_name": "deleteUser",
+                "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getServletRequest",
+                "from_name": "deleteUser",
+                "to_name": "setSuccessMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "changeLanguage",
-                "to_name": "getServletRequest",
+                "from_name": "editUserList",
+                "to_name": "setPageTitle",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveProfile",
-                "to_name": "getServletRequest",
+                "from_name": "editUserList",
+                "to_name": "getContext",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "answerQuestions",
-                "to_name": "getServletRequest",
+                "from_name": "saveUser",
+                "to_name": "setErrorMessage",
                 "calling_type": "CALL"
               }
             ],
@@ -92,13 +92,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "editUserList",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
                 "from_name": "deleteUser",
                 "to_name": "success",
                 "calling_type": "CALL"
@@ -108,6 +101,13 @@
                 "to_type": "Struts Result",
                 "from_name": "deleteUser",
                 "to_name": "input",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "editUserList",
+                "to_name": "success",
                 "calling_type": "CALL"
               },
               {
@@ -140,6 +140,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteUser",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "editUserList",
                 "to_name": "getService",
@@ -147,22 +154,15 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "editUserList",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveUser",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "viewUser",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
                 "to_name": "getService",
                 "calling_type": "CALL"
               }
@@ -176,6 +176,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "deleteUser",
+                "to_name": "getMerchantUserInformation",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteUser",
+                "to_name": "deleteMerchantUserInformation",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "editUserList",
                 "to_name": "getMerchantUserInfo",
                 "calling_type": "CALL"
@@ -183,29 +197,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "getMerchantStore",
+                "from_name": "saveUser",
+                "to_name": "saveOrUpdateRoles",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "changePassword",
-                "to_name": "saveOrUpdateMerchantUserInformation",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveSecurityQuestions",
-                "to_name": "saveOrUpdateMerchantUserInformation",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveProfile",
-                "to_name": "saveOrUpdateMerchantUserInformation",
+                "from_name": "saveUser",
+                "to_name": "deleteUserRoles",
                 "calling_type": "CALL"
               }
             ],
@@ -225,6 +225,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "viewUser",
+                "to_name": "setLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewUser",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "display",
                 "to_name": "getText",
                 "calling_type": "CALL"
@@ -232,22 +246,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveProfile",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "viewUser",
-                "to_name": "setLocale",
+                "from_name": "display",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               }
             ],
@@ -260,84 +260,42 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "changeLanguage",
-                "to_name": "getCountryid",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeLanguage",
-                "to_name": "setLang",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveProfile",
-                "to_name": "setLang",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeLanguage",
-                "to_name": "getLang",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "editUserList",
                 "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveUser",
+                "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changePassword",
+                "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPassword",
+                "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeLanguage",
+                "to_name": "getCountryid",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 10,
             "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "answerQuestions",
-                "to_name": "getQuestionText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayResetPassword",
-                "to_name": "getQuestionText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getSecurityQuestions",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveProfile",
-                "to_name": "getSecurityQuestions",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "answerQuestions",
-                "to_name": "getSecurityQuestions",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 7,
-            "to_file": "sm-core/src/com/salesmanager/core/module/model/application/SecurityQuestionsModule.java"
           },
           {
             "calls_between_elements": [
@@ -357,29 +315,71 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "viewUser",
-                "to_name": "getRoleCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "saveUser",
                 "to_name": "MerchantUserRole",
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class Struts",
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "ProfileAction",
+                "from_name": "saveUser",
                 "to_name": "MerchantUserRole",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewUser",
+                "to_name": "getRoleCode",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantUserRole.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getSecurityQuestions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProfile",
+                "to_name": "getSecurityQuestions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "answerQuestions",
+                "to_name": "getQuestionText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "answerQuestions",
+                "to_name": "getSecurityQuestions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayResetPassword",
+                "to_name": "getQuestionText",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core/src/com/salesmanager/core/module/model/application/SecurityQuestionsModule.java"
           },
           {
             "calls_between_elements": [
@@ -435,15 +435,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "answerQuestions",
-                "to_name": "encrypt",
+                "from_name": "changePassword",
+                "to_name": "generatekey",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "changePassword",
-                "to_name": "generatekey",
+                "from_name": "answerQuestions",
+                "to_name": "encrypt",
                 "calling_type": "CALL"
               },
               {
@@ -475,13 +475,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ProfileAction",
-                "to_name": "MerchantUserRoleDef",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "viewUser",
@@ -494,6 +487,13 @@
                 "from_name": "ProfileAction",
                 "to_name": "MerchantUserRoleDef",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "MerchantUserRoleDef",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -512,15 +512,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveProfile",
-                "to_name": "addErrorMessage",
+                "from_name": "display",
+                "to_name": "addNoticeMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "addNoticeMessage",
+                "from_name": "saveProfile",
+                "to_name": "addErrorMessage",
                 "calling_type": "CALL"
               },
               {
@@ -534,6 +534,62 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/util/MessageUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "prepareSelections",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveProfile",
+                "to_name": "prepareSelections",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "CountrySelectBaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-central/src/com/salesmanager/central/CountrySelectBaseAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "PropertiesUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
           },
           {
             "calls_between_elements": [
@@ -596,28 +652,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "prepareSelections",
+                "from_name": "changeLanguage",
+                "to_name": "getAllcountriesmap",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveProfile",
-                "to_name": "prepareSelections",
+                "from_name": "changeLanguage",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "ProfileAction",
-                "to_name": "CountrySelectBaseAction",
+                "to_name": "RefCache",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-central/src/com/salesmanager/central/CountrySelectBaseAction.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
           },
           {
             "calls_between_elements": [
@@ -652,15 +708,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayResetPassword",
-                "to_name": "getUrlTokens",
+                "from_name": "resetPassword",
+                "to_name": "getAdminPasswordResetUrl",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "getAdminPasswordResetUrl",
+                "from_name": "displayResetPassword",
+                "to_name": "getUrlTokens",
                 "calling_type": "CALL"
               },
               {
@@ -674,104 +730,6 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ProfileAction",
-                "to_name": "PropertiesUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeLanguage",
-                "to_name": "getAllcountriesmap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeLanguage",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ProfileAction",
-                "to_name": "RefCache",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "log",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ProfileAction",
-                "to_name": "LogMerchantUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LogMerchantUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayResetPassword",
-                "to_name": "getDefaultLocale",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "ProfileAction",
-                "to_name": "LocaleUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
           },
           {
             "calls_between_elements": [
@@ -799,6 +757,48 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "changeLanguage",
+                "to_name": "getCountryIsoCode2",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "Country",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Country.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword",
+                "to_name": "log",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "LogMerchantUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LogMerchantUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "resetPassword",
                 "to_name": "buildCentralUri",
                 "calling_type": "CALL"
@@ -814,6 +814,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/ReferenceUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveProfile",
+                "to_name": "context",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ProfileAction",
+                "to_name": "ProfileConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
           },
           {
             "calls_between_elements": [
@@ -841,27 +862,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "changeLanguage",
-                "to_name": "getCountryIsoCode2",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ProfileAction",
-                "to_name": "Country",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Country.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "answerQuestions",
                 "to_name": "generatePassword",
                 "calling_type": "CALL"
@@ -882,22 +882,22 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "saveProfile",
-                "to_name": "context",
-                "calling_type": "READ"
+                "to_type": "Java Method",
+                "from_name": "displayResetPassword",
+                "to_name": "getDefaultLocale",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
-                "to_type": "Java Class",
+                "to_type": "Java Class Struts",
                 "from_name": "ProfileAction",
-                "to_name": "ProfileConstants",
-                "calling_type": "READ"
+                "to_name": "LocaleUtil",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

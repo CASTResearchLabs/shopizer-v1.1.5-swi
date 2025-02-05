@@ -5,80 +5,10 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "createReportByCriteria",
-            "to_name": "getOrderId",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "searchByCriteria",
-            "to_name": "getOrderId",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/orderlistpage",
-            "to_name": "displayOrderListPage",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "displayOrderListPage",
-            "to_name": "getOrdersList",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "displayOrderList",
-            "to_name": "getOrdersList",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/orderReport",
-            "to_name": "createReportByCriteria",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getOrdersList",
-            "to_name": "buildCriteria",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "createReportByCriteria",
-            "to_name": "buildCriteria",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "searchByCriteria",
-            "to_name": "buildCriteria",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/orderlist",
-            "to_name": "displayOrderList",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/searchcriteria",
-            "to_name": "searchByCriteria",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setOrderId",
+            "to_name": "orderId",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -90,8 +20,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setOrderId",
-            "to_name": "orderId",
+            "from_name": "setInputStream",
+            "to_name": "inputStream",
             "calling_type": "WRITE"
           },
           {
@@ -104,9 +34,79 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setInputStream",
-            "to_name": "inputStream",
+            "from_name": "setCriteria",
+            "to_name": "criteria",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCriteria",
+            "to_name": "criteria",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOrders",
+            "to_name": "orders",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCardtext",
+            "to_name": "cardtext",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCardtext",
+            "to_name": "cardtext",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "displayOrderListPage",
+            "to_name": "getOrdersList",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "getOrdersList",
+            "to_name": "buildCriteria",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOrdersList",
+            "to_name": "criteria",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOrdersList",
+            "to_name": "ordersize",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOrdersList",
+            "to_name": "orders",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "createReportByCriteria",
+            "to_name": "getOrderId",
+            "calling_type": "CALL"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

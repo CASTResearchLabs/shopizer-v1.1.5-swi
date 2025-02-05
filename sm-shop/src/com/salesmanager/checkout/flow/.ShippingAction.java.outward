@@ -15,21 +15,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayShipping",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "selectShipping",
-                "to_name": "setShippingInformation",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayShipping",
                 "to_name": "setShippingInformation",
                 "calling_type": "CALL"
               },
@@ -39,6 +25,20 @@
                 "from_name": "selectShipping",
                 "to_name": "getShippingInformation",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "selectShipping",
+                "to_name": "getShippingMethods",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "selectShipping",
+                "to_name": "getOrder",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -47,6 +47,20 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setShippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -67,20 +81,6 @@
                 "from_name": "displayShipping",
                 "to_name": "getOptions",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShippingAction",
-                "to_name": "ShippingMethod",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setShippingMethods",
-                "to_name": "ShippingMethod",
-                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -89,13 +89,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayShipping",
-                "to_name": "setModule",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -113,15 +106,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayShipping",
-                "to_name": "getOptionId",
+                "from_name": "selectShipping",
+                "to_name": "getOptionPrice",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "selectShipping",
-                "to_name": "getOptionPrice",
+                "to_name": "getDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShipping",
+                "to_name": "setModule",
                 "calling_type": "CALL"
               }
             ],
@@ -141,15 +141,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "displayShipping",
-                "to_name": "success",
+                "from_name": "selectShipping",
+                "to_name": "GENERICERROR",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "selectShipping",
-                "to_name": "GENERICERROR",
+                "from_name": "displayShipping",
+                "to_name": "success",
                 "calling_type": "CALL"
               },
               {
@@ -225,15 +225,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayShipping",
-                "to_name": "getServletRequest",
+                "from_name": "selectShipping",
+                "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "selectShipping",
-                "to_name": "setTechnicalMessage",
+                "from_name": "displayShipping",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               },
               {
@@ -267,13 +267,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayShipping",
-                "to_name": "getShippingMethods",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "selectShipping",
                 "to_name": "getHandlingCost",
                 "calling_type": "CALL"
@@ -283,6 +276,13 @@
                 "to_type": "Java Method",
                 "from_name": "selectShipping",
                 "to_name": "setShippingCost",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShipping",
+                "to_name": "getShippingMethods",
                 "calling_type": "CALL"
               },
               {
@@ -318,14 +318,14 @@
                 "to_type": "Java Class",
                 "from_name": "ShippingAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "ShippingAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -365,27 +365,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayShipping",
-                "to_name": "getShippingQuote",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShippingAction",
-                "to_name": "ShippingService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "selectShipping",
                 "to_name": "updateOrderTotal",
                 "calling_type": "CALL"
@@ -401,6 +380,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShipping",
+                "to_name": "getShippingQuote",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingAction",
+                "to_name": "ShippingService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java"
           }
         ],
         "files_list_comment": "",

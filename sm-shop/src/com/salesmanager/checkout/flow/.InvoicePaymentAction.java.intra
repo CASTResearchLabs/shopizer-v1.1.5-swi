@@ -4,11 +4,11 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/initInvoicePayment",
-            "to_name": "displayPayment",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCustomer",
+            "to_name": "customer",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -20,22 +20,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "displayPayment",
-            "to_name": "customer",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setCustomer",
-            "to_name": "customer",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "displayPayment",
-            "to_name": "customer",
+            "from_name": "setOrder",
+            "to_name": "order",
             "calling_type": "WRITE"
           },
           {
@@ -49,14 +35,14 @@
             "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "displayPayment",
-            "to_name": "order",
+            "to_name": "customer",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setOrder",
-            "to_name": "order",
+            "from_name": "displayPayment",
+            "to_name": "customer",
             "calling_type": "WRITE"
           },
           {
@@ -64,7 +50,21 @@
             "to_type": "Java Field",
             "from_name": "displayPayment",
             "to_name": "order",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "displayPayment",
+            "to_name": "order",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/initInvoicePayment",
+            "to_name": "displayPayment",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Struts Operation",

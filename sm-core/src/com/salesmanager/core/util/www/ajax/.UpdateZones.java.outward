@@ -15,21 +15,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "updateZones",
-                "to_name": "setZoneName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getZones",
-                "to_name": "setZoneCountryId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "updateZones",
                 "to_name": "setZoneCountryId",
                 "calling_type": "CALL"
               },
@@ -39,6 +25,20 @@
                 "from_name": "getZones",
                 "to_name": "setZoneId",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getZones",
+                "to_name": "Zone",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getZones",
+                "to_name": "Zone",
+                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -83,27 +83,6 @@
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Field",
-                "to_type": "Java Method",
-                "from_name": "conf",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "UpdateZones",
-                "to_name": "PropertiesUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "updateZones",
@@ -121,6 +100,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "conf",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "UpdateZones",
+                "to_name": "PropertiesUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
           }
         ],
         "files_list_comment": "",

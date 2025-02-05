@@ -5,10 +5,10 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "doStartTag",
-            "to_name": "getProduct",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setDisplayCurrency",
+            "to_name": "displayCurrency",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -20,15 +20,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "doStartTag",
-            "to_name": "displayCurrency",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setDisplayCurrency",
-            "to_name": "displayCurrency",
+            "from_name": "setProduct",
+            "to_name": "product",
             "calling_type": "WRITE"
           },
           {
@@ -40,17 +33,24 @@
           },
           {
             "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "doStartTag",
+            "to_name": "getProduct",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "doStartTag",
-            "to_name": "product",
+            "to_name": "displayCurrency",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setProduct",
+            "from_name": "doStartTag",
             "to_name": "product",
-            "calling_type": "WRITE"
+            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "",

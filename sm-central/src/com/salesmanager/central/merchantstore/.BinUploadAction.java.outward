@@ -15,13 +15,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteFile",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "uploadToBin",
                 "to_name": "setErrorMessage",
                 "calling_type": "CALL"
@@ -38,6 +31,13 @@
                 "to_type": "Java Method",
                 "from_name": "uploadToBin",
                 "to_name": "setSuccessMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "uploadToBin",
+                "to_name": "setPageTitle",
                 "calling_type": "CALL"
               }
             ],
@@ -64,14 +64,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "deleteFile",
+                "from_name": "displayFileBrowser",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "displayFileBrowser",
+                "from_name": "deleteFile",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -203,27 +203,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "deleteFile",
-                "to_name": "context",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "BinUploadAction",
-                "to_name": "ProfileConstants",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "uploadToBin",
                 "to_name": "FileException",
@@ -240,6 +219,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/FileException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteFile",
+                "to_name": "context",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "BinUploadAction",
+                "to_name": "ProfileConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
           }
         ],
         "files_list_comment": "",

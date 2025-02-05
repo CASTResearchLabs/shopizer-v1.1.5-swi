@@ -15,14 +15,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "updatePageList",
-                "to_name": "getDynamicLabelId",
+                "from_name": "getPageDetails",
+                "to_name": "getDescriptions",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "populateLabel",
+                "from_name": "updatePageList",
                 "to_name": "getDynamicLabelId",
                 "calling_type": "CALL"
               },
@@ -35,10 +35,10 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populateLabel",
-                "to_name": "setDescriptions",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "updatePageList",
+                "to_name": "DynamicLabel",
+                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -52,6 +52,13 @@
                 "to_type": "Java Method",
                 "from_name": "getPageDetails",
                 "to_name": "getDynamicLabelDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPageDetails",
+                "to_name": "getId",
                 "calling_type": "CALL"
               },
               {
@@ -74,13 +81,6 @@
                 "from_name": "populateLabel",
                 "to_name": "setId",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getPageDetails",
-                "to_name": "getId",
-                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -89,13 +89,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "populateLabel",
-                "to_name": "addFieldError",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -108,6 +101,13 @@
                 "to_type": "Java Method",
                 "from_name": "getPageDetails",
                 "to_name": "prepareLanguages",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "populateLabel",
+                "to_name": "addFieldError",
                 "calling_type": "CALL"
               },
               {
@@ -134,15 +134,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "populateLabel",
-                "to_name": "setLanguageId",
+                "from_name": "getPageDetails",
+                "to_name": "getLanguageId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPageDetails",
-                "to_name": "getLanguageId",
+                "from_name": "populateLabel",
+                "to_name": "setLanguageId",
                 "calling_type": "CALL"
               },
               {
@@ -192,40 +192,19 @@
                 "to_type": "Java Class",
                 "from_name": "ContentAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "ContentAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Method",
-                "from_name": "conf",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ContentAction",
-                "to_name": "PropertiesUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
           },
           {
             "calls_between_elements": [
@@ -268,6 +247,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "conf",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ContentAction",
+                "to_name": "PropertiesUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
           }
         ],
         "files_list_comment": "",

@@ -7,38 +7,38 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "getUserlang",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "getMerchantUserInfo",
+                "to_name": "MerchantUserInformation",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createMerchantUserInformation",
-                "to_name": "getUserlang",
+                "from_name": "getAllMerchantStores",
+                "to_name": "getAdminName",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "setMerchantId",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "getAllMerchantStores",
+                "to_name": "MerchantUserInformation",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createMerchantUserInformation",
-                "to_name": "setMerchantId",
+                "from_name": "deleteMerchant",
+                "to_name": "getAdminName",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "getMerchantUserId",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "deleteMerchant",
+                "to_name": "MerchantUserInformation",
+                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -49,6 +49,20 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "cleanConfigurationLikeKey",
+                "to_name": "MerchantException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "cleanConfigurationKeys",
+                "to_name": "MerchantException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "getUser",
                 "to_name": "MerchantException",
@@ -56,31 +70,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getConfiguration",
-                "to_name": "MerchantException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getConfigurationByModule",
-                "to_name": "MerchantException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
                 "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "MerchantException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "cleanConfigurationLikeKey",
+                "from_name": "getUser",
                 "to_name": "MerchantException",
                 "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getUser",
+                "to_name": "MerchantException",
+                "calling_type": "RAISE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -99,13 +99,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createMerchantUserInformation",
-                "to_name": "getCountry",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getAllMerchantStores",
                 "to_name": "getStorename",
                 "calling_type": "CALL"
@@ -113,14 +106,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "getStorename",
+                "from_name": "getAllMerchantStores",
+                "to_name": "getMerchantId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getAllMerchantStores",
+                "to_name": "MerchantStore",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createMerchantUserInformation",
+                "from_name": "createNewOrSaveMerchant",
                 "to_name": "getStorename",
                 "calling_type": "CALL"
               }
@@ -141,29 +141,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getAllMerchantStores",
-                "to_name": "findByMerchantId",
+                "from_name": "saveOrUpdateMerchantUserInformation",
+                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "findByMerchantId",
+                "from_name": "getMerchantInformationByUserNameAndPassword",
+                "to_name": "findByUserNameAndPassword",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "findByAdminEmail",
+                "from_name": "getMerchantUserInformation",
+                "to_name": "findById",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getMerchantUserInformationByAdminEmail",
-                "to_name": "findByAdminEmail",
+                "from_name": "getMerchantUserInformation",
+                "to_name": "findByUserName",
                 "calling_type": "CALL"
               }
             ],
@@ -176,8 +176,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "findListMerchantId",
+                "from_name": "cleanConfigurationLikeKey",
+                "to_name": "deleteLike",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanConfigurationKeys",
+                "to_name": "deleteLike",
                 "calling_type": "CALL"
               },
               {
@@ -190,15 +197,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteMerchantConfigurations",
-                "to_name": "delete",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "delete",
+                "from_name": "saveOrUpdateMerchantConfiguration",
+                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               },
               {
@@ -218,37 +218,37 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
+                "from_name": "adminLogon",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "adminLogon",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "adminLogon",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
                 "from_name": "createNewOrSaveMerchant",
                 "to_name": "ServiceException",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "adminLogon",
-                "to_name": "ServiceException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "createMerchantUserInformation",
-                "to_name": "ServiceException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "adminLogon",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -259,85 +259,43 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getUser",
-                "to_name": "getBean",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "saveOrUpdateRoles",
+                "to_name": "MerchantUserRole",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getUserRoles",
+                "to_name": "MerchantUserRole",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getConfigurationByModule",
-                "to_name": "getBean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfiguration",
-                "to_name": "getBean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "adminLogon",
-                "to_name": "getBean",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "setAdminName",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createNewOrSaveMerchant",
-                "to_name": "getBean",
+                "to_name": "setRoleCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "MerchantUserRole",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 8,
-            "to_file": "sm-core/src/com/salesmanager/core/util/SpringUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "deleteMerchant",
-                "to_name": "OrderService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "deleteMerchant",
-                "to_name": "ReferenceService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "deleteMerchant",
-                "to_name": "CustomerService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "deleteMerchant",
-                "to_name": "CatalogService",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantUserRole.java"
           },
           {
             "calls_between_elements": [
@@ -386,6 +344,90 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteMerchant",
+                "to_name": "OrderService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteMerchant",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteMerchant",
+                "to_name": "CustomerService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteMerchant",
+                "to_name": "CatalogService",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getUser",
+                "to_name": "getBean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfigurationByModule",
+                "to_name": "getBean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfiguration",
+                "to_name": "getBean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "adminLogon",
+                "to_name": "getBean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "getBean",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8,
+            "to_file": "sm-core/src/com/salesmanager/core/util/SpringUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "createNewOrSaveMerchant",
                 "to_name": "setPromoCodeExpiry",
                 "calling_type": "CALL"
@@ -428,48 +470,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "setAdminName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "setRoleCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "MerchantUserRole",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "MerchantUserRole",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "saveOrUpdateRoles",
-                "to_name": "MerchantUserRole",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantUserRole.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveOrUpdateRoles",
                 "to_name": "saveOrUpdateAll",
                 "calling_type": "CALL"
@@ -484,6 +484,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "getUserRoles",
+                "to_name": "findByUserName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteMerchant",
                 "to_name": "deleteByUserName",
                 "calling_type": "CALL"
@@ -491,15 +498,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteMerchantUserInformation",
-                "to_name": "deleteByUserName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getUserRoles",
-                "to_name": "findByUserName",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "save",
                 "calling_type": "CALL"
               }
             ],
@@ -512,15 +512,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getAllMerchantStores",
-                "to_name": "loadAll",
+                "from_name": "getMerchantStore",
+                "to_name": "findByMerchantId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getMerchantStore",
-                "to_name": "findByMerchantId",
+                "from_name": "saveOrUpdateMerchantStore",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAllMerchantStores",
+                "to_name": "loadAll",
                 "calling_type": "CALL"
               },
               {
@@ -535,13 +542,6 @@
                 "to_type": "Java Method",
                 "from_name": "deleteMerchant",
                 "to_name": "delete",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateMerchantStore",
-                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               }
             ],
@@ -561,20 +561,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "encrypt",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createMerchantUserInformation",
-                "to_name": "encrypt",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getMerchantInformationByUserNameAndPassword",
                 "to_name": "generatekey",
                 "calling_type": "CALL"
@@ -583,7 +569,21 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createNewOrSaveMerchant",
+                "to_name": "encrypt",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
                 "to_name": "generatekey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createMerchantUserInformation",
+                "to_name": "encrypt",
                 "calling_type": "CALL"
               }
             ],
@@ -593,6 +593,20 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "saveOrUpdateMerchantConfigurations",
+                "to_name": "MerchantConfiguration",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteMerchantConfigurations",
+                "to_name": "MerchantConfiguration",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -611,20 +625,6 @@
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "MerchantService",
-                "to_name": "MerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "saveOrUpdateMerchantConfigurations",
-                "to_name": "MerchantConfiguration",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "deleteMerchantConfigurations",
                 "to_name": "MerchantConfiguration",
                 "calling_type": "USE"
               }
@@ -652,15 +652,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "findByMerchantId",
+                "from_name": "deleteMerchant",
+                "to_name": "delete",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "delete",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "findByMerchantId",
                 "calling_type": "CALL"
               },
               {
@@ -679,15 +679,50 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "sendHtmlEmail",
-                "calling_type": "CALL"
+                "to_type": "Java Field",
+                "from_name": "getMerchantInformationByUserNameAndPassword",
+                "to_name": "idConstant",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "ADMINISTRATOR",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "idConstant",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
                 "from_name": "createMerchantUserInformation",
+                "to_name": "idConstant",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "SecurityConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/SecurityConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
                 "to_name": "sendHtmlEmail",
                 "calling_type": "CALL"
               },
@@ -696,6 +731,13 @@
                 "to_type": "Java Constructor",
                 "from_name": "createNewOrSaveMerchant",
                 "to_name": "CommonService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createMerchantUserInformation",
+                "to_name": "sendHtmlEmail",
                 "calling_type": "CALL"
               },
               {
@@ -729,15 +771,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createMerchantUserInformation",
-                "to_name": "getText",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "getInstance",
+                "from_name": "createMerchantUserInformation",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
@@ -758,48 +800,6 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "ADMINISTRATOR",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getMerchantInformationByUserNameAndPassword",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "createMerchantUserInformation",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "SecurityConstants",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/SecurityConstants.java"
           },
           {
             "calls_between_elements": [
@@ -842,7 +842,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getConfigurationByModule",
-                "to_name": "getConfigurationVOByModule",
+                "to_name": "getConfigurationVO",
                 "calling_type": "CALL"
               },
               {
@@ -856,7 +856,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getConfigurationByModule",
-                "to_name": "getConfigurationVO",
+                "to_name": "getConfigurationVOByModule",
                 "calling_type": "CALL"
               },
               {
@@ -870,62 +870,6 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/MerchantConfigurationImpl.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "deleteAllCategories",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "deleteAllProducts",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "CatalogService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "buildCentralUri",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createMerchantUserInformation",
-                "to_name": "buildCentralUri",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "ReferenceUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/ReferenceUtil.java"
           },
           {
             "calls_between_elements": [
@@ -960,6 +904,34 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "getUser",
+                "to_name": "getUser",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "adminLogon",
+                "to_name": "logon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Interface",
+                "from_name": "MerchantService",
+                "to_name": "AdministrationLogonModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/module/model/application/AdministrationLogonModule.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "getModuleServices",
                 "to_name": "getShippingRealTimeQuotesMethods",
                 "calling_type": "CALL"
@@ -988,28 +960,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getUser",
-                "to_name": "getUser",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "buildCentralUri",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "adminLogon",
-                "to_name": "logon",
+                "from_name": "createMerchantUserInformation",
+                "to_name": "buildCentralUri",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Interface",
+                "to_type": "Java Class",
                 "from_name": "MerchantService",
-                "to_name": "AdministrationLogonModule",
+                "to_name": "ReferenceUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/module/model/application/AdministrationLogonModule.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/ReferenceUtil.java"
           },
           {
             "calls_between_elements": [
@@ -1044,6 +1016,160 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "deleteAllCategories",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "deleteAllProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "deleteAllDynamicLabel",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "ReferenceService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "deleteAllOrders",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "OrderService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "deleteTaxConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "TaxService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "deleteAllCustomers",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "CustomerService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "EMAIL_ALREADY_EXISTS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "ErrorConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/ErrorConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class Struts",
+                "from_name": "MerchantService",
+                "to_name": "LocaleUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "createNewOrSaveMerchant",
                 "to_name": "getDefaultCurrency",
                 "calling_type": "CALL"
@@ -1059,6 +1185,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "createNewOrSaveMerchant",
+                "to_name": "MerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "MerchantId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/MerchantId.java"
           },
           {
             "calls_between_elements": [
@@ -1085,22 +1232,43 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getMerchantUserRoleDef",
+                "to_name": "MerchantUserRoleDef",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantService",
+                "to_name": "MerchantUserRoleDef",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantUserRoleDef.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
                 "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "deleteAllCustomers",
+                "from_name": "conf",
+                "to_name": "getConfiguration",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "MerchantService",
-                "to_name": "CustomerService",
+                "to_name": "PropertiesUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
           },
           {
             "calls_between_elements": [
@@ -1148,48 +1316,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "EMAIL_ALREADY_EXISTS",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "ErrorConstants",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/ErrorConstants.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "MerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "MerchantId",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/MerchantId.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "getModuleServices",
                 "to_name": "CoreModuleService",
@@ -1206,132 +1332,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/reference/CoreModuleService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getMerchantUserRoleDef",
-                "to_name": "MerchantUserRoleDef",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "MerchantUserRoleDef",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantUserRoleDef.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "deleteAllDynamicLabel",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "ReferenceService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "deleteAllOrders",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "OrderService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Method",
-                "from_name": "conf",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "PropertiesUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "getLocale",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class Struts",
-                "from_name": "MerchantService",
-                "to_name": "LocaleUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteMerchant",
-                "to_name": "deleteTaxConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "TaxService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

@@ -8,13 +8,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deserializeJSON",
-                "to_name": "setQuantity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "serializeToJSON",
                 "to_name": "getQuantity",
                 "calling_type": "CALL"
@@ -22,22 +15,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "serializeToJSON",
+                "to_name": "getProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "serializeToJSON",
+                "to_name": "getAttributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deserializeJSON",
+                "to_name": "setQuantity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deserializeJSON",
                 "to_name": "setImage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deserializeJSON",
-                "to_name": "setProductName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deserializeJSON",
-                "to_name": "setPrice",
                 "calling_type": "CALL"
               }
             ],
@@ -69,16 +69,16 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MiniShoppingCartSerializationUtil",
-                "to_name": "Product",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "deserializeJSON",
+                "to_name": "Product",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MiniShoppingCartSerializationUtil",
                 "to_name": "Product",
                 "calling_type": "USE"
               }
@@ -134,15 +134,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deserializeJSON",
-                "to_name": "setProducts",
+                "from_name": "serializeToJSON",
+                "to_name": "getProducts",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "serializeToJSON",
-                "to_name": "getProducts",
+                "from_name": "deserializeJSON",
+                "to_name": "setProducts",
                 "calling_type": "CALL"
               },
               {
@@ -174,13 +174,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MiniShoppingCartSerializationUtil",
-                "to_name": "ProductAttribute",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "deserializeJSON",
@@ -193,6 +186,13 @@
                 "from_name": "MiniShoppingCartSerializationUtil",
                 "to_name": "ProductAttribute",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MiniShoppingCartSerializationUtil",
+                "to_name": "ProductAttribute",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -220,14 +220,14 @@
                 "to_type": "Java Class",
                 "from_name": "MiniShoppingCartSerializationUtil",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "MiniShoppingCartSerializationUtil",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",

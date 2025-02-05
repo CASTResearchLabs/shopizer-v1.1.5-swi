@@ -15,29 +15,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "getZoneName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCustomer",
-                "to_name": "getCustomerId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "getCustomerId",
+                "from_name": "validate",
+                "to_name": "getCustomerCountryId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "validate",
-                "to_name": "getCustomerCountryId",
+                "to_name": "getCustomerZoneId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validate",
+                "to_name": "getCustomerCity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validate",
+                "to_name": "getCustomerPostalCode",
                 "calling_type": "CALL"
               }
             ],
@@ -47,6 +47,13 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCustomer",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -74,13 +81,6 @@
                 "from_name": "createCustomer",
                 "to_name": "setLocale",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "getBillingCountry",
-                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -99,20 +99,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCustomer",
-                "to_name": "setStatus",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "setStatus",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "setStatusMsg",
                 "to_name": "setMessages",
                 "calling_type": "CALL"
@@ -121,55 +107,27 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getCustomer",
+                "to_name": "setStatus",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCustomer",
                 "to_name": "setMessages",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCustomer",
+                "to_name": "setStatus",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core/src/com/salesmanager/core/service/ws/WebServiceResponse.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCustomer",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getCustomer",
-                "to_name": "CustomerService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "createCustomer",
-                "to_name": "CustomerService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SalesManagerCustomerWSImpl",
-                "to_name": "ServiceFactory",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
           },
           {
             "calls_between_elements": [
@@ -188,18 +146,18 @@
                 "calling_type": "THROW"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SalesManagerCustomerWSImpl",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "validateCredentials",
                 "to_name": "ServiceException",
                 "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerCustomerWSImpl",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Class",
@@ -219,13 +177,90 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getCustomer",
-                "to_name": "getDefaultLocale",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getCustomer",
+                "to_name": "CustomerService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCustomer",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createCustomer",
+                "to_name": "CustomerService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerCustomerWSImpl",
+                "to_name": "ServiceFactory",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCredentials",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCredentials",
+                "to_name": "getApiKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCustomer",
+                "to_name": "getMerchantId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createCustomer",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SalesManagerCustomerWSImpl",
+                "to_name": "WebServiceCredentials",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ws/WebServiceCredentials.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCustomer",
                 "to_name": "getDefaultLocale",
                 "calling_type": "CALL"
               },
@@ -234,6 +269,13 @@
                 "to_type": "Java Method",
                 "from_name": "getCustomer",
                 "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCustomer",
+                "to_name": "getDefaultLocale",
                 "calling_type": "CALL"
               },
               {
@@ -260,77 +302,35 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateCredentials",
-                "to_name": "getMerchantId",
+                "from_name": "validate",
+                "to_name": "getAllZonesmap",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCustomer",
-                "to_name": "getMerchantId",
+                "from_name": "validate",
+                "to_name": "getAllcountriesmap",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createCustomer",
-                "to_name": "getMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateCredentials",
-                "to_name": "getApiKey",
+                "to_name": "getAllZonesmap",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "SalesManagerCustomerWSImpl",
-                "to_name": "WebServiceCredentials",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ws/WebServiceCredentials.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "saveOrUpdateCustomer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCustomer",
-                "to_name": "getCustomer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "getCustomer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SalesManagerCustomerWSImpl",
-                "to_name": "CustomerService",
+                "to_name": "RefCache",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
           },
           {
             "calls_between_elements": [
@@ -372,35 +372,35 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validate",
-                "to_name": "getAllZonesmap",
+                "from_name": "getCustomer",
+                "to_name": "getCustomer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createCustomer",
-                "to_name": "getAllZonesmap",
+                "to_name": "saveOrUpdateCustomer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validate",
-                "to_name": "getAllcountriesmap",
+                "from_name": "createCustomer",
+                "to_name": "getCustomer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "SalesManagerCustomerWSImpl",
-                "to_name": "RefCache",
+                "to_name": "CustomerService",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java"
           },
           {
             "calls_between_elements": [
@@ -489,27 +489,6 @@
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "SalesManagerCustomerWSImpl",
-                "to_name": "SystemUrlEntryType",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum Item",
-                "from_name": "createCustomer",
-                "to_name": "WEB",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/SystemUrlEntryType.java"
-          },
-          {
-            "calls_between_elements": [
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createCustomer",
@@ -548,6 +527,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "createCustomer",
+                "to_name": "WEB",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "SalesManagerCustomerWSImpl",
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/SystemUrlEntryType.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

@@ -14,15 +14,15 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getService",
-                "calling_type": "CALL"
+                "to_type": "Java Field",
+                "from_name": "saveModule",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteModule",
+                "from_name": "prepareModule",
                 "to_name": "getService",
                 "calling_type": "CALL"
               },
@@ -36,7 +36,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "saveModule",
+                "from_name": "prepareModule",
                 "to_name": "MerchantService",
                 "calling_type": "READ"
               }
@@ -71,15 +71,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteModule",
-                "to_name": "getServletRequest",
+                "from_name": "prepareModule",
+                "to_name": "getLocale",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getLocale",
+                "from_name": "deleteModule",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
             ],
@@ -99,20 +99,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "buildPackageMap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getConfigurationValuesMap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveModule",
                 "to_name": "buildShippingPropertiesLine",
                 "calling_type": "CALL"
@@ -122,6 +108,20 @@
                 "to_type": "Java Method",
                 "from_name": "saveModule",
                 "to_name": "buildShippingKeyLine",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "buildPackageMap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "getConfigurationValuesMap",
                 "calling_type": "CALL"
               }
             ],
@@ -176,15 +176,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getConfigurationByModule",
+                "from_name": "saveModule",
+                "to_name": "saveOrUpdateMerchantConfigurations",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveModule",
-                "to_name": "saveOrUpdateMerchantConfigurations",
+                "from_name": "prepareModule",
+                "to_name": "getConfigurationByModule",
                 "calling_type": "CALL"
               },
               {
@@ -245,6 +245,41 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "saveModule",
+                "to_name": "ValidationException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "saveModule",
+                "to_name": "ValidationException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingfedexAction",
+                "to_name": "ValidationException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingfedexAction",
+                "to_name": "ValidationException",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-central/src/com/salesmanager/central/util/ValidationException.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "saveModule",
                 "to_name": "context",
@@ -275,62 +310,6 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "saveModule",
-                "to_name": "ValidationException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShippingfedexAction",
-                "to_name": "ValidationException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "saveModule",
-                "to_name": "ValidationException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShippingfedexAction",
-                "to_name": "ValidationException",
-                "calling_type": "RAISE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-central/src/com/salesmanager/central/util/ValidationException.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayModule",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShippingfedexAction",
-                "to_name": "ConfigurationResponse",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
           },
           {
             "calls_between_elements": [
@@ -394,6 +373,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayModule",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingfedexAction",
+                "to_name": "ConfigurationResponse",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
           }
         ],
         "files_list_comment": "",

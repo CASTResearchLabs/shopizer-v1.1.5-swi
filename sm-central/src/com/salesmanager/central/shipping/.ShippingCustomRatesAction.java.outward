@@ -15,6 +15,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "deleteShippingEstimate",
+                "to_name": "setLastModified",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteShippingEstimate",
+                "to_name": "setConfigurationValue1",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteLine",
                 "to_name": "getConfigurationValue1",
                 "calling_type": "CALL"
@@ -22,22 +36,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getConfigurationValue1",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "add",
-                "to_name": "getConfigurationValue1",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeCountry",
-                "to_name": "getConfigurationValue1",
+                "from_name": "deleteLine",
+                "to_name": "setLastModified",
                 "calling_type": "CALL"
               }
             ],
@@ -64,15 +64,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "buildPriceRegionWithPrice",
-                "to_name": "setPriceLine",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "modifyCostLine",
-                "to_name": "getPriceLine",
+                "from_name": "buildPriceRegionWithEstimatedCosts",
+                "to_name": "setEstimatedTimeEnabled",
                 "calling_type": "CALL"
               },
               {
@@ -80,6 +73,13 @@
                 "to_type": "Java Method",
                 "from_name": "buildPriceRegionWithRegion",
                 "to_name": "setCountryline",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "buildPriceRegionWithRegion",
+                "to_name": "addCountry",
                 "calling_type": "CALL"
               }
             ],
@@ -92,6 +92,27 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
+                "from_name": "editTableRate",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "add",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "removeCountry",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
                 "from_name": "removeZonePrice",
                 "to_name": "success",
                 "calling_type": "CALL"
@@ -99,29 +120,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "modifyPriceLine",
+                "from_name": "addMaxPrice",
                 "to_name": "error",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "modifyPriceLine",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "removePriceLine",
-                "to_name": "error",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "removePriceLine",
-                "to_name": "success",
                 "calling_type": "CALL"
               }
             ],
@@ -140,6 +140,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepare",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "editTableRate",
                 "to_name": "getService",
@@ -147,22 +154,15 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "editTableRate",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "add",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeCountry",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeZonePrice",
                 "to_name": "getService",
                 "calling_type": "CALL"
               }
@@ -183,6 +183,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "editTableRate",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "add",
                 "to_name": "getText",
                 "calling_type": "CALL"
@@ -190,21 +197,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "add",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "removeCountry",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addMaxPrice",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removePriceLine",
                 "to_name": "getText",
                 "calling_type": "CALL"
               }
@@ -225,6 +225,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "editTableRate",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
@@ -242,13 +249,6 @@
                 "from_name": "removeCountry",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeZonePrice",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -257,20 +257,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addMaxPrice",
-                "to_name": "getCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "modifyPriceLine",
-                "to_name": "getCurrency",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -289,6 +275,20 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "add",
+                "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeCountry",
+                "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeZonePrice",
                 "to_name": "getMerchantid",
                 "calling_type": "CALL"
               }
@@ -316,22 +316,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "editTableRate",
-                "to_name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "add",
-                "to_name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
+                "from_name": "prepare",
+                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "prepare",
-                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
+                "to_name": "MODULE_SHIPPING_ZONES_SKIPPED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "editTableRate",
+                "to_name": "MODULE_SHIPPING_INDIC_COUNTRIES_COSTS",
                 "calling_type": "READ"
               }
             ],
@@ -344,27 +344,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addMaxPrice",
-                "to_name": "addErrorMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removePriceLine",
-                "to_name": "addErrorMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "modifyPriceLine",
-                "to_name": "addErrorMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "editTableRate",
                 "to_name": "addMessage",
                 "calling_type": "CALL"
@@ -373,6 +352,27 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "add",
+                "to_name": "addMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeCountry",
+                "to_name": "addMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addMaxPrice",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addMaxPrice",
                 "to_name": "addMessage",
                 "calling_type": "CALL"
               }
@@ -386,15 +386,50 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getConfiguration",
+                "from_name": "buildPriceRegionWithPrice",
+                "to_name": "setPrice",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeZonePrice",
-                "to_name": "saveOrUpdateMerchantConfigurations",
+                "from_name": "buildPriceRegionWithPrice",
+                "to_name": "setMaxpound",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "buildPriceRegionWithPrice",
+                "to_name": "ShippingPricePound",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addMaxPrice",
+                "to_name": "setPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addMaxPrice",
+                "to_name": "getPrice",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 9,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/shipping/ShippingPricePound.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "getConfiguration",
                 "calling_type": "CALL"
               },
               {
@@ -417,53 +452,18 @@
                 "from_name": "removeCountry",
                 "to_name": "saveOrUpdateMerchantConfiguration",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeZonePrice",
+                "to_name": "saveOrUpdateMerchantConfigurations",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildPriceRegionWithPrice",
-                "to_name": "setPrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addMaxPrice",
-                "to_name": "setPrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addMaxPrice",
-                "to_name": "getPrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildPriceRegionWithPrice",
-                "to_name": "setMaxpound",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addMaxPrice",
-                "to_name": "setMaxpound",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 9,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/shipping/ShippingPricePound.java"
           },
           {
             "calls_between_elements": [
@@ -539,27 +539,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "prepare",
-                "to_name": "ZONES",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "MySQL Table",
-                "from_name": "ShippingCustomRatesAction",
-                "to_name": "ZONES",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepare",
                 "to_name": "getMerchantConfigurationList",
@@ -597,6 +576,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationRequest.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "prepare",
+                "to_name": "ZONES",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "MySQL Table",
+                "from_name": "ShippingCustomRatesAction",
+                "to_name": "ZONES",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

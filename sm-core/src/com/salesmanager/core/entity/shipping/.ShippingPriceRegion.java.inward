@@ -4,156 +4,66 @@
       {
         "files": [
           {
-            "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingCustomRatesAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildPriceRegionWithEstimatedCosts",
-                "to_name": "setMaxDays",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildPriceRegionWithEstimatedCosts",
-                "to_name": "setMinDays",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildPriceRegionWithPrice",
-                "to_name": "setPriceLine",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "modifyCostLine",
-                "to_name": "getPriceLine",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildPriceRegionWithRegion",
-                "to_name": "setCountryline",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/src/com/salesmanager/central/shipping/ShippingCustomRatesAction.java",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 19
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/entity/shipping/ShippingEstimate.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingEstimateDescription",
-                "to_name": "getMaxDays",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 6
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingEstimateDescription",
-                "to_name": "getMinDays",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingEstimate",
-                "to_name": "ShippingPriceRegion",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setRegions",
-                "to_name": "ShippingPriceRegion",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getRegions",
-                "to_name": "ShippingPriceRegion",
-                "calling_type": "USE"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 7
-          },
-          {
             "from_file": "sm-core/src/com/salesmanager/core/util/ShippingUtil.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildShippingPriceRegionMap",
-                "to_name": "setMaxDays",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildShippingPriceRegionMap",
-                "to_name": "setMinDays",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildShippingPriceRegionMap",
-                "to_name": "setCountryline",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildShippingPriceRegionMap",
-                "to_name": "addCountry",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "buildShippingPriceRegionMap",
-                "to_name": "setEstimatedTimeEnabled",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "comment": "",
             "nb_calls_between_elements": 7
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuote",
-                "to_name": "getMaxDays",
-                "calling_type": "CALL"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuote",
-                "to_name": "getMinDays",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingService",
-                "to_name": "ShippingPriceRegion",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/entity/shipping/ShippingEstimate.java",
+            "comment": "calling_types list is truncated to first 5 items",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
             "comment": "",
             "nb_calls_between_elements": 3
           }

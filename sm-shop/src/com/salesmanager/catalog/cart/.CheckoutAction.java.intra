@@ -4,31 +4,10 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/checkout",
-            "to_name": "checkout",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getPostUrl",
-            "to_name": "postUrl",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setPostUrl",
-            "to_name": "postUrl",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "checkout",
-            "to_name": "postUrl",
+            "from_name": "setNvps",
+            "to_name": "nvps",
             "calling_type": "WRITE"
           },
           {
@@ -41,8 +20,22 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setNvps",
-            "to_name": "nvps",
+            "from_name": "setPostUrl",
+            "to_name": "postUrl",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getPostUrl",
+            "to_name": "postUrl",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "checkout",
+            "to_name": "postUrl",
             "calling_type": "WRITE"
           },
           {
@@ -51,6 +44,13 @@
             "from_name": "checkout",
             "to_name": "nvps",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/checkout",
+            "to_name": "checkout",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Struts Operation",

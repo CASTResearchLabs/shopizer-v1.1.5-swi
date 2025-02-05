@@ -5,10 +5,17 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "commit",
-            "to_name": "assignPrincipal",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "logout",
+            "to_name": "subject",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "logout",
+            "to_name": "verification",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -20,6 +27,27 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "login",
+            "to_name": "username",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "login",
+            "to_name": "verification",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "login",
+            "to_name": "verification",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "initialize",
             "to_name": "customerService",
             "calling_type": "WRITE"
@@ -27,78 +55,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "commit",
-            "to_name": "username",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "login",
-            "to_name": "username",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "commit",
-            "to_name": "username",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "abort",
-            "to_name": "username",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "logout",
-            "to_name": "subject",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "initialize",
             "to_name": "subject",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "login",
-            "to_name": "verification",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "commit",
-            "to_name": "verification",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "abort",
-            "to_name": "verification",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "logout",
-            "to_name": "verification",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "login",
-            "to_name": "verification",
             "calling_type": "WRITE"
           },
           {
@@ -107,6 +65,48 @@
             "from_name": "initialize",
             "to_name": "callbackHandler",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "commit",
+            "to_name": "assignPrincipal",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "commit",
+            "to_name": "username",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "commit",
+            "to_name": "username",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "commit",
+            "to_name": "verification",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "abort",
+            "to_name": "username",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "abort",
+            "to_name": "verification",
+            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "",

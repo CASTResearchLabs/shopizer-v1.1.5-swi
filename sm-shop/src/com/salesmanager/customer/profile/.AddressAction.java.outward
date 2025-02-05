@@ -15,21 +15,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "changeAddressForm",
-                "to_name": "getCustomerState",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "changeAddress",
-                "to_name": "getCustomerZoneId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeAddressForm",
                 "to_name": "getCustomerZoneId",
                 "calling_type": "CALL"
               },
@@ -38,6 +24,20 @@
                 "to_type": "Java Method",
                 "from_name": "changeAddress",
                 "to_name": "getCustomerStreetAddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeAddress",
+                "to_name": "getCustomerPostalCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeAddress",
+                "to_name": "getCustomerCountryId",
                 "calling_type": "CALL"
               }
             ],
@@ -51,13 +51,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "changeAddress",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeAddressForm",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
               },
@@ -80,6 +73,13 @@
                 "to_type": "Java Method",
                 "from_name": "changeAddress",
                 "to_name": "addFieldMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeAddress",
+                "to_name": "getLocale",
                 "calling_type": "CALL"
               }
             ],
@@ -133,6 +133,76 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setCountries",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCountries",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "countries",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AddressAction",
+                "to_name": "Country",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Country.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setZones",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getZones",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "zones",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AddressAction",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "changeAddress",
                 "to_name": "getService",
@@ -150,14 +220,14 @@
                 "to_type": "Java Class",
                 "from_name": "AddressAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "AddressAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -203,76 +273,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setZones",
-                "to_name": "Zone",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getZones",
-                "to_name": "Zone",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Class",
-                "from_name": "zones",
-                "to_name": "Zone",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AddressAction",
-                "to_name": "Zone",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setCountries",
-                "to_name": "Country",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getCountries",
-                "to_name": "Country",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Class",
-                "from_name": "countries",
-                "to_name": "Country",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AddressAction",
-                "to_name": "Country",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Country.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepareZones",
                 "to_name": "getAllcountriesmap",
@@ -296,27 +296,6 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "AddressAction",
-                "to_name": "SystemUrlEntryType",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum Item",
-                "from_name": "changeAddress",
-                "to_name": "WEB",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/SystemUrlEntryType.java"
           },
           {
             "calls_between_elements": [
@@ -365,27 +344,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareZones",
-                "to_name": "getLanguageNumberCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AddressAction",
-                "to_name": "LanguageUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "changeAddress",
                 "to_name": "getMerchantId",
                 "calling_type": "CALL"
@@ -401,6 +359,48 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "changeAddress",
+                "to_name": "WEB",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Enum",
+                "from_name": "AddressAction",
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/SystemUrlEntryType.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getLanguageNumberCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "AddressAction",
+                "to_name": "LanguageUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
           }
         ],
         "files_list_comment": "",

@@ -5,27 +5,6 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "validateUserName",
-            "to_name": "getAdminName",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/checkUserName",
-            "to_name": "validateUserName",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getAdminName",
-            "to_name": "adminName",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "setAdminName",
             "to_name": "adminName",
@@ -34,8 +13,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "isValidUserName",
-            "to_name": "validUserName",
+            "from_name": "getAdminName",
+            "to_name": "adminName",
             "calling_type": "READ"
           },
           {
@@ -48,9 +27,30 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "isValidUserName",
+            "to_name": "validUserName",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "validateUserName",
+            "to_name": "getAdminName",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "validateUserName",
             "to_name": "validUserName",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/checkUserName",
+            "to_name": "validateUserName",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Struts Operation",

@@ -14,6 +14,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "setupTax",
+                "to_name": "TaxService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepare",
                 "to_name": "getService",
@@ -27,18 +34,11 @@
                 "calling_type": "READ"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "setupTax",
-                "to_name": "TaxService",
-                "calling_type": "READ"
-              },
-              {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "TaxAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -99,15 +99,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getCountryid",
+                "from_name": "setupTax",
+                "to_name": "getMerchantid",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "setupTax",
-                "to_name": "getMerchantid",
+                "from_name": "prepare",
+                "to_name": "getCountryid",
                 "calling_type": "CALL"
               },
               {
@@ -163,34 +163,6 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Language.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "TaxAction",
-                "to_name": "LabelUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
           },
           {
             "calls_between_elements": [
@@ -282,6 +254,34 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepare",
+                "to_name": "getText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "TaxAction",
+                "to_name": "LabelUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
                 "to_name": "prepareSelections",
                 "calling_type": "CALL"
               },
@@ -296,27 +296,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-central/src/com/salesmanager/central/CountrySelectBaseAction.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "prepare",
-                "to_name": "LANGUAGES",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "MySQL Table",
-                "from_name": "TaxAction",
-                "to_name": "LANGUAGES",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [
@@ -422,6 +401,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-central/src/com/salesmanager/central/tax/DisplayTaxAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "prepare",
+                "to_name": "LANGUAGES",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "MySQL Table",
+                "from_name": "TaxAction",
+                "to_name": "LANGUAGES",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           }
         ],
         "files_list_comment": "",

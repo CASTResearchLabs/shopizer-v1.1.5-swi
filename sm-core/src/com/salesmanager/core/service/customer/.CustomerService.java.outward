@@ -15,20 +15,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetCustomerPassword",
-                "to_name": "getMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "getMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "changeCustomerPassword",
                 "to_name": "getCustomerLang",
                 "calling_type": "CALL"
@@ -36,8 +22,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetCustomerPassword",
-                "to_name": "getCustomerLang",
+                "from_name": "changeCustomerPassword",
+                "to_name": "setCustomerPassword",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeCustomerPassword",
+                "to_name": "getCustomerPassword",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeCustomerPassword",
+                "to_name": "getCustomerEmailAddress",
                 "calling_type": "CALL"
               }
             ],
@@ -50,20 +50,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "searchCustomers",
-                "to_name": "findCustomers",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "findCustomerByUserName",
-                "to_name": "findCustomerbyUserName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "findCustomerByEmail",
                 "to_name": "findCustomerbyEmail",
                 "calling_type": "CALL"
@@ -71,15 +57,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCustomersHavingCompanies",
-                "to_name": "findCustomersHavingCompany",
+                "from_name": "findCustomerbyUserNameAndPassword",
+                "to_name": "findByUserNameAndPasswordByMerchantId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCustomersByCompanyName",
-                "to_name": "findByCompanyName",
+                "from_name": "changeCustomerPassword",
+                "to_name": "saveOrUptade",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteCustomer",
+                "to_name": "delete",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToSavedCart",
+                "to_name": "saveShoppingCartAttributes",
                 "calling_type": "CALL"
               }
             ],
@@ -106,13 +106,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "setCustomerInfoNumberOfLogon",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "processLastLoggedInDate",
                 "to_name": "getCustomerInfoNumberOfLogon",
                 "calling_type": "CALL"
@@ -120,140 +113,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "getCustomerInfoNumberOfLogon",
+                "from_name": "processLastLoggedInDate",
+                "to_name": "setCustomerInfoDateOfLastLogon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "processLastLoggedInDate",
+                "to_name": "getCustomerInfoDateOfLastLogon",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 13,
             "to_file": "sm-core/src/com/salesmanager/core/entity/customer/CustomerInfo.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeCustomerPassword",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetCustomerPassword",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeCustomerPassword",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetCustomerPassword",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeCustomerPassword",
-                "to_name": "getStoreemailaddress",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetCustomerPassword",
-                "to_name": "getStoreemailaddress",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "getStoreemailaddress",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeCustomerPassword",
-                "to_name": "getStorename",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetCustomerPassword",
-                "to_name": "getStorename",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "changeCustomerPassword",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetCustomerPassword",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "changeCustomerPassword",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "resetCustomerPassword",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
           },
           {
             "calls_between_elements": [
@@ -267,6 +141,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "saveOrUpdateCustomerInfo",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "processLastLoggedInDate",
                 "to_name": "findById",
                 "calling_type": "CALL"
@@ -274,22 +155,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "processLastLoggedInDate",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteCustomer",
                 "to_name": "findById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteCustomer",
-                "to_name": "delete",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateCustomerInfo",
-                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               }
             ],
@@ -309,15 +183,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCustomersByCompanyName",
-                "to_name": "findByCompanyName",
+                "from_name": "findCustomerbyUserNameAndPassword",
+                "to_name": "findByUserNameAndPasswordByMerchantId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "findCustomerbyUserNameAndPassword",
-                "to_name": "findByUserNameAndPasswordByMerchantId",
+                "from_name": "changeCustomerPassword",
+                "to_name": "saveOrUptade",
                 "calling_type": "CALL"
               },
               {
@@ -330,14 +204,140 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "changeCustomerPassword",
-                "to_name": "saveOrUptade",
+                "from_name": "addProductToSavedCart",
+                "to_name": "saveShoppingCartAttributes",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 8,
             "to_file": "sm-core/src/com/salesmanager/core/service/customer/impl/dao/CustomerDao.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeCustomerPassword",
+                "to_name": "getText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeCustomerPassword",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetCustomerPassword",
+                "to_name": "getText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetCustomerPassword",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "getText",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeCustomerPassword",
+                "to_name": "getStoreemailaddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeCustomerPassword",
+                "to_name": "getStorename",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetCustomerPassword",
+                "to_name": "getStoreemailaddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetCustomerPassword",
+                "to_name": "getStorename",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "getStoreemailaddress",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "changeCustomerPassword",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "changeCustomerPassword",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetCustomerPassword",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "resetCustomerPassword",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
           },
           {
             "calls_between_elements": [
@@ -351,6 +351,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "saveOrUpdateCustomerInfo",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "processLastLoggedInDate",
                 "to_name": "findById",
                 "calling_type": "CALL"
@@ -358,22 +365,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "processLastLoggedInDate",
+                "to_name": "saveOrUpdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteCustomer",
                 "to_name": "findById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteCustomer",
-                "to_name": "delete",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateCustomerInfo",
-                "to_name": "saveOrUpdate",
                 "calling_type": "CALL"
               }
             ],
@@ -392,20 +392,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetCustomerPassword",
-                "to_name": "sendHtmlEmail",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "sendHtmlEmail",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "changeCustomerPassword",
                 "to_name": "CommonService",
@@ -413,9 +399,23 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetCustomerPassword",
+                "to_name": "sendHtmlEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "resetCustomerPassword",
                 "to_name": "CommonService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "sendHtmlEmail",
                 "calling_type": "CALL"
               }
             ],
@@ -435,20 +435,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetCustomerPassword",
-                "to_name": "encrypt",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "encrypt",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "changeCustomerPassword",
                 "to_name": "generatekey",
                 "calling_type": "CALL"
@@ -457,7 +443,21 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "resetCustomerPassword",
+                "to_name": "encrypt",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetCustomerPassword",
                 "to_name": "generatekey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "encrypt",
                 "calling_type": "CALL"
               }
             ],
@@ -538,34 +538,6 @@
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Class",
-                "to_type": "Java Enum",
-                "from_name": "CustomerService",
-                "to_name": "SystemUrlEntryType",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum Item",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "WEB",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum Item",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "PORTAL",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/SystemUrlEntryType.java"
-          },
-          {
-            "calls_between_elements": [
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "resetCustomerPassword",
@@ -622,23 +594,30 @@
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Field",
-                "to_type": "Java Method",
-                "from_name": "config",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "WEB",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "saveOrUpdateCustomer",
+                "to_name": "PORTAL",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "Java Enum",
                 "from_name": "CustomerService",
-                "to_name": "PropertiesUtil",
-                "calling_type": "CALL"
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/SystemUrlEntryType.java"
           },
           {
             "calls_between_elements": [
@@ -660,6 +639,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/ReferenceUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "config",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CustomerService",
+                "to_name": "PropertiesUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
           },
           {
             "calls_between_elements": [

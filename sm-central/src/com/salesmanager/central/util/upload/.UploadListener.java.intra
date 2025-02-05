@@ -5,6 +5,34 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "updateUploadInfo",
+            "to_name": "totalFiles",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "updateUploadInfo",
+            "to_name": "totalBytesRead",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "updateUploadInfo",
+            "to_name": "totalToRead",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "updateUploadInfo",
+            "to_name": "startTime",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "done",
             "to_name": "updateUploadInfo",
@@ -26,6 +54,27 @@
           },
           {
             "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "bytesRead",
+            "to_name": "totalBytesRead",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "bytesRead",
+            "to_name": "totalBytesRead",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "bytesRead",
+            "to_name": "delay",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "start",
             "to_name": "updateUploadInfo",
@@ -34,13 +83,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "updateUploadInfo",
-            "to_name": "totalFiles",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "start",
             "to_name": "totalFiles",
             "calling_type": "READ"
@@ -51,48 +93,6 @@
             "from_name": "start",
             "to_name": "totalFiles",
             "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "updateUploadInfo",
-            "to_name": "totalBytesRead",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "bytesRead",
-            "to_name": "totalBytesRead",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "bytesRead",
-            "to_name": "totalBytesRead",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "updateUploadInfo",
-            "to_name": "totalToRead",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "UploadListener",
-            "to_name": "totalToRead",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "updateUploadInfo",
-            "to_name": "startTime",
-            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -105,7 +105,7 @@
             "from_type": "Java Constructor",
             "to_type": "Java Field",
             "from_name": "UploadListener",
-            "to_name": "startTime",
+            "to_name": "totalToRead",
             "calling_type": "WRITE"
           }
         ],

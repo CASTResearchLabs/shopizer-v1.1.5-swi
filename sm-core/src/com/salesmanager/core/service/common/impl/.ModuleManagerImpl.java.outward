@@ -15,13 +15,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getModuleService",
-                "to_name": "getCoreModuleServiceCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getModuleServiceByCode",
                 "to_name": "getCoreModuleServiceSubtype",
                 "calling_type": "CALL"
@@ -30,14 +23,21 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getModuleService",
-                "to_name": "getCoreModuleServiceSubtype",
+                "to_name": "getCoreModuleServiceCode",
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class",
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "ModuleManagerImpl",
+                "from_name": "getModuleService",
                 "to_name": "CoreModuleService",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getModuleService",
+                "to_name": "getCoreModuleServiceSubtype",
                 "calling_type": "CALL"
               }
             ],

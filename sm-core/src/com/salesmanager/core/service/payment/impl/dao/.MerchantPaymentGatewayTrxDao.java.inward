@@ -4,30 +4,13 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "findMerchantPaymentGatewayTrxByMerchantIdAndOrderId",
-                "to_name": "findByMerchantIdAndOrderId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveMerchantPaymentGatewayTrx",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class DAO",
-                "from_name": "PaymentService",
-                "to_name": "MerchantPaymentGatewayTrxDao",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java",
             "comment": "",
             "nb_calls_between_elements": 3
           }

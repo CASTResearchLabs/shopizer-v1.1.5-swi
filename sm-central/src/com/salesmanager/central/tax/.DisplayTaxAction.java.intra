@@ -5,45 +5,17 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "displayTax",
-            "to_name": "setConfigurationScheme",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setConfigurationScheme",
+            "to_name": "configurationScheme",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "setup",
-            "to_name": "setConfigurationScheme",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "configureTax",
-            "to_name": "getConfigurationScheme",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "displayTax",
-            "to_name": "getConfigurationScheme",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "setup",
-            "to_name": "getConfigurationScheme",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "configureTax",
-            "to_name": "setInitialSetup",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "getConfigurationScheme",
+            "to_name": "configurationScheme",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -53,17 +25,24 @@
             "calling_type": "CALL"
           },
           {
-            "from_type": "Struts Operation",
+            "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "/configuretax",
-            "to_name": "configureTax",
+            "from_name": "resetTax",
+            "to_name": "cleanupTax",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "resetTax",
-            "to_name": "cleanupTax",
+            "from_name": "configureTax",
+            "to_name": "getConfigurationScheme",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "configureTax",
+            "to_name": "setInitialSetup",
             "calling_type": "CALL"
           },
           {
@@ -81,31 +60,52 @@
             "calling_type": "CALL"
           },
           {
-            "from_type": "Struts Operation",
+            "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "/removetax",
-            "to_name": "removeTax",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/displaytaxclass",
-            "to_name": "displayTaxClass",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/displaytaxbasis",
-            "to_name": "displayTaxBasis",
+            "from_name": "displayTaxClass",
+            "to_name": "displayTax",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "displayTaxClass",
+            "from_name": "displayTaxBasis",
             "to_name": "displayTax",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "displayTax",
+            "to_name": "setConfigurationScheme",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "displayTax",
+            "to_name": "getConfigurationScheme",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "displayTax",
+            "to_name": "configuration",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "setup",
+            "to_name": "setConfigurationScheme",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "setup",
+            "to_name": "getConfigurationScheme",
             "calling_type": "CALL"
           }
         ],

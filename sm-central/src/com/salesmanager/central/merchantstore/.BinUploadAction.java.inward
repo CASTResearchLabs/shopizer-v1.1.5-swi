@@ -4,142 +4,73 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "binAdd",
-                "to_name": "uploadToBin",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "uploadMediaFile",
-                "to_name": "uploadToBin",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "binView",
-                "to_name": "displayFileBrowser",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "displayFileBrowser",
-                "to_name": "displayFileBrowser",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "binDelete",
-                "to_name": "deleteFile",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts.xml",
+            "comment": "",
             "nb_calls_between_elements": 10
           },
           {
-            "from_file": "sm-central/WebContent/merchantstore/binView.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "binAdd",
-                "to_name": "/binAdd",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "binView.jsp",
-                "to_name": "/binAdd",
-                "calling_type": "POST"
-              },
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "merchantstore/binDelete.action",
-                "to_name": "/binDelete",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "binView.jsp",
-                "to_name": "/binDelete",
-                "calling_type": "POST"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-central/WebContent/merchantstore/binView.jsp",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-central/WebContent/merchantstore/binUpload.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "cartproperties/binDelete.action",
-                "to_name": "/binDelete",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "binUpload.jsp",
-                "to_name": "/binDelete",
-                "calling_type": "POST"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-central/WebContent/merchantstore/fileBrowser.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "uploadMediaFile",
-                "to_name": "/uploadMediaFile",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "fileBrowser.jsp",
-                "to_name": "/uploadMediaFile",
-                "calling_type": "POST"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-central/WebContent/common/fileBrowser.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "uploadMediaFile",
-                "to_name": "/uploadMediaFile",
-                "calling_type": "CALL"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "fileBrowser.jsp",
-                "to_name": "/uploadMediaFile",
-                "calling_type": "POST"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/WebContent/common/fileBrowser.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

@@ -8,6 +8,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Oracle Table",
+                "from_name": "getDynamicLabels",
+                "to_name": "PORTLET",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Oracle Table",
                 "from_name": "getPortlets",
                 "to_name": "PAGE",
                 "calling_type": "USE"
@@ -20,13 +27,6 @@
                 "calling_type": "USE"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Oracle Table",
-                "from_name": "getDynamicLabels",
-                "to_name": "PORTLET",
-                "calling_type": "SELECT"
-              },
-              {
                 "from_type": "Java Class DAO",
                 "to_type": "Oracle Table",
                 "from_name": "PortletDao",
@@ -36,7 +36,7 @@
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 10,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/upgrade/v1.1.2-TO-v1.1.3.sql"
+            "to_file": "schema/upgrade/v1.1.2-TO-v1.1.3.sql"
           },
           {
             "calls_between_elements": [
@@ -85,6 +85,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "MySQL Table",
+                "from_name": "getDynamicLabels",
+                "to_name": "PORTLET",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
                 "from_name": "getPortlets",
                 "to_name": "PAGE",
                 "calling_type": "USE"
@@ -97,13 +104,6 @@
                 "calling_type": "USE"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "getDynamicLabels",
-                "to_name": "PORTLET",
-                "calling_type": "SELECT"
-              },
-              {
                 "from_type": "Java Class DAO",
                 "to_type": "MySQL Table",
                 "from_name": "PortletDao",
@@ -113,7 +113,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           }
         ],
         "files_list_comment": "",

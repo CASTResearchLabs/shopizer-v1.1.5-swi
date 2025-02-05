@@ -8,20 +8,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "initOrderProduct",
-                "to_name": "setOriginalPriceAmount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initOrderProduct",
-                "to_name": "setProductPriceSpecialAmount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "determinePrice",
                 "to_name": "getProductPriceSpecialAmount",
                 "calling_type": "CALL"
@@ -29,14 +15,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "determinePriceWithAttributes",
-                "to_name": "getProductPriceSpecialAmount",
+                "from_name": "determinePrice",
+                "to_name": "getProductPriceSpecialDurationDays",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "formatHTMLProductPrice",
+                "from_name": "determinePrice",
+                "to_name": "getProductPriceSpecialEndDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "determinePrice",
+                "to_name": "getProductPriceSpecialStartDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "determinePriceWithAttributes",
                 "to_name": "getProductPriceSpecialAmount",
                 "calling_type": "CALL"
               }
@@ -50,22 +50,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "formatHTMLProductPrice",
-                "to_name": "getPriceSuffix",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "formatHTMLProductPriceWithAttributes",
-                "to_name": "getPriceSuffix",
+                "from_name": "determinePrice",
+                "to_name": "getSpecial",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "determinePrice",
-                "to_name": "getSpecial",
+                "to_name": "isDefaultPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "determinePrice",
+                "to_name": "getProductPriceAmount",
                 "calling_type": "CALL"
               },
               {
@@ -78,8 +78,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "formatHTMLProductPrice",
-                "to_name": "getSpecial",
+                "from_name": "determinePriceWithAttributes",
+                "to_name": "isDefaultPrice",
                 "calling_type": "CALL"
               }
             ],
@@ -92,15 +92,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "initOrderProduct",
-                "to_name": "getProductQuantityOrderMax",
+                "from_name": "determinePrice",
+                "to_name": "getPrices",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "determinePrice",
-                "to_name": "getPrices",
+                "to_name": "getSpecial",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "determinePrice",
+                "to_name": "getProductPrice",
                 "calling_type": "CALL"
               },
               {
@@ -113,15 +120,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "formatHTMLProductPrice",
-                "to_name": "getPrices",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "formatHTMLProductPriceWithAttributes",
-                "to_name": "getPrices",
+                "from_name": "determinePriceWithAttributes",
+                "to_name": "getSpecial",
                 "calling_type": "CALL"
               }
             ],
@@ -141,6 +141,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "determinePrice",
+                "to_name": "getExpiresDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "determinePrice",
+                "to_name": "getSpecialNewProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "determinePriceWithAttributes",
                 "to_name": "getSpecialDateAvailable",
                 "calling_type": "CALL"
@@ -148,22 +162,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "formatHTMLProductPrice",
-                "to_name": "getSpecialDateAvailable",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "formatHTMLProductPriceWithAttributes",
-                "to_name": "getSpecialDateAvailable",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "hasDiscount",
-                "to_name": "getSpecialDateAvailable",
+                "from_name": "determinePriceWithAttributes",
+                "to_name": "getExpiresDate",
                 "calling_type": "CALL"
               }
             ],
@@ -218,48 +218,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "formatHTMLProductPrice",
-                "to_name": "displayFormatedCssAmountWithCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "formatHTMLProductPriceWithAttributes",
-                "to_name": "displayFormatedCssAmountWithCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initOrderProduct",
-                "to_name": "displayFormatedAmountNoCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "formatHTMLProductPrice",
-                "to_name": "displayFormatedAmountWithCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "formatHTMLProductPriceWithAttributes",
-                "to_name": "displayFormatedAmountWithCurrency",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 7,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "determinePriceWithAttributes",
                 "to_name": "getOptionValuePrice",
                 "calling_type": "CALL"
@@ -267,8 +225,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "determinePriceWithAttributes",
+                "to_name": "isAttributeDisplayOnly",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "formatHTMLProductPriceWithAttributes",
                 "to_name": "getOptionValuePrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "formatHTMLProductPriceWithAttributes",
+                "to_name": "isAttributeDisplayOnly",
                 "calling_type": "CALL"
               },
               {
@@ -277,25 +249,53 @@
                 "from_name": "determinePriceNoDiscountWithAttributes",
                 "to_name": "getOptionValuePrice",
                 "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 7,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductAttribute.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "formatHTMLProductPrice",
+                "to_name": "displayFormatedCssAmountWithCurrency",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "determinePriceWithAttributes",
-                "to_name": "isAttributeDisplayOnly",
+                "from_name": "formatHTMLProductPrice",
+                "to_name": "displayFormatedAmountWithCurrency",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "formatHTMLProductPriceWithAttributes",
-                "to_name": "isAttributeDisplayOnly",
+                "to_name": "displayFormatedCssAmountWithCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "formatHTMLProductPriceWithAttributes",
+                "to_name": "displayFormatedAmountWithCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initOrderProduct",
+                "to_name": "displayFormatedAmountNoCurrency",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductAttribute.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
           },
           {
             "calls_between_elements": [
@@ -393,15 +393,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "formatHTMLProductPriceWithAttributes",
-                "to_name": "getText",
+                "from_name": "formatHTMLProductPrice",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "formatHTMLProductPrice",
-                "to_name": "getInstance",
+                "from_name": "formatHTMLProductPriceWithAttributes",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
@@ -451,14 +451,14 @@
                 "to_type": "Java Class",
                 "from_name": "ProductUtil",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ProductUtil",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -512,34 +512,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductName",
-                "to_name": "getProductName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getProductName",
-                "to_name": "getId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductUtil",
-                "to_name": "ProductDescription",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductDescription.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "formatHTMLProductPrice",
                 "to_name": "formatDate",
                 "calling_type": "CALL"
@@ -568,21 +540,49 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "initOrderProduct",
-                "to_name": "getOrderProductPriceSpecial",
+                "from_name": "getProductName",
+                "to_name": "getProductName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getProductName",
+                "to_name": "getId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ProductUtil",
-                "to_name": "OrderService",
+                "to_name": "ProductDescription",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductDescription.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "initOrderProduct",
+                "to_name": "DEFAULT_MAX_ORDER_BY_PRODUCT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductUtil",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/constants/CatalogConstants.java"
           },
           {
             "calls_between_elements": [
@@ -604,27 +604,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductDescriptionId.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initOrderProduct",
-                "to_name": "getProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductUtil",
-                "to_name": "CatalogService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
           },
           {
             "calls_between_elements": [
@@ -653,6 +632,48 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "initOrderProduct",
+                "to_name": "getOrderProductPriceSpecial",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductUtil",
+                "to_name": "OrderService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initOrderProduct",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ProductUtil",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "initOrderProduct",
                 "to_name": "getAttributesLine",
                 "calling_type": "CALL"
               },
@@ -667,27 +688,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/CheckoutUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "initOrderProduct",
-                "to_name": "DEFAULT_MAX_ORDER_BY_PRODUCT",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductUtil",
-                "to_name": "CatalogConstants",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/CatalogConstants.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

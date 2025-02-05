@@ -7,6 +7,13 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShippingQuote",
+                "to_name": "ShippingOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getShippingQuote",
                 "to_name": "getOptionPrice",
@@ -32,13 +39,6 @@
                 "from_name": "getShippingQuote",
                 "to_name": "setCurrency",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuote",
-                "to_name": "setOptionPrice",
-                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -47,6 +47,13 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShippingQuote",
+                "to_name": "PackageDetail",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -73,13 +80,6 @@
                 "to_type": "Java Method",
                 "from_name": "getShippingQuote",
                 "to_name": "getShippingQuantity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuote",
-                "to_name": "getShippingLength",
                 "calling_type": "CALL"
               }
             ],
@@ -134,13 +134,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "getShippingQuote",
-                "to_name": "TEST_ENVIRONMENT",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
                 "from_name": "getConfiguration",
                 "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
                 "calling_type": "READ"
@@ -150,6 +143,13 @@
                 "to_type": "Java Field",
                 "from_name": "getConfiguration",
                 "to_name": "MODULE_SHIPPING_RT_CRED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getShippingQuote",
+                "to_name": "TEST_ENVIRONMENT",
                 "calling_type": "READ"
               },
               {
@@ -170,6 +170,48 @@
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 7,
             "to_file": "sm-core/src/com/salesmanager/core/constants/ShippingConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfiguration",
+                "to_name": "getConfigurationValue1",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfiguration",
+                "to_name": "getConfigurationValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfiguration",
+                "to_name": "getConfigurationKey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfiguration",
+                "to_name": "getConfigurationValue2",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getConfigurationValue1",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantConfiguration.java"
           },
           {
             "calls_between_elements": [
@@ -219,44 +261,16 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getConfiguration",
-                "to_name": "getConfigurationValue1",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuote",
-                "to_name": "getConfigurationValue1",
+                "to_name": "addMerchantConfiguration",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getConfiguration",
-                "to_name": "getConfigurationValue",
+                "to_name": "addConfiguration",
                 "calling_type": "CALL"
               },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfiguration",
-                "to_name": "getConfigurationKey",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfiguration",
-                "to_name": "getConfigurationValue2",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantConfiguration.java"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -269,20 +283,6 @@
                 "to_type": "Java Method",
                 "from_name": "getShippingQuote",
                 "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfiguration",
-                "to_name": "addMerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfiguration",
-                "to_name": "addConfiguration",
                 "calling_type": "CALL"
               },
               {
@@ -427,23 +427,16 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuote",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "getShippingQuote",
                 "to_name": "ShippingService",
                 "calling_type": "READ"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CanadaPostQuotesImpl",
-                "to_name": "ServiceFactory",
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getService",
                 "calling_type": "CALL"
               },
               {
@@ -452,11 +445,74 @@
                 "from_name": "CanadaPostQuotesImpl",
                 "to_name": "ServiceFactory",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CanadaPostQuotesImpl",
+                "to_name": "ServiceFactory",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfiguration",
+                "to_name": "getProperties",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getConfiguration",
+                "to_name": "getKeys",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CanadaPostQuotesImpl",
+                "to_name": "ShippingUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/ShippingUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "trimPostalCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShippingQuote",
+                "to_name": "ShippingUtil",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "CanadaPostQuotesImpl",
+                "to_name": "ShippingUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/ShippingUtil.java"
           },
           {
             "calls_between_elements": [
@@ -492,55 +548,20 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getShippingQuote",
-                "to_name": "trimPostalCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getShippingQuote",
-                "to_name": "ShippingUtil",
+                "to_name": "getRealTimeQuoteShippingService",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "CanadaPostQuotesImpl",
-                "to_name": "ShippingUtil",
+                "to_name": "ShippingService",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/ShippingUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfiguration",
-                "to_name": "getProperties",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfiguration",
-                "to_name": "getKeys",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CanadaPostQuotesImpl",
-                "to_name": "ShippingUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/ShippingUtil.java"
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java"
           },
           {
             "calls_between_elements": [
@@ -688,27 +709,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Country.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuote",
-                "to_name": "getRealTimeQuoteShippingService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CanadaPostQuotesImpl",
-                "to_name": "ShippingService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

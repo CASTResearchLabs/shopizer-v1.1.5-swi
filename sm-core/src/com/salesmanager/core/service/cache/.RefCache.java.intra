@@ -4,11 +4,32 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "RefCache",
-            "to_name": "createCache",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "createCache",
+            "to_name": "zones",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "createCache",
+            "to_name": "loaded",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "createCache",
+            "to_name": "loaded",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCountriesMap",
+            "to_name": "countriesmap",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -26,51 +47,37 @@
           },
           {
             "from_type": "Java Method",
+            "to_type": "Java Constructor",
+            "from_name": "getFilterdByCountryZones",
+            "to_name": "ZonesCollectionFilter",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getLanguageswithcode",
-            "to_name": "languageswithcode",
+            "from_name": "getInstance",
+            "to_name": "cache",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getLanguageswithindex",
-            "to_name": "languageswithindex",
-            "calling_type": "READ"
+            "from_name": "getInstance",
+            "to_name": "cache",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Constructor",
+            "from_name": "getInstance",
+            "to_name": "RefCache",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getCurrenciesListWithCodes",
-            "to_name": "currencieswithcode",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getSizeunits",
-            "to_name": "sizeunits",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getWeightunits",
-            "to_name": "weightunits",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getCountriesStatus",
-            "to_name": "countriesStatus",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getCountriesMap",
-            "to_name": "countriesmap",
+            "from_name": "isLoaded",
+            "to_name": "loaded",
             "calling_type": "READ"
           },
           {
@@ -83,13 +90,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "createCache",
-            "to_name": "zones",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "getCountries",
             "to_name": "countries",
             "calling_type": "READ"
@@ -97,16 +97,16 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getInstance",
-            "to_name": "cache",
+            "from_name": "getLanguageswithcode",
+            "to_name": "languageswithcode",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getInstance",
-            "to_name": "cache",
-            "calling_type": "WRITE"
+            "from_name": "getCountriesStatus",
+            "to_name": "countriesStatus",
+            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

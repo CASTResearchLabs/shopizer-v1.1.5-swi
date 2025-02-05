@@ -4,72 +4,39 @@
       {
         "files": [
           {
-            "from_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "setAdminTokenToSession",
-                "to_name": "ADMIN_TOKEN_PARAM",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "setAdminTokenToSession",
-                "to_name": "ADMIN_MERCHANT_REG_DEF_CODE",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "BaseAction",
-                "to_name": "Constants",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Field",
-                "to_type": "Java Field",
-                "from_name": "merchantRegistrationDefCodes",
-                "to_name": "MERCHANT_REG_DEF_CODES",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "MerchantStoreAction",
-                "to_name": "Constants",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/src/com/salesmanager/central/profile/StoreAction.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-central/src/com/salesmanager/central/profile/StoreAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "saveStore",
-                "to_name": "ENGLISH_CODE",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "StoreAction",
-                "to_name": "Constants",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

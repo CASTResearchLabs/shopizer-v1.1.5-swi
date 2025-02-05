@@ -7,6 +7,20 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setShippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getShippingMethods",
+                "to_name": "ShippingMethod",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "displayShippingMethods",
                 "to_name": "getShippingModule",
@@ -20,23 +34,9 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class",
+                "from_type": "Java Field",
                 "to_type": "Java Class",
-                "from_name": "EditShippingMethods",
-                "to_name": "ShippingMethod",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setShippingMethods",
-                "to_name": "ShippingMethod",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getShippingMethods",
+                "from_name": "shippingMethods",
                 "to_name": "ShippingMethod",
                 "calling_type": "USE"
               }
@@ -115,14 +115,14 @@
                 "to_type": "Java Class",
                 "from_name": "EditShippingMethods",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "EditShippingMethods",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",

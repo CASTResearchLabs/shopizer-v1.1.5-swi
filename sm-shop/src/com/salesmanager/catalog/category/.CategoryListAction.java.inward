@@ -4,149 +4,88 @@
       {
         "files": [
           {
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "category",
-                "to_name": "displayCategory",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "*",
-                "to_name": "displayCategory",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "page",
-                "to_name": "page",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class",
-                "from_name": "page",
-                "to_name": "CategoryListAction",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class",
-                "from_name": "category",
-                "to_name": "CategoryListAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "GET",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/leftcolumn.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "category/{}",
-                "to_name": "/category",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "leftcolumn.jsp",
-                "to_name": "/category",
-                "calling_type": "GET"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "GET",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/header.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "${contextPath}/category/{}",
-                "to_name": "/category",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "header.jsp",
-                "to_name": "/category",
-                "calling_type": "GET"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "GET",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-central/WebContent/catalog/category.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "category.action",
-                "to_name": "/category",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "category.jsp",
-                "to_name": "/category",
-                "calling_type": "GET"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/category.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "page",
-                "to_name": "/page",
-                "calling_type": "CALL"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "category.jsp",
-                "to_name": "/page",
-                "calling_type": "POST"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
             "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/search.jsp",
-            "calls_between_elements": [
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "page",
-                "to_name": "/page",
-                "calling_type": "CALL"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "search.jsp",
-                "to_name": "/page",
-                "calling_type": "POST"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/category.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

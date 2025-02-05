@@ -5,24 +5,17 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "uploadProductImages",
-            "to_name": "isCropeable",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "isCropeable",
+            "to_name": "cropeable",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "uploadCropedProductImages",
-            "to_name": "resizeImage",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "uploadProductImages",
-            "to_name": "resizeImage",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setCropeable",
+            "to_name": "cropeable",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -34,78 +27,85 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
+            "from_name": "determineCropArea",
+            "to_name": "getCropeBaseline",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "determineCropArea",
+            "to_name": "cropAreaHeight",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "determineCropArea",
+            "to_name": "cropAreaWidth",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "determineBaseline",
+            "to_name": "setCropeBaseline",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "determineCropeable",
+            "to_name": "cropeable",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCropAreaHeight",
+            "to_name": "cropAreaHeight",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCropAreaHeight",
+            "to_name": "cropAreaHeight",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCropAreaWidth",
+            "to_name": "cropAreaWidth",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCropAreaWidth",
+            "to_name": "cropAreaWidth",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCropeBaseline",
+            "to_name": "cropeBaseline",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCropeBaseline",
+            "to_name": "cropeBaseline",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
             "from_name": "uploadCropedProductImages",
-            "to_name": "getDefaultConfigMap",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "uploadProductImages",
-            "to_name": "getDefaultConfigMap",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "initCropImage",
-            "to_name": "getDefaultConfigMap",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "uploadCropedProductImages",
-            "to_name": "getValue",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "uploadProductImages",
-            "to_name": "getValue",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "initCropImage",
-            "to_name": "getValue",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "uploadProductImages",
-            "to_name": "determineCropArea",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "initCropImage",
-            "to_name": "determineCropArea",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "uploadProductImages",
-            "to_name": "determineBaseline",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "initCropImage",
-            "to_name": "determineBaseline",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "uploadProductImages",
-            "to_name": "determineCropeable",
+            "to_name": "resizeImage",
             "calling_type": "CALL"
           }
         ],

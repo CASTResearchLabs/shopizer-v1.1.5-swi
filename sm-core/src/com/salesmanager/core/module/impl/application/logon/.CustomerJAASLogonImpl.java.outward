@@ -7,20 +7,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "resetPassword",
-                "to_name": "ServiceException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "logon",
-                "to_name": "ServiceException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "isUserInRole",
                 "to_name": "ServiceException",
@@ -28,10 +14,24 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "resetPassword",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "resetPassword",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "resetPassword",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
@@ -50,14 +50,49 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "getService",
+                "from_name": "isValidAuthToken",
+                "to_name": "decrypt",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAuthToken",
+                "to_name": "encrypt",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAuthToken",
+                "to_name": "generatekey",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "logon",
+                "to_name": "encrypt",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "generatekey",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/util/EncryptionUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword",
                 "to_name": "getService",
                 "calling_type": "CALL"
               },
@@ -67,6 +102,13 @@
                 "from_name": "resetPassword",
                 "to_name": "CustomerService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "getService",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -80,54 +122,12 @@
                 "to_type": "Java Class",
                 "from_name": "CustomerJAASLogonImpl",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAuthToken",
-                "to_name": "encrypt",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "logon",
-                "to_name": "encrypt",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAuthToken",
-                "to_name": "generatekey",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "logon",
-                "to_name": "generatekey",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "isValidAuthToken",
-                "to_name": "decrypt",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/util/EncryptionUtil.java"
           },
           {
             "calls_between_elements": [
@@ -141,15 +141,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "logon",
-                "to_name": "findCustomerbyUserNameAndPassword",
+                "from_name": "resetPassword",
+                "to_name": "changeCustomerPassword",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "changeCustomerPassword",
+                "from_name": "logon",
+                "to_name": "findCustomerbyUserNameAndPassword",
                 "calling_type": "CALL"
               },
               {

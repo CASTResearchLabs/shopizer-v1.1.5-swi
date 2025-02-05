@@ -6,17 +6,24 @@
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Initializer",
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "{(53:2)}",
-                "to_name": "createCacheMap",
+                "from_name": "getPaymentMetodsMap",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getPaymentMetodsMap",
-                "to_name": "getInstance",
+                "to_name": "containsCache",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPaymentMetodsMap",
+                "to_name": "getCacheMap",
                 "calling_type": "CALL"
               },
               {
@@ -29,15 +36,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPaymentMetod",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Initializer",
-                "to_type": "Java Method",
-                "from_name": "{(53:2)}",
-                "to_name": "getInstance",
+                "from_name": "getModule",
+                "to_name": "containsCache",
                 "calling_type": "CALL"
               }
             ],
@@ -50,22 +50,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getPaymentMethodsList",
-                "to_name": "getCoreModuleName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Initializer",
-                "to_type": "Java Method",
-                "from_name": "{(53:2)}",
-                "to_name": "getCoreModuleName",
+                "from_name": "getShippingRealTimeQuotesMethods",
+                "to_name": "getCountryIsoCode2",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
+                "to_type": "Java Class",
                 "from_name": "getShippingRealTimeQuotesMethods",
-                "to_name": "getCountryIsoCode2",
+                "to_name": "CoreModuleService",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPaymentMethodsList",
+                "to_name": "getCoreModuleName",
                 "calling_type": "CALL"
               },
               {
@@ -150,14 +150,14 @@
                 "to_type": "Java Class",
                 "from_name": "ServicesUtil",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ServicesUtil",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",

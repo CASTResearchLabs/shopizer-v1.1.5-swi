@@ -4,87 +4,29 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-integration.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "fbPageConfig",
-                "to_name": "editPageConfig",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "fbPageHeader",
-                "to_name": "editPageHeader",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "fbportlet",
-                "to_name": "displayPage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "createfbpage",
-                "to_name": "createPage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class",
-                "from_name": "fbPageConfig",
-                "to_name": "FbPageAdminAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-integration.xml",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
-            "from_file": "sm-central/WebContent/integration/fbPageAdmin.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "fbPageConfig",
-                "to_name": "/fbPageConfig",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "fbPageAdmin.jsp",
-                "to_name": "/fbPageConfig",
-                "calling_type": "POST"
-              },
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "integration/fbPageHeader.action",
-                "to_name": "/fbPageHeader",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "fbPageAdmin.jsp",
-                "to_name": "/fbPageHeader",
-                "calling_type": "POST"
-              },
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "createfbpage",
-                "to_name": "/createfbpage",
-                "calling_type": "CALL"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 3
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/WebContent/integration/fbPageAdmin.jsp",
+            "comment": "",
             "nb_calls_between_elements": 6
           }
         ],

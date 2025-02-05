@@ -34,11 +34,11 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class",
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "SystemService",
+                "from_name": "getIntegrationErrors",
                 "to_name": "CentralIntegrationError",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -85,15 +85,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getIntegrationErrors",
-                "to_name": "findByMerchantId",
+                "from_name": "logServiceMessage",
+                "to_name": "persist",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "logServiceMessage",
-                "to_name": "persist",
+                "from_name": "getIntegrationErrors",
+                "to_name": "findByMerchantId",
                 "calling_type": "CALL"
               },
               {
@@ -107,27 +107,6 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/ICentralIntegrationErrorDao.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getNextOrderIdSequence",
-                "to_name": "incrementOrderIdCounter",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "SystemService",
-                "to_name": "ISystemDao",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/ISystemDao.java"
           },
           {
             "calls_between_elements": [
@@ -154,22 +133,22 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getCentralRegistrationAssociations",
-                "to_name": "CentralRegistrationAssociation",
-                "calling_type": "USE"
+                "to_type": "Java Method",
+                "from_name": "getNextOrderIdSequence",
+                "to_name": "incrementOrderIdCounter",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "Java Interface",
                 "from_name": "SystemService",
-                "to_name": "CentralRegistrationAssociation",
-                "calling_type": "USE"
+                "to_name": "ISystemDao",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/system/CentralRegistrationAssociation.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/system/impl/dao/ISystemDao.java"
           },
           {
             "calls_between_elements": [
@@ -212,6 +191,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/system/CentralFunction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getCentralRegistrationAssociations",
+                "to_name": "CentralRegistrationAssociation",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "SystemService",
+                "to_name": "CentralRegistrationAssociation",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/system/CentralRegistrationAssociation.java"
           }
         ],
         "files_list_comment": "",

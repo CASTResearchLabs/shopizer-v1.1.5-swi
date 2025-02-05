@@ -4,93 +4,39 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/MerchantConfigurationImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfigurationVOByModule",
-                "to_name": "findByModule",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfigurationVO",
-                "to_name": "findByModule",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfigurationVO",
-                "to_name": "findListByKey",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfigurationVO",
-                "to_name": "findListMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getConfigurationVO",
-                "to_name": "findListByLike",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/impl/MerchantConfigurationImpl.java",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "cleanConfigurationLikeKey",
-                "to_name": "deleteLike",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "cleanConfigurationKeys",
-                "to_name": "deleteLike",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class DAO",
-                "from_name": "MerchantService",
-                "to_name": "MerchantConfigurationDao",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "setShippingTaxClass",
-                "to_name": "saveOrUpdate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class DAO",
-                "from_name": "ShippingService",
-                "to_name": "MerchantConfigurationDao",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

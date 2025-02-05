@@ -4,100 +4,58 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-shipping.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "packing",
-                "to_name": "display",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "editPacking",
-                "to_name": "editPackingOption",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class",
-                "from_name": "editPacking",
-                "to_name": "EditPackingAction",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class",
-                "from_name": "packing",
-                "to_name": "EditPackingAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-shipping.xml",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-central/WebContent/shipping/packing.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "shipping/editPacking.action",
-                "to_name": "/editPacking",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "packing.jsp",
-                "to_name": "/editPacking",
-                "calling_type": "POST"
+                "calling_type": "GET",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
             "from_file": "sm-central/WebContent/orders/orderdetails.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "orders/packing.action",
-                "to_name": "/packing",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "orderdetails.jsp",
-                "to_name": "/packing",
-                "calling_type": "GET"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-central/WebContent/shipping/shippingleftmenu.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "shipping/packing.action",
-                "to_name": "/packing",
-                "calling_type": "CALL"
+                "calling_type": "GET",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "shippingleftmenu.jsp",
-                "to_name": "/packing",
-                "calling_type": "GET"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/WebContent/shipping/shippingleftmenu.jsp",
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calling_types": [
+              {
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
+            "from_file": "sm-central/WebContent/shipping/packing.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

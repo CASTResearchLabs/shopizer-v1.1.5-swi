@@ -4,72 +4,39 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "cleanupVirtualProduct",
-                "to_name": "deleteFile",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "cleanupVirtualProduct",
-                "to_name": "setProductId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CatalogService",
-                "to_name": "LocalFileImpl",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/CoreFileImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "uploadFile",
-                "to_name": "copyFile",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Rich Client",
-                "to_type": "Java Class",
-                "from_name": "CoreFileImpl",
-                "to_name": "LocalFileImpl",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/OrderProductDownloadTag.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/OrderProductDownloadTag.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "doStartTag",
-                "to_name": "getFileUrl",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderProductDownloadTag",
-                "to_name": "LocalFileImpl",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/CoreFileImpl.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

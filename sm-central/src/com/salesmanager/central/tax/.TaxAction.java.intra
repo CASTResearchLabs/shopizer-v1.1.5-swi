@@ -5,10 +5,17 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "prepare",
-            "to_name": "setupTax",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setSchemeid",
+            "to_name": "schemeid",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getSchemeid",
+            "to_name": "schemeid",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -26,6 +33,62 @@
           },
           {
             "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setupTax",
+            "to_name": "taxlist",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setupTax",
+            "to_name": "taxlist",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getTaxbasis",
+            "to_name": "taxbasis",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "gatherParameters",
+            "to_name": "taxbasis",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "gatherParameters",
+            "to_name": "schemeid",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "gatherParameters",
+            "to_name": "TAX_BASIS",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "gatherParameters",
+            "to_name": "SCHEME",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "prepare",
+            "to_name": "setupTax",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "prepare",
             "to_name": "setup",
@@ -34,42 +97,7 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getCountryId",
-            "to_name": "countryId",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setCountryId",
-            "to_name": "countryId",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getDescriptions",
-            "to_name": "descriptions",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setDescriptions",
-            "to_name": "descriptions",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "prepare",
-            "to_name": "languages",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getLanguages",
             "to_name": "languages",
             "calling_type": "READ"
           },
@@ -78,34 +106,6 @@
             "to_type": "Java Field",
             "from_name": "prepare",
             "to_name": "languages",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setLanguages",
-            "to_name": "languages",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setupTax",
-            "to_name": "taxlist",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getTaxlist",
-            "to_name": "taxlist",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setupTax",
-            "to_name": "taxlist",
             "calling_type": "WRITE"
           }
         ],

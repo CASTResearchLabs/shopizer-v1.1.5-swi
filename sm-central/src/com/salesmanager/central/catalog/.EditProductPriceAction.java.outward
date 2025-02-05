@@ -8,8 +8,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editProductPrice",
-                "to_name": "addFieldError",
+                "from_name": "displayProductPrice",
+                "to_name": "setAuthorizationMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProductPrice",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayProductPrice",
+                "to_name": "setPageTitle",
                 "calling_type": "CALL"
               },
               {
@@ -22,28 +36,56 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editProductPrice",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayProductPrice",
-                "to_name": "setAuthorizationMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editProductPrice",
-                "to_name": "setAuthorizationMessage",
+                "from_name": "preparePriceDetails",
+                "to_name": "prepareLanguages",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 18,
             "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "displayProductPrice",
+                "to_name": "error",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "displayProductPrice",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "displayProductPrice",
+                "to_name": "AUTHORIZATIONEXCEPTION",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "editProductPrice",
+                "to_name": "input",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "editProductPrice",
+                "to_name": "success",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 12,
+            "to_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml"
           },
           {
             "calls_between_elements": [
@@ -91,48 +133,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "editProductPrice",
-                "to_name": "input",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "editProductPrice",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "displayProductPrice",
-                "to_name": "error",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "displayProductPrice",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "displayProductPrice",
-                "to_name": "AUTHORIZATIONEXCEPTION",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 12,
-            "to_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "preparePriceDetails",
                 "to_name": "getService",
@@ -140,22 +140,8 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editProductPrice",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "preparePriceDetails",
-                "to_name": "CatalogService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "editProductPrice",
                 "to_name": "CatalogService",
                 "calling_type": "READ"
               },
@@ -165,6 +151,20 @@
                 "from_name": "preparePriceDetails",
                 "to_name": "CommonService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductPrice",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "editProductPrice",
+                "to_name": "CatalogService",
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -173,6 +173,20 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setPricesModules",
+                "to_name": "CoreModuleService",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getPricesModules",
+                "to_name": "CoreModuleService",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -193,20 +207,6 @@
                 "from_name": "editProductPrice",
                 "to_name": "getCoreModuleServiceSubtype",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "EditProductPriceAction",
-                "to_name": "CoreModuleService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setPricesModules",
-                "to_name": "CoreModuleService",
-                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -267,13 +267,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editProductPrice",
-                "to_name": "getPrices",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "preparePriceDetails",
                 "to_name": "getDescriptions",
                 "calling_type": "CALL"
@@ -289,6 +282,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "editProductPrice",
+                "to_name": "getPrices",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductPrice",
                 "to_name": "getProductId",
                 "calling_type": "CALL"
               }
@@ -296,6 +296,41 @@
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePriceDetails",
+                "to_name": "getLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductPrice",
+                "to_name": "getCountryid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductPrice",
+                "to_name": "getCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditProductPriceAction",
+                "to_name": "Context",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
           },
           {
             "calls_between_elements": [
@@ -373,34 +408,27 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "editProductPrice",
-                "to_name": "getCountryid",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "editProductPrice",
-                "to_name": "getCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "preparePriceDetails",
-                "to_name": "getLang",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
-                "to_type": "Java Class",
+                "to_type": "Java Class Struts",
                 "from_name": "EditProductPriceAction",
-                "to_name": "Context",
+                "to_name": "LabelUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
           },
           {
             "calls_between_elements": [
@@ -435,34 +463,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editProductPrice",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editProductPrice",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "EditProductPriceAction",
-                "to_name": "LabelUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "preparePriceDetails",
                 "to_name": "getProductName",
                 "calling_type": "CALL"
@@ -491,15 +491,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editProductPrice",
-                "to_name": "getModule",
+                "from_name": "preparePriceDetails",
+                "to_name": "getModules",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "preparePriceDetails",
-                "to_name": "getModules",
+                "from_name": "editProductPrice",
+                "to_name": "getModule",
                 "calling_type": "CALL"
               },
               {
@@ -513,27 +513,6 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/service/common/CommonService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editProductPrice",
-                "to_name": "getCountryIsoCodeById",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "EditProductPriceAction",
-                "to_name": "CountryUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CountryUtil.java"
           },
           {
             "calls_between_elements": [
@@ -602,6 +581,48 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "preparePriceDetails",
+                "to_name": "PRICE_MODULE_TYPE",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditProductPriceAction",
+                "to_name": "ProductConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/ProductConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editProductPrice",
+                "to_name": "getCountryIsoCodeById",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditProductPriceAction",
+                "to_name": "CountryUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/CountryUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "editProductPrice",
                 "to_name": "validateCurrency",
@@ -639,27 +660,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/MessageUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "preparePriceDetails",
-                "to_name": "PRICE_MODULE_TYPE",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "EditProductPriceAction",
-                "to_name": "ProductConstants",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/ProductConstants.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

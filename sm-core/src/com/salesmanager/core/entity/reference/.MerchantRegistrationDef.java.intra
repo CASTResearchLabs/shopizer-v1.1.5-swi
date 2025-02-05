@@ -4,13 +4,6 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Java Class",
-            "to_type": "Java Method",
-            "from_name": "MerchantRegistrationDef",
-            "to_name": "getLastModified",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "getDateAdded",
@@ -25,10 +18,10 @@
             "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Constructor",
+            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "MerchantRegistrationDef",
-            "to_name": "dateAdded",
+            "from_name": "setLastModified",
+            "to_name": "lastModified",
             "calling_type": "WRITE"
           },
           {
@@ -41,15 +34,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setLastModified",
-            "to_name": "lastModified",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "MerchantRegistrationDef",
-            "to_name": "lastModified",
+            "from_name": "setMerchantRegistrationDefCode",
+            "to_name": "merchantRegistrationDefCode",
             "calling_type": "WRITE"
           },
           {
@@ -62,15 +48,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setMerchantRegistrationDefCode",
-            "to_name": "merchantRegistrationDefCode",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "MerchantRegistrationDef",
-            "to_name": "merchantRegistrationDefCode",
+            "from_name": "setMerchantRegistrationDefId",
+            "to_name": "merchantRegistrationDefId",
             "calling_type": "WRITE"
           },
           {
@@ -81,10 +60,24 @@
             "calling_type": "READ"
           },
           {
-            "from_type": "Java Method",
+            "from_type": "Java Constructor",
             "to_type": "Java Field",
-            "from_name": "setMerchantRegistrationDefId",
-            "to_name": "merchantRegistrationDefId",
+            "from_name": "MerchantRegistrationDef",
+            "to_name": "dateAdded",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Constructor",
+            "to_type": "Java Field",
+            "from_name": "MerchantRegistrationDef",
+            "to_name": "lastModified",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Constructor",
+            "to_type": "Java Field",
+            "from_name": "MerchantRegistrationDef",
+            "to_name": "merchantRegistrationDefCode",
             "calling_type": "WRITE"
           },
           {
@@ -93,6 +86,13 @@
             "from_name": "MerchantRegistrationDef",
             "to_name": "merchantRegistrationDefId",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Class",
+            "to_type": "Java Method",
+            "from_name": "MerchantRegistrationDef",
+            "to_name": "getLastModified",
+            "calling_type": "CALL"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

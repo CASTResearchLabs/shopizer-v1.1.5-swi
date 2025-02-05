@@ -5,23 +5,16 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getDescription",
-            "to_name": "getCoreModuleName",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getDescription",
-            "to_name": "getLocale",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "getCoreModuleServiceLogoPath",
+            "to_name": "coreModuleServiceLogoPath",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getLocale",
-            "to_name": "locale",
+            "from_name": "getCoreModuleName",
+            "to_name": "coreModuleName",
             "calling_type": "READ"
           },
           {
@@ -34,15 +27,15 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "isCoreModuleServiceConfigurable",
-            "to_name": "coreModuleServiceConfigurable",
+            "from_name": "getLocale",
+            "to_name": "locale",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setCoreModuleServiceConfigurable",
-            "to_name": "coreModuleServiceConfigurable",
+            "from_name": "setCoreModuleServiceProdEnv",
+            "to_name": "coreModuleServiceProdEnv",
             "calling_type": "WRITE"
           },
           {
@@ -55,15 +48,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setCoreModuleServiceProdEnv",
-            "to_name": "coreModuleServiceProdEnv",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "CoreModuleService",
-            "to_name": "coreModuleServiceProdEnv",
+            "from_name": "setCoreModuleServiceProdPort",
+            "to_name": "coreModuleServiceProdPort",
             "calling_type": "WRITE"
           },
           {
@@ -76,15 +62,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setCoreModuleServiceProdPort",
-            "to_name": "coreModuleServiceProdPort",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "CoreModuleService",
-            "to_name": "coreModuleServiceProdPort",
+            "from_name": "setCoreModuleServiceProdDomain",
+            "to_name": "coreModuleServiceProdDomain",
             "calling_type": "WRITE"
           },
           {
@@ -97,15 +76,36 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setCoreModuleServiceProdDomain",
-            "to_name": "coreModuleServiceProdDomain",
+            "from_name": "setCoreModuleServiceProdProtocol",
+            "to_name": "coreModuleServiceProdProtocol",
             "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Constructor",
+            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "CoreModuleService",
-            "to_name": "coreModuleServiceProdDomain",
+            "from_name": "getCoreModuleServiceProdProtocol",
+            "to_name": "coreModuleServiceProdProtocol",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCoreModuleServiceDevEnv",
+            "to_name": "coreModuleServiceDevEnv",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCoreModuleServiceDevEnv",
+            "to_name": "coreModuleServiceDevEnv",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCoreModuleServiceDevPort",
+            "to_name": "coreModuleServiceDevPort",
             "calling_type": "WRITE"
           }
         ],

@@ -4,18 +4,18 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "Currency",
-            "to_name": "setCurrencyId",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "hashCode",
             "to_name": "getCurrencyId",
             "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "hashCode",
+            "to_name": "hashCode",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -25,38 +25,10 @@
             "calling_type": "CALL"
           },
           {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "Currency",
-            "to_name": "initialize",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getSymbol",
-            "to_name": "symbol",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setSymbol",
-            "to_name": "symbol",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getSuffix",
-            "to_name": "suffix",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setSuffix",
-            "to_name": "suffix",
+            "from_name": "setSupported",
+            "to_name": "supported",
             "calling_type": "WRITE"
           },
           {
@@ -69,8 +41,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setSupported",
-            "to_name": "supported",
+            "from_name": "setLastUpdated",
+            "to_name": "lastUpdated",
             "calling_type": "WRITE"
           },
           {
@@ -83,8 +55,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setLastUpdated",
-            "to_name": "lastUpdated",
+            "from_name": "setValue",
+            "to_name": "value",
             "calling_type": "WRITE"
           },
           {
@@ -97,8 +69,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setValue",
-            "to_name": "value",
+            "from_name": "setDecimalPlaces",
+            "to_name": "decimalPlaces",
             "calling_type": "WRITE"
           },
           {
@@ -106,6 +78,34 @@
             "to_type": "Java Field",
             "from_name": "getDecimalPlaces",
             "to_name": "decimalPlaces",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setThousandsPoint",
+            "to_name": "thousandsPoint",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getThousandsPoint",
+            "to_name": "thousandsPoint",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setDecimalPoint",
+            "to_name": "decimalPoint",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getDecimalPoint",
+            "to_name": "decimalPoint",
             "calling_type": "READ"
           }
         ],

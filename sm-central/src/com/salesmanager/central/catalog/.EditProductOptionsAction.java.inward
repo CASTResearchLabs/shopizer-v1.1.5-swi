@@ -4,79 +4,28 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "productoption",
-                "to_name": "displayProductOptions",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "addproductoption",
-                "to_name": "addProductOption",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "editproductoptions",
-                "to_name": "editProductOptions",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "addproductoption",
-                "to_name": "EditProductOptionsAction",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "editproductoptions",
-                "to_name": "EditProductOptionsAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-central/WebContent/catalog/productoptions.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "addproductoption",
-                "to_name": "/addproductoption",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "productoptions.jsp",
-                "to_name": "/addproductoption",
-                "calling_type": "POST"
-              },
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "editproductoptions",
-                "to_name": "/editproductoptions",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "productoptions.jsp",
-                "to_name": "/editproductoptions",
-                "calling_type": "POST"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-central/WebContent/catalog/productoptions.jsp",
             "comment": "",
             "nb_calls_between_elements": 4
           }

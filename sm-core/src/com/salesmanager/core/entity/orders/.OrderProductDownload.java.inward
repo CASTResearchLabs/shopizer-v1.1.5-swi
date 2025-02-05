@@ -4,317 +4,133 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetOrderDownloadCounters",
-                "to_name": "setDownloadCount",
-                "calling_type": "CALL"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetOrderDownloadCounters",
-                "to_name": "setDownloadMaxdays",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "setOrderProductId",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "setOrderProductId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "setOrderId",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 11
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/util/CheckoutUtil.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createOrderProduct",
-                "to_name": "setFileId",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 5
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createOrderProduct",
-                "to_name": "setDownloadCount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createOrderProduct",
-                "to_name": "setDownloadMaxdays",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createOrderProduct",
-                "to_name": "setOrderProductFilename",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "createOrderProduct",
-                "to_name": "OrderProductDownload",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/util/CheckoutUtil.java",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/LocalFileImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getFileInputStream",
-                "to_name": "getOrderProductFilename",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 4
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getFileInputStream",
-                "to_name": "getFileId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getFileInputStream",
-                "to_name": "setDownloadCount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getFileInputStream",
-                "to_name": "getDownloadCount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "LocalFileImpl",
-                "to_name": "OrderProductDownload",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/LocalFileImpl.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "setProductName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getOrderProductFilename",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getOrderProductId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ComitOrderAction",
-                "to_name": "OrderProductDownload",
-                "calling_type": "CALL"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "",
-            "nb_calls_between_elements": 4
-          },
-          {
-            "from_file": "sm-shop/src/com/salesmanager/checkout/files/FilesAction.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "viewFiles",
-                "to_name": "setProductName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "viewFiles",
-                "to_name": "getOrderProductFilename",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "viewFiles",
-                "to_name": "getOrderProductId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "FilesAction",
-                "to_name": "OrderProductDownload",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4
-          },
-          {
             "from_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/IOrderProductDownloadDao.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "deleteAll",
-                "to_name": "OrderProductDownload",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "findByOrderId",
-                "to_name": "OrderProductDownload",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "saveOrUpdateAll",
-                "to_name": "OrderProductDownload",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Interface",
-                "to_type": "Java Class",
-                "from_name": "IOrderProductDownloadDao",
-                "to_name": "OrderProductDownload",
-                "calling_type": "USE"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
+            "from_file": "sm-shop/src/com/salesmanager/checkout/flow/ComitOrderAction.java",
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
+            "from_file": "sm-shop/src/com/salesmanager/checkout/files/FilesAction.java",
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "calling_types": [
+              {
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/order/impl/dao/OrderProductDownloadDao.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "deleteAll",
-                "to_name": "OrderProductDownload",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "saveOrUpdateAll",
-                "to_name": "OrderProductDownload",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "findByOrderId",
-                "to_name": "OrderProductDownload",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class DAO",
-                "to_type": "Java Class",
-                "from_name": "OrderProductDownloadDao",
-                "to_name": "OrderProductDownload",
-                "calling_type": "USE"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/OrderProductDownloadTag.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "doStartTag",
-                "to_name": "getOrderId",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "doStartTag",
-                "to_name": "getOrderProductDownloadId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderProductDownloadTag",
-                "to_name": "OrderProductDownload",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/util/www/tags/OrderProductDownloadTag.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-central/src/com/salesmanager/central/orders/EditOrderDetailsAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareOrderDetails",
-                "to_name": "getDownloadCount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "EditOrderDetailsAction",
-                "to_name": "OrderProductDownload",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/src/com/salesmanager/central/orders/EditOrderDetailsAction.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

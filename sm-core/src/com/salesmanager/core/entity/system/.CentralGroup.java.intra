@@ -4,11 +4,11 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Java Class",
-            "to_type": "Java Method",
-            "from_name": "CentralGroup",
-            "to_name": "getLastModified",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setLastModified",
+            "to_name": "lastModified",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -20,16 +20,58 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setLastModified",
-            "to_name": "lastModified",
+            "from_name": "setCentralGroupNewUntil",
+            "to_name": "centralGroupNewUntil",
             "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Constructor",
+            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "CentralGroup",
-            "to_name": "lastModified",
+            "from_name": "setCentralGroupNew",
+            "to_name": "centralGroupNew",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralGroupVisible",
+            "to_name": "centralGroupVisible",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralGroupPosition",
+            "to_name": "centralGroupPosition",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralGroupDescription",
+            "to_name": "centralGroupDescription",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralGroupCode",
+            "to_name": "centralGroupCode",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCentralGroupId",
+            "to_name": "centralGroupId",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCentralGroupId",
+            "to_name": "centralGroupId",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -41,37 +83,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setCentralGroupNewUntil",
-            "to_name": "centralGroupNewUntil",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "CentralGroup",
-            "to_name": "centralGroupNewUntil",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "isCentralGroupNew",
             "to_name": "centralGroupNew",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setCentralGroupNew",
-            "to_name": "centralGroupNew",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "CentralGroup",
-            "to_name": "centralGroupNew",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -83,20 +97,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setCentralGroupVisible",
-            "to_name": "centralGroupVisible",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "CentralGroup",
-            "to_name": "centralGroupVisible",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "getCentralGroupPosition",
             "to_name": "centralGroupPosition",
             "calling_type": "READ"
@@ -104,9 +104,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setCentralGroupPosition",
-            "to_name": "centralGroupPosition",
-            "calling_type": "WRITE"
+            "from_name": "getCentralGroupDescription",
+            "to_name": "centralGroupDescription",
+            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

@@ -92,20 +92,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getBillingState",
-                "to_name": "getAllZonesmap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingSate",
-                "to_name": "getAllZonesmap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getBillingCountry",
                 "to_name": "getAllcountriesmap",
                 "calling_type": "CALL"
@@ -113,8 +99,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "getBillingState",
+                "to_name": "getAllZonesmap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "getShippingCountry",
                 "to_name": "getAllcountriesmap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingSate",
+                "to_name": "getAllZonesmap",
                 "calling_type": "CALL"
               },
               {
@@ -128,34 +128,6 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getBillingState",
-                "to_name": "getZoneName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingSate",
-                "to_name": "getZoneName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "Customer",
-                "to_name": "Zone",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
           },
           {
             "calls_between_elements": [
@@ -184,6 +156,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Country.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getBillingState",
+                "to_name": "getZoneName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingSate",
+                "to_name": "getZoneName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "Customer",
+                "to_name": "Zone",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
           }
         ],
         "files_list_comment": "",

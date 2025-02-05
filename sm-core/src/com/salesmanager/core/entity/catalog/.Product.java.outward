@@ -29,63 +29,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getDescription",
-                "to_name": "getId",
+                "from_name": "getExternalLinkDownload",
+                "to_name": "getProductExternalDl",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getExternalLinkDownload",
-                "to_name": "getProductExternalDl",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "addToDescriptions",
+                "to_name": "ProductDescription",
+                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 9,
             "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductDescription.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getPrice",
-                "to_name": "determinePrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getFormatHTMLShortProductPrice",
-                "to_name": "formatHTMLProductPrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getFormatHTMLProductPrice",
-                "to_name": "formatHTMLProductPrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "isDiscount",
-                "to_name": "hasDiscount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "Product",
-                "to_name": "ProductUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/util/ProductUtil.java"
           },
           {
             "calls_between_elements": [
@@ -128,6 +86,48 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isDiscount",
+                "to_name": "hasDiscount",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getPrice",
+                "to_name": "determinePrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFormatHTMLShortProductPrice",
+                "to_name": "formatHTMLProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFormatHTMLProductPrice",
+                "to_name": "formatHTMLProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "Product",
+                "to_name": "ProductUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/util/ProductUtil.java"
           },
           {
             "calls_between_elements": [
@@ -260,7 +260,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           }
         ],
         "files_list_comment": "",

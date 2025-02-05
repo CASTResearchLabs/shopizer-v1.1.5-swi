@@ -8,13 +8,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "addFieldError",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "delete",
                 "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
@@ -22,22 +15,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "delete",
+                "to_name": "setSuccessMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete",
+                "to_name": "prepareLanguages",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "delete",
+                "to_name": "getContext",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "save",
-                "to_name": "setTechnicalMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayDetails",
-                "to_name": "setTechnicalMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveList",
-                "to_name": "setTechnicalMessage",
+                "to_name": "addFieldError",
                 "calling_type": "CALL"
               }
             ],
@@ -50,13 +50,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "getTitle",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "delete",
                 "to_name": "getDynamicLabelId",
                 "calling_type": "CALL"
@@ -64,6 +57,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "delete",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "getTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "save",
                 "to_name": "getDynamicLabelId",
                 "calling_type": "CALL"
@@ -71,15 +78,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayDetails",
-                "to_name": "getDynamicLabelId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveList",
-                "to_name": "getDynamicLabelId",
+                "from_name": "save",
+                "to_name": "setDescriptions",
                 "calling_type": "CALL"
               }
             ],
@@ -89,13 +89,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveList",
-                "to_name": "getVisible",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -123,6 +116,13 @@
                 "from_name": "save",
                 "to_name": "getDescriptions",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "getTitles",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -140,6 +140,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "delete",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "save",
                 "to_name": "getService",
@@ -147,22 +154,15 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "save",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "displayDetails",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveList",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayList",
                 "to_name": "getService",
                 "calling_type": "CALL"
               }
@@ -175,57 +175,15 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayDetails",
-                "to_name": "getDynamicLabelTitle",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayDetails",
-                "to_name": "getDynamicLabelDescription",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "setSeUrl",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayDetails",
-                "to_name": "getSeUrl",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "setDynamicLabelTitle",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 10,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/DynamicLabelDescription.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "save",
+                "from_name": "delete",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "delete",
+                "from_name": "save",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -261,16 +219,44 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "save",
-                "to_name": "saveOrUpdateDynamicLabel",
+                "to_name": "setSeUrl",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveList",
-                "to_name": "saveDynamicLabel",
+                "from_name": "save",
+                "to_name": "setDynamicLabelTitle",
                 "calling_type": "CALL"
               },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "setDynamicLabelDescription",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "setId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "save",
+                "to_name": "DynamicLabelDescription",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 10,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/DynamicLabelDescription.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -288,56 +274,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "saveOrUpdateDynamicLabel",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "displayDetails",
                 "to_name": "getDynamicLabel",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveList",
+                "to_name": "saveDynamicLabel",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 8,
             "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "setLanguageId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayDetails",
-                "to_name": "getLanguageId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "setDynamicLabelId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "save",
-                "to_name": "DynamicLabelDescriptionId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "StoreFrontPagesAction",
-                "to_name": "DynamicLabelDescriptionId",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/DynamicLabelDescriptionId.java"
           },
           {
             "calls_between_elements": [
@@ -380,6 +338,48 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "setLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "setDynamicLabelId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "save",
+                "to_name": "DynamicLabelDescriptionId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayDetails",
+                "to_name": "getLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "StoreFrontPagesAction",
+                "to_name": "DynamicLabelDescriptionId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/DynamicLabelDescriptionId.java"
           },
           {
             "calls_between_elements": [

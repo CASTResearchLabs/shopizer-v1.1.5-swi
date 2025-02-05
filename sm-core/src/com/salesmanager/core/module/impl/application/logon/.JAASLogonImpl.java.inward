@@ -4,72 +4,39 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/logon/AdministrationLogonModuleImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "logon",
-                "to_name": "getUser",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "logon",
-                "to_name": "validateUserNameAndPassword",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AdministrationLogonModuleImpl",
-                "to_name": "JAASLogonImpl",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/logon/AdministrationLogonModuleImpl.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getUser",
-                "to_name": "getUser",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "JAASLogonImpl",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/util/SecurityUtil.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/util/SecurityUtil.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "isCustomerInRole",
-                "to_name": "isUserInRole",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SecurityUtil",
-                "to_name": "JAASLogonImpl",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

@@ -5,17 +5,45 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "setPageStartNumber",
-            "to_name": "getSize",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setSize",
+            "to_name": "size",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "setPageStartNumber",
-            "to_name": "setPageCriteriaIndex",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "getSize",
+            "to_name": "size",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setPageCriteriaIndex",
+            "to_name": "pageCriteriaIndex",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getPageCriteriaIndex",
+            "to_name": "pageCriteriaIndex",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setRealCount",
+            "to_name": "realCount",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getRealCount",
+            "to_name": "realCount",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -61,41 +89,6 @@
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "setPageStartNumber",
-            "to_name": "getPageStartIndex",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getRealCount",
-            "to_name": "realCount",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setRealCount",
-            "to_name": "realCount",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getLastItem",
-            "to_name": "lastItem",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setLastItem",
-            "to_name": "lastItem",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "setPageElements",
             "to_name": "firstItem",
@@ -104,9 +97,16 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getFirstItem",
-            "to_name": "firstItem",
+            "from_name": "setPageElements",
+            "to_name": "listingCount",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "setPageStartNumber",
+            "to_name": "getSize",
+            "calling_type": "CALL"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

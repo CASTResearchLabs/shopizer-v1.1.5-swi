@@ -5,20 +5,6 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getTotalText",
-            "to_name": "getCurrency",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getShippingTotalText",
-            "to_name": "shippingTotalText",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "setShippingTotalText",
             "to_name": "shippingTotalText",
@@ -27,43 +13,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getTotalText",
-            "to_name": "totalText",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setTotalText",
-            "to_name": "totalText",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getRecursiveSubTotalText",
-            "to_name": "recursiveSubTotalText",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setRecursiveSubTotalText",
-            "to_name": "recursiveSubTotalText",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getOneTimeSubTotalText",
-            "to_name": "oneTimeSubTotalText",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setOneTimeSubTotalText",
-            "to_name": "oneTimeSubTotalText",
+            "from_name": "setShippingTotal",
+            "to_name": "shippingTotal",
             "calling_type": "WRITE"
           },
           {
@@ -76,15 +27,22 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setShippingTotal",
-            "to_name": "shippingTotal",
+            "from_name": "setShippingLine",
+            "to_name": "shippingLine",
             "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Constructor",
+            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "OrderTotalSummary",
-            "to_name": "shippingTotal",
+            "from_name": "getShippingLine",
+            "to_name": "shippingLine",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setTotalText",
+            "to_name": "totalText",
             "calling_type": "WRITE"
           },
           {
@@ -97,15 +55,57 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setTotal",
-            "to_name": "total",
+            "from_name": "getTaxTotal",
+            "to_name": "taxTotal",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setRecursiveSubTotalText",
+            "to_name": "recursiveSubTotalText",
             "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Constructor",
+            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "OrderTotalSummary",
-            "to_name": "total",
+            "from_name": "setOneTimeSubTotalText",
+            "to_name": "oneTimeSubTotalText",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getRecursiveSubTotal",
+            "to_name": "recursiveSubTotal",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOneTimeSubTotal",
+            "to_name": "oneTimeSubTotal",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setErrorMessage",
+            "to_name": "errorMessage",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setOrderProducts",
+            "to_name": "orderProducts",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setTaxTotal",
+            "to_name": "taxTotal",
             "calling_type": "WRITE"
           }
         ],

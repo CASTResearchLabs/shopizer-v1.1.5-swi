@@ -6,8 +6,8 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "updateProductListAvailability",
-            "to_name": "update Product p set",
+            "from_name": "findProductByMerchantIdAndSeoURLAndByLang",
+            "to_name": "select p from Product",
             "calling_type": "CALL"
           },
           {
@@ -20,7 +20,21 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "findProductsByProductsIdAndLanguageId",
+            "from_name": "findProductsByAvailabilityCategoriesIdAndMerchantIdAndLanguageId",
+            "to_name": "select p from Product",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "findProductsByAvailabilityCategoriesIdAndMerchantIdAndLanguageId",
+            "to_name": "select count(p) from Product",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "findByMerchantIdAndLanguageId",
             "to_name": "select p from Product",
             "calling_type": "CALL"
           },
@@ -34,22 +48,8 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "findProductsByAvailabilityCategoriesIdAndMerchantIdAndLanguageId",
-            "to_name": "select p from Product",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "JPQL Query",
-            "from_name": "findProductsByAvailabilityCategoriesIdAndMerchantIdAndLanguageId",
-            "to_name": "select count(p) from Product",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "JPQL Query",
-            "from_name": "findProductByMerchantIdAndSeoURLAndByLang",
-            "to_name": "select p from Product",
+            "from_name": "updateProductListAvailability",
+            "to_name": "update Product p set",
             "calling_type": "CALL"
           },
           {
@@ -62,13 +62,6 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "findByMerchantIdAndLanguageId",
-            "to_name": "select p from Product",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "JPQL Query",
             "from_name": "findAvailableProductsByProductsIdAndLanguageId",
             "to_name": "select count(p) from Product",
             "calling_type": "CALL"
@@ -77,6 +70,13 @@
             "from_type": "Java Method",
             "to_type": "JPQL Query",
             "from_name": "findAvailableProductsByProductsIdAndLanguageId",
+            "to_name": "select p from Product",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "findProductsByProductsIdAndLanguageId",
             "to_name": "select p from Product",
             "calling_type": "CALL"
           }

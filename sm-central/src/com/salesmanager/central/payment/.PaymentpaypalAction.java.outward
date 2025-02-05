@@ -22,13 +22,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayModule",
-                "to_name": "setProperties5",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveModule",
                 "to_name": "getProperties5",
                 "calling_type": "CALL"
@@ -36,8 +29,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayModule",
-                "to_name": "setProperties3",
+                "from_name": "saveModule",
+                "to_name": "getProperties2",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveModule",
+                "to_name": "getProperties1",
                 "calling_type": "CALL"
               }
             ],
@@ -56,20 +56,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveModule",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "deleteModule",
                 "to_name": "MerchantService",
@@ -77,10 +63,24 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveModule",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "saveModule",
                 "to_name": "MerchantService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "getService",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -155,15 +155,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayModule",
-                "to_name": "getServletRequest",
+                "from_name": "prepareModule",
+                "to_name": "getLocale",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getLocale",
+                "from_name": "displayModule",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
             ],
@@ -176,15 +176,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getConfigurationByModule",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getMerchantStore",
+                "from_name": "deleteModule",
+                "to_name": "deleteMerchantConfiguration",
                 "calling_type": "CALL"
               },
               {
@@ -197,8 +190,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteModule",
-                "to_name": "deleteMerchantConfiguration",
+                "from_name": "prepareModule",
+                "to_name": "getConfigurationByModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "getMerchantStore",
                 "calling_type": "CALL"
               },
               {
@@ -217,29 +217,36 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getText",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "setLanguages",
+                "to_name": "Language",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "getLanguages",
+                "to_name": "Language",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "languages",
+                "to_name": "Language",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
+                "to_type": "Java Class",
                 "from_name": "PaymentpaypalAction",
-                "to_name": "LabelUtil",
-                "calling_type": "CALL"
+                "to_name": "Language",
+                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Language.java"
           },
           {
             "calls_between_elements": [
@@ -275,6 +282,41 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteModule",
+                "to_name": "PAYMENT_PAYPALNAME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveModule",
+                "to_name": "PAYMENT_PAYPALNAME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveModule",
+                "to_name": "MODULE_PAYMENT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "PaymentpaypalAction",
+                "to_name": "PaymentConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/PaymentConstants.java"
           },
           {
             "calls_between_elements": [
@@ -350,71 +392,29 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "deleteModule",
-                "to_name": "PAYMENT_PAYPALNAME",
-                "calling_type": "READ"
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "getText",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "saveModule",
-                "to_name": "PAYMENT_PAYPALNAME",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "saveModule",
-                "to_name": "MODULE_PAYMENT",
-                "calling_type": "READ"
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
-                "to_type": "Java Class",
+                "to_type": "Java Class Struts",
                 "from_name": "PaymentpaypalAction",
-                "to_name": "PaymentConstants",
-                "calling_type": "READ"
+                "to_name": "LabelUtil",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/PaymentConstants.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setLanguages",
-                "to_name": "Language",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getLanguages",
-                "to_name": "Language",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Class",
-                "from_name": "languages",
-                "to_name": "Language",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "PaymentpaypalAction",
-                "to_name": "Language",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Language.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
           },
           {
             "calls_between_elements": [

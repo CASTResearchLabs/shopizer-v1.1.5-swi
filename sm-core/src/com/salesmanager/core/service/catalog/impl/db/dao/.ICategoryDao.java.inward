@@ -4,45 +4,22 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getSubCategoriesByParentCategoryAndLang",
-                "to_name": "findSubCategoriesByLang",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCategoriesByLang",
-                "to_name": "findByMerchantIdAndLanguageId",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateCategories",
-                "to_name": "saveOrUpdateAll",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "findCategoriesByMerchantIdAndLineageAndLanguageId",
-                "to_name": "findByMerchantIdAndLanguageIdAndLineage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "walkCategoriesForGettingNumberOfProducts",
-                "to_name": "findByMerchantIdAndLineage",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 23
           }
         ],

@@ -4,58 +4,24 @@
       {
         "files": [
           {
-            "from_file": "sm-shop/src/com/salesmanager/customer/profile/LogonAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "localLogon",
-                "to_name": "logon",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "remoteLogon",
-                "to_name": "logon",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "authenticateCustomer",
-                "to_name": "logonCustomer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "LogonAction",
-                "to_name": "AuthenticateCustomerAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-shop/src/com/salesmanager/customer/profile/LogonAction.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "logout",
-                "to_name": "logout",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "logout",
-                "to_name": "AuthenticateCustomerAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-customer.xml",
             "comment": "",
             "nb_calls_between_elements": 2
           }

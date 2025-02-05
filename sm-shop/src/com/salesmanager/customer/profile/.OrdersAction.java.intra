@@ -5,6 +5,55 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setOrderId",
+            "to_name": "orderId",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOrderId",
+            "to_name": "orderId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setOrders",
+            "to_name": "orders",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOrders",
+            "to_name": "orders",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCriteria",
+            "to_name": "size",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "ordersQuery",
+            "to_name": "orders",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "ordersQuery",
+            "to_name": "orders",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "displayOrders",
             "to_name": "getCriteria",
@@ -16,20 +65,6 @@
             "from_name": "displayOrders",
             "to_name": "ordersQuery",
             "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/orders",
-            "to_name": "displayOrders",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getCriteria",
-            "to_name": "size",
-            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -46,46 +81,11 @@
             "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getOrderId",
-            "to_name": "orderId",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setOrderId",
-            "to_name": "orderId",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getOrders",
-            "to_name": "orders",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "ordersQuery",
-            "to_name": "orders",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setOrders",
-            "to_name": "orders",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "ordersQuery",
-            "to_name": "orders",
-            "calling_type": "WRITE"
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/orders",
+            "to_name": "displayOrders",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Struts Operation",

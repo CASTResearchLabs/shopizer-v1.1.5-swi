@@ -56,6 +56,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteModule",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveModule",
                 "to_name": "getService",
@@ -63,24 +70,17 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveModule",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepareModule",
                 "to_name": "getService",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "prepareModule",
-                "to_name": "ReferenceService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "deleteModule",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -92,15 +92,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveModule",
-                "to_name": "addFieldError",
+                "from_name": "deleteModule",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteModule",
-                "to_name": "getServletRequest",
+                "from_name": "saveModule",
+                "to_name": "addFieldError",
                 "calling_type": "CALL"
               },
               {
@@ -134,20 +134,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "buildPackageMap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "buildServiceMap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveModule",
                 "to_name": "buildShippingPropertiesLine",
                 "calling_type": "CALL"
@@ -157,6 +143,20 @@
                 "to_type": "Java Method",
                 "from_name": "saveModule",
                 "to_name": "buildShippingKeyLine",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "buildPackageMap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareModule",
+                "to_name": "buildServiceMap",
                 "calling_type": "CALL"
               },
               {
@@ -176,8 +176,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareModule",
-                "to_name": "getConfigurationByModule",
+                "from_name": "deleteModule",
+                "to_name": "cleanConfigurationLikeKeyModule",
                 "calling_type": "CALL"
               },
               {
@@ -190,8 +190,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteModule",
-                "to_name": "cleanConfigurationLikeKeyModule",
+                "from_name": "prepareModule",
+                "to_name": "getConfigurationByModule",
                 "calling_type": "CALL"
               },
               {
@@ -205,41 +205,6 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveModule",
-                "to_name": "getUserid",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveModule",
-                "to_name": "getPassword",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveModule",
-                "to_name": "getKey1",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShippingupsxmlAction",
-                "to_name": "IntegrationKeys",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/common/model/IntegrationKeys.java"
           },
           {
             "calls_between_elements": [
@@ -315,15 +280,43 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
+                "to_type": "Java Method",
                 "from_name": "saveModule",
-                "to_name": "ValidationException",
+                "to_name": "getUserid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveModule",
+                "to_name": "getPassword",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveModule",
+                "to_name": "getKey1",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "ShippingupsxmlAction",
+                "to_name": "IntegrationKeys",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/service/common/model/IntegrationKeys.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "saveModule",
                 "to_name": "ValidationException",
                 "calling_type": "CALL"
               },
@@ -340,6 +333,13 @@
                 "from_name": "ShippingupsxmlAction",
                 "to_name": "ValidationException",
                 "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingupsxmlAction",
+                "to_name": "ValidationException",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -351,15 +351,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayModule",
-                "to_name": "getConfiguration",
+                "from_name": "saveModule",
+                "to_name": "getMerchantConfiguration",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveModule",
-                "to_name": "getMerchantConfiguration",
+                "from_name": "displayModule",
+                "to_name": "getConfiguration",
                 "calling_type": "CALL"
               },
               {

@@ -5,10 +5,24 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getFileInputStream",
-            "to_name": "setFileName",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setFileName",
+            "to_name": "fileName",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setProductid",
+            "to_name": "productid",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getProductid",
+            "to_name": "productid",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -27,37 +41,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getFileName",
-            "to_name": "fileName",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setFileName",
-            "to_name": "fileName",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getProductid",
-            "to_name": "productid",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setProductid",
-            "to_name": "productid",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "setProductId",
             "to_name": "productid",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "getFileInputStream",
+            "to_name": "setFileName",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getFileName",
+            "to_name": "fileName",
+            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "",

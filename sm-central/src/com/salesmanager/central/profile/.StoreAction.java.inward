@@ -4,79 +4,39 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "store",
-                "to_name": "display",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "savestore",
-                "to_name": "saveStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "savestore",
-                "to_name": "StoreAction",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "store",
-                "to_name": "StoreAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts.xml",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-central/src/com/salesmanager/central/profile/StoreFieldsValidator.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validate",
-                "to_name": "getSupportedLanguages",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "StoreFieldsValidator",
-                "to_name": "StoreAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/src/com/salesmanager/central/profile/StoreFieldsValidator.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-central/WebContent/profile/store.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "profile/savestore.action",
-                "to_name": "/savestore",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "store.jsp",
-                "to_name": "/savestore",
-                "calling_type": "POST"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/WebContent/profile/store.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

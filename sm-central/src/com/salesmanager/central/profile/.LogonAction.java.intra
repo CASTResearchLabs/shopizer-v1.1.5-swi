@@ -4,18 +4,11 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/logout",
-            "to_name": "logout",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/logon",
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setLogon",
             "to_name": "logon",
-            "calling_type": "CALL"
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -27,22 +20,29 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setLogon",
-            "to_name": "logon",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "logon",
             "to_name": "logon",
             "calling_type": "WRITE"
           },
           {
             "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/logout",
+            "to_name": "logout",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Struts Operation",
             "to_type": "Java Class",
             "from_name": "/logout",
             "to_name": "LogonAction",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/logon",
+            "to_name": "logon",
             "calling_type": "CALL"
           },
           {

@@ -57,6 +57,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "logout",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "logon",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
@@ -73,13 +80,6 @@
                 "to_type": "Java Method",
                 "from_name": "logon",
                 "to_name": "getUsername",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "logout",
-                "to_name": "getLocale",
                 "calling_type": "CALL"
               }
             ],
@@ -175,48 +175,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "logon",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "logon",
-                "to_name": "getMerchantRegistration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "logon",
-                "to_name": "adminLogon",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "logon",
-                "to_name": "getUserRoles",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "LogonAction",
-                "to_name": "MerchantService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "logon",
                 "to_name": "US_COUNTRY_ID",
@@ -259,6 +217,48 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "getMerchantRegistration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "adminLogon",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "getUserRoles",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "MerchantService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Struts Result",
                 "from_name": "logout",
                 "to_name": "success",
@@ -289,6 +289,41 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-central/WebContent/WEB-INF/classes/struts.xml"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "logon",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "logon",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "ServiceFactory",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "ServiceFactory",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
           },
           {
             "calls_between_elements": [
@@ -329,36 +364,29 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
+                "to_type": "Java Field",
                 "from_name": "logon",
-                "to_name": "getService",
-                "calling_type": "CALL"
+                "to_name": "context",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "logon",
-                "to_name": "MerchantService",
+                "to_name": "merchant",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "LogonAction",
-                "to_name": "ServiceFactory",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "LogonAction",
-                "to_name": "ServiceFactory",
+                "to_name": "ProfileConstants",
                 "calling_type": "READ"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
           },
           {
             "calls_between_elements": [
@@ -476,29 +504,22 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
+                "to_type": "Java Method",
                 "from_name": "logon",
-                "to_name": "context",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "logon",
-                "to_name": "merchant",
-                "calling_type": "READ"
+                "to_name": "setLanguages",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "LogonAction",
-                "to_name": "ProfileConstants",
-                "calling_type": "READ"
+                "to_name": "LanguageHelper",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-central/src/com/salesmanager/central/util/LanguageHelper.java"
           },
           {
             "calls_between_elements": [
@@ -583,27 +604,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantUserRole.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "logon",
-                "to_name": "setLanguages",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "LogonAction",
-                "to_name": "LanguageHelper",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-central/src/com/salesmanager/central/util/LanguageHelper.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

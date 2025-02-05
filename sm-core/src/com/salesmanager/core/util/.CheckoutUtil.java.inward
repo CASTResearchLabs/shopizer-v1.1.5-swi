@@ -4,177 +4,73 @@
       {
         "files": [
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleItems",
-                "to_name": "addAttributesToProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "addAttributesToProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleItems",
-                "to_name": "createOrderProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "createOrderProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShoppingCartAction",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-central/src/com/salesmanager/central/cart/AddProduct.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createOrderProduct",
-                "to_name": "createOrderProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addAttributes",
-                "to_name": "addAttributesFromRawObjects",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "addAttributes",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "createOrderProduct",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AddProduct",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-core/src/com/salesmanager/core/service/ws/impl/SalesManagerInvoiceWSImpl.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processNewInvoice",
-                "to_name": "addAttributesToProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "processNewInvoice",
-                "to_name": "createOrderProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "processNewInvoice",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SalesManagerInvoiceWSImpl",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-shop/src/com/salesmanager/checkout/subscription/SubscriptionAction.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "addAttributesToProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "createOrderProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "addItem",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SubscriptionAction",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/util/ProductUtil.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "initOrderProduct",
-                "to_name": "getAttributesLine",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProductUtil",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/util/ProductUtil.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

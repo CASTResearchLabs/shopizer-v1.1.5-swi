@@ -8,22 +8,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getCreditCards",
-                "to_name": "getSupportedCreditCards",
+                "from_name": "getCurrencies",
+                "to_name": "getCurrenciesListWithCodes",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAllCountries",
-                "to_name": "getAllcountriesmap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getWeightUnits",
-                "to_name": "getWeightunits",
+                "to_type": "Java Class",
+                "from_name": "getCurrencies",
+                "to_name": "RefCache",
                 "calling_type": "CALL"
               },
               {
@@ -35,9 +28,16 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getSizeUnits",
+                "to_name": "RefCache",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getProductTypes",
-                "to_name": "getProductTypes",
+                "from_name": "getWeightUnits",
+                "to_name": "getWeightunits",
                 "calling_type": "CALL"
               }
             ],
@@ -47,6 +47,20 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSizeUnits",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getWeightUnits",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -64,28 +78,56 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getYesno",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getTruefalse",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getTransactionType",
-                "to_name": "getServletRequest",
+                "from_name": "getSuccessfail",
+                "to_name": "getLocale",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 16,
             "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getSuccessfail",
+                "to_name": "buildSuccessFail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getYesno",
+                "to_name": "buildYesNo",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getTruefalse",
+                "to_name": "buildTrueFalse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Initializer",
+                "to_type": "Java Method",
+                "from_name": "{(51:2)}",
+                "to_name": "useCVV",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Initializer",
+                "to_type": "Java Method",
+                "from_name": "{(51:2)}",
+                "to_name": "getProductTypes",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-central/src/com/salesmanager/central/ref/LanguageLabels.java"
           },
           {
             "calls_between_elements": [
@@ -128,48 +170,6 @@
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Initializer",
-                "to_type": "Java Method",
-                "from_name": "{(51:2)}",
-                "to_name": "useCVV",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Initializer",
-                "to_type": "Java Method",
-                "from_name": "{(51:2)}",
-                "to_name": "getProductTypes",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getTruefalse",
-                "to_name": "buildTrueFalse",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getSuccessfail",
-                "to_name": "buildSuccessFail",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getYesno",
-                "to_name": "buildYesNo",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-central/src/com/salesmanager/central/ref/LanguageLabels.java"
           },
           {
             "calls_between_elements": [
@@ -227,47 +227,19 @@
                 "to_type": "Java Class",
                 "from_name": "RefAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "RefAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getStatus",
-                "to_name": "getLanguageNumberCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAllCountries",
-                "to_name": "getLanguageNumberCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "RefAction",
-                "to_name": "LanguageUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
           },
           {
             "calls_between_elements": [
@@ -296,6 +268,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/constants/PaymentConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getStatus",
+                "to_name": "getLanguageNumberCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getAllCountries",
+                "to_name": "getLanguageNumberCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RefAction",
+                "to_name": "LanguageUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
           },
           {
             "calls_between_elements": [

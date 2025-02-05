@@ -4,87 +4,33 @@
       {
         "files": [
           {
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "emptyCart",
-                "to_name": "emptyCart",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "showCart",
-                "to_name": "displayCart",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "addToCart",
-                "to_name": "addToCart",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "showCart",
-                "to_name": "ShoppingCartAction",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "emptyCart",
-                "to_name": "ShoppingCartAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
-            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/StoreShoppingCartAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkoutRemote",
-                "to_name": "assembleItems",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkoutLocal",
-                "to_name": "assembleShoppingCartItems",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkoutRemote",
-                "to_name": "cleanShoppingCart",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkoutRemote",
-                "to_name": "prepareStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkoutLocal",
-                "to_name": "prepareStore",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/StoreShoppingCartAction.java",
+            "comment": "",
             "nb_calls_between_elements": 6
           }
         ],

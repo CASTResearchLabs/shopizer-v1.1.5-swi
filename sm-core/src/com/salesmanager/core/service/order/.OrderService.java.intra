@@ -6,29 +6,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "updateOrderPayment",
-            "to_name": "getOrderAccount",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "saveInvoice",
-            "to_name": "saveInvoiceDetails",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "calculateTotal",
-            "to_name": "calculateOrderTotal",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "prepareInvoiceReport",
-            "to_name": "calculateTotal",
+            "from_name": "deleteAllOrders",
+            "to_name": "deleteOrder",
             "calling_type": "CALL"
           },
           {
@@ -48,15 +27,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "updateOrderStatus",
-            "to_name": "resetOrderDownloadCounters",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "deleteAllOrders",
-            "to_name": "deleteOrder",
+            "from_name": "calculateTotal",
+            "to_name": "calculateOrderTotal",
             "calling_type": "CALL"
           },
           {
@@ -67,11 +39,11 @@
             "calling_type": "READ"
           },
           {
-            "from_type": "Java Constructor",
+            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "ByteArrayDataSource",
-            "to_name": "name",
-            "calling_type": "WRITE"
+            "from_name": "getInputStream",
+            "to_name": "bytes",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -81,25 +53,39 @@
             "calling_type": "READ"
           },
           {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "ByteArrayDataSource",
-            "to_name": "contentType",
-            "calling_type": "WRITE"
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "saveInvoice",
+            "to_name": "saveInvoiceDetails",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "updateOrderStatus",
+            "to_name": "resetOrderDownloadCounters",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "updateOrderPayment",
+            "to_name": "getOrderAccount",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "prepareInvoiceReport",
+            "to_name": "calculateTotal",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getInputStream",
-            "to_name": "bytes",
+            "from_name": "prepareInvoiceReport",
+            "to_name": "INVOICE_IREPORT_DIR",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "ByteArrayDataSource",
-            "to_name": "bytes",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -107,6 +93,20 @@
             "from_name": "prepareOrderListReport",
             "to_name": "JASPERREPORT_DIR",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Constructor",
+            "to_type": "Java Field",
+            "from_name": "ByteArrayDataSource",
+            "to_name": "name",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Constructor",
+            "to_type": "Java Field",
+            "from_name": "ByteArrayDataSource",
+            "to_name": "contentType",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

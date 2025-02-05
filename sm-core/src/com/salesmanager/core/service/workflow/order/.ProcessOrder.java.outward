@@ -13,13 +13,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProcessOrder",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "execute",
@@ -27,6 +20,13 @@
                 "calling_type": "THROW"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "execute",
+                "to_name": "OrderException",
+                "calling_type": "RAISE"
+              },
+              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ProcessOrder",
@@ -34,9 +34,9 @@
                 "calling_type": "THROW"
               },
               {
-                "from_type": "Java Method",
+                "from_type": "Java Class",
                 "to_type": "Java Class",
-                "from_name": "execute",
+                "from_name": "ProcessOrder",
                 "to_name": "OrderException",
                 "calling_type": "RAISE"
               }
@@ -66,14 +66,14 @@
                 "to_type": "Java Class",
                 "from_name": "ProcessOrder",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "ProcessOrder",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -107,27 +107,6 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "execute",
-                "to_name": "PRODUCTS",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "MySQL Table",
-                "from_name": "ProcessOrder",
-                "to_name": "PRODUCTS",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [
@@ -170,6 +149,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/workflow/ProcessorContext.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "execute",
+                "to_name": "PRODUCTS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "ProcessOrder",
+                "to_name": "PRODUCTS",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           }
         ],
         "files_list_comment": "",

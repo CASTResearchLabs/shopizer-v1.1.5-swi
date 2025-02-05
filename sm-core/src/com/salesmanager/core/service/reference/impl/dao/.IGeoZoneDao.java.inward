@@ -4,65 +4,32 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteTaxConfiguration",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteTaxConfiguration",
-                "to_name": "findByMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrUpdateTaxRate",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "TaxService",
-                "to_name": "IGeoZoneDao",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteGeoZones",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteGeoZones",
-                "to_name": "findByMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Interface",
-                "from_name": "ReferenceService",
-                "to_name": "IGeoZoneDao",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java",
             "comment": "",
             "nb_calls_between_elements": 3
           }

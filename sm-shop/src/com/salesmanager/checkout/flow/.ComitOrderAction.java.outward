@@ -8,21 +8,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "setComited",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "comitOrder",
-                "to_name": "setOrderStatusHistory",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayOrder",
                 "to_name": "setOrderStatusHistory",
                 "calling_type": "CALL"
               },
@@ -38,6 +24,20 @@
                 "to_type": "Java Method",
                 "from_name": "comitOrder",
                 "to_name": "getPaymentMethod",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getShippingInformation",
                 "calling_type": "CALL"
               }
             ],
@@ -57,29 +57,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getOrderHistory",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getOrderTotal",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getOrderProducts",
+                "from_name": "comitOrder",
+                "to_name": "getMerchantId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "comitOrder",
-                "to_name": "getMerchantId",
+                "to_name": "setCustomerEmailAddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "setOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getOrderId",
                 "calling_type": "CALL"
               }
             ],
@@ -89,13 +89,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "displayOrder",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
@@ -115,6 +108,13 @@
                 "to_type": "Struts Result",
                 "from_name": "comitOrder",
                 "to_name": "GENERICERROR",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "displayOrder",
+                "to_name": "success",
                 "calling_type": "CALL"
               },
               {
@@ -140,13 +140,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "comitOrder",
                 "to_name": "SystemService",
@@ -158,6 +151,13 @@
                 "from_name": "comitOrder",
                 "to_name": "OrderService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "getService",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -183,13 +183,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "comitOrder",
                 "to_name": "addErrorMessage",
                 "calling_type": "CALL"
@@ -204,8 +197,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "comitOrder",
+                "to_name": "getServletResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "displayOrder",
-                "to_name": "getLocale",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
             ],
@@ -267,15 +267,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getOrderProductDownloads",
+                "from_name": "comitOrder",
+                "to_name": "sendOrderProblemEmail",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "comitOrder",
-                "to_name": "sendOrderProblemEmail",
+                "from_name": "displayOrder",
+                "to_name": "getOrderProductDownloads",
                 "calling_type": "CALL"
               },
               {
@@ -470,34 +470,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getModule",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getValue",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ComitOrderAction",
-                "to_name": "OrderTotal",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderTotal.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "comitOrder",
                 "to_name": "getComments",
                 "calling_type": "CALL"
@@ -553,64 +525,50 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "comitOrder",
-                "to_name": "PRODUCTS",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "MySQL Table",
-                "from_name": "ComitOrderAction",
-                "to_name": "PRODUCTS",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "comitOrder",
-                "to_name": "getCustomerEmailAddress",
+                "from_name": "displayOrder",
+                "to_name": "getModule",
                 "calling_type": "CALL"
               },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ComitOrderAction",
-                "to_name": "Customer",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "displayOrder",
-                "to_name": "getProductImage",
+                "to_name": "getValue",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "ComitOrderAction",
-                "to_name": "Product",
+                "to_name": "OrderTotal",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderTotal.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "comitOrder",
+                "to_name": "PRODUCTS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "MySQL Table",
+                "from_name": "ComitOrderAction",
+                "to_name": "PRODUCTS",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java"
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [
@@ -632,6 +590,69 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/constants/CatalogConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "displayFormatedAmountNoCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ComitOrderAction",
+                "to_name": "CurrencyUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ComitOrderAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayOrder",
+                "to_name": "getProductImage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ComitOrderAction",
+                "to_name": "Product",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java"
           },
           {
             "calls_between_elements": [
@@ -701,42 +722,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "displayFormatedAmountNoCurrency",
+                "from_name": "comitOrder",
+                "to_name": "getCustomerEmailAddress",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "ComitOrderAction",
-                "to_name": "CurrencyUtil",
+                "to_name": "Customer",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayOrder",
-                "to_name": "getProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ComitOrderAction",
-                "to_name": "CatalogService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

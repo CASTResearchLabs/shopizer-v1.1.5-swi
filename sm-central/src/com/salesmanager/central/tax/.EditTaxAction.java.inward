@@ -4,149 +4,84 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-tax.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "modifytaxline",
-                "to_name": "editTaxRate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "addtaxline",
-                "to_name": "addTaxRate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "edittaxclass",
-                "to_name": "editTaxClass",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "edittaxbasis",
-                "to_name": "editTaxBasis",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "modifytaxline",
-                "to_name": "EditTaxAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-tax.xml",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-central/src/com/salesmanager/central/tax/TaxAction.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "setup",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "TaxAction",
-                "to_name": "EditTaxAction",
-                "calling_type": "CALL"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-central/WebContent/tax/edittax.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "addtaxline",
-                "to_name": "/addtaxline",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "edittax.jsp",
-                "to_name": "/addtaxline",
-                "calling_type": "POST"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
-            "from_file": "sm-central/WebContent/tax/taxbasis.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "tax/edittaxbasis.action",
-                "to_name": "/edittaxbasis",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "taxbasis.jsp",
-                "to_name": "/edittaxbasis",
-                "calling_type": "POST"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2
-          },
-          {
             "from_file": "sm-central/WebContent/tax/taxclass.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "tax/edittaxclass.action",
-                "to_name": "/edittaxclass",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "taxclass.jsp",
-                "to_name": "/edittaxclass",
-                "calling_type": "POST"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-central/WebContent/tax/taxrates.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "modifytaxline",
-                "to_name": "/modifytaxline",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "taxrates.jsp",
-                "to_name": "/modifytaxline",
-                "calling_type": "POST"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/WebContent/tax/taxbasis.jsp",
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calling_types": [
+              {
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
+            "from_file": "sm-central/WebContent/tax/edittax.jsp",
+            "comment": "",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calling_types": [
+              {
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
+            "from_file": "sm-central/WebContent/tax/taxrates.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

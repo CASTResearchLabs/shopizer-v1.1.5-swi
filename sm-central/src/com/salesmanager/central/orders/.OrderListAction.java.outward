@@ -15,13 +15,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "buildCriteria",
-                "to_name": "setSdate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getOrdersList",
                 "to_name": "setEdate",
                 "calling_type": "CALL"
@@ -29,8 +22,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "buildCriteria",
-                "to_name": "setEdate",
+                "from_name": "getOrdersList",
+                "to_name": "getSdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrdersList",
+                "to_name": "getEdate",
                 "calling_type": "CALL"
               },
               {
@@ -57,21 +57,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "searchByCriteria",
-                "to_name": "setSize",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getOrdersList",
-                "to_name": "setRealCount",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchByCriteria",
                 "to_name": "setRealCount",
                 "calling_type": "CALL"
               },
@@ -80,6 +66,20 @@
                 "to_type": "Java Method",
                 "from_name": "getOrdersList",
                 "to_name": "setPageElements",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrdersList",
+                "to_name": "setPageStartNumber",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrdersList",
+                "to_name": "setListingCount",
                 "calling_type": "CALL"
               }
             ],
@@ -99,6 +99,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "getOrdersList",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "createReportByCriteria",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
@@ -106,22 +113,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "buildCriteria",
-                "to_name": "getServletRequest",
+                "from_name": "createReportByCriteria",
+                "to_name": "getLocale",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayOrderList",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchByCriteria",
-                "to_name": "getServletRequest",
+                "from_name": "createReportByCriteria",
+                "to_name": "getContext",
                 "calling_type": "CALL"
               }
             ],
@@ -140,20 +140,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createReportByCriteria",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchByCriteria",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "getOrdersList",
                 "to_name": "OrderService",
@@ -161,9 +147,23 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReportByCriteria",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "createReportByCriteria",
                 "to_name": "OrderService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "createReportByCriteria",
+                "to_name": "MerchantService",
                 "calling_type": "READ"
               }
             ],
@@ -183,14 +183,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createReportByCriteria",
-                "to_name": "getText",
+                "from_name": "getOrdersList",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "searchByCriteria",
+                "from_name": "createReportByCriteria",
                 "to_name": "getText",
                 "calling_type": "CALL"
               },
@@ -204,7 +204,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getOrdersList",
+                "from_name": "createReportByCriteria",
                 "to_name": "getInstance",
                 "calling_type": "CALL"
               }
@@ -261,48 +261,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createReportByCriteria",
-                "to_name": "prepareOrderListReport",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getOrdersList",
-                "to_name": "searchOrders",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createReportByCriteria",
-                "to_name": "searchOrders",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchByCriteria",
-                "to_name": "searchOrders",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderListAction",
-                "to_name": "OrderService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createReportByCriteria",
                 "to_name": "setMerchantStoreLogo",
                 "calling_type": "CALL"
               },
@@ -344,13 +302,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "searchByCriteria",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
                 "from_name": "createReportByCriteria",
                 "to_name": "success",
                 "calling_type": "CALL"
@@ -360,6 +311,13 @@
                 "to_type": "Struts Result",
                 "from_name": "createReportByCriteria",
                 "to_name": "input",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "searchByCriteria",
+                "to_name": "success",
                 "calling_type": "CALL"
               },
               {
@@ -387,34 +345,41 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getOrdersList",
-                "to_name": "addErrorMessage",
+                "to_name": "searchOrders",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createReportByCriteria",
-                "to_name": "addErrorMessage",
+                "to_name": "prepareOrderListReport",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReportByCriteria",
+                "to_name": "searchOrders",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "searchByCriteria",
-                "to_name": "addErrorMessage",
+                "to_name": "searchOrders",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderListAction",
-                "to_name": "MessageUtil",
+                "to_name": "OrderService",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/util/MessageUtil.java"
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
           },
           {
             "calls_between_elements": [
@@ -485,6 +450,41 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/entity/common/SearchCriteria.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrdersList",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createReportByCriteria",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchByCriteria",
+                "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "OrderListAction",
+                "to_name": "MessageUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/util/MessageUtil.java"
           },
           {
             "calls_between_elements": [

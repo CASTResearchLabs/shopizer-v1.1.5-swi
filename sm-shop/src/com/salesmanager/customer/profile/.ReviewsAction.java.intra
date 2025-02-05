@@ -5,10 +5,66 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "removeReview",
-            "to_name": "getReviewId",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setReviewId",
+            "to_name": "reviewId",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getReviewId",
+            "to_name": "reviewId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setReviews",
+            "to_name": "reviews",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getReviews",
+            "to_name": "reviews",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCurrentEntity",
+            "to_name": "currentEntity",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCurrentEntity",
+            "to_name": "currentEntity",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "reviewsQuery",
+            "to_name": "reviews",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "reviewsQuery",
+            "to_name": "reviews",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCriteria",
+            "to_name": "size",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -25,11 +81,25 @@
             "calling_type": "CALL"
           },
           {
-            "from_type": "Struts Operation",
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "displayReviews",
+            "to_name": "size",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "/reviews",
-            "to_name": "displayReviews",
+            "from_name": "removeReview",
+            "to_name": "getReviewId",
             "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Initializer",
+            "to_type": "Java Field",
+            "from_name": "{(48:2)}",
+            "to_name": "size",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Struts Operation",
@@ -37,76 +107,6 @@
             "from_name": "/removeReview",
             "to_name": "removeReview",
             "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getReviews",
-            "to_name": "reviews",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "reviewsQuery",
-            "to_name": "reviews",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setReviews",
-            "to_name": "reviews",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "reviewsQuery",
-            "to_name": "reviews",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getCurrentEntity",
-            "to_name": "currentEntity",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setCurrentEntity",
-            "to_name": "currentEntity",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getReviewId",
-            "to_name": "reviewId",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setReviewId",
-            "to_name": "reviewId",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getCriteria",
-            "to_name": "size",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "displayReviews",
-            "to_name": "size",
-            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

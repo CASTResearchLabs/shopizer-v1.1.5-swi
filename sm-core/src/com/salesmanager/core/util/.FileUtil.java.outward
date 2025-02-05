@@ -50,35 +50,35 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getInternalDownloadFileUrl",
-                "to_name": "encrypt",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getOrderDownloadFileUrl",
-                "to_name": "encrypt",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAdminPasswordResetUrl",
-                "to_name": "encrypt",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getInvoiceUrl",
-                "to_name": "encrypt",
+                "from_name": "getInvoiceTokens",
+                "to_name": "generatekey",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getInvoiceTokens",
+                "to_name": "decrypt",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getUrlTokens",
+                "to_name": "generatekey",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getUrlTokens",
+                "to_name": "decrypt",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getFileDownloadFileTokens",
                 "to_name": "generatekey",
                 "calling_type": "CALL"
               }
@@ -86,48 +86,6 @@
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 15,
             "to_file": "sm-core/src/com/salesmanager/core/util/EncryptionUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getInternalDownloadFileUrl",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getOrderDownloadFileUrl",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getInvoiceUrl",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getInternalDownloadFileUrl",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getOrderDownloadFileUrl",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
           },
           {
             "calls_between_elements": [
@@ -176,17 +134,45 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getDefaultCataloguePageUrl",
-                "to_name": "getUnSecureDomain",
+                "from_name": "getInternalDownloadFileUrl",
+                "to_name": "getService",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getInternalDownloadFileUrl",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderDownloadFileUrl",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "getOrderDownloadFileUrl",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getInvoiceUrl",
-                "to_name": "buildCartUri",
+                "to_name": "getService",
                 "calling_type": "CALL"
-              },
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 8,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -207,6 +193,20 @@
                 "from_name": "getAdminPasswordResetUrl",
                 "to_name": "buildCentralUri",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getDefaultCataloguePageUrl",
+                "to_name": "getUnSecureDomain",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getInvoiceUrl",
+                "to_name": "buildCartUri",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -225,15 +225,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getInvoiceUrl",
-                "to_name": "getMerchantId",
+                "from_name": "getOrderDownloadFileUrl",
+                "to_name": "getOrderId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getOrderDownloadFileUrl",
-                "to_name": "getOrderId",
+                "from_name": "getInvoiceUrl",
+                "to_name": "getMerchantId",
                 "calling_type": "CALL"
               },
               {
@@ -254,41 +254,6 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-core/src/com/salesmanager/core/entity/orders/Order.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getOrderDownloadFileUrl",
-                "to_name": "getCustomerLang",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getInvoiceUrl",
-                "to_name": "getCustomerLang",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getInvoiceUrl",
-                "to_name": "getCustomerId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FileUtil",
-                "to_name": "Customer",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java"
           },
           {
             "calls_between_elements": [
@@ -359,6 +324,41 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/util/DateUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getOrderDownloadFileUrl",
+                "to_name": "getCustomerLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getInvoiceUrl",
+                "to_name": "getCustomerLang",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getInvoiceUrl",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FileUtil",
+                "to_name": "Customer",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java"
           },
           {
             "calls_between_elements": [

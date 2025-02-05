@@ -15,20 +15,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "searchOrder",
-                "to_name": "getQuantity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchInvoice",
-                "to_name": "getQuantity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "searchOrderByCustomer",
                 "to_name": "getMerchantId",
                 "calling_type": "CALL"
@@ -36,8 +22,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "getUpperLimit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "getLowerLimit",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "searchOrder",
-                "to_name": "getMerchantId",
+                "to_name": "getQuantity",
                 "calling_type": "CALL"
               }
             ],
@@ -64,13 +64,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "searchInvoice",
-                "to_name": "getOrderId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "searchOrder",
                 "to_name": "getCustomerName",
                 "calling_type": "CALL"
@@ -78,8 +71,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "searchInvoice",
-                "to_name": "getCustomerName",
+                "from_name": "searchOrder",
+                "to_name": "getSdate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrder",
+                "to_name": "getEdate",
                 "calling_type": "CALL"
               }
             ],
@@ -98,20 +98,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchOrder",
-                "to_name": "setOrders",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchInvoice",
-                "to_name": "setOrders",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "searchOrderByCustomer",
                 "to_name": "SearchOrderResponse",
@@ -119,9 +105,23 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchOrder",
+                "to_name": "setOrders",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "searchOrder",
                 "to_name": "SearchOrderResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "searchInvoice",
+                "to_name": "setOrders",
                 "calling_type": "CALL"
               }
             ],
@@ -131,6 +131,20 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "searchOrderByCustomer",
+                "to_name": "ONLINE_CHANNEL",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "searchOrder",
+                "to_name": "ONLINE_CHANNEL",
+                "calling_type": "READ"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
@@ -151,20 +165,6 @@
                 "from_name": "findInvoicesByCustomerAndStartDate",
                 "to_name": "INVOICE_CHANNEL",
                 "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "findInvoicesByCustomer",
-                "to_name": "INVOICE_CHANNEL",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "searchOrderByCustomer",
-                "to_name": "ONLINE_CHANNEL",
-                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -173,6 +173,13 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "searchInvoice",
+                "to_name": "ORDERS",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "MySQL Table",
@@ -192,13 +199,6 @@
                 "to_type": "MySQL Table",
                 "from_name": "OrderDao",
                 "to_name": "ORDERS",
-                "calling_type": "INSERT"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "searchInvoice",
-                "to_name": "ORDERS",
                 "calling_type": "USE"
               },
               {
@@ -206,12 +206,12 @@
                 "to_type": "MySQL Table",
                 "from_name": "OrderDao",
                 "to_name": "ORDERS",
-                "calling_type": "USE"
+                "calling_type": "INSERT"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 5,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [

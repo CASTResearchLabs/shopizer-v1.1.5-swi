@@ -4,289 +4,130 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/util/MiniShoppingCartSerializationUtil.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deserializeJSON",
-                "to_name": "setQuantity",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "serializeToJSON",
-                "to_name": "getQuantity",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 10
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deserializeJSON",
-                "to_name": "setImage",
-                "calling_type": "CALL"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deserializeJSON",
-                "to_name": "setProductName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deserializeJSON",
-                "to_name": "setPrice",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/util/MiniShoppingCartSerializationUtil.java",
+            "comment": "",
             "nb_calls_between_elements": 16
           },
           {
-            "from_file": "sm-shop/src/com/salesmanager/catalog/common/AjaxCatalogUtil.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addProductToCart",
-                "to_name": "setQuantity",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 11
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addProductToCart",
-                "to_name": "getQuantity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addProductToCart",
-                "to_name": "setImage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addProductToCart",
-                "to_name": "setProductName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addProductToCart",
-                "to_name": "setPrice",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-shop/src/com/salesmanager/catalog/common/AjaxCatalogUtil.java",
+            "comment": "",
             "nb_calls_between_elements": 13
           },
           {
-            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "getQuantity",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "getProductId",
-                "calling_type": "CALL"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "getAttributes",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShoppingCartAction",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "USE"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/ShoppingCartAction.java",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/AjaxShoppingCartUtil.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeProduct",
-                "to_name": "getMainCartLine",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculate",
-                "to_name": "getMainCartLine",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculate",
-                "to_name": "setQuantity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "AjaxShoppingCartUtil",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "CALL"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "",
-            "nb_calls_between_elements": 4
-          },
-          {
-            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/CheckoutAction.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkout",
-                "to_name": "getQuantity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkout",
-                "to_name": "getProductId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "checkout",
-                "to_name": "getAttributes",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "CheckoutAction",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4
-          },
-          {
             "from_file": "sm-core/src/com/salesmanager/core/entity/orders/ShoppingCart.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setProducts",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getProducts",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Class",
-                "from_name": "products",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShoppingCart",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "USE"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-shop/src/com/salesmanager/checkout/util/MiniShoppingCartUtil.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTotal",
-                "to_name": "getQuantity",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "calculateTotal",
-                "to_name": "getPrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MiniShoppingCartUtil",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-shop/src/com/salesmanager/checkout/cart/AjaxShoppingCartUtil.java",
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 3
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
+            "from_file": "sm-shop/src/com/salesmanager/catalog/cart/CheckoutAction.java",
+            "comment": "",
+            "nb_calls_between_elements": 4
+          },
+          {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
+              },
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              }
+            ],
+            "from_file": "sm-shop/src/com/salesmanager/checkout/util/MiniShoppingCartUtil.java",
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/util/www/SessionUtil.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addOrderProduct",
-                "to_name": "getProductId",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addOrderProduct",
-                "to_name": "setMainCartLine",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SessionUtil",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/util/www/SessionUtil.java",
             "comment": "",
             "nb_calls_between_elements": 3
           }

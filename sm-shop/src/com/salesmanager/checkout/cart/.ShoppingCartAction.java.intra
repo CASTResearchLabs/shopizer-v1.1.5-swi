@@ -5,44 +5,37 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setReturnUrl",
+            "to_name": "returnUrl",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getReturnUrl",
+            "to_name": "returnUrl",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setSummary",
+            "to_name": "summary",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getSummary",
+            "to_name": "summary",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "emptyCart",
             "to_name": "setReturnUrl",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "assembleItems",
-            "to_name": "setSummary",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "assembleShoppingCartItems",
-            "to_name": "setSummary",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/emptyCart",
-            "to_name": "emptyCart",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/showCart",
-            "to_name": "displayCart",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/addToCart",
-            "to_name": "addToCart",
             "calling_type": "CALL"
           },
           {
@@ -76,16 +69,16 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getSummary",
-            "to_name": "summary",
+            "from_name": "addToCart",
+            "to_name": "value",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setSummary",
-            "to_name": "summary",
-            "calling_type": "WRITE"
+            "to_type": "Java Method",
+            "from_name": "assembleItems",
+            "to_name": "setSummary",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
@@ -93,6 +86,13 @@
             "from_name": "assembleItems",
             "to_name": "store",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "assembleShoppingCartItems",
+            "to_name": "setSummary",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",

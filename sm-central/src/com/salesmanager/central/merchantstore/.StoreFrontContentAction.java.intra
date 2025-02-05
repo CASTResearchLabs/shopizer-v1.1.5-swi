@@ -4,24 +4,45 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/deletePageContent",
-            "to_name": "delete",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setPageContentList",
+            "to_name": "pageContentList",
+            "calling_type": "WRITE"
           },
           {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/savePageContent",
-            "to_name": "save",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getPageContentList",
+            "to_name": "pageContentList",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setSectionId",
+            "to_name": "sectionId",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getSectionId",
+            "to_name": "sectionId",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "delete",
             "to_name": "prepareContentList",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "delete",
+            "to_name": "displayList",
             "calling_type": "CALL"
           },
           {
@@ -29,48 +50,6 @@
             "to_type": "Java Method",
             "from_name": "save",
             "to_name": "prepareContentList",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "displayDetails",
-            "to_name": "prepareContentList",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/pageContentDetails",
-            "to_name": "displayDetails",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/updatePageContentList",
-            "to_name": "saveList",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "delete",
-            "to_name": "displayList",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "saveList",
-            "to_name": "displayList",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/pageContentList",
-            "to_name": "displayList",
             "calling_type": "CALL"
           },
           {
@@ -90,6 +69,20 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
+            "from_name": "displayDetails",
+            "to_name": "prepareContentList",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "saveList",
+            "to_name": "displayList",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
             "from_name": "saveList",
             "to_name": "getTemplateSectionIds",
             "calling_type": "CALL"
@@ -104,9 +97,16 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getPageContentList",
-            "to_name": "pageContentList",
+            "from_name": "displayList",
+            "to_name": "sectionId",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/savePageContent",
+            "to_name": "save",
+            "calling_type": "CALL"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

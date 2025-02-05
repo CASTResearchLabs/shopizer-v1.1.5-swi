@@ -22,22 +22,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveMerchantStore",
-                "to_name": "addActionError",
+                "from_name": "deleteMerchant",
+                "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "fetchMerchantStore",
-                "to_name": "getServletRequest",
+                "from_name": "deleteMerchant",
+                "to_name": "setSuccessMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveMerchantStore",
-                "to_name": "getServletRequest",
+                "from_name": "deleteMerchant",
+                "to_name": "setPageTitle",
                 "calling_type": "CALL"
               }
             ],
@@ -57,29 +57,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "fetchMerchantStore",
-                "to_name": "getMerchantUserId",
+                "from_name": "isValidMerchantInfo",
+                "to_name": "getUserphone",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveMerchantStore",
-                "to_name": "getMerchantUserId",
+                "from_name": "isValidMerchantInfo",
+                "to_name": "getUsercountrycode",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "fetchMerchantStore",
-                "to_name": "getMerchantId",
+                "from_name": "isValidMerchantInfo",
+                "to_name": "getUserstate",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveMerchantStore",
-                "to_name": "getMerchantId",
+                "from_name": "isValidMerchantInfo",
+                "to_name": "getUserpostalcode",
                 "calling_type": "CALL"
               }
             ],
@@ -92,6 +92,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
+                "from_name": "deleteMerchant",
+                "to_name": "unauthorized",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "deleteMerchant",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
                 "from_name": "viewMerchantStores",
                 "to_name": "success",
                 "calling_type": "CALL"
@@ -99,28 +113,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "deleteMerchant",
+                "from_name": "fetchMerchantStore",
                 "to_name": "unauthorized",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "deleteMerchant",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "saveMerchantStore",
-                "to_name": "unauthorized",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "saveMerchantStore",
+                "from_name": "fetchMerchantStore",
                 "to_name": "error",
                 "calling_type": "CALL"
               }
@@ -140,6 +140,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteMerchant",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "viewMerchantStores",
                 "to_name": "getService",
@@ -147,24 +154,17 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "viewMerchantStores",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "fetchMerchantStore",
                 "to_name": "getService",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveMerchantStore",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "deleteMerchant",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -176,6 +176,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "deleteMerchant",
+                "to_name": "deleteMerchant",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewMerchantStores",
+                "to_name": "getAllMerchantStores",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "fetchMerchantStore",
                 "to_name": "getMerchantStore",
                 "calling_type": "CALL"
@@ -183,21 +197,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveMerchantStore",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "fetchMerchantStore",
-                "to_name": "getMerchantUserInformation",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveMerchantStore",
                 "to_name": "getMerchantUserInformation",
                 "calling_type": "CALL"
               },
@@ -239,56 +239,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveMerchantStore",
-                "to_name": "isExistingStore",
+                "from_name": "fetchMerchantStore",
+                "to_name": "getZoneid",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "fetchMerchantStore",
-                "to_name": "getZoneid",
+                "to_name": "getCountryid",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 8,
             "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveMerchantStore",
-                "to_name": "getReason",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "saveMerchantStore",
-                "to_name": "ServiceException",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "MerchantStoreAction",
-                "to_name": "ServiceException",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "MerchantStoreAction",
-                "to_name": "ServiceException",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -324,6 +289,41 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStoreHeader.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMerchantStore",
+                "to_name": "getReason",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "saveMerchantStore",
+                "to_name": "ServiceException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "ServiceException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "MerchantStoreAction",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceException.java"
           },
           {
             "calls_between_elements": [

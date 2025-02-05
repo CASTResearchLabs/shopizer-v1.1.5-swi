@@ -4,65 +4,43 @@
       {
         "files": [
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
+              }
+            ],
             "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-catalog.xml",
-            "calls_between_elements": [
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "checkout",
-                "to_name": "checkout",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "checkout",
-                "to_name": "CheckoutAction",
-                "calling_type": "CALL"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "GET",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-shop/WebContent/catalog/templates/decotemplate/portlets/minicartportlet.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "checkout.action",
-                "to_name": "/checkout",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "minicartportlet.jsp",
-                "to_name": "/checkout",
-                "calling_type": "GET"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-shop/WebContent/checkout/cart/cart.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "checkout/checkout.action",
-                "to_name": "/checkout",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "cart.jsp",
-                "to_name": "/checkout",
-                "calling_type": "POST"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-shop/WebContent/checkout/cart/cart.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

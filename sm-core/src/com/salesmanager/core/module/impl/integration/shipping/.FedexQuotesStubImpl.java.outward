@@ -50,13 +50,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getQuote",
-                "to_name": "getMerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "createWebAuthenticationDetail",
                 "to_name": "getConfiguration",
                 "calling_type": "CALL"
@@ -66,6 +59,13 @@
                 "to_type": "Java Method",
                 "from_name": "createClientDetail",
                 "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getQuote",
+                "to_name": "getMerchantConfiguration",
                 "calling_type": "CALL"
               },
               {
@@ -92,13 +92,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createClientDetail",
-                "to_name": "getUserid",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "createWebAuthenticationDetail",
                 "to_name": "getPassword",
                 "calling_type": "CALL"
@@ -106,15 +99,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createClientDetail",
-                "to_name": "getKey2",
+                "from_name": "createWebAuthenticationDetail",
+                "to_name": "getKey1",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "createWebAuthenticationDetail",
-                "to_name": "getKey1",
+                "from_name": "createClientDetail",
+                "to_name": "getUserid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createClientDetail",
+                "to_name": "getKey2",
                 "calling_type": "CALL"
               },
               {
@@ -133,17 +133,17 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getQuote",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "getQuote",
                 "to_name": "ShippingService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getQuote",
+                "to_name": "getService",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
@@ -191,6 +191,48 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/constants/ShippingConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getQuote",
+                "to_name": "ShippingOption",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexQuotesStubImpl",
+                "to_name": "ShippingOption",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/shipping/ShippingOption.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getQuote",
+                "to_name": "PackageDetail",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexQuotesStubImpl",
+                "to_name": "PackageDetail",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/shipping/PackageDetail.java"
           },
           {
             "calls_between_elements": [
@@ -296,48 +338,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/common/model/IntegrationProperties.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getQuote",
-                "to_name": "ShippingOption",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FedexQuotesStubImpl",
-                "to_name": "ShippingOption",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/shipping/ShippingOption.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getQuote",
-                "to_name": "PackageDetail",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FedexQuotesStubImpl",
-                "to_name": "PackageDetail",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/shipping/PackageDetail.java"
           }
         ],
         "files_list_comment": "",

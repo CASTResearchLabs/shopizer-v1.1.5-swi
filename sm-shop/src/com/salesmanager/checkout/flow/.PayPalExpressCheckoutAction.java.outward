@@ -36,8 +36,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "preparePaypalRequest",
-                "to_name": "PAYMENTERROR",
+                "from_name": "preparePaypalResponse",
+                "to_name": "GENERICERROR",
                 "calling_type": "CALL"
               }
             ],
@@ -99,21 +99,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "preparePaypalRequest",
-                "to_name": "getPaymentMethod",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "preparePaypalResponse",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "preparePaypalRequest",
                 "to_name": "getMerchantStore",
                 "calling_type": "CALL"
               },
@@ -122,6 +108,20 @@
                 "to_type": "Java Method",
                 "from_name": "preparePaypalResponse",
                 "to_name": "getShippingInformation",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getOrder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "setCustomer",
                 "calling_type": "CALL"
               }
             ],
@@ -148,13 +148,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "preparePaypalRequest",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "preparePaypalResponse",
                 "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
@@ -164,6 +157,13 @@
                 "to_type": "Java Method",
                 "from_name": "preparePaypalResponse",
                 "to_name": "addErrorMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalResponse",
+                "to_name": "getLocale",
                 "calling_type": "CALL"
               }
             ],
@@ -182,6 +182,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "preparePaypalResponse",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "preparePaypalRequest",
                 "to_name": "getService",
@@ -195,18 +202,11 @@
                 "calling_type": "READ"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "preparePaypalResponse",
-                "to_name": "ReferenceService",
-                "calling_type": "READ"
-              },
-              {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PayPalExpressCheckoutAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -337,27 +337,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "preparePaypalRequest",
-                "to_name": "preInitializePayment",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PayPalExpressCheckoutAction",
-                "to_name": "PaymentService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "preparePaypalResponse",
                 "to_name": "getCountryByIsoCode",
                 "calling_type": "CALL"
@@ -478,6 +457,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/constants/OrderConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePaypalRequest",
+                "to_name": "preInitializePayment",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PayPalExpressCheckoutAction",
+                "to_name": "PaymentService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/payment/PaymentService.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

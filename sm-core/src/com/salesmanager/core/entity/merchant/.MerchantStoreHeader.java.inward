@@ -4,79 +4,32 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAllMerchantStores",
-                "to_name": "setStorename",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 5
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAllMerchantStores",
-                "to_name": "setAdminEmail",
-                "calling_type": "CALL"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAllMerchantStores",
-                "to_name": "setAdminName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getAllMerchantStores",
-                "to_name": "setMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getAllMerchantStores",
-                "to_name": "MerchantStoreHeader",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
+            "comment": "",
             "nb_calls_between_elements": 8
           },
           {
-            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setMerchantStoreHeaderList",
-                "to_name": "MerchantStoreHeader",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getMerchantStoreHeaderList",
-                "to_name": "MerchantStoreHeader",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Class",
-                "from_name": "merchantStoreHeaderList",
-                "to_name": "MerchantStoreHeader",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "MerchantStoreAction",
-                "to_name": "MerchantStoreHeader",
-                "calling_type": "USE"
+                "calling_type": "USE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/src/com/salesmanager/central/merchantstore/MerchantStoreAction.java",
             "comment": "",
             "nb_calls_between_elements": 4
           }

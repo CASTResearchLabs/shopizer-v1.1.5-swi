@@ -64,13 +64,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeProduct",
-                "to_name": "setErrorMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "addProductToCart",
                 "to_name": "setProducts",
                 "calling_type": "CALL"
@@ -78,8 +71,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeProduct",
-                "to_name": "setProducts",
+                "from_name": "addProductToCart",
+                "to_name": "getProducts",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "addProductToCart",
+                "to_name": "ShoppingCart",
                 "calling_type": "CALL"
               }
             ],
@@ -141,21 +141,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "setPrice",
-                "to_name": "isStringValue",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "addProductToCart",
-                "to_name": "getValue",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "setPrice",
                 "to_name": "getValue",
                 "calling_type": "CALL"
               },
@@ -164,6 +150,20 @@
                 "to_type": "Java Method",
                 "from_name": "addProductToCart",
                 "to_name": "getName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addProductToCart",
+                "to_name": "getTextValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setPrice",
+                "to_name": "isStringValue",
                 "calling_type": "CALL"
               }
             ],
@@ -175,6 +175,13 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "addProductToCart",
+                "to_name": "CatalogService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "addProductToCart",
                 "to_name": "getService",
@@ -186,13 +193,6 @@
                 "from_name": "setPrice",
                 "to_name": "getService",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "addProductToCart",
-                "to_name": "CatalogService",
-                "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
@@ -206,7 +206,7 @@
                 "to_type": "Java Class",
                 "from_name": "AjaxCatalogUtil",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -225,15 +225,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "setPrice",
-                "to_name": "getProductAttributes",
+                "from_name": "addProductToCart",
+                "to_name": "getProduct",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addProductToCart",
-                "to_name": "getProduct",
+                "from_name": "setPrice",
+                "to_name": "getProductAttributes",
                 "calling_type": "CALL"
               },
               {
@@ -379,15 +379,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "setPrice",
-                "to_name": "getCurrency",
+                "from_name": "addProductToCart",
+                "to_name": "getMerchantId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addProductToCart",
-                "to_name": "getMerchantId",
+                "from_name": "setPrice",
+                "to_name": "getCurrency",
                 "calling_type": "CALL"
               },
               {
@@ -414,15 +414,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "removeProduct",
-                "to_name": "getMiniShoppingCart",
+                "from_name": "addProductToCart",
+                "to_name": "setMiniShoppingCart",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addProductToCart",
-                "to_name": "setMiniShoppingCart",
+                "from_name": "removeProduct",
+                "to_name": "getMiniShoppingCart",
                 "calling_type": "CALL"
               },
               {

@@ -7,59 +7,17 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayPage",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "displayPage",
-                "to_name": "ReferenceService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "displayPage",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
                 "to_type": "Java Class",
-                "from_name": "PageRequestAction",
-                "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "from_name": "getFields",
+                "to_name": "Field",
+                "calling_type": "USE"
               },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PageRequestAction",
-                "to_name": "ServiceFactory",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "displayPage",
                 "to_name": "getName",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getFields",
-                "to_name": "Field",
-                "calling_type": "USE"
               },
               {
                 "from_type": "Java Field",
@@ -86,6 +44,48 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-core/src/com/salesmanager/core/entity/system/Field.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayPage",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayPage",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayPage",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PageRequestAction",
+                "to_name": "ServiceFactory",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PageRequestAction",
+                "to_name": "ServiceFactory",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
           },
           {
             "calls_between_elements": [
@@ -132,13 +132,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PageRequestAction",
-                "to_name": "MerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "displayPage",
@@ -151,6 +144,13 @@
                 "from_name": "PageRequestAction",
                 "to_name": "MerchantConfiguration",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PageRequestAction",
+                "to_name": "MerchantConfiguration",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -176,7 +176,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/upgrade/v1.1.2-TO-v1.1.3.sql"
+            "to_file": "schema/upgrade/v1.1.2-TO-v1.1.3.sql"
           },
           {
             "calls_between_elements": [
@@ -282,27 +282,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/www/PageExecutionContext.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "displayPage",
-                "to_name": "PAGE",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "MySQL Table",
-                "from_name": "PageRequestAction",
-                "to_name": "PAGE",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [
@@ -429,6 +408,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationRequest.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "displayPage",
+                "to_name": "PAGE",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "PageRequestAction",
+                "to_name": "PAGE",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

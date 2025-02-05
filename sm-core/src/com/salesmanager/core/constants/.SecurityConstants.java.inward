@@ -4,247 +4,94 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getInvoiceTokens",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getUrlTokens",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getFileDownloadFileTokens",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getInternalDownloadFileUrl",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getOrderDownloadFileUrl",
-                "to_name": "idConstant",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 8
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "ADMINISTRATOR",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getMerchantInformationByUserNameAndPassword",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "createNewOrSaveMerchant",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "createMerchantUserInformation",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "SecurityConstants",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "changeCustomerPassword",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "resetCustomerPassword",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "saveOrUpdateCustomer",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerService",
-                "to_name": "SecurityConstants",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/security/JAASCustomerSecurityFilter.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "doFilter",
-                "to_name": "SM_CUSTOMER_USER",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getUser",
-                "to_name": "SM_CUSTOMER_USER",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "JAASCustomerSecurityFilter",
-                "to_name": "SecurityConstants",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "",
-            "nb_calls_between_elements": 3
-          },
-          {
             "from_file": "sm-central/src/com/salesmanager/central/profile/ProfileAction.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "changePassword",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "answerQuestions",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ProfileAction",
-                "to_name": "SecurityConstants",
-                "calling_type": "READ"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
+              }
+            ],
+            "from_file": "sm-core/src/com/salesmanager/core/security/JAASCustomerSecurityFilter.java",
+            "comment": "",
+            "nb_calls_between_elements": 3
+          },
+          {
+            "calling_types": [
+              {
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/logon/CustomerJAASLogonImpl.java",
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getAuthToken",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "logon",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomerJAASLogonImpl",
-                "to_name": "SecurityConstants",
-                "calling_type": "READ"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 3
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/security/CustomAuthFilter.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getUser",
-                "to_name": "SM_ADMIN_USER",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CustomAuthFilter",
-                "to_name": "SecurityConstants",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/logon/JAASSecurityCustomerLoginModule.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/logon/JAASSecurityCustomerLoginModule.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "isValidUser",
-                "to_name": "idConstant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "JAASSecurityCustomerLoginModule",
-                "to_name": "SecurityConstants",
-                "calling_type": "READ"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/security/CustomAuthFilter.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

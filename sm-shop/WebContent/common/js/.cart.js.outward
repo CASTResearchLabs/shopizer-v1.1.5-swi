@@ -6,12 +6,33 @@
           {
             "calls_between_elements": [
               {
+                "from_type": "JavaScript function",
+                "to_type": "Struts Operation",
+                "from_name": "setCalculate",
+                "to_name": "/showshippingmethods",
+                "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript Files",
+                "to_type": "Struts Operation",
+                "from_name": "cart.js",
+                "to_name": "/showshippingmethods",
+                "calling_type": "GET"
+              },
+              {
                 "from_type": "JavaScript HttpRequest Get Service",
                 "to_type": "Struts Operation",
-                "from_name": "landing",
-                "to_name": "/landing",
+                "from_name": "invoice/showshippingmethods.action",
+                "to_name": "/showshippingmethods",
                 "calling_type": "CALL"
-              },
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-central/src/com/salesmanager/central/shipping/EditShippingMethods.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "JavaScript function",
                 "to_type": "Struts Operation",
@@ -25,39 +46,18 @@
                 "from_name": "cart.js",
                 "to_name": "/landing",
                 "calling_type": "GET"
+              },
+              {
+                "from_type": "JavaScript HttpRequest Get Service",
+                "to_type": "Struts Operation",
+                "from_name": "landing",
+                "to_name": "/landing",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-shop/src/com/salesmanager/catalog/store/LandingAction.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Get Service",
-                "to_type": "Struts Operation",
-                "from_name": "invoice/showshippingmethods.action",
-                "to_name": "/showshippingmethods",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JavaScript function",
-                "to_type": "Struts Operation",
-                "from_name": "setCalculate",
-                "to_name": "/showshippingmethods",
-                "calling_type": "GET"
-              },
-              {
-                "from_type": "JavaScript Files",
-                "to_type": "Struts Operation",
-                "from_name": "cart.js",
-                "to_name": "/showshippingmethods",
-                "calling_type": "GET"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-central/src/com/salesmanager/central/shipping/EditShippingMethods.java"
           },
           {
             "calls_between_elements": [
@@ -83,17 +83,17 @@
           {
             "calls_between_elements": [
               {
-                "from_type": "JavaScript Files",
-                "to_type": "JavaScript Files",
-                "from_name": "cart.js",
-                "to_name": "thickbox-noconflict.js",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "JavaScript function",
                 "to_type": "JavaScript function",
                 "from_name": "setCartLine",
                 "to_name": "tb_init",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "JavaScript Files",
+                "to_type": "JavaScript Files",
+                "from_name": "cart.js",
+                "to_name": "thickbox-noconflict.js",
                 "calling_type": "CALL"
               }
             ],

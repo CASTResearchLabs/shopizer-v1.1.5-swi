@@ -8,6 +8,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
+                "from_name": "configureTax",
+                "to_name": "error",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "configureTax",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
                 "from_name": "removeTax",
                 "to_name": "success",
                 "calling_type": "CALL"
@@ -15,22 +29,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "displayTax",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "displayTax",
-                "to_name": "showoptions",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "displayTaxBasis",
-                "to_name": "success",
+                "from_name": "removeTax",
+                "to_name": "error",
                 "calling_type": "CALL"
               },
               {
@@ -57,22 +57,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "setup",
-                "to_name": "MODULE_TAX_BASIS",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
                 "from_name": "setInitialSetup",
                 "to_name": "MODULE_TAX_SCHEME",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "setup",
-                "to_name": "MODULE_TAX_SCHEME",
+                "to_type": "Java Class",
+                "from_name": "setInitialSetup",
+                "to_name": "TaxConstants",
                 "calling_type": "READ"
               },
               {
@@ -80,6 +73,13 @@
                 "to_type": "Java Field",
                 "from_name": "configureTax",
                 "to_name": "SHIPPING_TAX_BASIS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "configureTax",
+                "to_name": "EU_SCHEME",
                 "calling_type": "READ"
               }
             ],
@@ -98,6 +98,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "persistConfiguration",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "cleanupTax",
                 "to_name": "getService",
@@ -105,24 +112,17 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "cleanupTax",
+                "to_name": "TaxService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "displayTax",
                 "to_name": "getService",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "setup",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "persistConfiguration",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -148,6 +148,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "configureTax",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "cleanupTax",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
@@ -158,13 +165,6 @@
                 "from_name": "displayTax",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "setup",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -173,13 +173,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "setup",
-                "to_name": "getConfigurationValue",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -207,6 +200,13 @@
                 "from_name": "setInitialSetup",
                 "to_name": "MerchantConfiguration",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setup",
+                "to_name": "getConfigurationValue",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -215,13 +215,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayTax",
-                "to_name": "getCountryid",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -234,6 +227,13 @@
                 "to_type": "Java Method",
                 "from_name": "cleanupTax",
                 "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayTax",
+                "to_name": "getCountryid",
                 "calling_type": "CALL"
               },
               {
@@ -254,48 +254,6 @@
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 6,
             "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "configureTax",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayTax",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "configureTax",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayTax",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class Struts",
-                "from_name": "DisplayTaxAction",
-                "to_name": "LabelUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
           },
           {
             "calls_between_elements": [
@@ -344,70 +302,42 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "setup",
-                "to_name": "getMerchantConfiguration",
+                "from_name": "configureTax",
+                "to_name": "getText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "configureTax",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "displayTax",
-                "to_name": "getMerchantConfigurations",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "setup",
-                "to_name": "getMerchantConfigurations",
+                "from_name": "displayTax",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
-                "to_type": "Java Class",
+                "to_type": "Java Class Struts",
                 "from_name": "DisplayTaxAction",
-                "to_name": "ConfigurationResponse",
+                "to_name": "LabelUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayTax",
-                "to_name": "getZoneToGeoZone",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DisplayTaxAction",
-                "to_name": "TaxRateTaxTemplate",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "displayTax",
-                "to_name": "TaxRateTaxTemplate",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "DisplayTaxAction",
-                "to_name": "TaxRateTaxTemplate",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/tax/TaxRateTaxTemplate.java"
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
           },
           {
             "calls_between_elements": [
@@ -449,56 +379,70 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "setup",
-                "to_name": "getConfiguration",
+                "from_name": "displayTax",
+                "to_name": "getZoneToGeoZone",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "persistConfiguration",
-                "to_name": "saveOrUpdateMerchantConfiguration",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "displayTax",
+                "to_name": "TaxRateTaxTemplate",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "DisplayTaxAction",
-                "to_name": "MerchantService",
+                "to_name": "TaxRateTaxTemplate",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DisplayTaxAction",
+                "to_name": "TaxRateTaxTemplate",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/tax/TaxRateTaxTemplate.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "cleanupTax",
-                "to_name": "deleteTaxConfiguration",
+                "from_name": "displayTax",
+                "to_name": "getMerchantConfigurations",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayTax",
-                "to_name": "findByGeoZoneCountryId",
+                "from_name": "setup",
+                "to_name": "getMerchantConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setup",
+                "to_name": "getMerchantConfigurations",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "DisplayTaxAction",
-                "to_name": "TaxService",
+                "to_name": "ConfigurationResponse",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java"
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
           },
           {
             "calls_between_elements": [
@@ -533,6 +477,34 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "persistConfiguration",
+                "to_name": "saveOrUpdateMerchantConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setup",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DisplayTaxAction",
+                "to_name": "MerchantService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "configureTax",
                 "to_name": "addErrorMessage",
                 "calling_type": "CALL"
@@ -555,6 +527,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/util/MessageUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "cleanupTax",
+                "to_name": "deleteTaxConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayTax",
+                "to_name": "findByGeoZoneCountryId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "DisplayTaxAction",
+                "to_name": "TaxService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/service/tax/TaxService.java"
           },
           {
             "calls_between_elements": [

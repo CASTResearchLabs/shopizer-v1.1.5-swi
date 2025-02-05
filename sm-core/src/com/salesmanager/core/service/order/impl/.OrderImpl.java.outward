@@ -8,36 +8,36 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "setCurrency",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "getMerchantId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderProblemEmail",
-                "to_name": "setCurrency",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "getOrderStatus",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getOrderHistory",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "getOrderId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderProblemEmail",
-                "to_name": "getOrderHistory",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "getCustomerName",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getOrderTotal",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "getDatePurchased",
                 "calling_type": "CALL"
               }
             ],
@@ -56,6 +56,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendResetDownloadCountrsEmail",
                 "to_name": "getService",
@@ -63,24 +70,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderProblemEmail",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "OrderService",
+                "from_name": "sendResetDownloadCountrsEmail",
+                "to_name": "MerchantService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getService",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -99,21 +99,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderProblemEmail",
-                "to_name": "getOrderattributes",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getProductName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderProblemEmail",
                 "to_name": "getProductName",
                 "calling_type": "CALL"
               },
@@ -122,6 +108,20 @@
                 "to_type": "Java Method",
                 "from_name": "sendOrderConfirmationEmail",
                 "to_name": "getProductQuantity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "setCurrency",
                 "calling_type": "CALL"
               }
             ],
@@ -140,6 +140,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "CommonService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendResetDownloadCountrsEmail",
                 "to_name": "sendHtmlEmail",
@@ -147,23 +154,16 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "sendResetDownloadCountrsEmail",
+                "to_name": "CommonService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendOrderConfirmationEmail",
                 "to_name": "sendHtmlEmail",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderProblemEmail",
-                "to_name": "sendHtmlEmail",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "sendOrderStatusEmail",
-                "to_name": "CommonService",
                 "calling_type": "CALL"
               }
             ],
@@ -183,6 +183,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "sendResetDownloadCountrsEmail",
                 "to_name": "getText",
                 "calling_type": "CALL"
@@ -190,22 +197,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "sendResetDownloadCountrsEmail",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "sendOrderConfirmationEmail",
                 "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderProblemEmail",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderStatusEmail",
-                "to_name": "getInstance",
                 "calling_type": "CALL"
               }
             ],
@@ -218,57 +218,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getModule",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "getCustomerLang",
                 "calling_type": "CALL"
               },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderProblemEmail",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getTitle",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderProblemEmail",
-                "to_name": "getTitle",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderTotal.java"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendResetDownloadCountrsEmail",
                 "to_name": "getMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "sendOrderStatusEmail",
-                "to_name": "getCustomerLang",
                 "calling_type": "CALL"
               },
               {
@@ -345,13 +303,48 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getProductOption",
+                "to_name": "getModule",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getTitle",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "sendOrderProblemEmail",
+                "to_name": "getText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderProblemEmail",
+                "to_name": "getTitle",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderTotal.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
                 "to_name": "getProductOption",
                 "calling_type": "CALL"
               },
@@ -360,6 +353,13 @@
                 "to_type": "Java Method",
                 "from_name": "sendOrderConfirmationEmail",
                 "to_name": "getAttributeValue",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderProblemEmail",
+                "to_name": "getProductOption",
                 "calling_type": "CALL"
               },
               {
@@ -386,13 +386,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getMerchantUserInfo",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "sendOrderStatusEmail",
                 "to_name": "getMerchantStore",
                 "calling_type": "CALL"
@@ -402,6 +395,13 @@
                 "to_type": "Java Method",
                 "from_name": "sendResetDownloadCountrsEmail",
                 "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getMerchantUserInfo",
                 "calling_type": "CALL"
               },
               {
@@ -428,15 +428,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderProblemEmail",
-                "to_name": "getStoreemailaddress",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getCurrency",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getCurrency",
+                "from_name": "sendOrderProblemEmail",
+                "to_name": "getStoreemailaddress",
                 "calling_type": "CALL"
               },
               {
@@ -519,42 +519,42 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getCustomer",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "getOrderstatuswithlang",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderImpl",
-                "to_name": "CustomerService",
+                "to_name": "RefCache",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "getOrder",
+                "from_name": "sendOrderStatusEmail",
+                "to_name": "getOrderStatusName",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderImpl",
-                "to_name": "OrderService",
+                "to_name": "OrderStatus",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderStatus.java"
           },
           {
             "calls_between_elements": [
@@ -603,42 +603,42 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderStatusEmail",
-                "to_name": "getOrderstatuswithlang",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getCustomer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderImpl",
-                "to_name": "RefCache",
+                "to_name": "CustomerService",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "sendOrderStatusEmail",
-                "to_name": "getOrderStatusName",
+                "from_name": "sendOrderConfirmationEmail",
+                "to_name": "getOrder",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "OrderImpl",
-                "to_name": "OrderStatus",
+                "to_name": "OrderService",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderStatus.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java"
           },
           {
             "calls_between_elements": [

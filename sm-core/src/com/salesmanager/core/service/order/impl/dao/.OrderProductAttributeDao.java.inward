@@ -4,37 +4,17 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "deleteAll",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveInvoiceDetails",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveOrder",
-                "to_name": "persist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class DAO",
-                "from_name": "OrderService",
-                "to_name": "OrderProductAttributeDao",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
             "comment": "",
             "nb_calls_between_elements": 4
           }

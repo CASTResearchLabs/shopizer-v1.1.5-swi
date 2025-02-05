@@ -14,6 +14,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayShippingModules",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveMethodDetails",
                 "to_name": "getService",
@@ -21,24 +28,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareLists",
-                "to_name": "getService",
-                "calling_type": "CALL"
+                "to_type": "Java Field",
+                "from_name": "saveMethodDetails",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareDescriptions",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "cleanupkey",
-                "to_name": "getService",
-                "calling_type": "CALL"
+                "to_type": "Java Field",
+                "from_name": "saveMethodDetails",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -50,6 +50,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "displayShippingModules",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayShippingModules",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "saveMethodDetails",
                 "to_name": "addFieldError",
                 "calling_type": "CALL"
@@ -57,21 +71,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayShippingModules",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "cleanupkey",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayShippingModules",
+                "from_name": "saveMethodDetails",
                 "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               },
@@ -79,7 +79,7 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveMethodDetails",
-                "to_name": "setTechnicalMessage",
+                "to_name": "setSuccessMessage",
                 "calling_type": "CALL"
               }
             ],
@@ -113,15 +113,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveMethodDetails",
-                "to_name": "setDateAdded",
+                "from_name": "displayShippingModules",
+                "to_name": "getConfigurationValue2",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveMethodDetails",
-                "to_name": "setLastModified",
+                "to_name": "setDateAdded",
                 "calling_type": "CALL"
               }
             ],
@@ -176,13 +176,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareDescriptions",
-                "to_name": "getDynamicLabelDescription",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveMethodDetails",
                 "to_name": "setDynamicLabelTitle",
                 "calling_type": "CALL"
@@ -206,6 +199,13 @@
                 "to_type": "Java Method",
                 "from_name": "saveMethodDetails",
                 "to_name": "getId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "saveMethodDetails",
+                "to_name": "DynamicLabelDescription",
                 "calling_type": "CALL"
               }
             ],
@@ -239,15 +239,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareDescriptions",
-                "to_name": "getDescriptions",
+                "from_name": "saveMethodDetails",
+                "to_name": "setSectionId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveMethodDetails",
-                "to_name": "setSectionId",
+                "to_name": "setMerchantId",
                 "calling_type": "CALL"
               }
             ],
@@ -257,13 +257,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareLists",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -288,6 +281,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "prepareLists",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "cleanupkey",
                 "to_name": "cleanConfigurationKey",
                 "calling_type": "CALL"
@@ -296,48 +296,6 @@
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveMethodDetails",
-                "to_name": "saveOrUpdateDynamicLabel",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveMethodDetails",
-                "to_name": "deleteDynamicLabelDescriptions",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveMethodDetails",
-                "to_name": "deleteDynamicLabel",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveMethodDetails",
-                "to_name": "getDynamicLabels",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareDescriptions",
-                "to_name": "getDynamicLabels",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java"
           },
           {
             "calls_between_elements": [
@@ -387,44 +345,51 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveMethodDetails",
-                "to_name": "setLanguageId",
+                "to_name": "saveOrUpdateDynamicLabel",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveMethodDetails",
-                "to_name": "getLanguageId",
+                "to_name": "deleteDynamicLabelDescriptions",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMethodDetails",
+                "to_name": "deleteDynamicLabel",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMethodDetails",
+                "to_name": "getDynamicLabels",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepareDescriptions",
-                "to_name": "getLanguageId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "saveMethodDetails",
-                "to_name": "DynamicLabelDescriptionId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShippingRatesAction",
-                "to_name": "DynamicLabelDescriptionId",
+                "to_name": "getDynamicLabels",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/DynamicLabelDescriptionId.java"
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/service/reference/ReferenceService.java"
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "displayShippingModules",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
@@ -436,13 +401,6 @@
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
                 "from_name": "saveMethodDetails",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "displayShippingModules",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -464,6 +422,83 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-central/WebContent/WEB-INF/classes/struts-shipping.xml"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMethodDetails",
+                "to_name": "setLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveMethodDetails",
+                "to_name": "getLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "saveMethodDetails",
+                "to_name": "DynamicLabelDescriptionId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareDescriptions",
+                "to_name": "getLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingRatesAction",
+                "to_name": "DynamicLabelDescriptionId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/DynamicLabelDescriptionId.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setLanguages",
+                "to_name": "Language",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getLanguages",
+                "to_name": "Language",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "languages",
+                "to_name": "Language",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingRatesAction",
+                "to_name": "Language",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Language.java"
           },
           {
             "calls_between_elements": [
@@ -504,36 +539,29 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setLanguages",
-                "to_name": "Language",
-                "calling_type": "USE"
+                "to_type": "Java Method",
+                "from_name": "displayShippingModules",
+                "to_name": "getMerchantConfigurationList",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getLanguages",
-                "to_name": "Language",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Class",
-                "from_name": "languages",
-                "to_name": "Language",
-                "calling_type": "USE"
+                "to_type": "Java Method",
+                "from_name": "saveMethodDetails",
+                "to_name": "getMerchantConfiguration",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "ShippingRatesAction",
-                "to_name": "Language",
-                "calling_type": "USE"
+                "to_name": "ConfigurationResponse",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Language.java"
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
           },
           {
             "calls_between_elements": [
@@ -596,34 +624,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayShippingModules",
-                "to_name": "getMerchantConfigurationList",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveMethodDetails",
-                "to_name": "getMerchantConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShippingRatesAction",
-                "to_name": "ConfigurationResponse",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "prepareLists",
                 "to_name": "getText",
                 "calling_type": "CALL"
@@ -651,27 +651,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "displayShippingModules",
-                "to_name": "ZONES",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "MySQL Table",
-                "from_name": "ShippingRatesAction",
-                "to_name": "ZONES",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepareLists",
                 "to_name": "getGetSupportedLanguages",
@@ -688,6 +667,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/merchant/MerchantStore.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "displayShippingModules",
+                "to_name": "ZONES",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "MySQL Table",
+                "from_name": "ShippingRatesAction",
+                "to_name": "ZONES",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [

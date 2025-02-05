@@ -7,20 +7,6 @@
             "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "getText",
-            "to_name": "setLocale",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getLocale",
-            "to_name": "setLocale",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getText",
             "to_name": "getText",
             "calling_type": "CALL"
           },
@@ -40,15 +26,15 @@
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Field",
+            "to_type": "Java Method",
             "from_name": "getText",
-            "to_name": "locale",
-            "calling_type": "READ"
+            "to_name": "setLocale",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getLocale",
+            "from_name": "getText",
             "to_name": "locale",
             "calling_type": "READ"
           },
@@ -60,18 +46,18 @@
             "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Initializer",
-            "to_type": "Java Field",
-            "from_name": "{(164:2)}",
-            "to_name": "bundleList",
-            "calling_type": "WRITE"
+            "from_type": "Java Method",
+            "to_type": "Java Constructor",
+            "from_name": "getInstance",
+            "to_name": "LabelUtil",
+            "calling_type": "CALL"
           },
           {
-            "from_type": "Java Class Struts",
-            "to_type": "Java Interface",
-            "from_name": "LabelUtil",
-            "to_name": "SmTextProvider",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getLocale",
+            "to_name": "locale",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -89,9 +75,23 @@
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Constructor",
-            "from_name": "getInstance",
-            "to_name": "LabelUtil",
+            "to_type": "Java Method",
+            "from_name": "getLocale",
+            "to_name": "setLocale",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Initializer",
+            "to_type": "Java Field",
+            "from_name": "{(164:2)}",
+            "to_name": "bundleList",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Class Struts",
+            "to_type": "Java Interface",
+            "from_name": "LabelUtil",
+            "to_name": "SmTextProvider",
             "calling_type": "CALL"
           },
           {

@@ -6,13 +6,6 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "findSubCategoriesByLang",
-            "to_name": "select c from Category",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "JPQL Query",
             "from_name": "findCategoryByMerchantIdAndSeoURLAndByLang",
             "to_name": "select c from Category",
             "calling_type": "CALL"
@@ -20,7 +13,14 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "findByMerchantIdAndLineage",
+            "from_name": "findSubCategoriesByLang",
+            "to_name": "select c from Category",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "findByMerchantIdAndLanguageId",
             "to_name": "select c from Category",
             "calling_type": "CALL"
           },
@@ -34,7 +34,7 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "findByMerchantIdAndLanguageId",
+            "from_name": "findByMerchantIdAndLineage",
             "to_name": "select c from Category",
             "calling_type": "CALL"
           },

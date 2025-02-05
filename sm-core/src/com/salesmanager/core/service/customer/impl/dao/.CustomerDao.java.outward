@@ -126,34 +126,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "findUniqueCompanyName",
-                "to_name": "CUSTOMERS",
-                "calling_type": "SELECT"
-              },
-              {
-                "from_type": "JPA SQL Query",
-                "to_type": "MySQL Table",
-                "from_name": "select distinct c.customers_company from",
-                "to_name": "CUSTOMERS",
-                "calling_type": "SELECT"
-              },
-              {
-                "from_type": "Java Class DAO",
-                "to_type": "MySQL Table",
-                "from_name": "CustomerDao",
-                "to_name": "CUSTOMERS",
-                "calling_type": "SELECT"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "findCustomers",
                 "to_name": "setCustomers",
@@ -177,6 +149,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/entity/customer/SearchCustomerResponse.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "findUniqueCompanyName",
+                "to_name": "CUSTOMERS",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "JPA SQL Query",
+                "to_type": "MySQL Table",
+                "from_name": "select distinct c.customers_company from",
+                "to_name": "CUSTOMERS",
+                "calling_type": "SELECT"
+              },
+              {
+                "from_type": "Java Class DAO",
+                "to_type": "MySQL Table",
+                "from_name": "CustomerDao",
+                "to_name": "CUSTOMERS",
+                "calling_type": "SELECT"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [

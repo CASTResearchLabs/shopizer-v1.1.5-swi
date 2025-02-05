@@ -4,86 +4,47 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getUser",
-                "to_name": "MerchantException",
-                "calling_type": "CALL"
+                "calling_type": "THROW",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getConfiguration",
-                "to_name": "MerchantException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getConfigurationByModule",
-                "to_name": "MerchantException",
-                "calling_type": "CALL"
+                "calling_type": "RAISE",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantService",
-                "to_name": "MerchantException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "cleanConfigurationLikeKey",
-                "to_name": "MerchantException",
-                "calling_type": "THROW"
+                "calling_type": "THROW",
+                "nb_calls_between_elements": 2
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 24
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "updateShippingZonesAndCostsForDomestic",
-                "to_name": "MerchantException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingService",
-                "to_name": "MerchantException",
-                "calling_type": "THROW"
+                "calling_type": "THROW",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/shipping/ShippingService.java",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setAdminTokenToSession",
-                "to_name": "MerchantException",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "BaseAction",
-                "to_name": "MerchantException",
-                "calling_type": "CATCH"
+                "calling_type": "CATCH",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
             "comment": "",
             "nb_calls_between_elements": 2
           }

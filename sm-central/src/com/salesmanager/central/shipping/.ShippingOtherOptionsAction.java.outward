@@ -22,13 +22,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "getConfigurationValue",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "prepare",
                 "to_name": "getConfigurationKey",
                 "calling_type": "CALL"
@@ -36,8 +29,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "getConfigurationValue2",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "save",
-                "to_name": "setLastModified",
+                "to_name": "getConfigurationValue",
                 "calling_type": "CALL"
               }
             ],
@@ -50,13 +50,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "prepare",
-                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
                 "from_name": "getFreeshipdest",
                 "to_name": "DOMESTIC_SHIPPING",
                 "calling_type": "READ"
@@ -65,13 +58,13 @@
                 "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "prepare",
-                "to_name": "MODULE_SHIPPING_TAX_CLASS",
+                "to_name": "MODULE_SHIPPING_ZONES_SHIPPING",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "save",
+                "from_name": "prepare",
                 "to_name": "MODULE_SHIPPING_TAX_CLASS",
                 "calling_type": "READ"
               },
@@ -80,6 +73,13 @@
                 "to_type": "Java Field",
                 "from_name": "prepare",
                 "to_name": "MODULE_SHIPPING_HANDLING_FEES",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "prepare",
+                "to_name": "MODULE_SHIPPING_FREE_IND_DEST_AMNT",
                 "calling_type": "READ"
               }
             ],
@@ -98,22 +98,8 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "prepare",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "save",
                 "to_name": "MerchantService",
                 "calling_type": "READ"
               },
@@ -122,6 +108,20 @@
                 "to_type": "Java Field",
                 "from_name": "prepare",
                 "to_name": "TaxService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "save",
+                "to_name": "MerchantService",
                 "calling_type": "READ"
               }
             ],
@@ -134,14 +134,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "save",
+                "from_name": "display",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "display",
+                "from_name": "save",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -183,15 +183,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "getText",
+                "from_name": "prepare",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getInstance",
+                "from_name": "save",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
@@ -225,15 +225,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "getServletRequest",
+                "from_name": "prepare",
+                "to_name": "setPageTitle",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "setPageTitle",
+                "from_name": "save",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               },
               {
@@ -288,15 +288,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "getCurrency",
+                "from_name": "prepare",
+                "to_name": "getMerchantid",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getMerchantid",
+                "from_name": "save",
+                "to_name": "getCurrency",
                 "calling_type": "CALL"
               },
               {
@@ -406,27 +406,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "prepare",
-                "to_name": "ZONES",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "MySQL Table",
-                "from_name": "ShippingOtherOptionsAction",
-                "to_name": "ZONES",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepare",
                 "to_name": "getMerchantConfigurationList",
@@ -469,6 +448,48 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "prepare",
+                "to_name": "ConfigurationRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShippingOtherOptionsAction",
+                "to_name": "ConfigurationRequest",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationRequest.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "prepare",
+                "to_name": "ZONES",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "MySQL Table",
+                "from_name": "ShippingOtherOptionsAction",
+                "to_name": "ZONES",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "save",
                 "to_name": "validateCurrency",
@@ -506,27 +527,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-central/src/com/salesmanager/central/shipping/ShippingRatesAction.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "prepare",
-                "to_name": "ConfigurationRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShippingOtherOptionsAction",
-                "to_name": "ConfigurationRequest",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationRequest.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

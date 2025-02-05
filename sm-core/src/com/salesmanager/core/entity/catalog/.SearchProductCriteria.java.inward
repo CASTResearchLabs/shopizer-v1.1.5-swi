@@ -4,156 +4,70 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ProductDao.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchProduct",
-                "to_name": "getStatus",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "findProductsByDescription",
-                "to_name": "getDescription",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 4
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchProduct",
-                "to_name": "getDescription",
-                "calling_type": "CALL"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 4
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchProduct",
-                "to_name": "getVisible",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "searchProduct",
-                "to_name": "getCategoryid",
-                "calling_type": "CALL"
+                "calling_type": "READ",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/service/catalog/impl/db/dao/ProductDao.java",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 12
           },
           {
-            "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductListAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "show",
-                "to_name": "setDescription",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 5
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "show",
-                "to_name": "setStatus",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "show",
-                "to_name": "setVisible",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "show",
-                "to_name": "setCategoryid",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "show",
-                "to_name": "SearchProductCriteria",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-central/src/com/salesmanager/central/catalog/ProductListAction.java",
+            "comment": "",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-shop/src/com/salesmanager/catalog/store/SearchAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "search",
-                "to_name": "setDescription",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "page",
-                "to_name": "setDescription",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "search",
-                "to_name": "SearchProductCriteria",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "page",
-                "to_name": "SearchProductCriteria",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SearchAction",
-                "to_name": "SearchProductCriteria",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-shop/src/com/salesmanager/catalog/store/SearchAction.java",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "setCategories",
-                "to_name": "setCategoryList",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "setCategories",
-                "to_name": "SearchProductCriteria",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CategoryListAction",
-                "to_name": "SearchProductCriteria",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-shop/src/com/salesmanager/catalog/category/CategoryListAction.java",
             "comment": "",
             "nb_calls_between_elements": 3
           }

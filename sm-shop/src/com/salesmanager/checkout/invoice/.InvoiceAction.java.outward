@@ -8,15 +8,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "printInvoice",
+                "from_name": "prepareInvoice",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "printInvoice",
-                "to_name": "displayInvoice",
+                "from_name": "prepareInvoice",
+                "to_name": "GENERICERROR",
                 "calling_type": "CALL"
               },
               {
@@ -37,7 +37,7 @@
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
                 "from_name": "printInvoice",
-                "to_name": "GENERICERROR",
+                "to_name": "success",
                 "calling_type": "CALL"
               }
             ],
@@ -52,13 +52,6 @@
                 "to_type": "Java Method",
                 "from_name": "prepareInvoice",
                 "to_name": "addOrderProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayInvoice",
-                "to_name": "getMerchantStore",
                 "calling_type": "CALL"
               },
               {
@@ -81,6 +74,13 @@
                 "from_name": "prepareInvoice",
                 "to_name": "cleanCart",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "setShippingInformation",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -89,20 +89,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayInvoice",
-                "to_name": "setCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayInvoice",
-                "to_name": "getOrderHistory",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -123,6 +109,20 @@
                 "from_name": "prepareInvoice",
                 "to_name": "getMerchantId",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "getShippingModuleCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "getShippingMethod",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -141,6 +141,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "getServletResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "displayInvoice",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
@@ -148,21 +162,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "printInvoice",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "displayInvoice",
-                "to_name": "setTechnicalMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "printInvoice",
                 "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               }
@@ -177,13 +177,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepareInvoice",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "printInvoice",
                 "to_name": "getService",
                 "calling_type": "CALL"
               },
@@ -207,6 +200,13 @@
                 "from_name": "prepareInvoice",
                 "to_name": "MerchantService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "printInvoice",
+                "to_name": "getService",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -225,21 +225,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "printInvoice",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "displayInvoice",
-                "to_name": "setLocale",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "printInvoice",
                 "to_name": "setLocale",
                 "calling_type": "CALL"
               },
@@ -248,6 +234,20 @@
                 "to_type": "Java Method",
                 "from_name": "displayInvoice",
                 "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "printInvoice",
+                "to_name": "getText",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "printInvoice",
+                "to_name": "setLocale",
                 "calling_type": "CALL"
               }
             ],
@@ -281,15 +281,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayInvoice",
-                "to_name": "getCurrency",
+                "from_name": "prepareInvoice",
+                "to_name": "getCountry",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareInvoice",
-                "to_name": "getCountry",
+                "from_name": "displayInvoice",
+                "to_name": "getCurrency",
                 "calling_type": "CALL"
               }
             ],
@@ -372,34 +372,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayInvoice",
-                "to_name": "getComments",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayInvoice",
-                "to_name": "getCustomerNotified",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "InvoiceAction",
-                "to_name": "OrderStatusHistory",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderStatusHistory.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "prepareInvoice",
                 "to_name": "getMerchantStore",
                 "calling_type": "CALL"
@@ -422,6 +394,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoice",
+                "to_name": "getComments",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayInvoice",
+                "to_name": "getCustomerNotified",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceAction",
+                "to_name": "OrderStatusHistory",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderStatusHistory.java"
           },
           {
             "calls_between_elements": [
@@ -457,20 +457,20 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "prepareInvoice",
-                "to_name": "getCode",
+                "to_name": "setLocaleForRequest",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
-                "to_type": "Java Class",
+                "to_type": "Java Class Struts",
                 "from_name": "InvoiceAction",
-                "to_name": "Language",
+                "to_name": "LocaleUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Language.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
           },
           {
             "calls_between_elements": [
@@ -497,22 +497,64 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "displayInvoice",
+                "to_name": "STATUSINVOICED",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceAction",
+                "to_name": "OrderConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/constants/OrderConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareInvoice",
-                "to_name": "setLocaleForRequest",
+                "from_name": "printInvoice",
+                "to_name": "getUnSecureDomain",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
+                "to_type": "Java Class",
                 "from_name": "InvoiceAction",
-                "to_name": "LocaleUtil",
+                "to_name": "ReferenceUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/ReferenceUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "printInvoice",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceAction",
+                "to_name": "PropertiesUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
           },
           {
             "calls_between_elements": [
@@ -534,27 +576,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/HttpCallUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "displayInvoice",
-                "to_name": "STATUSINVOICED",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "InvoiceAction",
-                "to_name": "OrderConstants",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/OrderConstants.java"
           },
           {
             "calls_between_elements": [
@@ -666,27 +687,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "printInvoice",
-                "to_name": "getUnSecureDomain",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "InvoiceAction",
-                "to_name": "ReferenceUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/ReferenceUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "prepareInvoice",
                 "to_name": "getOrder",
                 "calling_type": "CALL"
@@ -729,27 +729,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "printInvoice",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "InvoiceAction",
-                "to_name": "PropertiesUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "prepareInvoice",
                 "to_name": "getDefaultLanguage",
                 "calling_type": "CALL"
@@ -765,6 +744,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareInvoice",
+                "to_name": "getCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceAction",
+                "to_name": "Language",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Language.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

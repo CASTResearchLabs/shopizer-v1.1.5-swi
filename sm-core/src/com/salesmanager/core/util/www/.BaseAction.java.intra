@@ -5,6 +5,20 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getServletRequest",
+            "to_name": "request",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setServletRequest",
+            "to_name": "request",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "setErrorMessage",
             "to_name": "getServletRequest",
@@ -19,15 +33,15 @@
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "addErrorMessage",
-            "to_name": "getServletRequest",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setLocale",
+            "to_name": "locale",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "addFieldMessage",
+            "from_name": "addErrorMessage",
             "to_name": "getServletRequest",
             "calling_type": "CALL"
           },
@@ -42,36 +56,22 @@
             "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "addFieldMessage",
+            "to_name": "getServletRequest",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "addFieldMessage",
             "to_name": "getLocale",
             "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getServletContext",
-            "to_name": "servletContext",
+            "from_name": "getLocale",
+            "to_name": "locale",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setServletContext",
-            "to_name": "servletContext",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getLastUrl",
-            "to_name": "lastUrl",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setLastUrl",
-            "to_name": "lastUrl",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -90,23 +90,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getLocale",
-            "to_name": "locale",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setLocale",
-            "to_name": "locale",
+            "from_name": "setLastUrl",
+            "to_name": "lastUrl",
             "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getServletResponse",
-            "to_name": "response",
+            "from_name": "getServletContext",
+            "to_name": "servletContext",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setServletContext",
+            "to_name": "servletContext",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

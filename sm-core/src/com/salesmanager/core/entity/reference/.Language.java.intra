@@ -4,18 +4,11 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "Language",
-            "to_name": "setLanguageId",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "Language",
-            "to_name": "initialize",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCode",
+            "to_name": "code",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -23,6 +16,13 @@
             "from_name": "hashCode",
             "to_name": "getLanguageId",
             "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "hashCode",
+            "to_name": "hashCode",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -34,13 +34,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getSortOrder",
-            "to_name": "sortOrder",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "setSortOrder",
             "to_name": "sortOrder",
             "calling_type": "WRITE"
@@ -48,8 +41,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getDirectory",
-            "to_name": "directory",
+            "from_name": "getSortOrder",
+            "to_name": "sortOrder",
             "calling_type": "READ"
           },
           {
@@ -62,8 +55,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getImage",
-            "to_name": "image",
+            "from_name": "getDirectory",
+            "to_name": "directory",
             "calling_type": "READ"
           },
           {
@@ -76,8 +69,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getCode",
-            "to_name": "code",
+            "from_name": "getImage",
+            "to_name": "image",
             "calling_type": "READ"
           },
           {
@@ -90,13 +83,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getName",
-            "to_name": "name",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "setName",
             "to_name": "name",
             "calling_type": "WRITE"
@@ -104,9 +90,23 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getLanguageId",
-            "to_name": "languageId",
+            "from_name": "getName",
+            "to_name": "name",
             "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setLanguageId",
+            "to_name": "languageId",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setLanguageId",
+            "to_name": "hashCode",
+            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

@@ -15,30 +15,30 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "refundTransaction",
-                "to_name": "setErrorcode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "captureTransaction",
-                "to_name": "setErrorcode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "makeTransaction",
-                "to_name": "setErrorcode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "parseResponse",
                 "to_name": "setReason",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "parseResponse",
+                "to_name": "TransactionException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "parseResponse",
+                "to_name": "TransactionException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "postTransaction",
+                "to_name": "TransactionException",
+                "calling_type": "THROW"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -57,20 +57,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "captureTransaction",
-                "to_name": "getCoreModuleServiceProdEnv",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "makeTransaction",
-                "to_name": "getCoreModuleServiceProdEnv",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "refundTransaction",
                 "to_name": "getCoreModuleServiceProdPort",
                 "calling_type": "CALL"
@@ -78,8 +64,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "captureTransaction",
-                "to_name": "getCoreModuleServiceProdPort",
+                "from_name": "refundTransaction",
+                "to_name": "getCoreModuleServiceProdDomain",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getCoreModuleServiceProdProtocol",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "refundTransaction",
+                "to_name": "getCoreModuleServiceDevEnv",
                 "calling_type": "CALL"
               }
             ],
@@ -89,6 +89,20 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "getMerchantPaymentGwReceived",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "getMerchantPaymentGwAuthtype",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -109,67 +123,11 @@
                 "from_name": "parseResponse",
                 "to_name": "setMerchantPaymentGwTrxid",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "parseResponse",
-                "to_name": "setMerchantPaymentGwSession",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "parseResponse",
-                "to_name": "setMerchantPaymentGwSent",
-                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 17,
             "to_file": "sm-core/src/com/salesmanager/core/entity/payment/MerchantPaymentGatewayTrx.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "parseResponse",
-                "to_name": "getPaymentModuleCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "parseResponse",
-                "to_name": "getMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "refundTransaction",
-                "to_name": "getCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "parseResponse",
-                "to_name": "getCustomerId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "retreiveTransactions",
-                "to_name": "getOrderId",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 14,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/Order.java"
           },
           {
             "calls_between_elements": [
@@ -218,17 +176,45 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "parseResponse",
-                "to_name": "setExpirydate",
+                "from_name": "retreiveTransactions",
+                "to_name": "getOrderId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "parseResponse",
-                "to_name": "setCreditcard",
+                "to_name": "getPaymentModuleCode",
                 "calling_type": "CALL"
               },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getCustomerId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "getOrderId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 14,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/Order.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -246,8 +232,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "setInternalGatewayOrderId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "retreiveTransactions",
+                "to_name": "GatewayTransactionVO",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "parseResponse",
-                "to_name": "setTransactionDetails",
+                "to_name": "setExpirydate",
                 "calling_type": "CALL"
               }
             ],
@@ -257,13 +257,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "makeTransaction",
-                "to_name": "getProperties3",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -288,8 +281,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "refundTransaction",
-                "to_name": "getProperties2",
+                "from_name": "stripProperties",
+                "to_name": "setProperties1",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "stripProperties",
+                "to_name": "IntegrationProperties",
                 "calling_type": "CALL"
               }
             ],
@@ -302,8 +302,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
+                "from_name": "getConfiguration",
+                "to_name": "PAYMENT_PSIGATENAME",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
                 "from_name": "refundTransaction",
                 "to_name": "TEST_ENVIRONMENT",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "refundTransaction",
+                "to_name": "REFUND",
                 "calling_type": "READ"
               },
               {
@@ -316,22 +330,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "makeTransaction",
-                "to_name": "TEST_ENVIRONMENT",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "getConfiguration",
-                "to_name": "PAYMENT_PSIGATENAME",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "refundTransaction",
-                "to_name": "REFUND",
+                "from_name": "captureTransaction",
+                "to_name": "CAPTURE",
                 "calling_type": "READ"
               }
             ],
@@ -351,13 +351,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "parseResponse",
-                "to_name": "setCreditcardtransaction",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "retreiveTransactions",
                 "to_name": "setOrderID",
                 "calling_type": "CALL"
@@ -371,9 +364,16 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "retreiveTransactions",
+                "to_name": "SalesManagerTransactionVO",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "parseResponse",
-                "to_name": "setAmount",
+                "to_name": "setCreditcardtransaction",
                 "calling_type": "CALL"
               }
             ],
@@ -428,21 +428,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "parseResponse",
-                "to_name": "encrypt",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getConfiguration",
-                "to_name": "generatekey",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "parseResponse",
                 "to_name": "generatekey",
                 "calling_type": "CALL"
               },
@@ -451,6 +437,20 @@
                 "to_type": "Java Method",
                 "from_name": "getConfiguration",
                 "to_name": "decrypt",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "encrypt",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "parseResponse",
+                "to_name": "generatekey",
                 "calling_type": "CALL"
               },
               {
@@ -486,47 +486,19 @@
                 "to_type": "Java Class",
                 "from_name": "PsigateTransactionImpl",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "PsigateTransactionImpl",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "retreiveTransactions",
-                "to_name": "getSentData",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "retreiveTransactions",
-                "to_name": "TransactionHelper",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "PsigateTransactionImpl",
-                "to_name": "TransactionHelper",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionHelper.java"
           },
           {
             "calls_between_elements": [
@@ -555,6 +527,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "retreiveTransactions",
+                "to_name": "getSentData",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "retreiveTransactions",
+                "to_name": "TransactionHelper",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "PsigateTransactionImpl",
+                "to_name": "TransactionHelper",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/service/payment/impl/TransactionHelper.java"
           },
           {
             "calls_between_elements": [

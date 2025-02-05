@@ -5,16 +5,23 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "setEmailTemplate",
-            "to_name": "setFreemarkerTemplate",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "getMailSender",
+            "to_name": "mailSender",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getFromAddress",
-            "to_name": "fromAddress",
+            "from_name": "getFreemarkerTemplate",
+            "to_name": "freemarkerTemplate",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getConfiguration",
+            "to_name": "configuration",
             "calling_type": "READ"
           },
           {
@@ -27,15 +34,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "prepareEmailContext",
+            "from_name": "getFromAddress",
             "to_name": "fromAddress",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getFromEmail",
-            "to_name": "fromEmail",
             "calling_type": "READ"
           },
           {
@@ -48,15 +48,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "prepareEmailContext",
+            "from_name": "getFromEmail",
             "to_name": "fromEmail",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getMailSender",
-            "to_name": "mailSender",
             "calling_type": "READ"
           },
           {
@@ -69,13 +62,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getFreemarkerTemplate",
-            "to_name": "freemarkerTemplate",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "setFreemarkerTemplate",
             "to_name": "freemarkerTemplate",
             "calling_type": "WRITE"
@@ -83,15 +69,29 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getConfiguration",
+            "from_name": "setFreemarkerMailConfiguration",
             "to_name": "configuration",
-            "calling_type": "READ"
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "setEmailTemplate",
+            "to_name": "setFreemarkerTemplate",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setFreemarkerMailConfiguration",
-            "to_name": "configuration",
+            "from_name": "prepareEmailContext",
+            "to_name": "fromAddress",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "prepareEmailContext",
+            "to_name": "fromEmail",
             "calling_type": "WRITE"
           },
           {

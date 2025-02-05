@@ -42,11 +42,25 @@
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-central/src/com/salesmanager/central/PageBaseAction.java"
+            "to_file": "sm-central/src/com/salesmanager/central/PageBaseAction.java",
+            "nb_calls_between_elements": 8
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "reviewProduct",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "reviewProduct",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -64,28 +78,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "reviewProduct",
-                "to_name": "setPageTitle",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "removeReview",
                 "to_name": "setPageTitle",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "reviewProduct",
-                "to_name": "getLocale",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java"
+            "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
+            "nb_calls_between_elements": 6
           },
           {
             "calls_between_elements": [
@@ -98,17 +98,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeReview",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "reviewProduct",
                 "to_name": "CatalogService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeReview",
+                "to_name": "getService",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -122,40 +122,40 @@
                 "to_type": "Java Class",
                 "from_name": "ProductReviewAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java",
+            "nb_calls_between_elements": 6
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "removeReview",
+                "from_name": "reviewProduct",
                 "to_name": "unauthorized",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "removeReview",
+                "from_name": "reviewProduct",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "reviewProduct",
+                "from_name": "removeReview",
                 "to_name": "unauthorized",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "reviewProduct",
+                "from_name": "removeReview",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -168,8 +168,8 @@
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml"
+            "to_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml",
+            "nb_calls_between_elements": 6
           },
           {
             "calls_between_elements": [
@@ -203,8 +203,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/common/SearchCriteria.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/common/SearchCriteria.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -238,8 +238,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -266,8 +266,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/SearchReviewCriteria.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/SearchReviewCriteria.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -287,8 +287,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/SearchReviewResponse.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/SearchReviewResponse.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -308,8 +308,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/common/SearchResponse.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/common/SearchResponse.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -329,8 +329,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -350,8 +350,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -371,8 +371,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -392,8 +392,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-central/src/com/salesmanager/central/util/PropertiesHelper.java"
+            "to_file": "sm-central/src/com/salesmanager/central/util/PropertiesHelper.java",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

@@ -4,135 +4,73 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/catalog/productlist.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "updatelist",
-                "to_name": "/updatelist",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "productlist.jsp",
-                "to_name": "/updatelist",
-                "calling_type": "POST"
-              },
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "productlist",
-                "to_name": "/productlist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "productlist.jsp",
-                "to_name": "/productlist",
-                "calling_type": "POST"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-central/WebContent/catalog/productlist.jsp",
             "comment": "",
             "nb_calls_between_elements": 5
           },
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "productlist",
-                "to_name": "show",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "updatelist",
-                "to_name": "updateavailability",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class",
-                "from_name": "updatelist",
-                "to_name": "ProductListAction",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class",
-                "from_name": "productlist",
-                "to_name": "ProductListAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-central/WebContent/common/searchbynamebox.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "productlist",
-                "to_name": "/productlist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "searchbynamebox.jsp",
-                "to_name": "/productlist",
-                "calling_type": "POST"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
+            "calling_types": [
+              {
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
+              },
+              {
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
+              }
+            ],
             "from_file": "sm-central/WebContent/common/filterbyvisibilitybox.jsp",
-            "calls_between_elements": [
-              {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "productlist",
-                "to_name": "/productlist",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "filterbyvisibilitybox.jsp",
-                "to_name": "/productlist",
-                "calling_type": "POST"
-              }
-            ],
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-central/WebContent/common/filterbystatusbox.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "productlist",
-                "to_name": "/productlist",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "filterbystatusbox.jsp",
-                "to_name": "/productlist",
-                "calling_type": "POST"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-central/WebContent/common/filterbystatusbox.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

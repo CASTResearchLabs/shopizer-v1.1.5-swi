@@ -17,26 +17,26 @@
                 "to_type": "Java Class",
                 "from_name": "processTransaction",
                 "to_name": "TransactionException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CodTransactionImpl",
-                "to_name": "TransactionException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "CodTransactionImpl",
-                "to_name": "TransactionException",
-                "calling_type": "CALL"
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "processTransaction",
+                "to_name": "TransactionException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "postTransaction",
+                "to_name": "TransactionException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "initTransaction",
                 "to_name": "TransactionException",
                 "calling_type": "THROW"
               }
@@ -76,11 +76,11 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class",
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "CodTransactionImpl",
+                "from_name": "retreiveTransactions",
                 "to_name": "SalesManagerTransactionVO",
-                "calling_type": "CALL"
+                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",

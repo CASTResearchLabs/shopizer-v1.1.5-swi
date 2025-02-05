@@ -7,10 +7,24 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByModuleIds",
+                "to_name": "ModuleConfiguration",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "findByConfigurationKeyAndCountryCode",
                 "to_name": "getId",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "findByConfigurationKeyAndCountryCode",
+                "to_name": "ModuleConfiguration",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
@@ -20,23 +34,9 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class DAO",
-                "to_type": "Java Class",
-                "from_name": "ModuleConfigurationDao",
-                "to_name": "ModuleConfiguration",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "findByModuleIds",
-                "to_name": "ModuleConfiguration",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "findByConfigurationKeyAndCountryCode",
+                "from_name": "findByConfigurationModuleAndCountryCode",
                 "to_name": "ModuleConfiguration",
                 "calling_type": "USE"
               }

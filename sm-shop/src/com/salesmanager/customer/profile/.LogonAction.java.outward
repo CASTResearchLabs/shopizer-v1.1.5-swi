@@ -57,6 +57,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "generateCaptchaImage",
+                "to_name": "getServletResponse",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "resetPassword",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
@@ -64,22 +71,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "resetPassword",
+                "to_name": "setMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "registerCustomer",
                 "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayRegistration",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "authenticateCustomer",
-                "to_name": "setServletRequest",
                 "calling_type": "CALL"
               }
             ],
@@ -89,6 +89,13 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "resetPassword",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
@@ -106,22 +113,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
+                "from_name": "registerCustomer",
+                "to_name": "GENERICERROR",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
                 "from_name": "displayRegistration",
                 "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "resetPassword",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "localLogon",
-                "to_name": "error",
                 "calling_type": "CALL"
               }
             ],
@@ -140,17 +140,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "registerCustomer",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "resetPassword",
                 "to_name": "CustomerService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "registerCustomer",
+                "to_name": "getService",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -164,7 +164,7 @@
                 "to_type": "Java Class",
                 "from_name": "LogonAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -183,15 +183,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "registerCustomer",
-                "to_name": "findCustomerByUserName",
+                "from_name": "resetPassword",
+                "to_name": "resetCustomerPassword",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "resetCustomerPassword",
+                "from_name": "registerCustomer",
+                "to_name": "findCustomerByUserName",
                 "calling_type": "CALL"
               },
               {
@@ -217,36 +217,36 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "localLogon",
-                "to_name": "getReason",
-                "calling_type": "CALL"
+                "to_type": "Java Class",
+                "from_name": "getZones",
+                "to_name": "Zone",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "authenticateCustomer",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
+                "from_name": "setZones",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "zones",
+                "to_name": "Zone",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "LogonAction",
-                "to_name": "ServiceException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "LogonAction",
-                "to_name": "ServiceException",
-                "calling_type": "CALL"
+                "to_name": "Zone",
+                "calling_type": "USE"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceException.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
           },
           {
             "calls_between_elements": [
@@ -323,6 +323,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "authenticateCustomer",
+                "to_name": "logonCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "localLogon",
                 "to_name": "logon",
                 "calling_type": "CALL"
@@ -332,13 +339,6 @@
                 "to_type": "Java Method",
                 "from_name": "remoteLogon",
                 "to_name": "logon",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "authenticateCustomer",
-                "to_name": "logonCustomer",
                 "calling_type": "CALL"
               },
               {
@@ -358,35 +358,35 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "getZones",
-                "to_name": "Zone",
-                "calling_type": "USE"
+                "from_name": "authenticateCustomer",
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setZones",
-                "to_name": "Zone",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Class",
-                "from_name": "zones",
-                "to_name": "Zone",
-                "calling_type": "USE"
+                "to_type": "Java Method",
+                "from_name": "localLogon",
+                "to_name": "getReason",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "LogonAction",
-                "to_name": "Zone",
-                "calling_type": "USE"
+                "to_name": "ServiceException",
+                "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceException.java"
           },
           {
             "calls_between_elements": [
@@ -427,6 +427,34 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayRegistration",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "PropertiesUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "displayRegistration",
                 "to_name": "US_COUNTRY_ID",
@@ -456,6 +484,90 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getAllcountriesmap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getFilterdByCountryZones",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "RefCache",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "generateCaptchaImage",
+                "to_name": "getImageForSessionId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "registerCustomer",
+                "to_name": "validateResponseForSessonId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "LogonAction",
+                "to_name": "CaptchaModule",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/module/model/application/CaptchaModule.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "generateCaptchaImage",
+                "to_name": "getBean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "registerCustomer",
+                "to_name": "getBean",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "LogonAction",
+                "to_name": "SpringUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/SpringUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "displayRegistration",
                 "to_name": "getCountryByIsoCode",
                 "calling_type": "CALL"
@@ -478,34 +590,6 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/util/CountryUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "registerCustomer",
-                "to_name": "validateResponseForSessonId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "generateCaptchaImage",
-                "to_name": "getImageForSessionId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Interface",
-                "from_name": "LogonAction",
-                "to_name": "CaptchaModule",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/module/model/application/CaptchaModule.java"
           },
           {
             "calls_between_elements": [
@@ -568,111 +652,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "generateCaptchaImage",
-                "to_name": "getBean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "registerCustomer",
-                "to_name": "getBean",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "LogonAction",
-                "to_name": "SpringUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/SpringUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayRegistration",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareZones",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "LogonAction",
-                "to_name": "PropertiesUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareZones",
-                "to_name": "getAllcountriesmap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareZones",
-                "to_name": "getFilterdByCountryZones",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "LogonAction",
-                "to_name": "RefCache",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Enum",
-                "from_name": "LogonAction",
-                "to_name": "SystemUrlEntryType",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum Item",
-                "from_name": "registerCustomer",
-                "to_name": "WEB",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/SystemUrlEntryType.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "registerCustomer",
                 "to_name": "validateEmail",
                 "calling_type": "CALL"
@@ -688,6 +667,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/CustomerUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "registerCustomer",
+                "to_name": "WEB",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Enum",
+                "from_name": "LogonAction",
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/SystemUrlEntryType.java"
           },
           {
             "calls_between_elements": [

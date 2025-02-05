@@ -15,13 +15,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "showDiscount",
-                "to_name": "getSpecialDateAvailable",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveDiscount",
                 "to_name": "setStatus",
                 "calling_type": "CALL"
@@ -38,6 +31,13 @@
                 "to_type": "Java Method",
                 "from_name": "saveDiscount",
                 "to_name": "setExpiresDate",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveDiscount",
+                "to_name": "setSpecialLastModified",
                 "calling_type": "CALL"
               }
             ],
@@ -57,14 +57,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveDiscount",
-                "to_name": "addActionError",
+                "from_name": "deleteDiscount",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "showDiscount",
+                "from_name": "saveDiscount",
                 "to_name": "addActionError",
                 "calling_type": "CALL"
               },
@@ -78,7 +78,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteDiscount",
+                "from_name": "saveDiscount",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
@@ -98,20 +98,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveDiscount",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "showDiscount",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "deleteDiscount",
                 "to_name": "CatalogService",
@@ -119,10 +105,24 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveDiscount",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "saveDiscount",
                 "to_name": "CatalogService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showDiscount",
+                "to_name": "getService",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -183,15 +183,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveDiscount",
-                "to_name": "getText",
+                "from_name": "deleteDiscount",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteDiscount",
-                "to_name": "getInstance",
+                "from_name": "saveDiscount",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
@@ -218,13 +218,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "showDiscount",
-                "to_name": "getProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "deleteDiscount",
                 "to_name": "deleteSpecial",
                 "calling_type": "CALL"
@@ -234,6 +227,13 @@
                 "to_type": "Java Method",
                 "from_name": "saveDiscount",
                 "to_name": "saveOrUpdateSpecial",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showDiscount",
+                "to_name": "getProduct",
                 "calling_type": "CALL"
               },
               {
@@ -260,15 +260,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "showDiscount",
-                "to_name": "getDescriptions",
+                "from_name": "saveDiscount",
+                "to_name": "getProductId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveDiscount",
-                "to_name": "getProductId",
+                "from_name": "showDiscount",
+                "to_name": "getDescriptions",
                 "calling_type": "CALL"
               },
               {
@@ -337,62 +337,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "showDiscount",
-                "to_name": "displayFormatedAmountNoCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveDiscount",
-                "to_name": "validateCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "EditDiscountAction",
-                "to_name": "CurrencyUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "showDiscount",
-                "to_name": "getProductName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "showDiscount",
-                "to_name": "getId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "EditDiscountAction",
-                "to_name": "ProductDescription",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductDescription.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "deleteDiscount",
                 "to_name": "addMessage",
                 "calling_type": "CALL"
@@ -415,6 +359,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/util/MessageUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveDiscount",
+                "to_name": "validateCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showDiscount",
+                "to_name": "displayFormatedAmountNoCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditDiscountAction",
+                "to_name": "CurrencyUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
           },
           {
             "calls_between_elements": [
@@ -443,6 +415,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showDiscount",
+                "to_name": "getProductName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showDiscount",
+                "to_name": "getId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditDiscountAction",
+                "to_name": "ProductDescription",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductDescription.java"
           },
           {
             "calls_between_elements": [

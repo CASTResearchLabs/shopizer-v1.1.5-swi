@@ -22,13 +22,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "setContinueshoppingurl",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveCart",
                 "to_name": "getContinueshoppingurl",
                 "calling_type": "CALL"
@@ -36,8 +29,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getContinueshoppingurl",
+                "from_name": "saveCart",
+                "to_name": "setDomainName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCart",
+                "to_name": "getDomainName",
                 "calling_type": "CALL"
               }
             ],
@@ -57,29 +57,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteImage",
-                "to_name": "getServletRequest",
+                "from_name": "saveCart",
+                "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveCart",
-                "to_name": "setTechnicalMessage",
+                "to_name": "setSuccessMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCart",
+                "to_name": "getPrincipal",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCart",
+                "to_name": "getContext",
                 "calling_type": "CALL"
               }
             ],
@@ -99,6 +99,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "saveCart",
+                "to_name": "saveOrUpdateMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCart",
+                "to_name": "getMerchantUserInformation",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteFile",
                 "to_name": "getMerchantStore",
                 "calling_type": "CALL"
@@ -106,22 +120,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteImage",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getConfiguration",
+                "from_name": "deleteFile",
+                "to_name": "saveOrUpdateMerchantStore",
                 "calling_type": "CALL"
               }
             ],
@@ -140,6 +140,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveCart",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "deleteFile",
                 "to_name": "getService",
@@ -147,24 +154,17 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteFile",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "display",
                 "to_name": "getService",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteImage",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "saveCart",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -183,21 +183,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteImage",
-                "to_name": "getUsercountrycode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveCart",
-                "to_name": "getUserpostalcode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteImage",
                 "to_name": "getUserpostalcode",
                 "calling_type": "CALL"
               },
@@ -206,6 +192,20 @@
                 "to_type": "Java Method",
                 "from_name": "saveCart",
                 "to_name": "getUsercity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCart",
+                "to_name": "getUseraddress",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteImage",
+                "to_name": "getUsercountrycode",
                 "calling_type": "CALL"
               }
             ],
@@ -218,14 +218,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "deleteFile",
+                "from_name": "saveCart",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "saveCart",
+                "from_name": "deleteFile",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -267,21 +267,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "setImagePath",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "saveCart",
-                "to_name": "setImageName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
                 "to_name": "setImageName",
                 "calling_type": "CALL"
               },
@@ -290,6 +276,20 @@
                 "to_type": "Java Constructor",
                 "from_name": "saveCart",
                 "to_name": "DynamicImage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "setImagePath",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "setImageName",
                 "calling_type": "CALL"
               }
             ],
@@ -314,11 +314,11 @@
                 "calling_type": "READ"
               },
               {
-                "from_type": "Java Class Struts",
+                "from_type": "Java Method",
                 "to_type": "Java Class",
-                "from_name": "CartPropertiesAction",
+                "from_name": "saveCart",
                 "to_name": "FileException",
-                "calling_type": "CALL"
+                "calling_type": "CATCH"
               },
               {
                 "from_type": "Java Class Struts",
@@ -328,9 +328,9 @@
                 "calling_type": "READ"
               },
               {
-                "from_type": "Java Method",
+                "from_type": "Java Class Struts",
                 "to_type": "Java Class",
-                "from_name": "saveCart",
+                "from_name": "CartPropertiesAction",
                 "to_name": "FileException",
                 "calling_type": "CATCH"
               }
@@ -351,15 +351,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getText",
+                "from_name": "saveCart",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveCart",
-                "to_name": "getInstance",
+                "from_name": "display",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
@@ -380,48 +380,6 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteFile",
-                "to_name": "getBrandingFilePath",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getBrandingFilePath",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteImage",
-                "to_name": "getBrandingFilePath",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getDefaultCataloguePageUrl",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "CartPropertiesAction",
-                "to_name": "FileUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java"
           },
           {
             "calls_between_elements": [
@@ -477,15 +435,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "deleteImage",
-                "to_name": "LB_WEIGHT_UNIT",
+                "from_name": "saveCart",
+                "to_name": "INCH_SIZE_UNIT",
                 "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
-                "from_name": "saveCart",
-                "to_name": "INCH_SIZE_UNIT",
+                "from_name": "deleteImage",
+                "to_name": "LB_WEIGHT_UNIT",
                 "calling_type": "READ"
               },
               {
@@ -506,6 +464,48 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-core/src/com/salesmanager/core/constants/Constants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteFile",
+                "to_name": "getBrandingFilePath",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getBrandingFilePath",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getDefaultCataloguePageUrl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteImage",
+                "to_name": "getBrandingFilePath",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CartPropertiesAction",
+                "to_name": "FileUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java"
           },
           {
             "calls_between_elements": [
@@ -576,34 +576,6 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/module/model/application/FileModule.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteImage",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Method",
-                "from_name": "conf",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "CartPropertiesAction",
-                "to_name": "PropertiesUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
           },
           {
             "calls_between_elements": [
@@ -693,22 +665,50 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "display",
-                "to_name": "SITEMAP",
-                "calling_type": "READ"
+                "to_type": "Java Method",
+                "from_name": "deleteImage",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "conf",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "CartPropertiesAction",
-                "to_name": "ConfigurationConstants",
-                "calling_type": "READ"
+                "to_name": "PropertiesUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getMerchantConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CartPropertiesAction",
+                "to_name": "ConfigurationResponse",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/ConfigurationConstants.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
           },
           {
             "calls_between_elements": [
@@ -735,22 +735,22 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
+                "to_type": "Java Field",
                 "from_name": "display",
-                "to_name": "getMerchantConfiguration",
-                "calling_type": "CALL"
+                "to_name": "SITEMAP",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "CartPropertiesAction",
-                "to_name": "ConfigurationResponse",
-                "calling_type": "CALL"
+                "to_name": "ConfigurationConstants",
+                "calling_type": "READ"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
+            "to_file": "sm-core/src/com/salesmanager/core/constants/ConfigurationConstants.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

@@ -4,44 +4,28 @@
       {
         "files": [
           {
-            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "comitInvoice",
-                "to_name": "comitOrder",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "comitInvoice",
-                "to_name": "ComitInvoiceAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-shop/WebContent/WEB-INF/classes/struts-checkout.xml",
             "comment": "",
             "nb_calls_between_elements": 2
           },
           {
-            "from_file": "sm-shop/WebContent/checkout/components/invoiceConfirmation.jsp",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "JavaScript HttpRequest Post Service",
-                "to_type": "Struts Operation",
-                "from_name": "comitInvoice",
-                "to_name": "/comitInvoice",
-                "calling_type": "CALL"
+                "calling_type": "POST",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "JSP Pages",
-                "to_type": "Struts Operation",
-                "from_name": "invoiceConfirmation.jsp",
-                "to_name": "/comitInvoice",
-                "calling_type": "POST"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-shop/WebContent/checkout/components/invoiceConfirmation.jsp",
             "comment": "",
             "nb_calls_between_elements": 2
           }

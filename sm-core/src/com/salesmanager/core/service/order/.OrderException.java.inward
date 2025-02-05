@@ -4,156 +4,74 @@
       {
         "files": [
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "sendOrderProblemEmail",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
+                "calling_type": "THROW",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "sendResetDownloadCountrsEmail",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "sendOrderConfirmationEmail",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
+                "calling_type": "THROW",
+                "nb_calls_between_elements": 2
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "resetOrderDownloadCounters",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "OrderService",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
+                "calling_type": "RAISE",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/service/order/OrderService.java",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 22
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessOrder.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "execute",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProcessOrder",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
+                "calling_type": "THROW",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "execute",
-                "to_name": "OrderException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ProcessOrder",
-                "to_name": "OrderException",
-                "calling_type": "THROW"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "execute",
-                "to_name": "OrderException",
-                "calling_type": "RAISE"
+                "calling_type": "RAISE",
+                "nb_calls_between_elements": 1
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/ProcessOrder.java",
+            "comment": "calling_types list is truncated to first 5 items",
             "nb_calls_between_elements": 6
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/LocalFileImpl.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getFileInputStream",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "LocalFileImpl",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getFileInputStream",
-                "to_name": "OrderException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "LocalFileImpl",
-                "to_name": "OrderException",
-                "calling_type": "RAISE"
+                "calling_type": "RAISE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/SaveOrder.java",
             "comment": "",
             "nb_calls_between_elements": 4
           },
           {
-            "from_file": "sm-core/src/com/salesmanager/core/service/workflow/order/SaveOrder.java",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "execute",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 1
               },
               {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SaveOrder",
-                "to_name": "OrderException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "execute",
-                "to_name": "OrderException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "SaveOrder",
-                "to_name": "OrderException",
-                "calling_type": "RAISE"
+                "calling_type": "RAISE",
+                "nb_calls_between_elements": 1
               }
             ],
+            "from_file": "sm-core/src/com/salesmanager/core/module/impl/application/files/LocalFileImpl.java",
             "comment": "",
             "nb_calls_between_elements": 4
           }

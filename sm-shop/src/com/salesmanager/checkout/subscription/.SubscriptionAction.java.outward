@@ -8,36 +8,36 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "setCustomerStreetAddress",
+                "from_name": "prepareZones",
+                "to_name": "setLocale",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "setCustomerPostalCode",
+                "from_name": "prepareZones",
+                "to_name": "getBillingState",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "setCustomerCity",
+                "from_name": "prepareZones",
+                "to_name": "setCustomerBillingCountryId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "setCustomerLang",
+                "from_name": "prepareZones",
+                "to_name": "getCustomerBillingCountryId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "setCustomerBillingCountryName",
+                "to_type": "Java Constructor",
+                "from_name": "prepareZones",
+                "to_name": "Customer",
                 "calling_type": "CALL"
               }
             ],
@@ -57,6 +57,20 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "validateAddSubscription",
+                "to_name": "getProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddSubscription",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "prepareZones",
                 "to_name": "getCountryId",
                 "calling_type": "CALL"
@@ -64,22 +78,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "setReturnUrl",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "getReturnUrl",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "getQty",
+                "from_name": "prepareZones",
+                "to_name": "getLang",
                 "calling_type": "CALL"
               }
             ],
@@ -92,45 +92,10 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "subscribe",
-                "to_name": "setPaymentMethod",
+                "from_name": "validateAddSubscription",
+                "to_name": "getLocale",
                 "calling_type": "CALL"
               },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "setOrderTotals",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "addOrderProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "subscribe",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "setMerchantStore",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 13,
-            "to_file": "sm-core/src/com/salesmanager/core/util/www/SessionUtil.java"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -148,21 +113,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "addItem",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "subscribe",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "preparePage",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
@@ -176,15 +134,50 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateAddSubscription",
-                "to_name": "getDefaultLang",
+                "from_name": "displaySubscriptionForm",
+                "to_name": "getOrder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "setCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getCustomer",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "addItem",
-                "to_name": "getContinueshoppingurl",
+                "to_name": "setOrderTotals",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "addOrderProduct",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 13,
+            "to_file": "sm-core/src/com/salesmanager/core/util/www/SessionUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddSubscription",
+                "to_name": "getDefaultLang",
                 "calling_type": "CALL"
               },
               {
@@ -197,15 +190,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "getCurrency",
+                "from_name": "validateAddSubscription",
+                "to_name": "getCountry",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "validateAddSubscription",
-                "to_name": "getCountry",
+                "to_name": "getStorename",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "getContinueshoppingurl",
                 "calling_type": "CALL"
               }
             ],
@@ -224,20 +224,6 @@
               },
               {
                 "from_type": "Java Field",
-                "to_type": "Java Method",
-                "from_name": "mservice",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Method",
-                "from_name": "cservice",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Field",
                 "to_type": "Java Field",
                 "from_name": "oservice",
                 "to_name": "OrderService",
@@ -245,10 +231,24 @@
               },
               {
                 "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "mservice",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Field",
                 "to_type": "Java Field",
-                "from_name": "cservice",
-                "to_name": "CatalogService",
+                "from_name": "mservice",
+                "to_name": "MerchantService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "cservice",
+                "to_name": "getService",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -302,17 +302,87 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "getDescriptions",
+                "from_name": "addItem",
+                "to_name": "getAllcountriesmap",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCustomer",
+                "to_name": "getAllZonesmap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCustomer",
+                "to_name": "getCountriesMap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePage",
+                "to_name": "getSupportedCreditCards",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "preparePage",
+                "to_name": "RefCache",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setZonesByCountry",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getZonesByCountry",
+                "to_name": "Zone",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCustomer",
+                "to_name": "getZoneName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Class",
+                "from_name": "zonesByCountry",
+                "to_name": "Zone",
+                "calling_type": "USE"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "SubscriptionAction",
-                "to_name": "Country",
-                "calling_type": "CALL"
-              },
+                "to_name": "Zone",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
+          },
+          {
+            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -328,9 +398,23 @@
                 "calling_type": "USE"
               },
               {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCustomer",
+                "to_name": "getDescriptions",
+                "calling_type": "CALL"
+              },
+              {
                 "from_type": "Java Field",
                 "to_type": "Java Class",
                 "from_name": "countries",
+                "to_name": "Country",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
                 "to_name": "Country",
                 "calling_type": "USE"
               }
@@ -386,84 +470,112 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "preparePage",
-                "to_name": "getSupportedCreditCards",
+                "from_name": "validateAddSubscription",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "getAllZonesmap",
+                "from_name": "validateAddSubscription",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "getCountriesMap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "getAllcountriesmap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "preparePage",
-                "to_name": "RefCache",
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "SubscriptionAction",
+                "to_name": "LabelUtil",
                 "calling_type": "CALL"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddSubscription",
+                "to_name": "OUT_OF_STOCK_PRODUCT_QUANTITY",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddSubscription",
+                "to_name": "LOW_STOCK_PRODUCT_QUANTITY",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddSubscription",
+                "to_name": "PRODUCT_ID_PARAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "validateAddSubscription",
+                "to_name": "MERCHANT_ID_PARAM",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Interface",
+                "from_name": "SubscriptionAction",
+                "to_name": "Constants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-shop/src/com/salesmanager/checkout/web/Constants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "addItem",
+                "to_name": "OrderProductAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "getZoneName",
+                "from_name": "addItem",
+                "to_name": "setProductOptionValueId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "addItem",
+                "to_name": "OrderProductAttribute",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "SubscriptionAction",
-                "to_name": "Zone",
+                "to_name": "OrderProductAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "OrderProductAttribute",
                 "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "setZonesByCountry",
-                "to_name": "Zone",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "getZonesByCountry",
-                "to_name": "Zone",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Class",
-                "from_name": "zonesByCountry",
-                "to_name": "Zone",
-                "calling_type": "USE"
               }
             ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderProductAttribute.java"
           },
           {
             "calls_between_elements": [
@@ -512,112 +624,35 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateAddSubscription",
-                "to_name": "getText",
+                "from_name": "addItem",
+                "to_name": "addAttributesToProduct",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateAddSubscription",
-                "to_name": "getInstance",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "SubscriptionAction",
-                "to_name": "LabelUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "addItem",
-                "to_name": "setProductOptionValueId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "addItem",
-                "to_name": "OrderProductAttribute",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SubscriptionAction",
-                "to_name": "OrderProductAttribute",
+                "to_name": "createOrderProduct",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "addItem",
-                "to_name": "OrderProductAttribute",
-                "calling_type": "USE"
+                "to_name": "CheckoutUtil",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "SubscriptionAction",
-                "to_name": "OrderProductAttribute",
-                "calling_type": "USE"
+                "to_name": "CheckoutUtil",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/OrderProductAttribute.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "validateAddSubscription",
-                "to_name": "OUT_OF_STOCK_PRODUCT_QUANTITY",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "validateAddSubscription",
-                "to_name": "LOW_STOCK_PRODUCT_QUANTITY",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "validateAddSubscription",
-                "to_name": "PRODUCT_ID_PARAM",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "validateAddSubscription",
-                "to_name": "MERCHANT_ID_PARAM",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Interface",
-                "from_name": "SubscriptionAction",
-                "to_name": "Constants",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-shop/src/com/salesmanager/checkout/web/Constants.java"
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/util/CheckoutUtil.java"
           },
           {
             "calls_between_elements": [
@@ -629,13 +664,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SubscriptionAction",
-                "to_name": "MerchantUserInformation",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "validateAddSubscription",
@@ -648,6 +676,13 @@
                 "from_name": "SubscriptionAction",
                 "to_name": "MerchantUserInformation",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "MerchantUserInformation",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -688,237 +723,6 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "addAttributesToProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "createOrderProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "addItem",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SubscriptionAction",
-                "to_name": "CheckoutUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CheckoutUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareZones",
-                "to_name": "getZonesByCountry",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareZones",
-                "to_name": "getCountries",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SubscriptionAction",
-                "to_name": "RefUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-shop/src/com/salesmanager/checkout/util/RefUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "subscribe",
-                "to_name": "isPaymentModuleCreditCardType",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "subscribe",
-                "to_name": "PaymentUtil",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SubscriptionAction",
-                "to_name": "PaymentUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PaymentUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "getLocaleFromStoreEntity",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareZones",
-                "to_name": "getDefaultLocale",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "SubscriptionAction",
-                "to_name": "LocaleUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "getProductAttributeByOptionValueAndProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateAddSubscription",
-                "to_name": "getProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SubscriptionAction",
-                "to_name": "CatalogService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "getCountryName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateCustomer",
-                "to_name": "getId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SubscriptionAction",
-                "to_name": "CountryDescription",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/CountryDescription.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "subscribe",
-                "to_name": "setCreditCard",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "subscribe",
-                "to_name": "validateCreditCard",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
-                "from_name": "SubscriptionAction",
-                "to_name": "CheckoutBaseAction",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "getOptionValueId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "addItem",
-                "to_name": "getProductId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SubscriptionAction",
-                "to_name": "ProductAttribute",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductAttribute.java"
           },
           {
             "calls_between_elements": [
@@ -975,6 +779,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/service/common/CommonService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddSubscription",
+                "to_name": "getProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "getProductAttributeByOptionValueAndProduct",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "CatalogService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
           },
           {
             "calls_between_elements": [
@@ -1066,49 +898,42 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "validateCustomer",
-                "to_name": "validateEmail",
+                "to_name": "getCountryName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateCustomer",
+                "to_name": "getId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "SubscriptionAction",
-                "to_name": "CustomerUtil",
+                "to_name": "CountryDescription",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CustomerUtil.java"
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/CountryDescription.java"
           },
           {
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateAddSubscription",
-                "to_name": "getLanguageId",
+                "from_name": "subscribe",
+                "to_name": "isPaymentModuleCreditCardType",
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "SubscriptionAction",
-                "to_name": "ProductDescriptionId",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductDescriptionId.java"
-          },
-          {
-            "calls_between_elements": [
-              {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "preparePage",
-                "to_name": "getPaymentMethods",
+                "to_type": "Java Class",
+                "from_name": "subscribe",
+                "to_name": "PaymentUtil",
                 "calling_type": "CALL"
               },
               {
@@ -1120,8 +945,120 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-shop/src/com/salesmanager/checkout/util/PaymentUtil.java"
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/PaymentUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "subscribe",
+                "to_name": "setCreditCard",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "subscribe",
+                "to_name": "validateCreditCard",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "SubscriptionAction",
+                "to_name": "CheckoutBaseAction",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getZonesByCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getCountries",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "RefUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-shop/src/com/salesmanager/checkout/util/RefUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareZones",
+                "to_name": "getDefaultLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "getLocaleFromStoreEntity",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class Struts",
+                "from_name": "SubscriptionAction",
+                "to_name": "LocaleUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/LocaleUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "getOptionValueId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addItem",
+                "to_name": "getProductId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "ProductAttribute",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductAttribute.java"
           },
           {
             "calls_between_elements": [
@@ -1191,6 +1128,27 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "validateCustomer",
+                "to_name": "validateEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "CustomerUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/CustomerUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "subscribe",
                 "to_name": "getPaymentModuleName",
                 "calling_type": "CALL"
@@ -1206,6 +1164,48 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/payment/PaymentMethod.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "preparePage",
+                "to_name": "getPaymentMethods",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "PaymentUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-shop/src/com/salesmanager/checkout/util/PaymentUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddSubscription",
+                "to_name": "getLanguageId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "SubscriptionAction",
+                "to_name": "ProductDescriptionId",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductDescriptionId.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

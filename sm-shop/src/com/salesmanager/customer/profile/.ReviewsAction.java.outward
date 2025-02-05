@@ -22,15 +22,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayReviews",
-                "to_name": "setPageStartNumber",
+                "from_name": "reviewsQuery",
+                "to_name": "setListingCount",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "reviewsQuery",
-                "to_name": "setListingCount",
+                "from_name": "displayReviews",
+                "to_name": "setPageStartNumber",
                 "calling_type": "CALL"
               },
               {
@@ -50,8 +50,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "reviewsQuery",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "getCriteria",
                 "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCriteria",
+                "to_name": "getLocale",
                 "calling_type": "CALL"
               },
               {
@@ -66,20 +80,6 @@
                 "to_type": "Java Method",
                 "from_name": "removeReview",
                 "to_name": "setTechnicalMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeReview",
-                "to_name": "setMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "reviewsQuery",
-                "to_name": "getLocale",
                 "calling_type": "CALL"
               }
             ],
@@ -98,17 +98,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "removeReview",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "reviewsQuery",
                 "to_name": "CatalogService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "removeReview",
+                "to_name": "getService",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -122,7 +122,7 @@
                 "to_type": "Java Class",
                 "from_name": "ReviewsAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -134,14 +134,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "removeReview",
+                "from_name": "displayReviews",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "displayReviews",
+                "from_name": "removeReview",
                 "to_name": "success",
                 "calling_type": "CALL"
               },

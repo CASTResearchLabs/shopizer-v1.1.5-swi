@@ -4,25 +4,11 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Java Class",
-            "to_type": "Java Method",
-            "from_name": "TaxRateTaxTemplate",
-            "to_name": "getLastModified",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getDescriptions",
-            "to_name": "descriptions",
+            "from_name": "getTaxClassId",
+            "to_name": "taxClassId",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setDescriptions",
-            "to_name": "descriptions",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -34,8 +20,15 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setZoneToGeoZone",
-            "to_name": "zoneToGeoZone",
+            "from_name": "setTaxClassId",
+            "to_name": "taxClassId",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setPiggyback",
+            "to_name": "piggyback",
             "calling_type": "WRITE"
           },
           {
@@ -48,8 +41,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setPiggyback",
-            "to_name": "piggyback",
+            "from_name": "setDateAdded",
+            "to_name": "dateAdded",
             "calling_type": "WRITE"
           },
           {
@@ -62,15 +55,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setDateAdded",
-            "to_name": "dateAdded",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "TaxRateTaxTemplate",
-            "to_name": "dateAdded",
+            "from_name": "setLastModified",
+            "to_name": "lastModified",
             "calling_type": "WRITE"
           },
           {
@@ -83,15 +69,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setLastModified",
-            "to_name": "lastModified",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "TaxRateTaxTemplate",
-            "to_name": "lastModified",
+            "from_name": "setTaxRate",
+            "to_name": "taxRate",
             "calling_type": "WRITE"
           },
           {
@@ -104,9 +83,30 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setTaxRate",
-            "to_name": "taxRate",
+            "from_name": "setTaxPriority",
+            "to_name": "taxPriority",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getTaxPriority",
+            "to_name": "taxPriority",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setTaxZoneId",
+            "to_name": "taxZoneId",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getTaxZoneId",
+            "to_name": "taxZoneId",
+            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

@@ -4,11 +4,11 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/summary",
-            "to_name": "displayOrderSummaryAction",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setOrderHistory",
+            "to_name": "orderHistory",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -20,8 +20,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setOrderHistory",
-            "to_name": "orderHistory",
+            "from_name": "setOrder",
+            "to_name": "order",
             "calling_type": "WRITE"
           },
           {
@@ -41,16 +41,16 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setOrder",
+            "from_name": "displayOrderSummaryAction",
             "to_name": "order",
             "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "displayOrderSummaryAction",
-            "to_name": "order",
-            "calling_type": "WRITE"
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/summary",
+            "to_name": "displayOrderSummaryAction",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Struts Operation",

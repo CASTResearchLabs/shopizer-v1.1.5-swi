@@ -42,8 +42,8 @@
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 50,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/customer/Customer.java",
+            "nb_calls_between_elements": 50
           },
           {
             "calls_between_elements": [
@@ -64,45 +64,31 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "getServletRequest",
+                "from_name": "createCustomer",
+                "to_name": "setErrorMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareCustomerDetails",
-                "to_name": "getServletRequest",
+                "from_name": "createCustomer",
+                "to_name": "setAuthorizationMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayCustomerCreate",
-                "to_name": "getServletRequest",
+                "from_name": "createCustomer",
+                "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 26,
-            "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java"
+            "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
+            "nb_calls_between_elements": 26
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "resetPassword",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "resetPassword",
-                "to_name": "error",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
@@ -120,14 +106,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "displayCustomerCreate",
+                "from_name": "createCustomer",
+                "to_name": "AUTHORIZATIONEXCEPTION",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "resetPassword",
                 "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "resetPassword",
+                "to_name": "error",
                 "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 16,
-            "to_file": "sm-central/WebContent/WEB-INF/classes/struts-customer.xml"
+            "to_file": "sm-central/WebContent/WEB-INF/classes/struts-customer.xml",
+            "nb_calls_between_elements": 16
           },
           {
             "calls_between_elements": [
@@ -135,27 +135,6 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "createCustomer",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareCustomerDetails",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displaySelectCompany",
                 "to_name": "getService",
                 "calling_type": "CALL"
               },
@@ -165,14 +144,56 @@
                 "from_name": "createCustomer",
                 "to_name": "CustomerService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "resetPassword",
+                "to_name": "CustomerService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareCustomerDetails",
+                "to_name": "getService",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 10,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java",
+            "nb_calls_between_elements": 10
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "createCustomer",
+                "to_name": "AuthorizationException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "resetPassword",
+                "to_name": "AuthorizationException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "displayCustomerDetails",
+                "to_name": "AuthorizationException",
+                "calling_type": "CATCH"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
@@ -186,116 +207,11 @@
                 "from_name": "prepareCustomerDetails",
                 "to_name": "AuthorizationException",
                 "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "CustomerDetailsAction",
-                "to_name": "AuthorizationException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "createCustomer",
-                "to_name": "AuthorizationException",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "resetPassword",
-                "to_name": "AuthorizationException",
-                "calling_type": "CATCH"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 8,
-            "to_file": "sm-central/src/com/salesmanager/central/AuthorizationException.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "findCustomerByUserName",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "resetCustomerPassword",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "saveOrUpdateCustomer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "getCustomer",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareCustomerDetails",
-                "to_name": "getCustomer",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 7,
-            "to_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "setCountry",
-                "to_name": "getCountryid",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayCustomerCreate",
-                "to_name": "getCountryid",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "createCustomer",
-                "to_name": "getMerchantid",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareCustomerDetails",
-                "to_name": "getMerchantid",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayCustomerCreate",
-                "to_name": "getMerchantid",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 7,
-            "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
+            "to_file": "sm-central/src/com/salesmanager/central/AuthorizationException.java",
+            "nb_calls_between_elements": 8
           },
           {
             "calls_between_elements": [
@@ -336,8 +252,92 @@
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 7,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Zone.java",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCustomer",
+                "to_name": "findCustomerByUserName",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCustomer",
+                "to_name": "saveOrUpdateCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCustomer",
+                "to_name": "getCustomer",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword",
+                "to_name": "resetCustomerPassword",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareCustomerDetails",
+                "to_name": "getCustomer",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "to_file": "sm-core/src/com/salesmanager/core/service/customer/CustomerService.java",
+            "nb_calls_between_elements": 7
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "createCustomer",
+                "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setCountry",
+                "to_name": "getCountryid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepareCustomerDetails",
+                "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayCustomerCreate",
+                "to_name": "getCountryid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "displayCustomerCreate",
+                "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java",
+            "nb_calls_between_elements": 7
           },
           {
             "calls_between_elements": [
@@ -378,8 +378,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
+            "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java",
+            "nb_calls_between_elements": 5
           },
           {
             "calls_between_elements": [
@@ -413,8 +413,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Country.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Country.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -441,8 +441,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/LabelUtil.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -469,92 +469,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Enum",
-                "from_name": "CustomerDetailsAction",
-                "to_name": "SystemUrlEntryType",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Enum Item",
-                "from_name": "createCustomer",
-                "to_name": "WEB",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/SystemUrlEntryType.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "setCountry",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "CustomerDetailsAction",
-                "to_name": "PropertiesUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "setCountry",
-                "to_name": "getLanguageNumberCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "CustomerDetailsAction",
-                "to_name": "LanguageUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "resetPassword",
-                "to_name": "addMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "CustomerDetailsAction",
-                "to_name": "MessageUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/MessageUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -574,8 +490,92 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/Constants.java"
+            "to_file": "sm-core/src/com/salesmanager/core/constants/Constants.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Enum Item",
+                "from_name": "createCustomer",
+                "to_name": "WEB",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Enum",
+                "from_name": "CustomerDetailsAction",
+                "to_name": "SystemUrlEntryType",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/SystemUrlEntryType.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "resetPassword",
+                "to_name": "addMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CustomerDetailsAction",
+                "to_name": "MessageUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "sm-core/src/com/salesmanager/core/util/MessageUtil.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setCountry",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CustomerDetailsAction",
+                "to_name": "PropertiesUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "setCountry",
+                "to_name": "getLanguageNumberCode",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "CustomerDetailsAction",
+                "to_name": "LanguageUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

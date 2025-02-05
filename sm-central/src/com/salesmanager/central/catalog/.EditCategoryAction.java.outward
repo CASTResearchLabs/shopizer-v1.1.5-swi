@@ -8,13 +8,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveCategory",
-                "to_name": "addFieldError",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "showEditCategory",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
@@ -22,21 +15,28 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "showEditCategory",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showEditCategory",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "showEditCategory",
+                "to_name": "getContext",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteCategory",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveCategory",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
@@ -57,13 +57,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveCategory",
-                "to_name": "getParentId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "showEditCategory",
                 "to_name": "getCategoryId",
                 "calling_type": "CALL"
@@ -71,15 +64,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteCategory",
-                "to_name": "getCategoryId",
+                "from_name": "showEditCategory",
+                "to_name": "getName",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveCategory",
-                "to_name": "getCategoryId",
+                "from_name": "showEditCategory",
+                "to_name": "setParentId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "showEditCategory",
+                "to_name": "Category",
                 "calling_type": "CALL"
               }
             ],
@@ -113,15 +113,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getCategoryName",
+                "from_name": "showEditCategory",
+                "to_name": "getMetatagDescription",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "showEditCategory",
-                "to_name": "getMetatagDescription",
+                "to_name": "getSeUrl",
                 "calling_type": "CALL"
               }
             ],
@@ -131,13 +131,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "saveCategory",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
@@ -163,6 +156,13 @@
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
                 "from_name": "saveCategory",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "saveCategory",
                 "to_name": "input",
                 "calling_type": "CALL"
               }
@@ -182,6 +182,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "showEditCategory",
+                "to_name": "CatalogService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "deleteCategory",
                 "to_name": "getService",
@@ -189,24 +196,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "deleteCategory",
+                "to_name": "CatalogService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
                 "from_name": "saveCategory",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getService",
-                "calling_type": "CALL"
+                "to_name": "CatalogService",
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -218,21 +218,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteCategory",
-                "to_name": "deleteCategory",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "showEditCategory",
-                "to_name": "getCategoriesByLang",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "saveCategory",
                 "to_name": "getCategoriesByLang",
                 "calling_type": "CALL"
               },
@@ -246,8 +232,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getSubCategoriesByCategoryAndLang",
+                "from_name": "showEditCategory",
+                "to_name": "getCategory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteCategory",
+                "to_name": "deleteCategory",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCategory",
+                "to_name": "getCategoriesByLang",
                 "calling_type": "CALL"
               }
             ],
@@ -267,6 +267,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "showEditCategory",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "deleteCategory",
                 "to_name": "getText",
                 "calling_type": "CALL"
@@ -274,22 +281,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "deleteCategory",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "saveCategory",
                 "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "showEditCategory",
-                "to_name": "getInstance",
                 "calling_type": "CALL"
               }
             ],
@@ -302,22 +302,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveCategory",
-                "to_name": "getLang",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getLang",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "showEditCategory",
                 "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "saveCategory",
+                "to_name": "getLang",
                 "calling_type": "CALL"
               },
               {
@@ -332,6 +325,13 @@
                 "to_type": "Java Method",
                 "from_name": "prepare",
                 "to_name": "getMerchantid",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getLang",
                 "calling_type": "CALL"
               }
             ],
@@ -343,48 +343,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "display",
-                "to_name": "CATEGORIES",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "MySQL Table",
-                "from_name": "EditCategoryAction",
-                "to_name": "CATEGORIES",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "prepare",
-                "to_name": "LANGUAGES",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "MySQL Table",
-                "from_name": "EditCategoryAction",
-                "to_name": "LANGUAGES",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "display",
-                "to_name": "PRODUCTS",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "showEditCategory",
                 "to_name": "addErrorMessage",
@@ -400,6 +358,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "deleteCategory",
+                "to_name": "addMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "saveCategory",
                 "to_name": "addErrorMessage",
                 "calling_type": "CALL"
@@ -409,13 +374,6 @@
                 "to_type": "Java Method",
                 "from_name": "prepare",
                 "to_name": "addErrorMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "deleteCategory",
-                "to_name": "addMessage",
                 "calling_type": "CALL"
               }
             ],
@@ -428,8 +386,22 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Field",
+                "from_name": "deleteCategory",
+                "to_name": "merchant",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
                 "from_name": "saveCategory",
                 "to_name": "context",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "saveCategory",
+                "to_name": "merchant",
                 "calling_type": "READ"
               },
               {
@@ -445,25 +417,53 @@
                 "from_name": "display",
                 "to_name": "context",
                 "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "deleteCategory",
-                "to_name": "merchant",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "saveCategory",
-                "to_name": "merchant",
-                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 6,
             "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "prepare",
+                "to_name": "LANGUAGES",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "display",
+                "to_name": "CATEGORIES",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "display",
+                "to_name": "PRODUCTS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "MySQL Table",
+                "from_name": "EditCategoryAction",
+                "to_name": "CATEGORIES",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "MySQL Table",
+                "from_name": "EditCategoryAction",
+                "to_name": "LANGUAGES",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "calls_between_elements list is truncated to first 5 items",
+            "nb_calls_between_elements": 6,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [
@@ -505,50 +505,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "deleteCategory",
-                "to_name": "getReason",
+                "from_name": "showEditCategory",
+                "to_name": "getLanguageId",
                 "calling_type": "CALL"
               },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "EditCategoryAction",
-                "to_name": "CatalogException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "deleteCategory",
-                "to_name": "CatalogException",
-                "calling_type": "CATCH"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "EditCategoryAction",
-                "to_name": "CatalogException",
-                "calling_type": "CATCH"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogException.java"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "saveCategory",
                 "to_name": "setLanguageId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "showEditCategory",
-                "to_name": "getLanguageId",
                 "calling_type": "CALL"
               },
               {
@@ -569,6 +534,41 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/CategoryDescriptionId.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "deleteCategory",
+                "to_name": "getReason",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "deleteCategory",
+                "to_name": "CatalogException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditCategoryAction",
+                "to_name": "CatalogException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditCategoryAction",
+                "to_name": "CatalogException",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogException.java"
           },
           {
             "calls_between_elements": [
@@ -624,21 +624,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getMasterCategoryId",
+                "from_name": "saveCategory",
+                "to_name": "getRootCategoryforCategory",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "EditCategoryAction",
-                "to_name": "Product",
+                "to_name": "CategoryUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/CategoryUtil.java"
           },
           {
             "calls_between_elements": [
@@ -687,21 +687,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "saveCategory",
-                "to_name": "getRootCategoryforCategory",
+                "from_name": "display",
+                "to_name": "getMasterCategoryId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "EditCategoryAction",
-                "to_name": "CategoryUtil",
+                "to_name": "Product",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CategoryUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

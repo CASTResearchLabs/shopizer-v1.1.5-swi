@@ -4,18 +4,25 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "OrderProductDownload",
-            "to_name": "setOrderProductDownloadId",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setProductName",
+            "to_name": "productName",
+            "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "OrderProductDownload",
-            "to_name": "initialize",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOrderProductFilename",
+            "to_name": "orderProductFilename",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOrderProductId",
+            "to_name": "orderProductId",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -27,8 +34,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setProductName",
-            "to_name": "productName",
+            "from_name": "setFileId",
+            "to_name": "fileId",
             "calling_type": "WRITE"
           },
           {
@@ -48,44 +55,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "hashCode",
-            "to_name": "fileId",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setFileId",
-            "to_name": "fileId",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "equals",
             "to_name": "downloadCount",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "hashCode",
-            "to_name": "downloadCount",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getDownloadCount",
-            "to_name": "downloadCount",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setDownloadCount",
-            "to_name": "downloadCount",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -97,15 +69,43 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "hashCode",
-            "to_name": "downloadMaxdays",
+            "from_name": "equals",
+            "to_name": "orderProductFilename",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getDownloadMaxdays",
-            "to_name": "downloadMaxdays",
+            "from_name": "equals",
+            "to_name": "orderProductId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "equals",
+            "to_name": "orderId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "equals",
+            "to_name": "orderProductDownloadId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "hashCode",
+            "to_name": "fileId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "hashCode",
+            "to_name": "downloadCount",
             "calling_type": "READ"
           }
         ],

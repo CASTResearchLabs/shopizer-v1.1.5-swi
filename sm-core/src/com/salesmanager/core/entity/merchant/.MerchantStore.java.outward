@@ -50,20 +50,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getZoneName",
-                "to_name": "getAllZonesmap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCountryName",
-                "to_name": "getAllcountriesmap",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getGetSupportedLanguages",
                 "to_name": "getLanguageswithcode",
                 "calling_type": "CALL"
@@ -73,6 +59,20 @@
                 "to_type": "Java Method",
                 "from_name": "getGetSupportedLanguages",
                 "to_name": "getLanguageswithindex",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getZoneName",
+                "to_name": "getAllZonesmap",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCountryName",
+                "to_name": "getAllcountriesmap",
                 "calling_type": "CALL"
               },
               {
@@ -86,6 +86,34 @@
             "comment": "",
             "nb_calls_between_elements": 5,
             "to_file": "sm-core/src/com/salesmanager/core/service/cache/RefCache.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getStoreBannerPath",
+                "to_name": "getStoreLogoPath",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getLogoPath",
+                "to_name": "getStoreLogoPath",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "MerchantStore",
+                "to_name": "FileUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java"
           },
           {
             "calls_between_elements": [
@@ -148,49 +176,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getStoreBannerPath",
-                "to_name": "getStoreLogoPath",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getLogoPath",
-                "to_name": "getStoreLogoPath",
+                "from_name": "getGetSupportedLanguages",
+                "to_name": "getLanguageId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "MerchantStore",
-                "to_name": "FileUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Method",
-                "from_name": "conf",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "MerchantStore",
-                "to_name": "PropertiesUtil",
+                "to_name": "Language",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Language.java"
           },
           {
             "calls_between_elements": [
@@ -237,23 +237,23 @@
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Method",
+                "from_type": "Java Field",
                 "to_type": "Java Method",
-                "from_name": "getGetSupportedLanguages",
-                "to_name": "getLanguageId",
+                "from_name": "conf",
+                "to_name": "getConfiguration",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "MerchantStore",
-                "to_name": "Language",
+                "to_name": "PropertiesUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/reference/Language.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/PropertiesUtil.java"
           }
         ],
         "files_list_comment": "",

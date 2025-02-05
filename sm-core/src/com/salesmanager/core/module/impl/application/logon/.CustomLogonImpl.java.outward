@@ -8,21 +8,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
-                "from_name": "validateUserNameAndPassword",
-                "to_name": "ServiceException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
                 "from_name": "getUser",
-                "to_name": "ServiceException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "isUserInRole",
                 "to_name": "ServiceException",
                 "calling_type": "CALL"
               },
@@ -32,6 +18,20 @@
                 "from_name": "getUser",
                 "to_name": "ServiceException",
                 "calling_type": "THROW"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getUser",
+                "to_name": "ServiceException",
+                "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "validateUserNameAndPassword",
+                "to_name": "ServiceException",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -56,17 +56,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "isUserInRole",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "validateUserNameAndPassword",
                 "to_name": "MerchantService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "isUserInRole",
+                "to_name": "getService",
+                "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
@@ -119,16 +119,16 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "isUserInRole",
-                "to_name": "getName",
+                "to_type": "Java Constructor",
+                "from_name": "validateUserNameAndPassword",
+                "to_name": "UserPrincipal",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "validateUserNameAndPassword",
-                "to_name": "UserPrincipal",
+                "to_type": "Java Method",
+                "from_name": "isUserInRole",
+                "to_name": "getName",
                 "calling_type": "CALL"
               },
               {

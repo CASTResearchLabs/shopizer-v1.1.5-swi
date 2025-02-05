@@ -5,10 +5,10 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "validateNumber",
-            "to_name": "luhnValidate",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "validateCvv",
+            "to_name": "AMEX",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -26,6 +26,13 @@
           },
           {
             "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "validateNumber",
+            "to_name": "luhnValidate",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "validateNumber",
             "to_name": "DINERS",
@@ -36,13 +43,6 @@
             "to_type": "Java Field",
             "from_name": "validateNumber",
             "to_name": "DISCOVER",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "validateCvv",
-            "to_name": "AMEX",
             "calling_type": "READ"
           },
           {

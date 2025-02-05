@@ -5,16 +5,37 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getOptionPriceText",
-            "to_name": "getOptionPrice",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setModule",
+            "to_name": "module",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getEstimatedNumberOfDays",
-            "to_name": "estimatedNumberOfDays",
+            "from_name": "getModule",
+            "to_name": "module",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOptionId",
+            "to_name": "optionId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOptionPrice",
+            "to_name": "optionPrice",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getDescription",
+            "to_name": "description",
             "calling_type": "READ"
           },
           {
@@ -27,8 +48,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getOptionCode",
-            "to_name": "optionCode",
+            "from_name": "getEstimatedNumberOfDays",
+            "to_name": "estimatedNumberOfDays",
             "calling_type": "READ"
           },
           {
@@ -41,8 +62,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getOptionName",
-            "to_name": "optionName",
+            "from_name": "getOptionCode",
+            "to_name": "optionCode",
             "calling_type": "READ"
           },
           {
@@ -55,8 +76,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getOptionPrice",
-            "to_name": "optionPrice",
+            "from_name": "getOptionName",
+            "to_name": "optionName",
             "calling_type": "READ"
           },
           {
@@ -69,22 +90,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setOptionPrice",
-            "to_name": "optionPrice",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getDeliveryDate",
-            "to_name": "deliveryDate",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setDeliveryDate",
-            "to_name": "deliveryDate",
+            "from_name": "setShippingDate",
+            "to_name": "shippingDate",
             "calling_type": "WRITE"
           },
           {
@@ -97,16 +104,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setShippingDate",
-            "to_name": "shippingDate",
+            "from_name": "setDeliveryDate",
+            "to_name": "deliveryDate",
             "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getModule",
-            "to_name": "module",
-            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

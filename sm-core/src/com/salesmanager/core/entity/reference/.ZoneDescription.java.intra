@@ -4,32 +4,11 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "ZoneDescription",
-            "to_name": "setId",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "hashCode",
-            "to_name": "getId",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "equals",
-            "to_name": "getId",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "ZoneDescription",
-            "to_name": "initialize",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setZone",
+            "to_name": "zone",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -40,9 +19,37 @@
           },
           {
             "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "hashCode",
+            "to_name": "getId",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setZone",
-            "to_name": "zone",
+            "from_name": "hashCode",
+            "to_name": "hashCode",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "hashCode",
+            "to_name": "hashCode",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "equals",
+            "to_name": "getId",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setZoneName",
+            "to_name": "zoneName",
             "calling_type": "WRITE"
           },
           {
@@ -55,8 +62,15 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setZoneName",
-            "to_name": "zoneName",
+            "from_name": "setId",
+            "to_name": "id",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setId",
+            "to_name": "hashCode",
             "calling_type": "WRITE"
           },
           {
@@ -67,32 +81,18 @@
             "calling_type": "READ"
           },
           {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setId",
-            "to_name": "id",
-            "calling_type": "WRITE"
+            "from_type": "Java Constructor",
+            "to_type": "Java Method",
+            "from_name": "ZoneDescription",
+            "to_name": "setId",
+            "calling_type": "CALL"
           },
           {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "hashCode",
-            "to_name": "hashCode",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "hashCode",
-            "to_name": "hashCode",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setId",
-            "to_name": "hashCode",
-            "calling_type": "WRITE"
+            "from_type": "Java Constructor",
+            "to_type": "Java Method",
+            "from_name": "ZoneDescription",
+            "to_name": "initialize",
+            "calling_type": "CALL"
           }
         ],
         "calls_between_elements_list_comment": "",

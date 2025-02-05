@@ -4,27 +4,6 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/editbilling",
-            "to_name": "editBilling",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "displayOrderEmailAddress",
-            "to_name": "setOrder",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "prepareOrderDetails",
-            "to_name": "setOrder",
-            "calling_type": "CALL"
-          },
-          {
             "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "editBilling",
@@ -34,8 +13,64 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
+            "from_name": "editBilling",
+            "to_name": "prepareOrderDetails",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setOrder",
+            "to_name": "order",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOrder",
+            "to_name": "order",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCountryid",
+            "to_name": "countryid",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCountryid",
+            "to_name": "countryid",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCustomerinformation",
+            "to_name": "customerinformation",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCustomerinformation",
+            "to_name": "customerinformation",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
             "from_name": "viewBillingCustomer",
             "to_name": "getOrder",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "viewBillingCustomer",
+            "to_name": "prepareOrderDetails",
             "calling_type": "CALL"
           },
           {
@@ -48,6 +83,13 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
+            "from_name": "editShipping",
+            "to_name": "prepareOrderDetails",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
             "from_name": "viewShippingCustomer",
             "to_name": "getOrder",
             "calling_type": "CALL"
@@ -55,57 +97,15 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
+            "from_name": "viewShippingCustomer",
+            "to_name": "prepareOrderDetails",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
             "from_name": "displayOrderEmailAddress",
-            "to_name": "getOrder",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "editOrderEmailAddress",
-            "to_name": "getOrder",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "prepareOrderDetails",
-            "to_name": "getOrder",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "prepareOrderDetails",
-            "to_name": "setCountryid",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/editcustomerbilling",
-            "to_name": "viewBillingCustomer",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/editshipping",
-            "to_name": "editShipping",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/editcustomershipping",
-            "to_name": "viewShippingCustomer",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/displaymailaddress",
-            "to_name": "displayOrderEmailAddress",
+            "to_name": "setOrder",
             "calling_type": "CALL"
           }
         ],

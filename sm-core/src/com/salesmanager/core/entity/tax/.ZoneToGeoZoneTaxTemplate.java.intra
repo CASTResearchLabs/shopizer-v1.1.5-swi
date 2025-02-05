@@ -4,11 +4,11 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Java Class",
-            "to_type": "Java Method",
-            "from_name": "ZoneToGeoZoneTaxTemplate",
-            "to_name": "getLastModified",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getGeoZone",
+            "to_name": "geoZone",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -27,41 +27,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "hashCode",
-            "to_name": "zoneId",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setZoneId",
-            "to_name": "zoneId",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "ZoneToGeoZoneTaxTemplate",
-            "to_name": "zoneId",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "getGeoZone",
-            "to_name": "geoZone",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setGeoZone",
-            "to_name": "geoZone",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "equals",
             "to_name": "dateAdded",
             "calling_type": "READ"
@@ -69,6 +34,41 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "equals",
+            "to_name": "lastModified",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "equals",
+            "to_name": "geoZoneId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "equals",
+            "to_name": "zoneCountryId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "equals",
+            "to_name": "associationId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "hashCode",
+            "to_name": "zoneId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "hashCode",
             "to_name": "dateAdded",
             "calling_type": "READ"
@@ -76,8 +76,29 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getDateAdded",
-            "to_name": "dateAdded",
+            "from_name": "hashCode",
+            "to_name": "lastModified",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "hashCode",
+            "to_name": "geoZoneId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "hashCode",
+            "to_name": "zoneCountryId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "hashCode",
+            "to_name": "associationId",
             "calling_type": "READ"
           },
           {
@@ -86,27 +107,6 @@
             "from_name": "setDateAdded",
             "to_name": "dateAdded",
             "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Field",
-            "from_name": "ZoneToGeoZoneTaxTemplate",
-            "to_name": "dateAdded",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "equals",
-            "to_name": "lastModified",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "hashCode",
-            "to_name": "lastModified",
-            "calling_type": "READ"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

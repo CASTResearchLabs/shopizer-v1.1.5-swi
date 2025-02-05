@@ -4,11 +4,18 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/landing",
-            "to_name": "displayLanding",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setSlides",
+            "to_name": "slides",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getSlides",
+            "to_name": "slides",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -20,13 +27,6 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getSlides",
-            "to_name": "slides",
-            "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
             "from_name": "displayLanding",
             "to_name": "slides",
             "calling_type": "READ"
@@ -34,15 +34,15 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setSlides",
+            "from_name": "displayLanding",
             "to_name": "slides",
             "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "displayLanding",
-            "to_name": "slides",
+            "from_name": "setFeaturedProducts",
+            "to_name": "featuredProducts",
             "calling_type": "WRITE"
           },
           {
@@ -53,11 +53,11 @@
             "calling_type": "READ"
           },
           {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setFeaturedProducts",
-            "to_name": "featuredProducts",
-            "calling_type": "WRITE"
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/landing",
+            "to_name": "displayLanding",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Struts Operation",

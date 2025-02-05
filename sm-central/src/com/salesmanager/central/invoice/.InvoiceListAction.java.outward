@@ -92,6 +92,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "setPageTitle",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "resetInvoiceList",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
@@ -108,13 +115,6 @@
                 "to_type": "Java Method",
                 "from_name": "displayInvoiceList",
                 "to_name": "setTechnicalMessage",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "setPageTitle",
                 "calling_type": "CALL"
               },
               {
@@ -210,27 +210,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Oracle Table",
-                "from_name": "displayInvoiceList",
-                "to_name": "PAGE",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Oracle Table",
-                "from_name": "InvoiceListAction",
-                "to_name": "PAGE",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/upgrade/v1.1.2-TO-v1.1.3.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "displayInvoiceList",
                 "to_name": "getService",
@@ -248,19 +227,40 @@
                 "to_type": "Java Class",
                 "from_name": "InvoiceListAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "InvoiceListAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Oracle Table",
+                "from_name": "displayInvoiceList",
+                "to_name": "PAGE",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Oracle Table",
+                "from_name": "InvoiceListAction",
+                "to_name": "PAGE",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "schema/upgrade/v1.1.2-TO-v1.1.3.sql"
           },
           {
             "calls_between_elements": [
@@ -303,27 +303,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/entity/common/SearchResponse.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "displayInvoiceList",
-                "to_name": "PAGE",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "MySQL Table",
-                "from_name": "InvoiceListAction",
-                "to_name": "PAGE",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [
@@ -391,27 +370,6 @@
           {
             "calls_between_elements": [
               {
-                "from_type": "Java Field",
-                "to_type": "Java Method",
-                "from_name": "config",
-                "to_name": "getConfiguration",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "InvoiceListAction",
-                "to_name": "PropertiesHelper",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-central/src/com/salesmanager/central/util/PropertiesHelper.java"
-          },
-          {
-            "calls_between_elements": [
-              {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
                 "from_name": "displayInvoiceList",
@@ -434,6 +392,27 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "displayInvoiceList",
+                "to_name": "PAGE",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "MySQL Table",
+                "from_name": "InvoiceListAction",
+                "to_name": "PAGE",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "displayInvoiceList",
                 "to_name": "context",
@@ -450,6 +429,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-central/src/com/salesmanager/central/profile/ProfileConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Method",
+                "from_name": "config",
+                "to_name": "getConfiguration",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "InvoiceListAction",
+                "to_name": "PropertiesHelper",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-central/src/com/salesmanager/central/util/PropertiesHelper.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

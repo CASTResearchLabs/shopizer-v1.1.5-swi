@@ -8,20 +8,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "viewFiles",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "accessUrl",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
                 "from_name": "getFile",
                 "to_name": "MAXIMUMDOWNLOADREACHED",
                 "calling_type": "CALL"
@@ -37,6 +23,20 @@
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
                 "from_name": "getFile",
+                "to_name": "GENERICERROR",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "viewFiles",
+                "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "viewFiles",
                 "to_name": "GENERICERROR",
                 "calling_type": "CALL"
               }
@@ -57,20 +57,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "viewFiles",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "accessUrl",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "getFile",
                 "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
@@ -79,7 +65,21 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "viewFiles",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "viewFiles",
                 "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "accessUrl",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
             ],
@@ -115,14 +115,14 @@
                 "to_type": "Java Class",
                 "from_name": "FilesAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "FilesAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -209,13 +209,6 @@
                 "calling_type": "CALL"
               },
               {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "FilesAction",
-                "to_name": "CoreException",
-                "calling_type": "CALL"
-              },
-              {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "accessUrl",
@@ -228,6 +221,13 @@
                 "from_name": "FilesAction",
                 "to_name": "CoreException",
                 "calling_type": "RAISE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "FilesAction",
+                "to_name": "CoreException",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -294,27 +294,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "viewFiles",
-                "to_name": "MERCHANT_STORE",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "MySQL Table",
-                "from_name": "FilesAction",
-                "to_name": "MERCHANT_STORE",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "getFile",
                 "to_name": "getBean",
@@ -331,27 +310,6 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/SpringUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "accessUrl",
-                "to_name": "getUrlTokens",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "FilesAction",
-                "to_name": "FileUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java"
           },
           {
             "calls_between_elements": [
@@ -415,6 +373,48 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/util/www/SessionUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "viewFiles",
+                "to_name": "MERCHANT_STORE",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "MySQL Table",
+                "from_name": "FilesAction",
+                "to_name": "MERCHANT_STORE",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "accessUrl",
+                "to_name": "getUrlTokens",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "FilesAction",
+                "to_name": "FileUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/util/FileUtil.java"
           },
           {
             "calls_between_elements": [

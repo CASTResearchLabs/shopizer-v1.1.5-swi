@@ -6,7 +6,7 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "findByMerchantIdAnsSectionIdsAndLanguageId",
+            "from_name": "findByMerchantIdAndSeUrlAndLanguageId",
             "to_name": "select d from DynamicLabel",
             "calling_type": "CALL"
           },
@@ -27,7 +27,14 @@
           {
             "from_type": "Java Method",
             "to_type": "JPQL Query",
-            "from_name": "findByMerchantIdAndSeUrlAndLanguageId",
+            "from_name": "findByMerchantIdAndLabelIdAndLanguageId",
+            "to_name": "select d from DynamicLabel",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "JPQL Query",
+            "from_name": "findByMerchantIdAnsSectionIdsAndLanguageId",
             "to_name": "select d from DynamicLabel",
             "calling_type": "CALL"
           },
@@ -35,13 +42,6 @@
             "from_type": "Java Method",
             "to_type": "JPQL Query",
             "from_name": "findByMerchantIdAndLanguageId",
-            "to_name": "select d from DynamicLabel",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "JPQL Query",
-            "from_name": "findByMerchantIdAndLabelIdAndLanguageId",
             "to_name": "select d from DynamicLabel",
             "calling_type": "CALL"
           }

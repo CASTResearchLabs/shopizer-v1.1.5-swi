@@ -5,6 +5,20 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getLineage",
+            "to_name": "lineage",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getMerchantId",
+            "to_name": "merchantId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Method",
             "from_name": "getCategoryDescription",
             "to_name": "getDescriptions",
@@ -12,58 +26,44 @@
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "getName",
-            "to_name": "getDescriptions",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Class",
-            "to_type": "Java Method",
-            "from_name": "Category",
-            "to_name": "getLastModified",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "Category",
-            "to_name": "setCategoryId",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Constructor",
-            "to_type": "Java Method",
-            "from_name": "Category",
-            "to_name": "initialize",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getName",
-            "to_name": "name",
+            "from_name": "getParentId",
+            "to_name": "parentId",
             "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setName",
-            "to_name": "name",
-            "calling_type": "WRITE"
+            "from_name": "getCategoryId",
+            "to_name": "categoryId",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getName",
-            "to_name": "name",
-            "calling_type": "WRITE"
+            "from_name": "hashCode",
+            "to_name": "merchantId",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getLineage",
-            "to_name": "lineage",
+            "from_name": "hashCode",
+            "to_name": "parentId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "hashCode",
+            "to_name": "categoryId",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getParent",
+            "to_name": "parent",
             "calling_type": "READ"
           },
           {
@@ -76,6 +76,13 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
+            "from_name": "setDepth",
+            "to_name": "depth",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
             "from_name": "getDepth",
             "to_name": "depth",
             "calling_type": "READ"
@@ -83,8 +90,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setDepth",
-            "to_name": "depth",
+            "from_name": "setDescriptions",
+            "to_name": "descriptions",
             "calling_type": "WRITE"
           },
           {
@@ -97,16 +104,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getName",
-            "to_name": "descriptions",
+            "from_name": "equals",
+            "to_name": "merchantId",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setDescriptions",
-            "to_name": "descriptions",
-            "calling_type": "WRITE"
           }
         ],
         "calls_between_elements_list_comment": "calls_between_elements list is truncated to first 15 items",

@@ -8,20 +8,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "viewShippingCustomer",
-                "to_name": "getShippingModuleCode",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editOrderEmailAddress",
-                "to_name": "setCustomerEmailAddress",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "editBilling",
                 "to_name": "getOrderId",
                 "calling_type": "CALL"
@@ -29,15 +15,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "viewBillingCustomer",
-                "to_name": "getOrderId",
+                "from_name": "editBilling",
+                "to_name": "setBillingCountry",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editShipping",
-                "to_name": "getOrderId",
+                "from_name": "editBilling",
+                "to_name": "getBillingCountry",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editBilling",
+                "to_name": "setBillingState",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editBilling",
+                "to_name": "getBillingState",
                 "calling_type": "CALL"
               }
             ],
@@ -50,36 +50,36 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editOrderEmailAddress",
-                "to_name": "addFieldError",
+                "from_name": "editBilling",
+                "to_name": "setAuthorizationMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editShipping",
-                "to_name": "getServletRequest",
+                "from_name": "editBilling",
+                "to_name": "setTechnicalMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "viewShippingCustomer",
-                "to_name": "getServletRequest",
+                "from_name": "editBilling",
+                "to_name": "setSuccessMessage",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "displayOrderEmailAddress",
-                "to_name": "getServletRequest",
+                "from_name": "prepare",
+                "to_name": "setPageTitle",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editOrderEmailAddress",
-                "to_name": "getServletRequest",
+                "from_name": "viewBillingCustomer",
+                "to_name": "setAuthorizationMessage",
                 "calling_type": "CALL"
               }
             ],
@@ -92,21 +92,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "editOrderEmailAddress",
-                "to_name": "input",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "editOrderEmailAddress",
-                "to_name": "success",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Struts Result",
-                "from_name": "displayOrderEmailAddress",
+                "from_name": "editBilling",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -114,7 +100,21 @@
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
                 "from_name": "editBilling",
+                "to_name": "AUTHORIZATIONEXCEPTION",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "viewBillingCustomer",
                 "to_name": "success",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Struts Result",
+                "from_name": "viewBillingCustomer",
+                "to_name": "AUTHORIZATIONEXCEPTION",
                 "calling_type": "CALL"
               },
               {
@@ -140,6 +140,13 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Field",
+                "from_name": "editBilling",
+                "to_name": "OrderService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "editShipping",
                 "to_name": "getService",
@@ -147,24 +154,17 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "viewShippingCustomer",
-                "to_name": "getService",
-                "calling_type": "CALL"
+                "to_type": "Java Field",
+                "from_name": "editShipping",
+                "to_name": "OrderService",
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayOrderEmailAddress",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editOrderEmailAddress",
-                "to_name": "getService",
-                "calling_type": "CALL"
+                "to_type": "Java Field",
+                "from_name": "editShipping",
+                "to_name": "ReferenceService",
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -173,27 +173,6 @@
           },
           {
             "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "prepareOrderDetails",
-                "to_name": "AuthorizationException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "prepareOrderDetails",
-                "to_name": "AuthorizationException",
-                "calling_type": "RAISE"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "EditCustomerAction",
-                "to_name": "AuthorizationException",
-                "calling_type": "RAISE"
-              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Class",
@@ -207,6 +186,27 @@
                 "from_name": "viewBillingCustomer",
                 "to_name": "AuthorizationException",
                 "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "editShipping",
+                "to_name": "AuthorizationException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "viewShippingCustomer",
+                "to_name": "AuthorizationException",
+                "calling_type": "CATCH"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "editOrderEmailAddress",
+                "to_name": "AuthorizationException",
+                "calling_type": "CATCH"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -215,6 +215,20 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editBilling",
+                "to_name": "saveOrUpdateOrder",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "editShipping",
+                "to_name": "saveOrUpdateOrder",
+                "calling_type": "CALL"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -232,21 +246,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareOrderDetails",
-                "to_name": "getOrder",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editBilling",
-                "to_name": "saveOrUpdateOrder",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "editShipping",
+                "from_name": "editOrderEmailAddress",
                 "to_name": "saveOrUpdateOrder",
                 "calling_type": "CALL"
               }
@@ -281,15 +281,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepareOrderDetails",
-                "to_name": "getLang",
+                "from_name": "viewShippingCustomer",
+                "to_name": "getMerchantid",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "viewShippingCustomer",
-                "to_name": "getMerchantid",
+                "from_name": "prepareOrderDetails",
+                "to_name": "getLang",
                 "calling_type": "CALL"
               }
             ],
@@ -568,27 +568,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "editOrderEmailAddress",
-                "to_name": "validateEmail",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "EditCustomerAction",
-                "to_name": "CustomerUtil",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CustomerUtil.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "viewShippingCustomer",
                 "to_name": "getConfiguration",
                 "calling_type": "CALL"
@@ -604,6 +583,27 @@
             "comment": "",
             "nb_calls_between_elements": 2,
             "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "viewShippingCustomer",
+                "to_name": "ConfigurationRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "EditCustomerAction",
+                "to_name": "ConfigurationRequest",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationRequest.java"
           },
           {
             "calls_between_elements": [
@@ -630,22 +630,22 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "viewShippingCustomer",
-                "to_name": "ConfigurationRequest",
+                "to_type": "Java Method",
+                "from_name": "editOrderEmailAddress",
+                "to_name": "validateEmail",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "EditCustomerAction",
-                "to_name": "ConfigurationRequest",
+                "to_name": "CustomerUtil",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationRequest.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/CustomerUtil.java"
           }
         ],
         "files_list_comment": "files list is truncated to first 15 items",

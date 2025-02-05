@@ -5,31 +5,10 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "selectPayment",
-            "to_name": "getPaymentMethod",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/selectInvoicePaymentMethod",
-            "to_name": "selectPayment",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/selectPaymentMethod",
-            "to_name": "selectPayment",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/payment",
-            "to_name": "displayPayment",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setPaymentMethod",
+            "to_name": "paymentMethod",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -40,6 +19,13 @@
           },
           {
             "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "selectPayment",
+            "to_name": "getPaymentMethod",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "displayPayment",
             "to_name": "paymentMethod",
@@ -48,16 +34,16 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setPaymentMethod",
+            "from_name": "displayPayment",
             "to_name": "paymentMethod",
             "calling_type": "WRITE"
           },
           {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "displayPayment",
-            "to_name": "paymentMethod",
-            "calling_type": "WRITE"
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/selectInvoicePaymentMethod",
+            "to_name": "selectPayment",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Struts Operation",
@@ -68,9 +54,23 @@
           },
           {
             "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/selectPaymentMethod",
+            "to_name": "selectPayment",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Struts Operation",
             "to_type": "Java Class",
             "from_name": "/selectPaymentMethod",
             "to_name": "PaymentAction",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/payment",
+            "to_name": "displayPayment",
             "calling_type": "CALL"
           },
           {

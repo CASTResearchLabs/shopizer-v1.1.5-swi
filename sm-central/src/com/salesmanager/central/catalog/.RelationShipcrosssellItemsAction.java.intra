@@ -4,11 +4,18 @@
       {
         "calls_between_elements": [
           {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/RelationShipcrosssellItems!displayItems",
-            "to_name": "displayItems",
-            "calling_type": "CALL"
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setCrossSellItems",
+            "to_name": "crossSellItems",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getCrossSellItems",
+            "to_name": "crossSellItems",
+            "calling_type": "READ"
           },
           {
             "from_type": "Java Method",
@@ -20,15 +27,22 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getProduct",
+            "from_name": "displayItems",
             "to_name": "product",
-            "calling_type": "READ"
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
             "from_name": "displayItems",
-            "to_name": "product",
+            "to_name": "products",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "displayItems",
+            "to_name": "crossSellItems",
             "calling_type": "WRITE"
           },
           {
@@ -41,16 +55,9 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getProducts",
-            "to_name": "products",
+            "from_name": "getProduct",
+            "to_name": "product",
             "calling_type": "READ"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "displayItems",
-            "to_name": "products",
-            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -62,23 +69,16 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "getCrossSellItems",
-            "to_name": "crossSellItems",
+            "from_name": "getProducts",
+            "to_name": "products",
             "calling_type": "READ"
           },
           {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "setCrossSellItems",
-            "to_name": "crossSellItems",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Field",
-            "from_name": "displayItems",
-            "to_name": "crossSellItems",
-            "calling_type": "WRITE"
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/RelationShipcrosssellItems!displayItems",
+            "to_name": "displayItems",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Struts Operation",

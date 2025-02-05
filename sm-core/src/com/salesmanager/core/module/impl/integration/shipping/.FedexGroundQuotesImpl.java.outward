@@ -57,15 +57,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getShippingMethodDescription",
-                "to_name": "getText",
+                "from_name": "getShippingQuote",
+                "to_name": "getInstance",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "getShippingQuote",
-                "to_name": "getInstance",
+                "from_name": "getShippingMethodDescription",
+                "to_name": "getText",
                 "calling_type": "CALL"
               },
               {
@@ -147,34 +147,6 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getShippingQuote",
-                "to_name": "getQuote",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "getShippingQuote",
-                "to_name": "FedexRequestQuotesImpl",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "FedexGroundQuotesImpl",
-                "to_name": "FedexRequestQuotesImpl",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexRequestQuotesImpl.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "getConfiguration",
                 "to_name": "MODULE_SHIPPING_RT_PKG_DOM_INT",
@@ -198,6 +170,34 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/constants/ShippingConstants.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getShippingQuote",
+                "to_name": "getQuote",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "getShippingQuote",
+                "to_name": "FedexRequestQuotesImpl",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "FedexGroundQuotesImpl",
+                "to_name": "FedexRequestQuotesImpl",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/module/impl/integration/shipping/FedexRequestQuotesImpl.java"
           },
           {
             "calls_between_elements": [

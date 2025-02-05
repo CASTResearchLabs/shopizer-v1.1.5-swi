@@ -14,20 +14,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCategoriesForDropDownBox",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getItemPerCategoryCount",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "getCategoryPath",
                 "to_name": "CatalogService",
@@ -35,10 +21,24 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getCategoriesForDropDownBox",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "getCategoriesForDropDownBox",
                 "to_name": "CatalogService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "getItemPerCategoryCount",
+                "to_name": "getService",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -92,6 +92,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "walkCategories",
+                "to_name": "getCategoryId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "getCategoriesForDropDownBox",
                 "to_name": "setName",
                 "calling_type": "CALL"
@@ -101,13 +108,6 @@
                 "to_type": "Java Method",
                 "from_name": "getCategoriesForDropDownBox",
                 "to_name": "setCategoryId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "walkCategories",
-                "to_name": "getCategoryId",
                 "calling_type": "CALL"
               },
               {
@@ -133,39 +133,11 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "getCategoriesForDropDownBox",
-                "to_name": "CATEGORIES",
-                "calling_type": "USE"
+                "to_type": "Java Method",
+                "from_name": "getCategoryPath",
+                "to_name": "getCategoriesByLang",
+                "calling_type": "CALL"
               },
-              {
-                "from_type": "Java Class",
-                "to_type": "MySQL Table",
-                "from_name": "CategoryUtil",
-                "to_name": "CATEGORIES",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "MySQL Table",
-                "from_name": "getItemPerCategoryCount",
-                "to_name": "PRODUCTS",
-                "calling_type": "USE"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "MySQL Table",
-                "from_name": "CategoryUtil",
-                "to_name": "PRODUCTS",
-                "calling_type": "USE"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
-          },
-          {
-            "calls_between_elements": [
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -178,13 +150,6 @@
                 "to_type": "Java Method",
                 "from_name": "getItemPerCategoryCount",
                 "to_name": "countProductsPerCategoryAndSubCategories",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "getCategoryPath",
-                "to_name": "getCategoriesByLang",
                 "calling_type": "CALL"
               },
               {
@@ -233,6 +198,41 @@
             "comment": "",
             "nb_calls_between_elements": 4,
             "to_file": "sm-core/src/com/salesmanager/core/util/CacheUtil.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "getCategoriesForDropDownBox",
+                "to_name": "CATEGORIES",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "MySQL Table",
+                "from_name": "getItemPerCategoryCount",
+                "to_name": "PRODUCTS",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "CategoryUtil",
+                "to_name": "CATEGORIES",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "MySQL Table",
+                "from_name": "CategoryUtil",
+                "to_name": "PRODUCTS",
+                "calling_type": "USE"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [

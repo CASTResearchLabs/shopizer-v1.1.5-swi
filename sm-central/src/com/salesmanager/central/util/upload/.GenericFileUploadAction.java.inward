@@ -4,37 +4,13 @@
       {
         "files": [
           {
-            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml",
-            "calls_between_elements": [
+            "calling_types": [
               {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "uploadProducts",
-                "to_name": "uploadProducts",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Method",
-                "from_name": "uploadCategory",
-                "to_name": "uploadCategories",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "uploadProducts",
-                "to_name": "GenericFileUploadAction",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Struts Action",
-                "to_type": "Java Class Struts",
-                "from_name": "uploadCategory",
-                "to_name": "GenericFileUploadAction",
-                "calling_type": "CALL"
+                "calling_type": "CALL",
+                "nb_calls_between_elements": 2
               }
             ],
+            "from_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml",
             "comment": "",
             "nb_calls_between_elements": 4
           }

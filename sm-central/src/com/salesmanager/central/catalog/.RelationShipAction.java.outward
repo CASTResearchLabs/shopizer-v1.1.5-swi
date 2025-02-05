@@ -7,43 +7,43 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "getProductId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "display",
-                "to_name": "setProductId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "display",
-                "to_name": "Product",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "RelationShipAction",
-                "to_name": "Product",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Class",
                 "from_name": "setProducts",
                 "to_name": "Product",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getProducts",
+                "to_name": "Product",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "setItems",
+                "to_name": "Product",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getItems",
+                "to_name": "Product",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "display",
+                "to_name": "getProductId",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 11,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java"
+            "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/Product.java",
+            "nb_calls_between_elements": 11
           },
           {
             "calls_between_elements": [
@@ -84,8 +84,8 @@
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java"
+            "to_file": "sm-central/src/com/salesmanager/central/BaseAction.java",
+            "nb_calls_between_elements": 6
           },
           {
             "calls_between_elements": [
@@ -126,8 +126,8 @@
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
-            "nb_calls_between_elements": 6,
-            "to_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml"
+            "to_file": "sm-central/WebContent/WEB-INF/classes/struts-catalog.xml",
+            "nb_calls_between_elements": 6
           },
           {
             "calls_between_elements": [
@@ -161,8 +161,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/catalog/CatalogService.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -185,19 +185,19 @@
                 "to_type": "Java Class",
                 "from_name": "RelationShipAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               },
               {
                 "from_type": "Java Class",
                 "to_type": "Java Class",
                 "from_name": "RelationShipAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "READ"
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+            "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java",
+            "nb_calls_between_elements": 4
           },
           {
             "calls_between_elements": [
@@ -224,8 +224,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java"
+            "to_file": "sm-central/src/com/salesmanager/central/profile/Context.java",
+            "nb_calls_between_elements": 3
           },
           {
             "calls_between_elements": [
@@ -245,8 +245,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java"
+            "to_file": "sm-core/src/com/salesmanager/core/util/LanguageUtil.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -266,29 +266,8 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipcrosssellItemsAction.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Field",
-                "to_type": "Java Field",
-                "from_name": "relationShipType",
-                "to_name": "PRODUCT_RELATIONSHIP_FEATURED_ITEMS",
-                "calling_type": "READ"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "RelationShipAction",
-                "to_name": "CatalogConstants",
-                "calling_type": "READ"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/CatalogConstants.java"
+            "to_file": "sm-central/src/com/salesmanager/central/catalog/RelationShipcrosssellItemsAction.java",
+            "nb_calls_between_elements": 2
           },
           {
             "calls_between_elements": [
@@ -308,8 +287,29 @@
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/constants/ProductConstants.java"
+            "to_file": "sm-core/src/com/salesmanager/core/constants/ProductConstants.java",
+            "nb_calls_between_elements": 2
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Field",
+                "to_type": "Java Field",
+                "from_name": "relationShipType",
+                "to_name": "PRODUCT_RELATIONSHIP_FEATURED_ITEMS",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "RelationShipAction",
+                "to_name": "CatalogConstants",
+                "calling_type": "READ"
+              }
+            ],
+            "comment": "",
+            "to_file": "sm-core/src/com/salesmanager/core/constants/CatalogConstants.java",
+            "nb_calls_between_elements": 2
           }
         ],
         "files_list_comment": "",

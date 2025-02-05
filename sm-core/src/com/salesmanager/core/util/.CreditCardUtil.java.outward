@@ -7,10 +7,17 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
-                "to_type": "Java Field",
-                "from_name": "validate",
-                "to_name": "DATE",
-                "calling_type": "READ"
+                "to_type": "Java Constructor",
+                "from_name": "validateCvv",
+                "to_name": "CreditCardUtilException",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "validateCvv",
+                "to_name": "CreditCardUtilException",
+                "calling_type": "THROW"
               },
               {
                 "from_type": "Java Method",
@@ -21,22 +28,15 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Constructor",
+                "to_type": "Java Class",
                 "from_name": "validateCvv",
                 "to_name": "CreditCardUtilException",
-                "calling_type": "CALL"
+                "calling_type": "RAISE"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "validate",
-                "to_name": "CreditCardUtilException",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "luhnValidate",
                 "to_name": "CreditCardUtilException",
                 "calling_type": "CALL"
               }
@@ -57,6 +57,13 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "validateCvv",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "validate",
                 "to_name": "getText",
                 "calling_type": "CALL"
@@ -64,21 +71,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "validate",
+                "to_name": "getInstance",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "luhnValidate",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateNumber",
-                "to_name": "getText",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateDate",
                 "to_name": "getText",
                 "calling_type": "CALL"
               }

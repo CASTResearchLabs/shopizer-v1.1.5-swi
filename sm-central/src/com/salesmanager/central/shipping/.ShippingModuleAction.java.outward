@@ -7,30 +7,16 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "getConfigurationModuleNames",
+                "to_name": "MerchantConfiguration",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "save",
                 "to_name": "getConfigurationValue1",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getConfigurationValue1",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getConfigurationValue",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getConfigurationKey",
                 "calling_type": "CALL"
               },
               {
@@ -38,6 +24,20 @@
                 "to_type": "Java Method",
                 "from_name": "save",
                 "to_name": "setDateAdded",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "setConfigurationValue1",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "setConfigurationValue",
                 "calling_type": "CALL"
               }
             ],
@@ -56,20 +56,6 @@
               },
               {
                 "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "delete",
                 "to_name": "MerchantService",
@@ -77,10 +63,24 @@
               },
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
+                "to_name": "getService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Field",
                 "from_name": "save",
                 "to_name": "MerchantService",
                 "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "getService",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -99,20 +99,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "delete",
                 "to_name": "setSuccessMessage",
                 "calling_type": "CALL"
@@ -121,7 +107,21 @@
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "save",
+                "to_name": "getServletRequest",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "save",
                 "to_name": "setSuccessMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
             ],
@@ -134,15 +134,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "saveModule",
+                "from_name": "delete",
+                "to_name": "deleteModule",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "prepareModule",
+                "from_name": "save",
+                "to_name": "saveModule",
                 "calling_type": "CALL"
               },
               {
@@ -155,8 +155,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "deleteModule",
+                "from_name": "prepare",
+                "to_name": "prepareModule",
                 "calling_type": "CALL"
               },
               {
@@ -218,15 +218,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "saveModule",
+                "from_name": "delete",
+                "to_name": "deleteModule",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "prepareModule",
+                "from_name": "save",
+                "to_name": "saveModule",
                 "calling_type": "CALL"
               },
               {
@@ -239,8 +239,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "deleteModule",
+                "from_name": "prepare",
+                "to_name": "prepareModule",
                 "calling_type": "CALL"
               },
               {
@@ -260,15 +260,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "saveModule",
+                "from_name": "delete",
+                "to_name": "deleteModule",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "prepareModule",
+                "from_name": "save",
+                "to_name": "saveModule",
                 "calling_type": "CALL"
               },
               {
@@ -281,8 +281,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "deleteModule",
+                "from_name": "prepare",
+                "to_name": "prepareModule",
                 "calling_type": "CALL"
               },
               {
@@ -302,15 +302,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "saveModule",
+                "from_name": "delete",
+                "to_name": "deleteModule",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "prepareModule",
+                "from_name": "save",
+                "to_name": "saveModule",
                 "calling_type": "CALL"
               },
               {
@@ -323,8 +323,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "deleteModule",
+                "from_name": "prepare",
+                "to_name": "prepareModule",
                 "calling_type": "CALL"
               },
               {
@@ -344,15 +344,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "save",
-                "to_name": "saveModule",
+                "from_name": "delete",
+                "to_name": "deleteModule",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "prepareModule",
+                "from_name": "save",
+                "to_name": "saveModule",
                 "calling_type": "CALL"
               },
               {
@@ -365,8 +365,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "deleteModule",
+                "from_name": "prepare",
+                "to_name": "prepareModule",
                 "calling_type": "CALL"
               },
               {
@@ -386,8 +386,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getConfiguration",
+                "from_name": "delete",
+                "to_name": "deleteMerchantConfiguration",
                 "calling_type": "CALL"
               },
               {
@@ -400,8 +400,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "delete",
-                "to_name": "deleteMerchantConfiguration",
+                "from_name": "prepare",
+                "to_name": "getConfiguration",
                 "calling_type": "CALL"
               },
               {
@@ -525,6 +525,27 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "prepare",
+                "to_name": "getMerchantConfigurationList",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class",
+                "to_type": "Java Class",
+                "from_name": "ShippingModuleAction",
+                "to_name": "ConfigurationResponse",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 2,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Constructor",
                 "from_name": "prepare",
                 "to_name": "ConfigurationRequest",
@@ -561,28 +582,7 @@
             ],
             "comment": "",
             "nb_calls_between_elements": 2,
-            "to_file": "C:/CAST-node/common-data/upload/SWintel115/main_sources/schema/sql/shopizer_schema_mysql.sql"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepare",
-                "to_name": "getMerchantConfigurationList",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class",
-                "to_type": "Java Class",
-                "from_name": "ShippingModuleAction",
-                "to_name": "ConfigurationResponse",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 2,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/ConfigurationResponse.java"
+            "to_file": "schema/sql/shopizer_schema_mysql.sql"
           },
           {
             "calls_between_elements": [

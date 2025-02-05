@@ -13,28 +13,7 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Method",
-            "from_name": "page",
-            "to_name": "getProductCount",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/search",
-            "to_name": "search",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
             "from_name": "search",
-            "to_name": "setProducts",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "page",
             "to_name": "setProducts",
             "calling_type": "CALL"
           },
@@ -47,17 +26,10 @@
           },
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "page",
-            "to_name": "getSearch",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/page",
-            "to_name": "page",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setProducts",
+            "to_name": "products",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -69,15 +41,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setProducts",
-            "to_name": "products",
-            "calling_type": "WRITE"
-          },
-          {
-            "from_type": "Java Initializer",
-            "to_type": "Java Field",
-            "from_name": "{(43:2)}",
-            "to_name": "size",
+            "from_name": "setSearch",
+            "to_name": "search",
             "calling_type": "WRITE"
           },
           {
@@ -89,16 +54,51 @@
           },
           {
             "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "page",
+            "to_name": "getProductCount",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "page",
+            "to_name": "setProducts",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "page",
+            "to_name": "getSearch",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Initializer",
             "to_type": "Java Field",
-            "from_name": "setSearch",
-            "to_name": "search",
+            "from_name": "{(43:2)}",
+            "to_name": "size",
             "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/page",
+            "to_name": "page",
+            "calling_type": "CALL"
           },
           {
             "from_type": "Struts Operation",
             "to_type": "Java Class",
             "from_name": "/page",
             "to_name": "SearchAction",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Struts Operation",
+            "to_type": "Java Method",
+            "from_name": "/search",
+            "to_name": "search",
             "calling_type": "CALL"
           },
           {

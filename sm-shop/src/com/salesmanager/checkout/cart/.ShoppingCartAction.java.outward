@@ -15,21 +15,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "setOriginalProductPrice",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "assembleItems",
-                "to_name": "setOrderattributes",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
                 "to_name": "setOrderattributes",
                 "calling_type": "CALL"
               },
@@ -38,6 +24,20 @@
                 "to_type": "Java Method",
                 "from_name": "assembleItems",
                 "to_name": "getOrderattributes",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "getProductPrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "getProductQuantityOrderMax",
                 "calling_type": "CALL"
               }
             ],
@@ -50,20 +50,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleItems",
-                "to_name": "getAttributeValue",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateAddItem",
-                "to_name": "setCountryId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "addToCart",
                 "to_name": "getReturnUrl",
                 "calling_type": "CALL"
@@ -71,15 +57,29 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleItems",
-                "to_name": "getQty",
+                "from_name": "addToCart",
+                "to_name": "getMerchantId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "setLangId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
                 "from_name": "assembleItems",
-                "to_name": "getAttributeId",
+                "to_name": "CheckoutParams",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "getAttributeValue",
                 "calling_type": "CALL"
               }
             ],
@@ -92,8 +92,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "cleanShoppingCart",
-                "to_name": "isComited",
+                "from_name": "emptyCart",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "setToken",
                 "calling_type": "CALL"
               },
               {
@@ -106,22 +113,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "addOrderProduct",
+                "from_name": "assembleItems",
+                "to_name": "setOrder",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "emptyCart",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "cleanShoppingCart",
-                "to_name": "getMerchantStore",
+                "from_name": "assembleItems",
+                "to_name": "getOrder",
                 "calling_type": "CALL"
               }
             ],
@@ -134,8 +134,8 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateAddItem",
-                "to_name": "getDefaultLang",
+                "from_name": "emptyCart",
+                "to_name": "getContinueshoppingurl",
                 "calling_type": "CALL"
               },
               {
@@ -148,21 +148,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "emptyCart",
-                "to_name": "getContinueshoppingurl",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateAddItem",
-                "to_name": "getStoreemailaddress",
+                "from_name": "assembleItems",
+                "to_name": "getCurrency",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "assembleItems",
+                "to_name": "getMerchantId",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
                 "to_name": "getCurrency",
                 "calling_type": "CALL"
               }
@@ -190,21 +190,21 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "setTechnicalMessage",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "addToCart",
+                "to_name": "getLocale",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "assembleItems",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "getServletRequest",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "cleanShoppingCart",
                 "to_name": "getServletRequest",
                 "calling_type": "CALL"
               }
@@ -218,14 +218,14 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "displayCart",
+                "from_name": "emptyCart",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Struts Result",
-                "from_name": "emptyCart",
+                "from_name": "displayCart",
                 "to_name": "success",
                 "calling_type": "CALL"
               },
@@ -259,6 +259,13 @@
             "calls_between_elements": [
               {
                 "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "assembleItems",
+                "to_name": "OrderProductAttribute",
+                "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "assembleItems",
                 "to_name": "setProductOptionValueId",
@@ -267,21 +274,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "setProductOptionValueId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "assembleItems",
-                "to_name": "setProductOptionValue",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
                 "to_name": "setProductOptionValue",
                 "calling_type": "CALL"
               },
@@ -291,6 +284,13 @@
                 "from_name": "assembleItems",
                 "to_name": "OrderProductAttribute",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "OrderProductAttribute",
+                "calling_type": "USE"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -309,21 +309,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "setCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "assembleItems",
-                "to_name": "setMerchantId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
                 "to_name": "setMerchantId",
                 "calling_type": "CALL"
               },
@@ -332,6 +318,20 @@
                 "to_type": "Java Method",
                 "from_name": "assembleItems",
                 "to_name": "setDatePurchased",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "assembleItems",
+                "to_name": "Order",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "setCurrency",
                 "calling_type": "CALL"
               }
             ],
@@ -351,21 +351,7 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "getOptionValueId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "assembleItems",
-                "to_name": "getProductId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
                 "to_name": "getProductId",
                 "calling_type": "CALL"
               },
@@ -375,6 +361,20 @@
                 "from_name": "assembleItems",
                 "to_name": "getProductOptionValue",
                 "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "getOptionValuePrice",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "getOptionValueId",
+                "calling_type": "CALL"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
@@ -383,6 +383,13 @@
           },
           {
             "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Class",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "ShoppingCartProduct",
+                "calling_type": "USE"
+              },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
@@ -408,13 +415,6 @@
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "ShoppingCartAction",
-                "to_name": "ShoppingCartProduct",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Class",
-                "from_name": "assembleShoppingCartItems",
                 "to_name": "ShoppingCartProduct",
                 "calling_type": "USE"
               }
@@ -476,6 +476,13 @@
               },
               {
                 "from_type": "Java Field",
+                "to_type": "Java Field",
+                "from_name": "mservice",
+                "to_name": "MerchantService",
+                "calling_type": "READ"
+              },
+              {
+                "from_type": "Java Field",
                 "to_type": "Java Method",
                 "from_name": "cservice",
                 "to_name": "getService",
@@ -489,23 +496,58 @@
                 "calling_type": "READ"
               },
               {
-                "from_type": "Java Field",
-                "to_type": "Java Field",
-                "from_name": "mservice",
-                "to_name": "MerchantService",
-                "calling_type": "READ"
-              },
-              {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "ShoppingCartAction",
                 "to_name": "ServiceFactory",
-                "calling_type": "CALL"
+                "calling_type": "READ"
               }
             ],
             "comment": "calls_between_elements list is truncated to first 5 items",
             "nb_calls_between_elements": 6,
             "to_file": "sm-core/src/com/salesmanager/core/service/ServiceFactory.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "displayFormatedAmountNoCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleItems",
+                "to_name": "displayFormatedAmountWithCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "displayFormatedAmountNoCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "displayFormatedAmountWithCurrency",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartAction",
+                "to_name": "CurrencyUtil",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 5,
+            "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
           },
           {
             "calls_between_elements": [
@@ -561,15 +603,15 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "addAttributesToProduct",
+                "from_name": "assembleItems",
+                "to_name": "createOrderProduct",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleItems",
-                "to_name": "createOrderProduct",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "addAttributesToProduct",
                 "calling_type": "CALL"
               },
               {
@@ -596,42 +638,35 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleItems",
-                "to_name": "displayFormatedAmountNoCurrency",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "displayFormatedAmountNoCurrency",
+                "from_name": "displayCart",
+                "to_name": "preparePayments",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "assembleItems",
-                "to_name": "displayFormatedAmountWithCurrency",
+                "to_name": "updateOrderTotal",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "assembleShoppingCartItems",
-                "to_name": "displayFormatedAmountWithCurrency",
+                "to_name": "updateOrderTotal",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
-                "to_type": "Java Class",
+                "to_type": "Java Class Struts",
                 "from_name": "ShoppingCartAction",
-                "to_name": "CurrencyUtil",
+                "to_name": "CheckoutBaseAction",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 5,
-            "to_file": "sm-core/src/com/salesmanager/core/util/CurrencyUtil.java"
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java"
           },
           {
             "calls_between_elements": [
@@ -708,15 +743,43 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
+                "from_name": "prepareStore",
+                "to_name": "getMerchantStore",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
                 "from_name": "validateAddItem",
-                "to_name": "getUserlang",
+                "to_name": "getMerchantUserInfo",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddItem",
+                "to_name": "getMerchantStore",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
                 "to_type": "Java Class",
                 "from_name": "ShoppingCartAction",
-                "to_name": "MerchantUserInformation",
+                "to_name": "MerchantService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 4,
+            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddItem",
+                "to_name": "getUserlang",
                 "calling_type": "CALL"
               },
               {
@@ -732,6 +795,13 @@
                 "from_name": "ShoppingCartAction",
                 "to_name": "MerchantUserInformation",
                 "calling_type": "USE"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartAction",
+                "to_name": "MerchantUserInformation",
+                "calling_type": "CALL"
               }
             ],
             "comment": "",
@@ -771,70 +841,56 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "validateAddItem",
-                "to_name": "getMerchantUserInfo",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "prepareStore",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateAddItem",
-                "to_name": "getMerchantStore",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShoppingCartAction",
-                "to_name": "MerchantService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-core/src/com/salesmanager/core/service/merchant/MerchantService.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleItems",
-                "to_name": "updateOrderTotal",
+                "from_name": "assembleShoppingCartItems",
+                "to_name": "getAttributeId",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
                 "from_name": "assembleShoppingCartItems",
-                "to_name": "updateOrderTotal",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "displayCart",
-                "to_name": "preparePayments",
+                "to_name": "getTextValue",
                 "calling_type": "CALL"
               },
               {
                 "from_type": "Java Class Struts",
-                "to_type": "Java Class Struts",
+                "to_type": "Java Class",
                 "from_name": "ShoppingCartAction",
-                "to_name": "CheckoutBaseAction",
+                "to_name": "ShoppingCartProductAttribute",
                 "calling_type": "CALL"
               }
             ],
             "comment": "",
-            "nb_calls_between_elements": 4,
-            "to_file": "sm-shop/src/com/salesmanager/checkout/CheckoutBaseAction.java"
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/ShoppingCartProductAttribute.java"
+          },
+          {
+            "calls_between_elements": [
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Method",
+                "from_name": "validateAddItem",
+                "to_name": "sendHtmlEmail",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Method",
+                "to_type": "Java Constructor",
+                "from_name": "validateAddItem",
+                "to_name": "CommonService",
+                "calling_type": "CALL"
+              },
+              {
+                "from_type": "Java Class Struts",
+                "to_type": "Java Class",
+                "from_name": "ShoppingCartAction",
+                "to_name": "CommonService",
+                "calling_type": "CALL"
+              }
+            ],
+            "comment": "",
+            "nb_calls_between_elements": 3,
+            "to_file": "sm-core/src/com/salesmanager/core/service/common/CommonService.java"
           },
           {
             "calls_between_elements": [
@@ -897,34 +953,6 @@
               {
                 "from_type": "Java Method",
                 "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "getAttributeId",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "assembleShoppingCartItems",
-                "to_name": "getTextValue",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShoppingCartAction",
-                "to_name": "ShoppingCartProductAttribute",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/entity/orders/ShoppingCartProductAttribute.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
                 "from_name": "assembleItems",
                 "to_name": "getName",
                 "calling_type": "CALL"
@@ -947,34 +975,6 @@
             "comment": "",
             "nb_calls_between_elements": 3,
             "to_file": "sm-core/src/com/salesmanager/core/entity/catalog/ProductOptionValue.java"
-          },
-          {
-            "calls_between_elements": [
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Method",
-                "from_name": "validateAddItem",
-                "to_name": "sendHtmlEmail",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Method",
-                "to_type": "Java Constructor",
-                "from_name": "validateAddItem",
-                "to_name": "CommonService",
-                "calling_type": "CALL"
-              },
-              {
-                "from_type": "Java Class Struts",
-                "to_type": "Java Class",
-                "from_name": "ShoppingCartAction",
-                "to_name": "CommonService",
-                "calling_type": "CALL"
-              }
-            ],
-            "comment": "",
-            "nb_calls_between_elements": 3,
-            "to_file": "sm-core/src/com/salesmanager/core/service/common/CommonService.java"
           },
           {
             "calls_between_elements": [

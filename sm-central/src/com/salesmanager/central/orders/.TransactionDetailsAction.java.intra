@@ -5,80 +5,10 @@
         "calls_between_elements": [
           {
             "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "processTransaction",
-            "to_name": "getRefundAmount",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "prepareOrderDetails",
-            "to_name": "setOrderTotal",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "prepareOrderDetails",
-            "to_name": "setOrder",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "displayTransactions",
-            "to_name": "getOrder",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "processTransaction",
-            "to_name": "getOrder",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "prepareOrderDetails",
-            "to_name": "getOrder",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "processTransaction",
-            "to_name": "getProcess",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/transactiondetails",
-            "to_name": "displayTransactions",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Struts Operation",
-            "to_type": "Java Method",
-            "from_name": "/transactionprocess",
-            "to_name": "processTransaction",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "displayTransactions",
-            "to_name": "prepareOrderDetails",
-            "calling_type": "CALL"
-          },
-          {
-            "from_type": "Java Method",
-            "to_type": "Java Method",
-            "from_name": "processTransaction",
-            "to_name": "prepareOrderDetails",
-            "calling_type": "CALL"
+            "to_type": "Java Field",
+            "from_name": "setRefundAmount",
+            "to_name": "refundAmount",
+            "calling_type": "WRITE"
           },
           {
             "from_type": "Java Method",
@@ -90,8 +20,8 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setRefundAmount",
-            "to_name": "refundAmount",
+            "from_name": "setOrderTotal",
+            "to_name": "orderTotal",
             "calling_type": "WRITE"
           },
           {
@@ -104,8 +34,78 @@
           {
             "from_type": "Java Method",
             "to_type": "Java Field",
-            "from_name": "setOrderTotal",
-            "to_name": "orderTotal",
+            "from_name": "setOrder",
+            "to_name": "order",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getOrder",
+            "to_name": "order",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "setProcess",
+            "to_name": "process",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getProcess",
+            "to_name": "process",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getNextaction",
+            "to_name": "nextaction",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "isCreditcardtransaction",
+            "to_name": "creditcardtransaction",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "getTransactions",
+            "to_name": "gatewaytransactions",
+            "calling_type": "READ"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "displayTransactions",
+            "to_name": "getOrder",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Method",
+            "from_name": "displayTransactions",
+            "to_name": "prepareOrderDetails",
+            "calling_type": "CALL"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "displayTransactions",
+            "to_name": "nextaction",
+            "calling_type": "WRITE"
+          },
+          {
+            "from_type": "Java Method",
+            "to_type": "Java Field",
+            "from_name": "displayTransactions",
+            "to_name": "creditcardtransaction",
             "calling_type": "WRITE"
           }
         ],
